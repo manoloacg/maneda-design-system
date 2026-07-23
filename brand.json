@@ -1,0 +1,54 @@
+{
+  "brand": "Maneda Photography",
+  "archetype": {
+    "dominant": "Sage",
+    "dominant_weight": 0.7,
+    "secondary": "Hero",
+    "secondary_weight": 0.3
+  },
+  "colors": {
+    "obsidian": "#0D0D0D",
+    "charcoal": "#1A1A1A",
+    "graphite": "#2C2C2C",
+    "slate": "#4A4A4A",
+    "stone": "#7A7A7A",
+    "mist": "#B8B0A8",
+    "linen": "#E8E2DA",
+    "ivory": "#F5F2ED",
+    "warmWhite": "#FAFAF8",
+    "gold": "#C4A882",
+    "goldLight": "#D4BC9E",
+    "goldDark": "#A88B62"
+  },
+  "colorRule": "Gold is an accent only, never a base color. No vibrant, saturated, or warm colors elsewhere in the palette.",
+  "typography": {
+    "display": {
+      "family": "Cormorant Garamond",
+      "weights": [300, 400, 600],
+      "usage": "Headlines, brand name, taglines, italic quote accents"
+    },
+    "body": {
+      "family": "Montserrat",
+      "weights": [300, 400, 500, 600],
+      "usage": "Body copy at weight 300, captions/labels at weight 500 uppercase"
+    },
+    "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+  },
+  "voice": {
+    "tone": ["sober", "precise", "collegial"],
+    "forbidden": ["superlatives", "exclamation points", "sales language", "em-dashes", "excessive emoji"],
+    "coreCredential": "10+ years as an architectural designer, photographs with a designer's understanding of space, light, and materiality"
+  },
+  "logos": {
+    "status": "pending upload",
+    "expectedVariants": ["primary", "on-dark", "on-light", "icon-only"],
+    "expectedFormats": ["svg", "png"]
+  },
+  "contact": {
+    "email": "manedastudios@gmail.com",
+    "phone": "321-947-1674",
+    "website": "manedastudios.com",
+    "instagram": "@maneda.ph",
+    "location": "Orlando, FL"
+  }
+}
