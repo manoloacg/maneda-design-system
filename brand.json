@@ -40,9 +40,18 @@
     "coreCredential": "10+ years as an architectural designer, photographs with a designer's understanding of space, light, and materiality"
   },
   "logos": {
-    "status": "pending upload",
-    "expectedVariants": ["primary", "on-dark", "on-light", "icon-only"],
-    "expectedFormats": ["svg", "png"]
+    "status": "uploaded, vector source still needed",
+    "files": {
+      "primarySquareBlack": "logos/primary-square-black.png",
+      "primarySquareWhite": "logos/primary-square-white.png",
+      "primaryHorizontalBlack": "logos/primary-horizontal-black.png",
+      "iconBlackOnWhite": "logos/icon-black-on-white.png",
+      "iconWhiteOnBlack": "logos/icon-white-on-black.png",
+      "iconWhiteTransparent": "logos/icon-white-transparent.png",
+      "iconBlackOnCream": "logos/icon-black-on-cream.png"
+    },
+    "vectorSource": null,
+    "note": "No SVG available yet. PNG only. See logos/README.md for usage rules."
   },
   "contact": {
     "email": "manedastudios@gmail.com",
