@@ -1,0 +1,38 @@
+/* Maneda Photography — Design Tokens
+   Source of truth: Identity.html
+   Import this file into any project that needs brand-consistent styling. */
+
+:root {
+  /* Color palette */
+  --obsidian: #0D0D0D;
+  --charcoal: #1A1A1A;
+  --graphite: #2C2C2C;
+  --slate: #4A4A4A;
+  --stone: #7A7A7A;
+  --mist: #B8B0A8;
+  --linen: #E8E2DA;
+  --ivory: #F5F2ED;
+  --warm-white: #FAFAF8;
+  --gold: #C4A882;
+  --gold-light: #D4BC9E;
+  --gold-dark: #A88B62;
+
+  /* Typography */
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body: 'Montserrat', sans-serif;
+
+  /* Weights */
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+
+  /* Letter spacing */
+  --tracking-caption: 0.3em;
+  --tracking-label: 0.4em;
+  --tracking-display: 0.08em;
+
+  /* Line height */
+  --leading-body: 1.7;
+  --leading-relaxed: 1.9;
+}
