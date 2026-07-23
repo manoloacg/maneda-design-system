@@ -60,8 +60,19 @@ Rhythm of 3: photo → photo → text. Never two text posts in a row. Never thre
 
 ## Files in this repo
 
+- `README.md` — this file, full identity overview
 - `tokens.css` — CSS custom properties for the palette, ready to import into any build
-- `README.md` — this file
+- `brand.json` — machine-readable version of colors, type, voice, and logo paths
+- `VOICE.md` — full bio structure, positioning, tone rules, manifesto
+- `logos/` — all logo files and usage rules (see `logos/README.md`)
+
+## How to point a tool at this repo
+
+**Claude Design / Claude (this chat or Cowork):** share the GitHub repo URL, or the raw file URLs, in a prompt. Claude will fetch and use it as spec.
+
+**Canva:** no live sync. Open Canva → Brand Kit → upload the logo files from `logos/`, enter the hex codes from this README or `brand.json`, and add the two font families. Update the Brand Kit by hand any time this repo changes — treat this repo as the master copy, Canva as a mirror.
+
+**Any code build (website, app):** import `tokens.css` directly, or parse `brand.json`.
 
 ## Source
 
