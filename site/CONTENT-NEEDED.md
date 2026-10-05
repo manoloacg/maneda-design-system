@@ -27,7 +27,6 @@ Every placeholder on the site is marked `[PLACEHOLDER: ...]` in the source and s
 | Reply window promise | `site.json` (`replyWindow`) | Open |
 | Portrait | About page | Open |
 | About page "What I value" in your own words | `about.values` | Open |
-| Confirm the line "Manolo is completing the ARE toward Florida licensure." | `about.story` | Open. Confirm exact wording. |
 | Confirm service inclusions and not-included lists for all five services, especially consultations | `services.items` | Open. Drafted by Claude, not by Manolo. |
 | What moves a site analysis above $700 | `services.items.site-analysis.pricingNote` | Open |
 | Native Portuguese read of all Portuguese copy | `pt.json` files | Open |
