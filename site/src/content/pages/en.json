@@ -439,7 +439,7 @@
         },
         {
           "q": "What file formats do I receive?",
-          "a": "PDF for review and permit submittal. Interior packages include CAD and PDF floor plans. [PLACEHOLDER: confirm whether native Revit files are shared for architectural work]"
+          "a": "PDF for review and permit submittal. Interior packages include CAD and PDF floor plans. Native Revit files are not shared."
         },
         {
           "q": "How does payment work?",

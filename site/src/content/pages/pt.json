@@ -439,7 +439,7 @@
         },
         {
           "q": "Em quais formatos recebo os arquivos?",
-          "a": "PDF para revisão e submissão à prefeitura. Os pacotes de interiores incluem plantas baixas em CAD e PDF. [PLACEHOLDER: confirmar se arquivos nativos do Revit são entregues em projetos de arquitetura]"
+          "a": "PDF para revisão e submissão à prefeitura. Os pacotes de interiores incluem plantas baixas em CAD e PDF. Os arquivos nativos do Revit não são compartilhados."
         },
         {
           "q": "Como funciona o pagamento?",

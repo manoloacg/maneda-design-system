@@ -13,7 +13,7 @@ Domain: manedastudios.com, newly bought by Manolo, nothing hosted on it. Reply p
 | 5 | Written confirmation from the Ohio owner that the project, hero render and rear render may be published (verbal OK received) | Keep in your files |
 | 6 | Ohio residence case study, still missing: size in SF, the outcome (permit and build status), images for design moves 1, 3, 4 and 5 (sauna plan, sight lines, bedroom egress before and after, garage and entry), an early sketch beside the final plan or elevation, and one sheet excerpt with the title block, owner name and address removed. Text drafted by Claude from the August 22 meeting minutes, still needs Manolo's read. | `src/content/projects/en/ohio-residence.md` and `pt/` |
 | 7 | Written client approval before any real name or address appears (`clientApproved: true`). Not needed while the project stays anonymous. | Same files |
-| 9 | FAQ: whether native Revit files are shared for architectural work, your deposit and payment schedule, and which states and jurisdictions you serve. Professional of record is settled: the owner hires and pays the structural engineer. | `process.faq` |
+| 9 | FAQ: your deposit and payment schedule, and which states and jurisdictions you serve. Native Revit files: not shared (settled). Professional of record is settled: the owner hires and pays the structural engineer. | `process.faq` |
 | 10 | Portrait of Manolo, in an architectural setting | About page |
 | 11 | "What I value" in Manolo's own words (three short statements) | `about.values` |
 | 12 | Final read of the five service descriptions, now rewritten from your Service Pricing Guide, in both languages | `services.items` in both page files |
