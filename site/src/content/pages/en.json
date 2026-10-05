@@ -243,7 +243,7 @@
         ],
         "notIncluded": [
           "Drawings sealed by MDS",
-          "Structural engineering. A structural engineer prepares these drawings under a separate contract.",
+          "Structural engineering. The owner hires a structural engineer under a separate contract.",
           "Mechanical, electrical, or plumbing engineering",
           "Contractor services or construction work",
           "Permit fees"
@@ -292,7 +292,7 @@
         "Each project gets a written fixed fee at the proposal stage, set by phase, so the cost is known before work starts.",
         "Two rounds of revisions are included in each phase. Added rounds are billed at an hourly rate.",
         "The schedule pauses while the project waits on your approvals or information. Durations assume approvals within 5 business days.",
-        "Fees cover design services only. Construction, permit fees, furnishings, and contractor costs are separate.",
+        "Fees cover design services only. Construction, permit fees, furnishings, contractor costs, and engineering are separate. Engineers and other consultants are hired and paid by the owner under separate contracts.",
         "Zoning and code summaries are informal and are not legal opinions.",
         "Consultation and site visit credits apply to a full-service package booked within 14 days. Credits cannot be transferred."
       ]
@@ -409,7 +409,7 @@
       {
         "title": "Construction documents and permit support",
         "emphasis": false,
-        "happens": "For design clients, the approved design is developed into construction documents and coordinated for permit submittal. The set goes to your builder as the basis for pricing and construction. Structural drawings are prepared by a structural engineer under a separate contract.",
+        "happens": "For design clients, the approved design is developed into construction documents and coordinated for permit submittal. The set goes to your builder as the basis for pricing and construction. Structural drawings are prepared by a structural engineer, hired by the owner under a separate contract.",
         "provide": "Your builder and engineers, if you have them. Responses to permit review comments.",
         "get": "A construction document set and support through permit review comments.",
         "duration": "Construction documents 8 to 12 weeks, then permitting 3 to 8 weeks, depending on the jurisdiction"
@@ -431,7 +431,7 @@
         },
         {
           "q": "Who seals the drawings?",
-          "a": "Where a seal is required, drawings are reviewed and sealed by a licensed professional of record. Structural drawings are prepared by a structural engineer under a separate contract. MDS coordinates the documents that need a seal with the licensed professional of record. [PLACEHOLDER: who engages and pays the professional of record, including for projects outside Florida]"
+          "a": "Where a seal is required, drawings are reviewed and sealed by a licensed professional of record. On residential projects this is often the structural engineer, hired and paid by the owner under a separate contract. MDS coordinates the drawings with the engineer during construction documents. Where a jurisdiction requires a different professional, MDS confirms that during site and code review."
         },
         {
           "q": "How many revisions are included?",

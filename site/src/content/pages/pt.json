@@ -243,7 +243,7 @@
         ],
         "notIncluded": [
           "Desenhos selados pela MDS",
-          "Engenharia estrutural. Um engenheiro estrutural prepara esses desenhos em contrato separado.",
+          "Engenharia estrutural. O proprietário contrata um engenheiro estrutural em contrato separado.",
           "Engenharia mecânica, elétrica ou hidráulica",
           "Serviços de construtor ou execução de obra",
           "Taxas de aprovação"
@@ -292,7 +292,7 @@
         "Cada projeto recebe um honorário fixo por escrito na fase de proposta, definido por fase, para que o custo seja conhecido antes de o trabalho começar.",
         "Duas rodadas de revisão estão incluídas em cada fase. Rodadas adicionais são cobradas por hora.",
         "O cronograma pausa enquanto o projeto espera por aprovações ou informações suas. Os prazos supõem aprovações em até 5 dias úteis.",
-        "Os honorários cobrem apenas serviços de projeto. Obra, taxas de aprovação, mobiliário e custos do construtor são separados.",
+        "Os honorários cobrem apenas serviços de projeto. Obra, taxas de aprovação, mobiliário, custos do construtor e engenharia são separados. Engenheiros e outros consultores são contratados e pagos pelo proprietário, em contratos separados.",
         "Resumos de zoneamento e de código são informais e não são pareceres jurídicos.",
         "Os créditos de consultoria e de visita valem para um pacote completo contratado em até 14 dias. Os créditos não podem ser transferidos."
       ]
@@ -409,7 +409,7 @@
       {
         "title": "Projeto executivo e apoio na aprovação",
         "emphasis": false,
-        "happens": "Para clientes de projeto, o projeto aprovado é desenvolvido em projeto executivo (construction documents) e coordenado para a submissão à prefeitura (permit). O conjunto segue para o seu construtor como base de orçamento e obra. Os desenhos estruturais são feitos por um engenheiro estrutural, em contrato separado.",
+        "happens": "Para clientes de projeto, o projeto aprovado é desenvolvido em projeto executivo (construction documents) e coordenado para a submissão à prefeitura (permit). O conjunto segue para o seu construtor como base de orçamento e obra. Os desenhos estruturais são feitos por um engenheiro estrutural, contratado pelo proprietário em contrato separado.",
         "provide": "Seu construtor e seus engenheiros, se tiver. Respostas aos comentários da análise de aprovação (plan review).",
         "get": "Um conjunto de projeto executivo e apoio nos comentários da análise de aprovação.",
         "duration": "Projeto executivo de 8 a 12 semanas, depois aprovação de 3 a 8 semanas, conforme a prefeitura"
@@ -431,7 +431,7 @@
         },
         {
           "q": "Quem sela os desenhos?",
-          "a": "Quando um selo é exigido, os desenhos são revisados e selados por um profissional licenciado responsável pelo projeto. Os desenhos estruturais são feitos por um engenheiro estrutural, em contrato separado. A MDS coordena os documentos que precisam de selo com o profissional licenciado responsável. [PLACEHOLDER: quem contrata e paga o profissional responsável, inclusive em projetos fora da Flórida]"
+          "a": "Quando um selo é exigido, os desenhos são revisados e selados por um profissional licenciado responsável pelo projeto. Em projetos residenciais, esse profissional costuma ser o engenheiro estrutural, contratado e pago pelo proprietário em contrato separado. A MDS coordena os desenhos com o engenheiro durante o projeto executivo. Quando a prefeitura exige outro profissional, a MDS confirma isso na análise do terreno e do código."
         },
         {
           "q": "Quantas revisões estão incluídas?",
