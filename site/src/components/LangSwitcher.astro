@@ -1,0 +1,27 @@
+---
+/* "EN | PT" as two plain text links. The current language is marked.
+   Keeps the visitor on the equivalent page through the route map in i18n/utils.ts. */
+import { alternatePath, getLang, languages, t } from '../i18n/utils';
+const current = getLang(Astro.url.pathname);
+const link = 'inline-flex min-h-[var(--tap)] min-w-[var(--tap)] items-center justify-center px-1 text-[0.8rem] font-medium tracking-[0.18em] no-underline';
+---
+
+<nav aria-label={t(current, 'lang.label')} class="flex items-center">
+  {
+    languages.map((l, i) => (
+      <>
+        {i > 0 && <span aria-hidden="true" class="text-stone">|</span>}
+        <a
+          href={alternatePath(Astro.url.pathname, l)}
+          lang={l}
+          hreflang={l}
+          data-lang-switch={l}
+          aria-current={l === current ? 'page' : undefined}
+          class={`${link} ${l === current ? 'underline decoration-gold decoration-2 underline-offset-[0.5em]' : 'text-[var(--color-text-muted)] hover:text-obsidian'}`}
+        >
+          {l.toUpperCase()}
+        </a>
+      </>
+    ))
+  }
+</nav>

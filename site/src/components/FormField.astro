@@ -1,0 +1,46 @@
+---
+/* Accessible form field: visible label, hint, required or optional marker, error slot.
+   type: text, email, tel, url, textarea, select */
+import { getLang, t } from '../i18n/utils';
+interface Option { value: string; label: string }
+interface Props {
+  name: string;
+  label: string;
+  type?: 'text' | 'email' | 'tel' | 'url' | 'textarea' | 'select';
+  required?: boolean;
+  hint?: string;
+  options?: Option[];
+  value?: string;
+  placeholder?: string;
+  rows?: number;
+  autocomplete?: string;
+}
+const { name, label, type = 'text', required = false, hint, options = [], value = '', placeholder, rows = 5, autocomplete } = Astro.props;
+const lang = getLang(Astro.url.pathname);
+const id = `f-${name}`;
+const describedBy = [hint ? `${id}-hint` : '', `${id}-error`].filter(Boolean).join(' ');
+const control =
+  'block w-full min-h-[var(--tap)] border border-graphite bg-white px-4 py-3 text-base text-obsidian placeholder:text-slate focus:border-obsidian aria-[invalid=true]:border-[#9B1C1C]';
+---
+
+<div class="flex flex-col gap-2">
+  <label for={id} class="flex items-baseline justify-between gap-4 text-sm font-medium">
+    <span>{label}</span>
+    <span class="sheet-label text-[var(--color-text-muted)]">
+      {required ? t(lang, 'form.required') : t(lang, 'form.optional')}
+    </span>
+  </label>
+  {hint && <p id={`${id}-hint`} class="text-sm text-[var(--color-text-muted)]">{hint}</p>}
+  {
+    type === 'textarea' ? (
+      <textarea id={id} name={name} rows={rows} required={required} placeholder={placeholder} aria-describedby={describedBy} class={control}>{value}</textarea>
+    ) : type === 'select' ? (
+      <select id={id} name={name} required={required} aria-describedby={describedBy} class={control}>
+        {options.map((o) => <option value={o.value} selected={o.value === value}>{o.label}</option>)}
+      </select>
+    ) : (
+      <input id={id} name={name} type={type} value={value} required={required} placeholder={placeholder} autocomplete={autocomplete} aria-describedby={describedBy} class={control} />
+    )
+  }
+  <p id={`${id}-error`} class="min-h-[1.25rem] text-sm text-[#9B1C1C]" aria-live="polite"></p>
+</div>

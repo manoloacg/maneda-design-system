@@ -1,0 +1,24 @@
+{
+  "name": "Maneda Design Studios",
+  "shortName": "MDS",
+  "url": "https://www.example.com",
+  "urlNote": "[PLACEHOLDER: replace with the real domain once confirmed]",
+  "email": "[PLACEHOLDER: studio email]",
+  "serviceArea": {
+    "en": "Orlando metro area and Central Florida",
+    "pt": "Região metropolitana de Orlando e Flórida Central"
+  },
+  "languages": ["en", "pt"],
+  "social": {
+    "instagram": ""
+  },
+  "form": {
+    "provider": "web3forms",
+    "endpoint": "https://api.web3forms.com/submit",
+    "accessKey": "[PLACEHOLDER: Web3Forms access key]"
+  },
+  "replyWindow": {
+    "en": "[PLACEHOLDER: within 1 business day, confirm with Manolo]",
+    "pt": "[PLACEHOLDER: em até 1 dia útil, confirmar com o Manolo]"
+  }
+}

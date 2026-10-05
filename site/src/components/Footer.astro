@@ -1,0 +1,54 @@
+---
+import site from '../content/site.json';
+import { getLang, isPlaceholder, markPlaceholders, pick, routeFor, t } from '../i18n/utils';
+const lang = getLang(Astro.url.pathname);
+const items = ['services', 'work', 'process', 'about', 'contact'] as const;
+const email = site.email;
+const year = new Date().getFullYear();
+const link = 'inline-flex min-h-[var(--tap)] items-center no-underline hover:underline decoration-gold underline-offset-[0.4em]';
+---
+
+<footer class="tone-dark" style="padding-block:clamp(3rem,2rem + 4vw,6rem)">
+  <div class="container-site grid grid-cols-12 gap-x-6 gap-y-10">
+    <div class="col-span-12 md:col-span-5">
+      <img src="/images/logo/logo-horizontal-white.png" alt="Maneda Studios" width="200" height="52" class="mb-6 h-auto w-[200px]" loading="lazy" />
+      <p class="max-w-[38ch] text-[var(--color-text-muted)]">{t(lang, 'footer.about')}</p>
+    </div>
+
+    <nav aria-label={t(lang, 'nav.primary')} class="col-span-6 md:col-span-3">
+      <ul>
+        {items.map((key) => <li><a href={routeFor(lang, key)} class={link}>{t(lang, `nav.${key}`)}</a></li>)}
+      </ul>
+    </nav>
+
+    <div class="col-span-6 md:col-span-4">
+      <p class="sheet-label mb-2 text-[var(--color-text-muted)]">{t(lang, 'footer.email')}</p>
+      {
+        isPlaceholder(email) ? (
+          <p class="mb-6" set:html={markPlaceholders(email)} />
+        ) : (
+          <p class="mb-6"><a href={`mailto:${email}`} class={link}>{email}</a></p>
+        )
+      }
+      <p class="sheet-label mb-2 text-[var(--color-text-muted)]">{t(lang, 'footer.serviceArea')}</p>
+      <p class="mb-6">{pick(lang, site.serviceArea)}</p>
+      {
+        site.social.instagram && (
+          <>
+            <p class="sheet-label mb-2 text-[var(--color-text-muted)]">{t(lang, 'footer.social')}</p>
+            <p><a href={site.social.instagram} class={link} rel="noopener">{t(lang, 'footer.instagram')}</a></p>
+          </>
+        )
+      }
+    </div>
+
+    <div class="col-span-12 flex flex-col gap-4 border-t border-[var(--color-rule)] pt-8 text-sm text-[var(--color-text-muted)] md:flex-row md:items-start md:justify-between">
+      <!-- CONFIRM WITH MANOLO before launch: seal sentence (EN and PT) -->
+      <p class="max-w-[60ch]">{t(lang, 'footer.seal')}</p>
+      <p class="shrink-0">
+        &copy; {year} {site.name}. {t(lang, 'footer.rights')}
+        <a href={routeFor(lang, 'privacy')} class="ml-2 underline">{t(lang, 'footer.privacy')}</a>
+      </p>
+    </div>
+  </div>
+</footer>

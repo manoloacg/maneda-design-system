@@ -1,0 +1,116 @@
+---
+import '@fontsource/cormorant-garamond/latin-300.css';
+import '@fontsource/cormorant-garamond/latin-300-italic.css';
+import '@fontsource/cormorant-garamond/latin-400.css';
+import '@fontsource/montserrat/latin-400.css';
+import '@fontsource/montserrat/latin-500.css';
+import cormorant300 from '@fontsource/cormorant-garamond/files/cormorant-garamond-latin-300-normal.woff2?url';
+import montserrat400 from '@fontsource/montserrat/files/montserrat-latin-400-normal.woff2?url';
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import LangBanner from '../components/LangBanner.astro';
+import MobileCta from '../components/MobileCta.astro';
+import site from '../content/site.json';
+import { alternatePath, getLang, t } from '../i18n/utils';
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  noindex?: boolean;
+}
+const lang = getLang(Astro.url.pathname);
+const { title = t(lang, 'meta.defaultTitle'), description = t(lang, 'meta.defaultDescription'), image = '/images/og-default.png', noindex = false } = Astro.props;
+const path = Astro.url.pathname;
+const abs = (p: string) => new URL(p, Astro.site).href;
+const canonical = abs(path);
+const og = { en: 'en_US', pt: 'pt_BR' } as const;
+---
+
+<!doctype html>
+<html lang={lang === 'pt' ? 'pt-BR' : 'en'} data-path-en={alternatePath(path, 'en')} data-path-pt={alternatePath(path, 'pt')}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="en" href={abs(alternatePath(path, 'en'))} />
+    <link rel="alternate" hreflang="pt-BR" href={abs(alternatePath(path, 'pt'))} />
+    <link rel="alternate" hreflang="x-default" href={abs(alternatePath(path, 'en'))} />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
+
+    <meta property="og:site_name" content={site.name} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={abs(image)} />
+    <meta property="og:locale" content={og[lang]} />
+    <meta property="og:locale:alternate" content={og[lang === 'en' ? 'pt' : 'en']} />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="preload" href={cormorant300} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={montserrat400} as="font" type="font/woff2" crossorigin />
+
+    <!-- Language memory. Runs before first paint, so there is no flash.
+         1. A remembered choice applies only to the first page of a new visit.
+         2. The language banner shows only if the browser language differs and no choice is saved.
+         The browser language never triggers a redirect. -->
+    <script is:inline>
+      (function () {
+        var d = document.documentElement;
+        d.classList.add('js');
+        var page = d.lang.slice(0, 2);
+        var store, seen, dismissed;
+        try { store = localStorage.getItem('mds-lang'); dismissed = localStorage.getItem('mds-banner'); } catch (e) {}
+        try { seen = sessionStorage.getItem('mds-visit'); sessionStorage.setItem('mds-visit', '1'); } catch (e) {}
+        if (!seen && store && store !== page) {
+          var target = d.getAttribute('data-path-' + store);
+          if (target) { location.replace(target + location.search + location.hash); return; }
+        }
+        var browserPt = (navigator.language || '').toLowerCase().indexOf('pt') === 0;
+        if (!store && !dismissed && ((page === 'en' && browserPt) || (page === 'pt' && !browserPt))) {
+          d.classList.add('show-lang-banner');
+        }
+      })();
+    </script>
+  </head>
+  <body class="pb-16 md:pb-0">
+    <a href="#main" class="skip-link">{t(lang, 'a11y.skip')}</a>
+    <LangBanner />
+    <Header />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer />
+    <MobileCta />
+
+    <script>
+      // Remember an explicit language choice.
+      document.querySelectorAll<HTMLElement>('[data-lang-switch]').forEach((el) =>
+        el.addEventListener('click', () => {
+          try { localStorage.setItem('mds-lang', el.dataset.langSwitch!); } catch (e) {}
+        })
+      );
+      document.getElementById('lang-banner-dismiss')?.addEventListener('click', () => {
+        document.documentElement.classList.remove('show-lang-banner');
+        try { localStorage.setItem('mds-banner', '1'); } catch (e) {}
+      });
+      // Subtle fade and upward reveal. CSS only animates when motion is allowed.
+      const items = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver(
+          (entries) => entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); } }),
+          { rootMargin: '0px 0px -8% 0px' }
+        );
+        items.forEach((el) => io.observe(el));
+      } else {
+        items.forEach((el) => el.classList.add('is-visible'));
+      }
+    </script>
+  </body>
+</html>

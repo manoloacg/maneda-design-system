@@ -1,0 +1,21 @@
+---
+/* Neutral frame with a visible PLACEHOLDER tag. Used until a real project image is supplied.
+   `note` says what image belongs here so Manolo knows what to send. */
+import { getLang, t } from '../i18n/utils';
+interface Props { ratio?: string; note?: string; class?: string }
+const { ratio = '4 / 3', note = '', class: extra = '' } = Astro.props;
+const lang = getLang(Astro.url.pathname);
+const tag = t(lang, 'placeholder.tag');
+---
+
+<div
+  role="img"
+  aria-label={`${t(lang, 'placeholder.image')}${note ? ': ' + note : ''}`}
+  class={`relative w-full overflow-hidden ${extra}`}
+  style={`aspect-ratio:${ratio};background:repeating-linear-gradient(135deg,var(--color-placeholder-bg) 0 14px,#DAD6D0 14px 15px);color:var(--color-placeholder-ink)`}
+>
+  <span
+    class="sheet-label absolute left-3 top-3 bg-[var(--color-placeholder-flag)] px-2 py-1 text-obsidian"
+  >{tag}</span>
+  {note && <span class="absolute inset-x-4 bottom-3 text-[var(--text-sm)]">{note}</span>}
+</div>

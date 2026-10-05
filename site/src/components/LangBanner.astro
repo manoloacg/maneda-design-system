@@ -1,0 +1,16 @@
+---
+/* One small dismissible notice. Shown only when the browser language differs from the page language
+   and the visitor has not chosen a language yet. The text is written in the OTHER language.
+   The logic that decides when to show it lives in BaseLayout.astro. */
+import { alternatePath, getLang, t, type Lang } from '../i18n/utils';
+const current = getLang(Astro.url.pathname);
+const other: Lang = current === 'en' ? 'pt' : 'en';
+---
+
+<div id="lang-banner" lang={other} class="hidden items-center justify-between gap-4 bg-obsidian px-4 py-2 text-sm text-ivory [.show-lang-banner_&]:flex">
+  <p>
+    {t(other, 'lang.bannerText')}
+    <a href={alternatePath(Astro.url.pathname, other)} data-lang-switch={other} class="ml-2 underline decoration-gold">{t(other, 'lang.bannerLink')}</a>
+  </p>
+  <button type="button" id="lang-banner-dismiss" class="inline-flex min-h-[var(--tap)] min-w-[var(--tap)] items-center justify-center text-xl" aria-label={t(other, 'lang.bannerDismiss')}>&times;</button>
+</div>

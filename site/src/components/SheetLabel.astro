@@ -1,0 +1,10 @@
+---
+/* Small drawing-sheet style label with a thin rule, for example "MDS-26-01". */
+interface Props { text: string; rule?: boolean; class?: string }
+const { text, rule = true, class: extra = '' } = Astro.props;
+---
+
+<p class={`sheet-label flex items-center gap-4 text-[var(--color-text-muted)] ${extra}`}>
+  <span>{text}</span>
+  {rule && <span aria-hidden="true" class="h-px w-12 bg-gold"></span>}
+</p>

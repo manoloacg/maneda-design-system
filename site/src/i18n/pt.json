@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "siteName": "Maneda Design Studios",
+    "defaultTitle": "Maneda Design Studios | Projeto residencial na Flórida Central",
+    "defaultDescription": "A Maneda Design Studios projeta casas, ampliações e interiores na Flórida Central e leva o projeto até o projeto executivo."
+  },
+  "nav": {
+    "services": "Serviços",
+    "work": "Trabalhos",
+    "process": "Processo",
+    "about": "Sobre",
+    "contact": "Contato",
+    "primary": "Principal",
+    "menuOpen": "Menu",
+    "menuClose": "Fechar",
+    "home": "Maneda Design Studios, página inicial"
+  },
+  "cta": {
+    "requestQuote": "Solicitar orçamento",
+    "seeWork": "Ver trabalhos selecionados",
+    "nextStep": "Próximo passo"
+  },
+  "lang": {
+    "label": "Idioma",
+    "en": "English",
+    "pt": "Português",
+    "bannerText": "Este site também está em português.",
+    "bannerLink": "Ver em português",
+    "bannerDismiss": "Fechar aviso"
+  },
+  "a11y": {
+    "skip": "Ir para o conteúdo principal"
+  },
+  "footer": {
+    "about": "A Maneda Design Studios é um estúdio de projeto residencial na Flórida Central.",
+    "seal": "Quando um selo é exigido, os desenhos são revisados e selados por um profissional licenciado responsável pelo projeto.",
+    "serviceArea": "Área de atendimento",
+    "email": "E-mail",
+    "social": "Redes",
+    "instagram": "Instagram",
+    "privacy": "Política de privacidade",
+    "rights": "Todos os direitos reservados."
+  },
+  "placeholder": {
+    "tag": "Placeholder",
+    "image": "Imagem placeholder"
+  },
+  "form": {
+    "required": "Obrigatório",
+    "optional": "Opcional",
+    "errorRequired": "Este campo é obrigatório.",
+    "errorEmail": "Informe um e-mail válido.",
+    "send": "Enviar solicitação",
+    "sending": "Enviando"
+  },
+  "project": {
+    "number": "Projeto",
+    "viewCase": "Ler o estudo de caso"
+  },
+  "faq": {
+    "heading": "Perguntas"
+  },
+  "home": {
+    "headline": "Projeto residencial na Flórida Central.",
+    "subhead": "A Maneda Design Studios projeta casas, ampliações e interiores, e leva o projeto até os desenhos prontos para construir."
+  },
+  "styleguide": {
+    "title": "Guia de estilo",
+    "intro": "Referência interna do sistema de design da Fase 1. Esta página não é indexada e será removida antes do lançamento.",
+    "colors": "Cor",
+    "type": "Tipografia",
+    "buttons": "Botões",
+    "form": "Campos de formulário",
+    "cards": "Cartão de projeto",
+    "faq": "Perguntas frequentes",
+    "placeholders": "Placeholders",
+    "sections": "Tons de seção"
+  }
+}

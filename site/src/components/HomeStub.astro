@@ -1,0 +1,22 @@
+---
+/* Phase 1 stand-in for the home page. The real home page is built in Phase 2. */
+import Button from './Button.astro';
+import ImagePlaceholder from './ImagePlaceholder.astro';
+import { getLang, routeFor, t } from '../i18n/utils';
+const lang = getLang(Astro.url.pathname);
+---
+
+<section class="container-site grid grid-cols-12 items-end gap-x-6 gap-y-10" style="padding-block:var(--section-space)">
+  <div class="col-span-12 lg:col-span-6">
+    <p class="sheet-label mb-6 text-[var(--color-text-muted)]">MDS-26-00</p>
+    <h1 class="mb-6">{t(lang, 'home.headline')}</h1>
+    <p class="lead mb-10 max-w-[48ch]">{t(lang, 'home.subhead')}</p>
+    <div class="flex flex-wrap gap-4">
+      <Button href={routeFor(lang, 'contact')}>{t(lang, 'cta.requestQuote')}</Button>
+      <Button href={routeFor(lang, 'work')} variant="secondary">{t(lang, 'cta.seeWork')}</Button>
+    </div>
+  </div>
+  <div class="col-span-12 lg:col-span-6">
+    <ImagePlaceholder ratio="4 / 5" note="Hero: real project photo, full width in the final build" />
+  </div>
+</section>

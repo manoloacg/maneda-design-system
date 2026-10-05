@@ -1,0 +1,31 @@
+---
+/* One idea per section. tone: light, alt (ivory), dark (obsidian). */
+interface Props {
+  id?: string;
+  tone?: 'light' | 'alt' | 'dark';
+  label?: string;
+  title?: string;
+  intro?: string;
+  titleTag?: 'h1' | 'h2';
+  class?: string;
+}
+const { id, tone = 'light', label, title, intro, titleTag: Tag = 'h2', class: extra = '' } = Astro.props;
+const toneClass = { light: '', alt: 'tone-alt', dark: 'tone-dark' }[tone];
+---
+
+<section id={id} class={`${toneClass} ${extra}`} style="padding-block:var(--section-space)">
+  <div class="container-site">
+    {
+      (label || title || intro) && (
+        <header class="reveal mb-12 grid grid-cols-12 gap-x-6 gap-y-4 md:mb-16">
+          <div class="col-span-12 md:col-span-8">
+            {label && <p class="sheet-label mb-5 text-[var(--color-text-muted)]">{label}</p>}
+            {title && <Tag>{title}</Tag>}
+            {intro && <p class="lead mt-6 max-w-[60ch]">{intro}</p>}
+          </div>
+        </header>
+      )
+    }
+    <slot />
+  </div>
+</section>

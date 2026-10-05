@@ -1,0 +1,20 @@
+---
+/* Native <details> disclosure. No JavaScript. items come from a content file. */
+import { markPlaceholders } from '../i18n/utils';
+interface Props { items: { q: string; a: string }[] }
+const { items } = Astro.props;
+---
+
+<div class="border-t border-[var(--color-rule-strong)]">
+  {
+    items.map((item) => (
+      <details class="group border-b border-[var(--color-rule)]">
+        <summary class="flex min-h-[var(--tap)] cursor-pointer list-none items-center justify-between gap-6 py-5 text-lg [&::-webkit-details-marker]:hidden">
+          <span class="font-[family-name:var(--font-display)] text-[var(--text-h3)] leading-tight" set:html={markPlaceholders(item.q)} />
+          <span aria-hidden="true" class="text-2xl leading-none transition-transform group-open:rotate-45">+</span>
+        </summary>
+        <p class="max-w-[65ch] pb-6 text-[var(--color-text-muted)]" set:html={markPlaceholders(item.a)} />
+      </details>
+    ))
+  }
+</div>

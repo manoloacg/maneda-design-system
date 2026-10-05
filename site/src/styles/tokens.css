@@ -1,0 +1,65 @@
+/* Maneda Design Studios: design tokens.
+   Brand values come from the design system repo (../tokens.css, brand.json).
+   Change colors, fonts and spacing here. Nothing else in the site hard-codes them.
+
+   Contrast notes (WCAG AA, measured on --warm-white):
+   - Gold (#C4A882) is about 2.2:1. Use it for rules, borders and fills only. Never for text.
+   - Stone (#7A7A7A) is about 4.1:1. Large text only.
+   - Slate (#4A4A4A) is about 8.6:1. Use it for secondary text.
+*/
+
+:root {
+  /* Brand palette */
+  --obsidian: #0D0D0D;
+  --charcoal: #1A1A1A;
+  --graphite: #2C2C2C;
+  --slate: #4A4A4A;
+  --stone: #7A7A7A;
+  --mist: #B8B0A8;
+  --linen: #E8E2DA;
+  --ivory: #F5F2ED;
+  --warm-white: #FAFAF8;
+  --gold: #C4A882;
+  --gold-light: #D4BC9E;
+  --gold-dark: #A88B62;
+
+  /* Semantic roles (light is the default) */
+  --color-bg: var(--warm-white);
+  --color-bg-alt: var(--ivory);
+  --color-text: var(--obsidian);
+  --color-text-muted: var(--slate);
+  --color-rule: var(--linen);
+  --color-rule-strong: var(--graphite);
+  --color-focus: #1F5FBF;
+  --color-placeholder-bg: #E4E1DC;
+  --color-placeholder-ink: #3D3D3D;
+  --color-placeholder-flag: #FFE27A;
+
+  /* Typography */
+  --font-display: 'Cormorant Garamond', 'Cormorant', Georgia, serif;
+  --font-body: 'Montserrat', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --tracking-caption: 0.3em;
+  --tracking-label: 0.2em;
+  --tracking-display: 0.04em;
+  --leading-body: 1.7;
+  --leading-relaxed: 1.9;
+
+  /* Fluid type scale */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: clamp(1.125rem, 1.05rem + 0.3vw, 1.3rem);
+  --text-h3: clamp(1.5rem, 1.3rem + 0.8vw, 1.9rem);
+  --text-h2: clamp(2rem, 1.5rem + 2vw, 3rem);
+  --text-h1: clamp(2.5rem, 1.7rem + 3.6vw, 4.75rem);
+
+  /* Layout */
+  --max-width: 1200px;
+  --gutter: clamp(1.25rem, 4vw, 3rem);
+  --section-space: clamp(4rem, 3rem + 6vw, 9rem);
+  --tap: 2.75rem; /* 44px minimum touch target */
+}

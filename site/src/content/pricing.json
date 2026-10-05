@@ -1,0 +1,32 @@
+{
+  "_help": "Edit prices and price text here. Amounts are in US dollars. Nothing else on the site holds a price.",
+  "currency": "USD",
+  "consultations": [
+    {
+      "id": "virtual",
+      "amount": 200,
+      "duration": { "en": "1 hour, virtual", "pt": "1 hora, virtual" }
+    },
+    {
+      "id": "in-person",
+      "amount": 300,
+      "duration": { "en": "90 minutes, in person", "pt": "90 minutos, presencial" }
+    },
+    {
+      "id": "deep-dive",
+      "amount": 450,
+      "duration": { "en": "2 hours, in person, deep dive", "pt": "2 horas, presencial, análise aprofundada" }
+    }
+  ],
+  "siteAnalysis": {
+    "from": 700,
+    "label": { "en": "From $700", "pt": "A partir de US$ 700" }
+  },
+  "quoted": {
+    "label": { "en": "Quoted per project scope", "pt": "Orçado conforme o escopo do projeto" },
+    "explanation": {
+      "en": "Scope drives price. Size, complexity, and the number of revisions change the work, so each project is quoted after a short conversation.",
+      "pt": "O escopo define o preço. Tamanho, complexidade e número de revisões mudam o trabalho, por isso cada projeto é orçado depois de uma conversa curta."
+    }
+  }
+}
