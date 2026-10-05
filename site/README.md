@@ -39,6 +39,10 @@ Open `src/content/pricing.json`. Change the `amount` numbers for the three consu
 3. Fill in every field. Keep `clientApproved: false` until the client approves in writing. Use city or county only, never a street address.
 4. Run `npm run build`. The project appears on the Work page and gets its own page.
 
+## How to change the home page photo
+
+Replace `src/assets/hero-home.jpg` with another image of at least 2000 pixels wide, ideally 4:3 or wider with the house in the lower half. Update its description in `home.hero.alt` in both page files.
+
 ## How to add a photo
 
 Put the image in `src/assets/` (create the folder if needed), then add `heroImage: ../../../assets/your-photo.jpg` to the project file. The site resizes it automatically. Always write a real description in `heroAlt`.

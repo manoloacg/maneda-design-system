@@ -1,8 +1,8 @@
 {
   "name": "Maneda Design Studios",
   "shortName": "MDS",
-  "url": "https://www.example.com",
-  "urlNote": "[PLACEHOLDER: replace with the real domain once confirmed]",
+  "url": "https://manedastudios.com",
+  "urlNote": "[PLACEHOLDER: confirm manedastudios.com is registered to MDS, and decide whether Maneda Photography shares it]",
   "email": "manedastudios@gmail.com",
   "serviceArea": {
     "en": "Orlando metro area and Central Florida",
@@ -18,7 +18,7 @@
   "form": {
     "provider": "web3forms",
     "endpoint": "https://api.web3forms.com/submit",
-    "accessKey": "[PLACEHOLDER: Web3Forms access key]"
+    "accessKey": "bce18b7e-18da-42a9-91aa-5b75f0d3a46c"
   },
   "replyWindow": {
     "en": "[PLACEHOLDER: within 1 business day, confirm with Manolo]",

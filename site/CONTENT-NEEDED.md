@@ -2,16 +2,16 @@
 
 Every placeholder on the site is written `[PLACEHOLDER: ...]` in the source and shows as a yellow flag in the preview. Run `npm run launch-check` to see the live count.
 
-Done already: studio email (manedastudios@gmail.com), seal sentence in English (confirmed).
+Done already: studio email (manedastudios@gmail.com), seal sentence in English (confirmed), home hero photo, Web3Forms access key (the form now sends real email).
+
+Tentative: domain manedastudios.com. Confirm it is registered to MDS. Your brand file lists it for Maneda Photography, so decide whether the two businesses share it.
 
 ## Must have before launch
 
 | # | Item | Where it goes |
 |---|---|---|
-| 1 | Domain name | `src/content/site.json` (`url`) |
-| 2 | Web3Forms access key (see LAUNCH.md section 3) | `site.json` (`form.accessKey`) |
+| 1 | Confirm the domain manedastudios.com (see above) | `src/content/site.json` (`url`) |
 | 3 | Reply promise, for example "within 1 business day", in English and Portuguese | `site.json` (`replyWindow`) |
-| 4 | Hero photo for the home page, wide, of a real MDS project | Home page |
 | 5 | Which of the three projects you approve for public case studies | `src/content/projects/` |
 | 6 | For each approved project: the brief, the site and code context, 3 design moves with a sketch, diagram or 3D view each, an early sketch beside the final plan or elevation, one sheet excerpt, and the outcome | `src/content/projects/en/*.md` and `pt/*.md` |
 | 7 | Written client approval before any real name or address appears (`clientApproved: true`) | Same files |

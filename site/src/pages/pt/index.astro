@@ -3,10 +3,13 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import HomePage from '../../components/HomePage.astro';
 import { getLang, getPage } from '../../i18n/utils';
 import { studioSchema } from '../../lib/schema';
+import { getImage } from 'astro:assets';
+import hero from '../../assets/hero-home.jpg';
 const lang = getLang(Astro.url.pathname);
+const share = (await getImage({ src: hero, width: 1200, height: 630, fit: 'cover', position: 'center', format: 'jpg' })).src;
 const meta = getPage(lang).home.meta;
 ---
 
-<BaseLayout title={meta.title} description={meta.description} schema={[studioSchema(lang)]}>
+<BaseLayout image={share} title={meta.title} description={meta.description} schema={[studioSchema(lang)]}>
   <HomePage />
 </BaseLayout>
