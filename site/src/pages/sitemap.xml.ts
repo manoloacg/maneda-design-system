@@ -14,7 +14,7 @@ export const GET: APIRoute = async () => {
     .map(([, r]) => r.en);
 
   const projects = await getCollection('projects');
-  for (const p of projects.filter((p) => p.id.startsWith('en/') && !hasPlaceholder(p.data))) paths.push(`${routes.work.en}${p.id.split('/')[1]}/`);
+  for (const p of projects.filter((p) => p.id.startsWith('en/') && p.data.published && !hasPlaceholder(p.data))) paths.push(`${routes.work.en}${p.id.split('/')[1]}/`);
   const posts = await getCollection('journal');
   for (const p of posts.filter((p) => p.id.startsWith('en/') && !p.data.draft && !hasPlaceholder(p.data))) paths.push(`${routes.journal.en}${p.id.split('/')[1]}/`);
   const cities = await getCollection('cities');

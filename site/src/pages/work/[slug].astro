@@ -10,7 +10,7 @@ import { fill, getLang, getPage, routeFor, withSiteName } from '../../i18n/utils
 export async function getStaticPaths() {
   const all = await getCollection('projects');
   return all
-    .filter((p) => p.id.startsWith('en/'))
+    .filter((p) => p.id.startsWith('en/') && p.data.published)
     .map((entry) => ({ params: { slug: entry.id.split('/')[1] }, props: { entry } }));
 }
 const { entry } = Astro.props;

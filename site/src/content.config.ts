@@ -11,6 +11,7 @@ const projects = defineCollection({
       title: z.string(),
       number: z.string(), // sheet-style number, for example MDS-26-01
       order: z.number(),
+      published: z.boolean().default(true), // false hides the project everywhere without deleting the file
       type: z.enum(['residential', 'outdoor', 'commercial', 'interiors']),
       location: z.string(), // city or county level only
       size: z.string(),

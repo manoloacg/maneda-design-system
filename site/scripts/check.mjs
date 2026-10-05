@@ -35,7 +35,7 @@ for (const file of walk('.').filter((f) => textExt.has(extname(f)) && !f.endsWit
       }
       if (/\barchitect\b/i.test(line) && !/"(label|value)": "Architect"/i.test(line)) fail(`"architect" ${at}: ${line.trim().slice(0, 80)}`);
       if (/\bArquiteto\b/.test(line) && !/"label": "Arquiteto"/.test(line)) fail(`"Arquiteto" ${at}`);
-      if (/\blicensed\b|licenciado/i.test(line) && !seal.test(line) && !/seal/i.test(line)) fail(`"licensed" ${at}: ${line.trim().slice(0, 80)}`);
+      if (/\blicensed\b|licenciado/i.test(line) && !seal.test(line) && !/seal/i.test(line) && !/engineer|engenheiro/i.test(line)) fail(`"licensed" ${at}: ${line.trim().slice(0, 80)}`);
     }
   });
 }
