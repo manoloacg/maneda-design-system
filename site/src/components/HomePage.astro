@@ -5,6 +5,7 @@ import { Image } from 'astro:assets';
 import hero from '../assets/hero-home.jpg';
 import ProjectCard from './ProjectCard.astro';
 import SheetLabel from './SheetLabel.astro';
+import ServiceArt from './ServiceArt.astro';
 import services from '../content/services.json';
 import { getProjects } from '../lib/projects';
 import { getLang, getPage, pick, routeFor, t } from '../i18n/utils';
@@ -69,8 +70,13 @@ const num = (i: number) => String(i + 1).padStart(2, '0');
     {
       services.services.map((s, i) => (
         <li class="reveal grid grid-cols-12 items-baseline gap-x-6 gap-y-2 border-b border-[var(--color-rule)] py-7">
-          <span class="sheet-label col-span-2 text-[var(--color-text-muted)] md:col-span-1">{num(i)}</span>
-          <h3 class="col-span-10 md:col-span-4">{pick(lang, s.title)}</h3>
+          <span class="col-span-2 flex items-center gap-3 md:col-span-1">
+            <span class="sheet-label text-[var(--color-text-muted)]">{num(i)}</span>
+          </span>
+          <h3 class="col-span-10 flex items-center gap-4 md:col-span-4">
+            <ServiceArt kind={s.id as 'residential-design'} variant="icon" class="h-9 w-9 shrink-0 text-obsidian" />
+            <span>{pick(lang, s.title)}</span>
+          </h3>
           <p class="col-span-12 text-[var(--color-text-muted)] md:col-span-5">{pick(lang, s.summary)}</p>
           <p class="col-span-12 md:col-span-2 md:text-right">
             <Button href={`${routeFor(lang, 'services')}#${s.id}`} variant="text">{p.services.learnMore}<span class="sr-only">&nbsp;{p.services.learnMoreAbout} {pick(lang, s.title)}</span></Button>
@@ -93,7 +99,7 @@ const num = (i: number) => String(i + 1).padStart(2, '0');
           location={pr.data.location}
           result={pr.data.result}
           alt={pr.data.heroAlt}
-          image={pr.data.heroImage}
+          image={pr.data.cardImage ?? pr.data.heroImage}
         />
       ))
     }

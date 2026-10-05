@@ -21,6 +21,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: calc(var(--header-h) + var(--subnav-h) + 1rem);
     -webkit-text-size-adjust: 100%;
   }
   body {

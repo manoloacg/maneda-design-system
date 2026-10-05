@@ -127,7 +127,12 @@
       "duration": "Prazo típico",
       "credit": "de crédito para um pacote completo contratado em até 14 dias",
       "addons": "Adicionais",
-      "siteVisitTitle": "Também disponível"
+      "siteVisitTitle": "Também disponível",
+      "jump": "Ir para um serviço",
+      "to": "a",
+      "seeWork": "Ver os trabalhos",
+      "overview": "Os cinco serviços",
+      "glance": "Escolha em que ponto você está"
     },
     "items": {
       "residential-design": {
@@ -347,7 +352,8 @@
       "text": "Conte-nos sobre o seu lote e o seu programa.",
       "button": "Solicitar orçamento"
     },
-    "metaDescription": "{title}: o programa, o contexto do terreno, as decisões de projeto e o resultado."
+    "metaDescription": "{title}: o programa, o contexto do terreno, as decisões de projeto e o resultado.",
+    "rearAlt": "Renderização 3D da parte de trás da residência: fachada branca de três níveis com uma sala de vidro angulada de esquadrias escuras, um deck longo com escada e um pavimento inferior com saída para o gramado."
   },
   "process": {
     "meta": {

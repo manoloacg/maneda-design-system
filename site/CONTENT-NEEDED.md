@@ -20,6 +20,10 @@ Domain: manedastudios.com, newly bought by Manolo, nothing hosted on it. Reply p
 | 15 | One legal review: see `LEGAL-CHECKLIST.md`. Then set `legalReviewDone` to true in `site.json`. | `LEGAL-CHECKLIST.md` |
 | 16 | A native Portuguese read of all Portuguese copy, including the Portuguese seal sentence | `pt.json` files |
 
+## Images that would improve the site
+
+The Services page shows drawing-style diagrams until you add your own images (see README). Best candidates: an interior render or photo for interior design, a redacted site plan or site analysis page for site analysis, a consultation sketch or marked-up plan, and a redacted drawing sheet for construction documents. Save them in `src/assets/services/`.
+
 ## Should have
 
 | Item | Notes |

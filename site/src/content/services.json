@@ -11,6 +11,10 @@
       "summary": {
         "en": "Concept, schematic design, and design development for custom homes, additions, renovations, outdoor living spaces, and barndominiums.",
         "pt": "Estudo preliminar, anteprojeto e desenvolvimento do projeto para casas sob medida, ampliações, reformas, áreas externas e barndominiums."
+      },
+      "short": {
+        "en": "Residential design",
+        "pt": "Projeto residencial"
       }
     },
     {
@@ -23,6 +27,10 @@
       "summary": {
         "en": "Layout, finishes, and material direction resolved together with the building, not applied after it.",
         "pt": "Layout, acabamentos e direção de materiais resolvidos junto com a edificação, não aplicados depois dela."
+      },
+      "short": {
+        "en": "Interiors",
+        "pt": "Interiores"
       }
     },
     {
@@ -35,6 +43,10 @@
       "summary": {
         "en": "A written report on what a lot allows before you buy it or design on it: setbacks, zoning, access, utilities, and constraints.",
         "pt": "Relatório escrito sobre o que o lote permite antes de comprar ou projetar: recuos, zoneamento, acesso, infraestrutura e restrições."
+      },
+      "short": {
+        "en": "Site analysis",
+        "pt": "Terreno"
       }
     },
     {
@@ -47,6 +59,10 @@
       "summary": {
         "en": "A working session with a designer on a room or a set of rooms: layout, materials, color, furniture, and lighting. Virtual or in person.",
         "pt": "Uma sessão de trabalho com um designer sobre um ambiente ou um conjunto de ambientes: layout, materiais, cores, mobiliário e iluminação. Virtual ou presencial."
+      },
+      "short": {
+        "en": "Consultations",
+        "pt": "Consultorias"
       }
     },
     {
@@ -59,6 +75,10 @@
       "summary": {
         "en": "The next step for design clients. The design you approved is the design that gets built, with permit and construction support if you want it.",
         "pt": "O próximo passo para clientes de projeto. O projeto aprovado é o projeto que será construído, com apoio na aprovação e na obra, se você quiser."
+      },
+      "short": {
+        "en": "Construction documents",
+        "pt": "Projeto executivo"
       }
     }
   ]

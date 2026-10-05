@@ -21,6 +21,7 @@ const projects = defineCollection({
       result: z.string(), // one line, shown on the project card
       clientApproved: z.boolean().default(false), // must be true before real names or addresses appear
       heroImage: image().optional(),
+      cardImage: image().optional(), // image for the project card, if different from the hero
       heroAlt: z.string(),
       brief: z.string(),
       context: z.string(),

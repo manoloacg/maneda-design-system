@@ -39,7 +39,7 @@ const btn = 'inline-flex min-h-[var(--tap)] items-center border border-obsidian 
             location={pr.data.location}
             result={pr.data.result}
             alt={pr.data.heroAlt}
-            image={pr.data.heroImage}
+            image={pr.data.cardImage ?? pr.data.heroImage}
           />
         </div>
       ))

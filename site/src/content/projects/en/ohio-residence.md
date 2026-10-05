@@ -11,6 +11,7 @@ year: "2026"
 result: "Plan, elevations, and interiors resolved with the owner and the builder."
 clientApproved: false # Owner OK to publish given verbally via Manolo on 2026-10-05. Get it in writing. Keep false: no real names or address are used.
 heroImage: ../../../assets/hero-home.jpg
+cardImage: ../../../assets/ohio-rear.webp
 heroAlt: "3D rendering of a white three-level residence with dark metal roofs, a tall gabled entry, a stone-clad wing, and a three-car garage, seen across a paved motor court and lawn."
 brief: "The owners wanted a modern house that reads right on a farm-type setting without turning into a farmhouse. The priorities: an open, connected plan where people can see and hear between spaces, a light exterior with gray or black stone accents, a three to four season room, and a finished walkout level with a gym, sauna, theater, and guest suite."
 context: "The site is a rural lot in Ohio, so the design follows Ohio code. The builder was ready to start soon, so layout and structure were fixed first and finishes followed in a separate phase. Structural stamping is by a licensed Ohio engineer of record, coordinated separately."

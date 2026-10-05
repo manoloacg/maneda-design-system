@@ -1,146 +1,281 @@
 ---
 import Section from './Section.astro';
 import Button from './Button.astro';
+import ServiceArt from './ServiceArt.astro';
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import hero from '../assets/hero-home.jpg';
+import rear from '../assets/ohio-rear.webp';
 import services from '../content/services.json';
 import pricing from '../content/pricing.json';
 import { formatUsd, getLang, getPage, pick, routeFor, t } from '../i18n/utils';
 
 const lang = getLang(Astro.url.pathname);
-const page = getPage(lang).services;
+const full = getPage(lang);
+const page = full.services;
 const L = page.labels;
 const contact = routeFor(lang, 'contact');
 const num = (i: number) => String(i + 1).padStart(2, '0');
 const quoteHref = (id: string) => `${contact}?service=${id}`;
 const items = page.items as Record<string, (typeof page.items)['residential-design']>;
-const listClass = 'border-t border-[var(--color-rule-strong)]';
-const li = 'border-b border-[var(--color-rule)] py-3';
+
+// Your own image for a service: save it as src/assets/services/<service-id>.jpg (or .webp, .png).
+const custom = import.meta.glob<ImageMetadata>('../assets/services/*.{jpg,jpeg,png,webp}', { eager: true, import: 'default' });
+const customFor = (id: string) => Object.entries(custom).find(([k]) => (k.split('/').pop() ?? '').startsWith(`${id}.`))?.[1];
+const photoFor = (id: string): { src: ImageMetadata; alt: string } | undefined => {
+  const c = customFor(id);
+  if (c) return { src: c, alt: pick(lang, services.services.find((s) => s.id === id)!.title) };
+  if (id === 'residential-design') return { src: hero, alt: full.home.hero.alt };
+  return undefined;
+};
+
+const amounts = pricing.consultations.map((c) => c.amount);
+const glancePrice = (s: (typeof services.services)[number]) =>
+  s.pricing === 'consultations'
+    ? `${formatUsd(lang, Math.min(...amounts))} ${L.to} ${formatUsd(lang, Math.max(...amounts))}`
+    : s.pricing === 'siteAnalysis'
+      ? pick(lang, pricing.siteAnalysis.label)
+      : pick(lang, pricing.quoted.label);
+
+const card = 'border border-[var(--color-rule-strong)] bg-[var(--color-bg)] p-6 md:p-7';
+const cardTitle = 'sheet-label mb-4 flex items-center gap-3 text-[var(--color-text-muted)]';
+const bullet = 'flex gap-3 border-t border-[var(--color-rule)] py-3 first:border-t-0 before:mt-[0.62em] before:h-[5px] before:w-[5px] before:shrink-0 before:bg-gold before:content-[""]';
+const bulletNo = "flex gap-3 border-t border-[var(--color-rule)] py-3 first:border-t-0 before:shrink-0 before:text-stone before:content-['×']";
+const priceRow = 'flex items-baseline justify-between gap-6 border-t border-[var(--color-rule)] py-3 first:border-t-0';
+const priceFig = 'font-[family-name:var(--font-display)] text-[1.6rem] leading-none';
 ---
 
-<Section titleTag="h1" label={page.hero.label} title={page.hero.title} intro={page.hero.intro} />
+<Section titleTag="h1" label={page.hero.label} title={page.hero.title} intro={page.hero.intro}>
+  <p class="sheet-label mb-5 text-[var(--color-text-muted)]">{L.glance}</p>
+  <ol class="grid gap-px border border-[var(--color-rule-strong)] bg-[var(--color-rule-strong)] sm:grid-cols-2 lg:grid-cols-5">
+    {
+      services.services.map((s, i) => (
+        <li class="reveal bg-[var(--color-bg)]">
+          <a href={`#${s.id}`} class="group flex h-full flex-col gap-4 p-6 no-underline transition-colors hover:bg-[var(--color-bg-alt)]">
+            <span class="flex items-center justify-between">
+              <ServiceArt kind={s.id as 'residential-design'} variant="icon" class="h-11 w-11 text-obsidian" />
+              <span class="sheet-label text-[var(--color-text-muted)]">{num(i)}</span>
+            </span>
+            <span class="font-[family-name:var(--font-display)] text-[1.45rem] leading-tight">{pick(lang, s.short)}</span>
+            <span class="sheet-label mt-auto min-h-[3.6rem] border-t border-[var(--color-rule)] pt-3 text-[var(--color-text-muted)]">{glancePrice(s)}</span>
+          </a>
+        </li>
+      ))
+    }
+  </ol>
+</Section>
+
+<nav
+  id="service-nav"
+  aria-label={L.jump}
+  class="sticky top-[var(--header-h)] z-40 border-y border-[var(--color-rule)] bg-[var(--color-bg)]/95 backdrop-blur"
+  style="height:var(--subnav-h)"
+>
+  <ul class="container-site flex h-full items-center gap-2 overflow-x-auto whitespace-nowrap">
+    {
+      services.services.map((s) => (
+        <li>
+          <a href={`#${s.id}`} data-target={s.id} class="inline-flex min-h-[var(--tap)] items-center border-b-2 border-transparent px-3 text-[0.72rem] font-medium uppercase tracking-[0.16em] no-underline hover:border-gold aria-[current=true]:border-obsidian">
+            {pick(lang, s.short)}
+          </a>
+        </li>
+      ))
+    }
+    <li>
+      <a href="#builders" data-target="builders" class="inline-flex min-h-[var(--tap)] items-center border-b-2 border-transparent px-3 text-[0.72rem] font-medium uppercase tracking-[0.16em] no-underline hover:border-gold aria-[current=true]:border-obsidian">
+        {page.builders.label}
+      </a>
+    </li>
+  </ul>
+</nav>
 
 {
   services.services.map((s, i) => {
     const d = items[s.id];
     const isCd = s.id === 'construction-documents';
+    const photo = photoFor(s.id);
     return (
-      <Section
-        id={s.id}
-        tone={i % 2 === 1 || isCd ? 'alt' : 'light'}
-        label={isCd ? `${num(i)} · ${L.cdEyebrow}` : num(i)}
-        title={pick(lang, s.title)}
-        intro={d.what}
-      >
-        <div class="grid gap-10 md:grid-cols-3">
-          <div class="reveal">
-            <h3 class="sheet-label mb-4 text-[var(--color-text-muted)]">{L.included}</h3>
-            <ul class={listClass}>{d.included.map((x) => <li class={li}>{x}</li>)}</ul>
-          </div>
-          <div class="reveal">
-            <h3 class="sheet-label mb-4 text-[var(--color-text-muted)]">{L.notIncluded}</h3>
-            <ul class={listClass}>{d.notIncluded.map((x) => <li class={li}>{x}</li>)}</ul>
-          </div>
-          <div class="reveal">
-            <h3 class="sheet-label mb-4 text-[var(--color-text-muted)]">{L.deliverables}</h3>
-            <ul class={listClass}>{d.deliverables.map((x) => <li class={li}>{x}</li>)}</ul>
-          </div>
-        </div>
+      <section id={s.id} data-service-section class={i % 2 === 1 ? 'tone-alt' : ''} style="padding-block:var(--section-space)">
+        <div class="container-site grid grid-cols-12 gap-y-10 lg:gap-x-12">
+          <div class="col-span-12 lg:col-span-5">
+            <div class="lg:sticky lg:top-[calc(var(--header-h)+var(--subnav-h)+2rem)]">
+              <div class="mb-6 flex items-end gap-4">
+                <span aria-hidden="true" class="font-[family-name:var(--font-display)] text-[5.5rem] font-light leading-[0.8] text-stone">{num(i)}</span>
+                <ServiceArt kind={s.id as 'residential-design'} variant="icon" class="mb-1 h-10 w-10 text-obsidian" />
+              </div>
+              <div class="reveal">
+                {photo ? (
+                  <Image src={photo.src} alt={photo.alt} widths={[480, 800, 1000]} sizes="(min-width: 1024px) 40vw, 100vw" class="aspect-[4/3] w-full object-cover" loading="lazy" />
+                ) : (
+                  <div class="border border-[var(--color-rule-strong)] bg-[var(--color-bg-alt)] p-4 text-obsidian">
+                    <ServiceArt kind={s.id as 'residential-design'} class="h-auto w-full" />
+                  </div>
+                )}
+                {s.id === 'residential-design' && <p class="mt-3"><a href={routeFor(lang, 'work')} class="sheet-label text-[var(--color-text-muted)]">{L.seeWork} &rarr;</a></p>}
+              </div>
 
-        {isCd && (
-          <div class="reveal mt-12">
-            <h3 class="sheet-label mb-4 text-[var(--color-text-muted)]">{L.sheetIndex}</h3>
-            <ol class="grid gap-x-8 sm:grid-cols-2 lg:grid-cols-4">
-              {page.cdSheets.map((sheet, n) => (
-                <li class={`${li} flex gap-4`}><span class="sheet-label text-[var(--color-text-muted)]">A-{n + 1}</span>{sheet}</li>
-              ))}
-            </ol>
-            <p class="mt-6 max-w-[60ch] text-[var(--color-text-muted)]">{t(lang, 'footer.seal')}</p>
-          </div>
-        )}
-
-        <div class="mt-12 grid gap-8 md:grid-cols-3">
-          <div class="reveal">
-            <h3 class="sheet-label mb-3 text-[var(--color-text-muted)]">{L.suits}</h3>
-            <p>{d.suits}</p>
-          </div>
-          <div class="reveal">
-            <h3 class="sheet-label mb-3 text-[var(--color-text-muted)]">{L.duration}</h3>
-            <p>{d.duration}</p>
-          </div>
-          <div class="reveal">
-            <h3 class="sheet-label mb-3 text-[var(--color-text-muted)]">{L.pricing}</h3>
-            {s.pricing === 'quoted' && (
-              <>
-                <p class="font-medium">{pick(lang, pricing.quoted.label)}</p>
-                <p class="mt-2 text-[var(--color-text-muted)]">{pick(lang, pricing.quoted.explanation)}</p>
-              </>
-            )}
-            {s.pricing === 'siteAnalysis' && (
-              <>
-                <ul class={listClass}>
-                  {pricing.siteAnalysis.tiers.map((t) => (
-                    <li class={`${li} flex items-baseline justify-between gap-6`}>
-                      <span>{pick(lang, t.label)}</span>
-                      <span class="font-[family-name:var(--font-display)] text-[1.6rem]">{formatUsd(lang, t.amount)}</span>
-                    </li>
-                  ))}
-                </ul>
-                <p class="sheet-label mb-2 mt-6 text-[var(--color-text-muted)]">{L.addons}</p>
-                <ul class={listClass}>
-                  {pricing.siteAnalysis.addons.map((a) => (
-                    <li class={`${li} flex items-baseline justify-between gap-6 text-sm`}>
-                      <span>{pick(lang, a.label)}</span>
-                      <span>{formatUsd(lang, a.amount)}</span>
-                    </li>
-                  ))}
-                </ul>
-              </>
-            )}
-            {s.pricing === 'consultations' && (
-              <ul class={listClass}>
-                {pricing.consultations.map((c) => (
-                  <li class={li}>
-                    <div class="flex items-baseline justify-between gap-6">
-                      <span>{pick(lang, c.duration)}</span>
-                      <span class="font-[family-name:var(--font-display)] text-[1.6rem]">{formatUsd(lang, c.amount)}</span>
+              <div class={`reveal mt-6 ${card}`}>
+                <p class={cardTitle}>{L.pricing}</p>
+                {s.pricing === 'quoted' && (
+                  <>
+                    <p class="font-medium">{pick(lang, pricing.quoted.label)}</p>
+                    <p class="mt-2 text-sm text-[var(--color-text-muted)]">{pick(lang, pricing.quoted.explanation)}</p>
+                  </>
+                )}
+                {s.pricing === 'siteAnalysis' && (
+                  <>
+                    <ul>
+                      {pricing.siteAnalysis.tiers.map((tier) => (
+                        <li class={priceRow}><span>{pick(lang, tier.label)}</span><span class={priceFig}>{formatUsd(lang, tier.amount)}</span></li>
+                      ))}
+                    </ul>
+                    <p class="sheet-label mb-1 mt-5 text-[var(--color-text-muted)]">{L.addons}</p>
+                    <ul>
+                      {pricing.siteAnalysis.addons.map((a) => (
+                        <li class={`${priceRow} text-sm`}><span>{pick(lang, a.label)}</span><span>{formatUsd(lang, a.amount)}</span></li>
+                      ))}
+                    </ul>
+                  </>
+                )}
+                {s.pricing === 'consultations' && (
+                  <ul>
+                    {pricing.consultations.map((c) => (
+                      <li class="border-t border-[var(--color-rule)] py-3 first:border-t-0">
+                        <div class="flex items-baseline justify-between gap-6">
+                          <span>{pick(lang, c.duration)}</span>
+                          <span class={priceFig}>{formatUsd(lang, c.amount)}</span>
+                        </div>
+                        <p class="mt-1 text-sm text-[var(--color-text-muted)]">{formatUsd(lang, c.credit)} {L.credit}</p>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+                {isCd && (
+                  <>
+                    <p class="sheet-label mb-1 mt-5 text-[var(--color-text-muted)]">{L.siteVisitTitle}</p>
+                    <div class="border-t border-[var(--color-rule)] pt-3">
+                      <div class="flex items-baseline justify-between gap-6">
+                        <span>{pick(lang, pricing.siteVisit.label)}</span>
+                        <span class={priceFig}>{formatUsd(lang, pricing.siteVisit.amount)}</span>
+                      </div>
+                      <p class="mt-1 text-sm text-[var(--color-text-muted)]">{formatUsd(lang, pricing.siteVisit.credit)} {L.credit}</p>
                     </div>
-                    <p class="mt-1 text-sm text-[var(--color-text-muted)]">{formatUsd(lang, c.credit)} {L.credit}</p>
-                  </li>
-                ))}
-              </ul>
-            )}
+                  </>
+                )}
+              </div>
+            </div>
+          </div>
+
+          <div class="col-span-12 lg:col-span-7">
+            <div class="reveal">
+              <p class="sheet-label mb-4 text-[var(--color-text-muted)]">{isCd ? L.cdEyebrow : pick(lang, s.short)}</p>
+              <h2>{pick(lang, s.title)}</h2>
+              <p class="lead mt-6 max-w-[60ch]">{d.what}</p>
+            </div>
+
+            <dl class="reveal mt-10 grid gap-px border border-[var(--color-rule-strong)] bg-[var(--color-rule-strong)] md:grid-cols-2">
+              <div class="bg-[var(--color-bg)] p-6">
+                <dt class="sheet-label mb-2 text-[var(--color-text-muted)]">{L.suits}</dt>
+                <dd>{d.suits}</dd>
+              </div>
+              <div class="bg-[var(--color-bg)] p-6">
+                <dt class="sheet-label mb-2 text-[var(--color-text-muted)]">{L.duration}</dt>
+                <dd>{d.duration}</dd>
+              </div>
+            </dl>
+
+            <div class={`reveal mt-6 ${card}`}>
+              <h3 class={cardTitle}>{L.included}</h3>
+              <ul>{d.included.map((x) => <li class={bullet}>{x}</li>)}</ul>
+            </div>
+            <div class="mt-6 grid gap-6 md:grid-cols-2">
+              <div class={`reveal ${card}`}>
+                <h3 class={cardTitle}>{L.deliverables}</h3>
+                <ul>{d.deliverables.map((x) => <li class={bullet}>{x}</li>)}</ul>
+              </div>
+              <div class={`reveal ${card}`}>
+                <h3 class={cardTitle}>{L.notIncluded}</h3>
+                <ul>{d.notIncluded.map((x) => <li class={bulletNo}>{x}</li>)}</ul>
+              </div>
+            </div>
+
             {isCd && (
-              <>
-                <p class="sheet-label mb-2 mt-6 text-[var(--color-text-muted)]">{L.siteVisitTitle}</p>
-                <ul class={listClass}>
-                  <li class={li}>
-                    <div class="flex items-baseline justify-between gap-6">
-                      <span>{pick(lang, pricing.siteVisit.label)}</span>
-                      <span class="font-[family-name:var(--font-display)] text-[1.6rem]">{formatUsd(lang, pricing.siteVisit.amount)}</span>
-                    </div>
-                    <p class="mt-1 text-sm text-[var(--color-text-muted)]">{formatUsd(lang, pricing.siteVisit.credit)} {L.credit}</p>
-                  </li>
-                </ul>
-              </>
+              <div class={`reveal mt-6 ${card}`}>
+                <h3 class={cardTitle}>{L.sheetIndex}</h3>
+                <ol class="grid gap-x-8 sm:grid-cols-2">
+                  {page.cdSheets.map((sheet, n) => (
+                    <li class="flex gap-4 border-t border-[var(--color-rule)] py-3 first:border-t-0 sm:[&:nth-child(2)]:border-t-0"><span class="sheet-label text-[var(--color-text-muted)]">A-{n + 1}</span>{sheet}</li>
+                  ))}
+                </ol>
+                <p class="mt-5 text-sm text-[var(--color-text-muted)]">{t(lang, 'footer.seal')}</p>
+              </div>
             )}
+
+            <p class="mt-10">
+              <Button href={quoteHref(s.id)}>{s.id === 'consultations' ? L.bookConsultation : L.requestQuote}</Button>
+            </p>
           </div>
         </div>
-
-        <p class="mt-12">
-          <Button href={quoteHref(s.id)}>{s.id === 'consultations' ? L.bookConsultation : L.requestQuote}</Button>
-        </p>
-      </Section>
+      </section>
     );
   })
 }
 
 <Section tone="alt" label={page.terms.label} title={page.terms.title}>
-  <ul class={`${listClass} max-w-[48rem]`}>{page.terms.items.map((x) => <li class={li}>{x}</li>)}</ul>
+  <ol class="grid gap-px border border-[var(--color-rule-strong)] bg-[var(--color-rule-strong)] sm:grid-cols-2 lg:grid-cols-3">
+    {
+      page.terms.items.map((x, n) => (
+        <li class="reveal flex flex-col gap-3 bg-[var(--color-bg)] p-6">
+          <span class="sheet-label text-[var(--color-text-muted)]">{num(n)}</span>
+          <span>{x}</span>
+        </li>
+      ))
+    }
+  </ol>
 </Section>
 
 <Section tone="light" label={page.notFit.label} title={page.notFit.title} intro={page.notFit.intro}>
-  <ul class={`${listClass} max-w-[48rem]`}>{page.notFit.items.map((x) => <li class={li}>{x}</li>)}</ul>
+  <ul class="grid gap-6 sm:grid-cols-2">
+    {
+      page.notFit.items.map((x) => (
+        <li class={`reveal flex gap-4 ${card}`}>
+          <span aria-hidden="true" class="font-[family-name:var(--font-display)] text-3xl leading-none text-stone">&times;</span>
+          <span>{x}</span>
+        </li>
+      ))
+    }
+  </ul>
 </Section>
 
-<Section id="builders" tone="dark" label={page.builders.label} title={page.builders.title} intro={page.builders.text}>
-  <Button href={`${contact}?who=builder`}>{page.builders.button}</Button>
-</Section>
+<section id="builders" data-service-section class="tone-dark" style="padding-block:var(--section-space)">
+  <div class="container-site grid grid-cols-12 items-center gap-y-10 lg:gap-x-12">
+    <div class="reveal col-span-12 lg:col-span-6">
+      <p class="sheet-label mb-5 text-[var(--color-text-muted)]">{page.builders.label}</p>
+      <h2>{page.builders.title}</h2>
+      <p class="lead mt-6 max-w-[56ch]">{page.builders.text}</p>
+      <p class="mt-10"><Button href={`${contact}?who=builder`}>{page.builders.button}</Button></p>
+    </div>
+    <div class="reveal col-span-12 lg:col-span-6">
+      <Image src={customFor('builders') ?? rear} alt={full.caseStudy.rearAlt} widths={[480, 800, 1000]} sizes="(min-width: 1024px) 45vw, 100vw" class="aspect-[4/3] w-full object-cover" loading="lazy" />
+    </div>
+  </div>
+</section>
+
+<script>
+  // Highlight the quick-jump link for the section on screen.
+  const links = document.querySelectorAll<HTMLAnchorElement>('#service-nav a[data-target]');
+  const sections = document.querySelectorAll<HTMLElement>('[data-service-section]');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(
+      (entries) =>
+        entries.forEach((e) => {
+          if (!e.isIntersecting) return;
+          links.forEach((a) => a.setAttribute('aria-current', String(a.dataset.target === e.target.id)));
+          const active = document.querySelector<HTMLAnchorElement>('#service-nav a[aria-current="true"]');
+          active?.scrollIntoView({ inline: 'center', block: 'nearest' });
+        }),
+      { rootMargin: '-40% 0px -55% 0px' }
+    );
+    sections.forEach((s) => io.observe(s));
+  }
+</script>

@@ -127,7 +127,12 @@
       "duration": "Typical duration",
       "credit": "credit toward a full-service package booked within 14 days",
       "addons": "Add-ons",
-      "siteVisitTitle": "Also available"
+      "siteVisitTitle": "Also available",
+      "jump": "Jump to a service",
+      "to": "to",
+      "seeWork": "See the work",
+      "overview": "The five services",
+      "glance": "Choose where you are"
     },
     "items": {
       "residential-design": {
@@ -347,7 +352,8 @@
       "text": "Tell us about your lot and your program.",
       "button": "Request a quote"
     },
-    "metaDescription": "{title}: the brief, the site context, the design decisions, and the outcome."
+    "metaDescription": "{title}: the brief, the site context, the design decisions, and the outcome.",
+    "rearAlt": "3D rendering of the rear of the residence: a white three-level facade with a dark-framed angled glass room, a long deck with a stair, and a walkout lower level opening to the lawn."
   },
   "process": {
     "meta": {

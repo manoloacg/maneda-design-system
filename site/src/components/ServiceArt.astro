@@ -1,0 +1,78 @@
+---
+/* Drawing-style illustrations for the five services. They are generic diagrams in the studio's
+   drawing-sheet look, with no text, so they work in both languages. Small version: variant="icon".
+   To use your own image instead, save it as src/assets/services/<service-id>.jpg (or .webp or .png). */
+interface Props { kind: 'residential-design' | 'interior-design' | 'site-analysis' | 'consultations' | 'construction-documents'; variant?: 'icon' | 'art'; class?: string }
+const { kind, variant = 'art', class: extra = '' } = Astro.props;
+const ink = 'currentColor';
+const gold = '#A88B62';
+---
+
+{
+  variant === 'icon' ? (
+    <svg viewBox="0 0 48 48" fill="none" stroke={ink} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class={extra}>
+      {kind === 'residential-design' && (<><path d="M5 23 24 7l19 16" /><path d="M10 21v20h28V21" /><path d="M20 41V29h8v12" /><path d="M32 12v6" stroke={gold} /></>)}
+      {kind === 'interior-design' && (<><path d="M9 27h30v11H9z" /><path d="M13 27v-8h22v8" /><path d="M9 38v4M39 38v4" /><path d="M6 24v14M42 24v14" stroke={gold} /></>)}
+      {kind === 'site-analysis' && (<><path d="M7 10h34v30H7z" /><path d="M14 17h20v16H14z" stroke-dasharray="3 3" stroke={gold} /><path d="M20 22h8v6h-8z" /></>)}
+      {kind === 'consultations' && (<><path d="M7 9h24v16H19l-7 6v-6H7z" /><path d="M21 29h20v12h-5l-5 4v-4h-10z" stroke={gold} /></>)}
+      {kind === 'construction-documents' && (<><path d="M10 5h28v38H10z" /><path d="M10 33h28" /><path d="M16 11h16M16 17h16M16 23h10" /><path d="M26 33v10" stroke={gold} /></>)}
+    </svg>
+  ) : (
+    <svg viewBox="0 0 480 340" fill="none" stroke={ink} stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class={extra}>
+      {kind === 'site-analysis' && (
+        <>
+          <defs>
+            <pattern id="hatch-site" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><path d="M0 0v9" stroke={gold} stroke-width="0.8" /></pattern>
+          </defs>
+          <path d="M60 60 420 48 440 290 48 300z" stroke-width="2" />
+          <path d="M112 102 378 94 392 250 100 258z" stroke-dasharray="6 5" stroke={gold} fill="url(#hatch-site)" />
+          <path d="M176 134h150v88H176z" fill="var(--color-bg)" stroke-width="1.75" />
+          <path d="M20 318h440M20 326h440" />
+          <path d="M60 340h360M60 334v12M420 334v12" stroke-width="1" />
+          <circle cx="52" cy="26" r="14" /><path d="M52 40V12M46 20l6-8 6 8" />
+          <path d="M120 18l24 0M120 18l6-5M120 18l6 5" stroke={gold} />
+        </>
+      )}
+      {kind === 'interior-design' && (
+        <>
+          <path d="M40 36h400v270H40z" stroke-width="3" />
+          <path d="M48 44h384v254H48z" stroke-width="0.75" />
+          <path d="M150 36h150" stroke="var(--color-bg)" stroke-width="6" /><path d="M150 32v8M300 32v8M150 38h150" stroke-width="1" />
+          <path d="M200 306h60" stroke="var(--color-bg)" stroke-width="6" /><path d="M200 306a60 60 0 0 1 60-60" stroke-width="0.75" stroke-dasharray="3 3" /><path d="M200 306v-60" stroke-width="1" />
+          <rect x="70" y="76" width="150" height="62" rx="6" /><rect x="70" y="66" width="150" height="14" rx="4" />
+          <rect x="92" y="168" width="106" height="64" stroke-dasharray="5 4" stroke={gold} />
+          <rect x="112" y="184" width="66" height="34" rx="2" />
+          <circle cx="340" cy="170" r="34" /><circle cx="340" cy="120" r="12" /><circle cx="340" cy="220" r="12" /><circle cx="290" cy="170" r="12" /><circle cx="390" cy="170" r="12" />
+          <circle cx="400" cy="76" r="14" stroke={gold} />
+          <path d="M40 330h400M40 324v12M440 324v12" stroke-width="1" />
+        </>
+      )}
+      {kind === 'consultations' && (
+        <>
+          <path d="M40 40h280v110h120v150H40z" stroke-width="3" />
+          <path d="M48 48h264v110h120v134H48z" stroke-width="0.75" />
+          <path d="M56 56h40v230H56zM96 56h210v34H96z" />
+          <rect x="170" y="160" width="130" height="46" rx="2" />
+          <circle cx="210" cy="240" r="10" /><circle cx="260" cy="240" r="10" />
+          <path d="M360 190h56v80h-56z" />
+          <path d="M40 330h400M40 324v12M440 324v12" stroke-width="1" />
+          <path d="M462 40v260M456 40h12M456 300h12" stroke-width="1" />
+          <path d="M120 130C160 110 220 120 250 150" stroke={gold} stroke-dasharray="6 5" /><path d="M250 150l-12-2M250 150l-4-11" stroke={gold} />
+        </>
+      )}
+      {kind === 'construction-documents' && (
+        <>
+          <path d="M30 20h420v300H30z" stroke-width="2" />
+          <path d="M42 32h396v276H42z" stroke-width="0.75" />
+          <path d="M350 32v276M350 90h88M350 150h88M350 210h88M350 262h88" />
+          <path d="M360 44h50M360 104h40M360 164h60M360 224h44M360 274h30" stroke={gold} />
+          <path d="M70 80h240v160H70z" stroke-width="2" /><path d="M70 150h110v90M180 80v70M180 150h130M250 150v90" />
+          <circle cx="70" cy="58" r="10" /><circle cx="180" cy="58" r="10" /><circle cx="310" cy="58" r="10" />
+          <path d="M70 68v12M180 68v12M310 68v12" />
+          <path d="M70 270h240M70 264v12M310 264v12" stroke-width="1" /><path d="M326 80v160M320 80h12M320 240h12" stroke-width="1" />
+          <path d="M100 110l24-0M100 110l5-4M100 110l5 4" stroke={gold} />
+        </>
+      )}
+    </svg>
+  )
+}

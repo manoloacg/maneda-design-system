@@ -62,4 +62,6 @@
   --gutter: clamp(1.25rem, 4vw, 3rem);
   --section-space: clamp(4rem, 3rem + 6vw, 9rem);
   --tap: 2.75rem; /* 44px minimum touch target */
+  --header-h: 4.5rem; /* height of the pinned header */
+  --subnav-h: 3.25rem; /* height of the services quick-jump bar */
 }

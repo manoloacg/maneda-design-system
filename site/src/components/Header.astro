@@ -8,8 +8,8 @@ const here = Astro.url.pathname;
 const link = 'inline-flex min-h-[var(--tap)] min-w-[var(--tap)] items-center text-[0.8rem] font-medium uppercase tracking-[0.18em] no-underline hover:underline decoration-gold underline-offset-[0.5em]';
 ---
 
-<header class="border-b border-[var(--color-rule)] bg-[var(--color-bg)]">
-  <div class="container-site flex items-center justify-between gap-4 py-3">
+<header class="sticky top-0 z-50 border-b border-[var(--color-rule)] bg-[var(--color-bg)]/95 backdrop-blur supports-[backdrop-filter]:bg-[var(--color-bg)]/90">
+  <div class="container-site flex h-[var(--header-h)] items-center justify-between gap-4">
     <a href={routeFor(lang, 'home')} class="inline-flex min-h-[var(--tap)] shrink-0 items-center" aria-label={t(lang, 'nav.home')}>
       <img src="/images/logo/logo-horizontal-black.png" alt="Maneda Studios" width="155" height="40" class="h-8 w-auto sm:h-10" />
     </a>
