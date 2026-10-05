@@ -9,6 +9,7 @@ interface Props {
   titleTag?: 'h1' | 'h2';
   class?: string;
 }
+import { markPlaceholders } from '../i18n/utils';
 const { id, tone = 'light', label, title, intro, titleTag: Tag = 'h2', class: extra = '' } = Astro.props;
 const toneClass = { light: '', alt: 'tone-alt', dark: 'tone-dark' }[tone];
 ---
@@ -20,8 +21,8 @@ const toneClass = { light: '', alt: 'tone-alt', dark: 'tone-dark' }[tone];
         <header class="reveal mb-12 grid grid-cols-12 gap-x-6 gap-y-4 md:mb-16">
           <div class="col-span-12 md:col-span-8">
             {label && <p class="sheet-label mb-5 text-[var(--color-text-muted)]">{label}</p>}
-            {title && <Tag>{title}</Tag>}
-            {intro && <p class="lead mt-6 max-w-[60ch]">{intro}</p>}
+            {title && <Tag set:html={markPlaceholders(title)} />}
+            {intro && <p class="lead mt-6 max-w-[60ch]" set:html={markPlaceholders(intro)} />}
           </div>
         </header>
       )

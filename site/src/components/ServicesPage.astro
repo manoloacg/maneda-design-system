@@ -1,0 +1,106 @@
+---
+import Section from './Section.astro';
+import Button from './Button.astro';
+import services from '../content/services.json';
+import pricing from '../content/pricing.json';
+import { fill, formatUsd, getLang, getPage, markPlaceholders, pick, routeFor, t } from '../i18n/utils';
+
+const lang = getLang(Astro.url.pathname);
+const page = getPage(lang).services;
+const L = page.labels;
+const contact = routeFor(lang, 'contact');
+const num = (i: number) => String(i + 1).padStart(2, '0');
+const quoteHref = (id: string) => `${contact}?service=${id}`;
+const items = page.items as Record<string, (typeof page.items)['residential-design'] & { pricingNote?: string }>;
+const listClass = 'border-t border-[var(--color-rule-strong)]';
+const li = 'border-b border-[var(--color-rule)] py-3';
+---
+
+<Section titleTag="h1" label={page.hero.label} title={page.hero.title} intro={page.hero.intro} />
+
+{
+  services.services.map((s, i) => {
+    const d = items[s.id];
+    const isCd = s.id === 'construction-documents';
+    return (
+      <Section
+        id={s.id}
+        tone={i % 2 === 1 || isCd ? 'alt' : 'light'}
+        label={isCd ? `${num(i)} · ${L.cdEyebrow}` : num(i)}
+        title={pick(lang, s.title)}
+        intro={d.what}
+      >
+        <div class="grid gap-10 md:grid-cols-3">
+          <div class="reveal">
+            <h3 class="sheet-label mb-4 text-[var(--color-text-muted)]">{L.included}</h3>
+            <ul class={listClass}>{d.included.map((x) => <li class={li}>{x}</li>)}</ul>
+          </div>
+          <div class="reveal">
+            <h3 class="sheet-label mb-4 text-[var(--color-text-muted)]">{L.notIncluded}</h3>
+            <ul class={listClass}>{d.notIncluded.map((x) => <li class={li}>{x}</li>)}</ul>
+          </div>
+          <div class="reveal">
+            <h3 class="sheet-label mb-4 text-[var(--color-text-muted)]">{L.deliverables}</h3>
+            <ul class={listClass}>{d.deliverables.map((x) => <li class={li}>{x}</li>)}</ul>
+          </div>
+        </div>
+
+        {isCd && (
+          <div class="reveal mt-12">
+            <h3 class="sheet-label mb-4 text-[var(--color-text-muted)]">{L.sheetIndex}</h3>
+            <ol class="grid gap-x-8 sm:grid-cols-2 lg:grid-cols-4">
+              {page.cdSheets.map((sheet, n) => (
+                <li class={`${li} flex gap-4`}><span class="sheet-label text-[var(--color-text-muted)]">A-{n + 1}</span>{sheet}</li>
+              ))}
+            </ol>
+            <p class="mt-6 max-w-[60ch] text-[var(--color-text-muted)]">{t(lang, 'footer.seal')}</p>
+          </div>
+        )}
+
+        <div class="mt-12 grid gap-8 md:grid-cols-2">
+          <div class="reveal">
+            <h3 class="sheet-label mb-3 text-[var(--color-text-muted)]">{L.suits}</h3>
+            <p>{d.suits}</p>
+          </div>
+          <div class="reveal">
+            <h3 class="sheet-label mb-3 text-[var(--color-text-muted)]">{L.pricing}</h3>
+            {s.pricing === 'quoted' && (
+              <>
+                <p class="font-medium">{pick(lang, pricing.quoted.label)}</p>
+                <p class="mt-2 text-[var(--color-text-muted)]">{pick(lang, pricing.quoted.explanation)}</p>
+              </>
+            )}
+            {s.pricing === 'siteAnalysis' && (
+              <>
+                <p class="font-medium">{pick(lang, pricing.siteAnalysis.label)}</p>
+                {d.pricingNote && <p class="mt-2 text-[var(--color-text-muted)]" set:html={markPlaceholders(d.pricingNote)} />}
+              </>
+            )}
+            {s.pricing === 'consultations' && (
+              <ul class={listClass}>
+                {pricing.consultations.map((c) => (
+                  <li class={`${li} flex items-baseline justify-between gap-6`}>
+                    <span>{pick(lang, c.duration)}</span>
+                    <span class="font-[family-name:var(--font-display)] text-[1.6rem]">{formatUsd(lang, c.amount)}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        </div>
+
+        <p class="mt-12">
+          <Button href={quoteHref(s.id)}>{s.id === 'consultations' ? L.bookConsultation : L.requestQuote}</Button>
+        </p>
+      </Section>
+    );
+  })
+}
+
+<Section tone="light" label={page.notFit.label} title={page.notFit.title} intro={page.notFit.intro}>
+  <ul class={`${listClass} max-w-[48rem]`}>{page.notFit.items.map((x) => <li class={li}>{x}</li>)}</ul>
+</Section>
+
+<Section id="builders" tone="dark" label={page.builders.label} title={page.builders.title} intro={page.builders.text}>
+  <Button href={`${contact}?who=builder`}>{page.builders.button}</Button>
+</Section>

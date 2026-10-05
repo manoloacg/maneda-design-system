@@ -1,10 +1,10 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import HomePage from '../../components/HomePage.astro';
+import WorkIndex from '../../components/WorkIndex.astro';
 import { getLang, getPage } from '../../i18n/utils';
-const meta = getPage(getLang(Astro.url.pathname)).home.meta;
+const meta = getPage(getLang(Astro.url.pathname)).work.meta;
 ---
 
 <BaseLayout title={meta.title} description={meta.description}>
-  <HomePage />
+  <WorkIndex />
 </BaseLayout>

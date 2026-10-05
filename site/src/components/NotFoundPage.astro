@@ -1,0 +1,19 @@
+---
+import Button from './Button.astro';
+import { getLang, getPage, routeFor } from '../i18n/utils';
+
+const lang = getLang(Astro.url.pathname);
+const page = getPage(lang).notFound;
+---
+
+<section style="padding-block:var(--section-space)">
+  <div class="container-site max-w-[48rem]">
+    <p class="sheet-label mb-5 text-[var(--color-text-muted)]">404</p>
+    <h1>{page.title}</h1>
+    <p class="lead mt-6">{page.text}</p>
+    <p class="mt-10 flex flex-wrap items-center gap-6">
+      <Button href={routeFor(lang, 'home')} variant="secondary">{page.home}</Button>
+      <a href="/pt/" lang="pt" class="underline decoration-gold">{page.pt}</a>
+    </p>
+  </div>
+</section>

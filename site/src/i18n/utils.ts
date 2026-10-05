@@ -1,5 +1,7 @@
 import en from './en.json';
 import pt from './pt.json';
+import pagesEn from '../content/pages/en.json';
+import pagesPt from '../content/pages/pt.json';
 
 export type Lang = 'en' | 'pt';
 export const languages: Lang[] = ['en', 'pt'];
@@ -16,6 +18,7 @@ export const routes = {
   contact: { en: '/contact/', pt: '/pt/contato/' },
   journal: { en: '/journal/', pt: '/pt/diario/' },
   resources: { en: '/resources/', pt: '/pt/recursos/' },
+  thankYou: { en: '/contact/thank-you/', pt: '/pt/contato/obrigado/' },
   privacy: { en: '/privacy/', pt: '/pt/privacidade/' },
   styleguide: { en: '/styleguide/', pt: '/pt/styleguide/' },
 } as const;
@@ -41,11 +44,13 @@ export function t(lang: Lang, key: string): string {
 /** Equivalent path in another language. Works for nested pages such as /work/some-project/. */
 export function alternatePath(pathname: string, target: Lang): string {
   const current = getLang(pathname);
+  if (pathname === '/404/') return routes.home[target];
   if (current === target) return pathname;
   const path = pathname.endsWith('/') ? pathname : pathname + '/';
   const entries = Object.values(routes).filter((r) => r.en !== '/');
+  const exact = entries.find((r) => r[current] === path);
+  if (exact) return exact[target];
   for (const r of entries) {
-    if (path === r[current]) return r[target];
     if (path.startsWith(r[current])) return r[target] + path.slice(r[current].length);
   }
   return target === 'pt' ? '/pt/' : '/';
@@ -63,3 +68,13 @@ export function markPlaceholders(text: string): string {
   const escaped = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   return escaped.replace(/\[PLACEHOLDER[^\]]*\]/g, (m) => `<mark class="ph">${m}</mark>`);
 }
+
+/** Page copy for a language, from src/content/pages/<lang>.json. Both files share one structure. */
+export type PageCopy = typeof pagesEn;
+export const getPage = (lang: Lang): PageCopy => (lang === 'pt' ? pagesPt : pagesEn) as PageCopy;
+
+/** Replace {name} tokens in a string. */
+export const fill = (text: string, vars: Record<string, string>) =>
+  text.replace(/\{(\w+)\}/g, (_, k) => vars[k] ?? '');
+
+export const formatUsd = (lang: Lang, amount: number) => (lang === 'pt' ? `US$ ${amount}` : `$${amount}`);

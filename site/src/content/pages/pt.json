@@ -1,0 +1,717 @@
+{
+  "home": {
+    "meta": {
+      "title": "Projeto Residencial na Flórida Central | Maneda Design Studios",
+      "description": "A Maneda Design Studios projeta casas, ampliações e interiores na Flórida Central e leva o projeto até os desenhos prontos para construir."
+    },
+    "hero": {
+      "imageNote": "Destaque: foto real de projeto, em largura total"
+    },
+    "positioning": {
+      "label": "O estúdio",
+      "title": "As decisões de projeto vêm primeiro.",
+      "text": "Como a casa se posiciona no lote, como a luz e o ar circulam e como os ambientes se conectam são definidos antes de qualquer desenho para aprovação. Cada decisão é explicada em linguagem clara e verificada contra o código da Flórida. O projeto que você aprova é o projeto que será construído."
+    },
+    "audience": {
+      "label": "Para quem é",
+      "title": "Para quem quer um designer, não só desenhos.",
+      "items": [
+        {
+          "title": "Proprietários",
+          "text": "Você planeja uma casa sob medida, uma ampliação, uma reforma, uma área externa ou um barndominium na Flórida Central. Quer um designer que dê forma ao projeto, não só que desenhe."
+        },
+        {
+          "title": "Clientes de língua portuguesa",
+          "text": "Trabalhe com um designer em português, da primeira conversa até a revisão do projeto. Os desenhos entregues às prefeituras são em inglês, como exigido."
+        },
+        {
+          "title": "Construtores e incorporadores",
+          "text": "Chame a MDS na fase de projeto, para que a obra seja resolvida antes de ser orçada e construída.",
+          "link": "Veja como funciona"
+        }
+      ]
+    },
+    "services": {
+      "label": "Serviços",
+      "title": "Cinco serviços, na ordem em que um projeto os usa.",
+      "learnMore": "Saiba mais"
+    },
+    "work": {
+      "label": "Trabalhos selecionados",
+      "title": "Projetos, com o raciocínio por trás de cada um.",
+      "viewAll": "Ver todos os trabalhos"
+    },
+    "process": {
+      "label": "Processo",
+      "title": "Cinco etapas, da primeira conversa aos desenhos prontos para construir.",
+      "link": "Leia o processo completo",
+      "steps": [
+        {
+          "title": "Consulta, escopo e contrato",
+          "text": "Você descreve o projeto. Acertamos escopo e honorários."
+        },
+        {
+          "title": "Análise do terreno e do código",
+          "text": "Verificamos lote, zoneamento e código antes de desenhar."
+        },
+        {
+          "title": "Estudo preliminar e anteprojeto",
+          "text": "Croquis, volumetria e opções de planta."
+        },
+        {
+          "title": "Desenvolvimento do projeto",
+          "text": "O projeto escolhido é refinado, com revisões."
+        },
+        {
+          "title": "Projeto executivo",
+          "text": "O projeto aprovado vira um conjunto pronto para construir."
+        }
+      ]
+    },
+    "credibility": {
+      "label": "Formação",
+      "title": "Experiência que aparece no projeto.",
+      "items": [
+        {
+          "k": "10+",
+          "v": "anos projetando edifícios multifamiliares e de varejo"
+        },
+        {
+          "k": "Código",
+          "v": "Análise do código da Flórida e da prefeitura desde o primeiro croqui"
+        },
+        {
+          "k": "EN / PT",
+          "v": "Inglês e português do Brasil, da primeira conversa à revisão final"
+        },
+        {
+          "k": "EUA + BR",
+          "v": "Formação em arquitetura nos Estados Unidos e no Brasil"
+        }
+      ]
+    },
+    "cta": {
+      "label": "Comece um projeto",
+      "title": "Conte-nos sobre o seu projeto.",
+      "text": "O formulário pergunta o que precisamos para dar uma resposta útil.",
+      "fields": [
+        "Tipo de projeto",
+        "Localização",
+        "Prazo"
+      ]
+    }
+  },
+  "services": {
+    "meta": {
+      "title": "Serviços | Maneda Design Studios",
+      "description": "Projeto residencial, design de interiores, análise de terreno, consultorias de projeto e projeto executivo para casas e ampliações na Flórida Central."
+    },
+    "hero": {
+      "label": "Serviços",
+      "title": "Primeiro o projeto. Depois os desenhos.",
+      "intro": "Cinco serviços, na ordem em que um projeto os usa. O projeto residencial vem primeiro. O projeto executivo vem por último, como o próximo passo para clientes de projeto."
+    },
+    "labels": {
+      "included": "O que está incluído",
+      "notIncluded": "O que não está incluído",
+      "deliverables": "Entregas típicas",
+      "suits": "Para quem serve",
+      "pricing": "Como funciona o preço",
+      "sheetIndex": "Índice de pranchas de exemplo",
+      "requestQuote": "Solicitar orçamento",
+      "bookConsultation": "Solicitar esta consultoria",
+      "service": "Serviço",
+      "cdEyebrow": "O próximo passo depois do projeto",
+      "fixedPrice": "Preço fixo"
+    },
+    "items": {
+      "residential-design": {
+        "what": "Um designer trabalha com você do primeiro croqui até um projeto resolvido. Você recebe opções de estudo preliminar, estudos de volumetria e de planta, vistas 3D e uma explicação clara do motivo de cada decisão. O projeto é feito para o seu lote, o seu programa e o código da Flórida.",
+        "included": [
+          "Análise do terreno e do programa",
+          "Croquis de estudo preliminar",
+          "Estudos de volumetria e de planta",
+          "Vistas 3D",
+          "Conjunto de anteprojeto",
+          "Conjunto de desenvolvimento do projeto",
+          "Direção de materiais e acabamentos",
+          "Revisões conforme definido no contrato"
+        ],
+        "notIncluded": [
+          "Engenharia estrutural, mecânica, elétrica ou hidráulica",
+          "Levantamentos topográficos e laudos geotécnicos",
+          "Taxas de aprovação e de impacto"
+        ],
+        "deliverables": [
+          "Croquis de estudo preliminar",
+          "Estudos de volumetria e de planta",
+          "Vistas 3D",
+          "Conjunto de anteprojeto",
+          "Conjunto de desenvolvimento do projeto",
+          "Direção de materiais e acabamentos"
+        ],
+        "suits": "Proprietários que constroem ou reformam uma casa na Flórida Central e querem critério de projeto, não só desenhos."
+      },
+      "interior-design": {
+        "what": "Layout, acabamentos, intenção de iluminação e direção de materiais, resolvidos junto com a edificação. Os interiores são projetados como parte da planta, para que ambientes, luz e materiais funcionem juntos.",
+        "included": [
+          "Planejamento de espaço e layouts dos ambientes",
+          "Direção de acabamentos e materiais",
+          "Intenção de iluminação e conceitos de forro",
+          "Conceitos de marcenaria",
+          "Pranchas de seleção"
+        ],
+        "notIncluded": [
+          "Compra e fornecimento de mobiliário",
+          "Instalação e gerenciamento de obra",
+          "Engenharia"
+        ],
+        "deliverables": [
+          "Plantas de interiores",
+          "Pranchas de materiais e acabamentos",
+          "Elevações internas dos ambientes principais",
+          "Vistas 3D dos ambientes principais"
+        ],
+        "suits": "Proprietários de casas novas, reformas e ampliações que querem os interiores resolvidos junto com a edificação, e não depois dela."
+      },
+      "site-analysis": {
+        "what": "Um relatório escrito sobre o lote, antes de comprar ou projetar. Ele mostra o que zoneamento, recuos, zona de inundação e acesso permitem, e o que o lote comporta. É uma análise de projeto feita sobre registros públicos. Não é levantamento topográfico, parecer jurídico nem estudo de engenharia.",
+        "included": [
+          "Zona de uso e usos permitidos",
+          "Recuos, altura e taxa de ocupação",
+          "Zona de inundação e notas de cota",
+          "Servidões e acesso, conforme os registros disponíveis",
+          "Notas sobre infraestrutura disponível",
+          "Diagrama da área construível",
+          "Um resumo do programa: o que o lote comporta"
+        ],
+        "notIncluded": [
+          "Levantamento topográfico ou de divisas",
+          "Sondagem do solo ou ensaios geotécnicos",
+          "Parecer jurídico ou de titularidade"
+        ],
+        "deliverables": [
+          "Relatório escrito (PDF)",
+          "Diagrama da área construível"
+        ],
+        "suits": "Compradores que comparam lotes, proprietários que planejam uma ampliação e construtores que testam um terreno antes de se comprometer.",
+        "pricingNote": "[PLACEHOLDER: o que leva um relatório acima do preço inicial]"
+      },
+      "consultations": {
+        "what": "Uma conversa de trabalho com um designer sobre o seu terreno, o seu programa e as suas opções. Você sai com uma direção clara e os próximos passos. Escolha virtual ou presencial.",
+        "included": [
+          "Análise do seu terreno, plantas ou fotos antes da conversa",
+          "Direção de projeto e opções",
+          "Visão geral do código e do caminho de aprovação (permit)",
+          "Próximos passos por escrito"
+        ],
+        "notIncluded": [
+          "Desenhos ou conjunto de projeto",
+          "Visitas ao terreno além da sessão agendada"
+        ],
+        "deliverables": [
+          "Um resumo da direção e dos próximos passos"
+        ],
+        "suits": "Proprietários que decidem se e como começar, e proprietários com um projeto que precisa de uma segunda opinião."
+      },
+      "construction-documents": {
+        "what": "O próximo passo depois do projeto. Com o projeto aprovado, ele é desenvolvido em um conjunto de projeto executivo (construction documents), para que o projeto aprovado seja o projeto construído. Este serviço é oferecido a clientes de projeto.",
+        "included": [
+          "Conjunto de projeto executivo desenvolvido a partir do projeto aprovado",
+          "Coordenação com o seu construtor e os engenheiros",
+          "Apoio nos comentários da análise de aprovação (plan review)"
+        ],
+        "notIncluded": [
+          "Desenhos selados pela MDS",
+          "Engenharia estrutural, mecânica, elétrica ou hidráulica",
+          "Serviços de construtor ou administração de obra"
+        ],
+        "deliverables": [
+          "Conjunto de projeto executivo",
+          "Respostas aos comentários da análise de aprovação"
+        ],
+        "suits": "Clientes de projeto cujo projeto aprovado está pronto para ser orçado, aprovado e construído."
+      }
+    },
+    "cdSheets": [
+      "Folha de rosto",
+      "Implantação",
+      "Plantas baixas",
+      "Elevações",
+      "Cortes",
+      "Detalhes",
+      "Quadros",
+      "Notas"
+    ],
+    "notFit": {
+      "label": "Adequação",
+      "title": "O que a MDS não faz.",
+      "intro": "Isto poupa tempo se você está comparando opções.",
+      "items": [
+        "Sem desenhos selados ou carimbados pela MDS",
+        "Sem engenharia estrutural, mecânica, elétrica ou hidráulica",
+        "Sem serviços de construtor nem execução de obra",
+        "Sem trabalhos só de desenho. Esses pedidos são analisados caso a caso pelo formulário de contato."
+      ]
+    },
+    "builders": {
+      "label": "Construtores e incorporadores",
+      "title": "Parceiro de projeto para construtores e incorporadores.",
+      "text": "Chame a MDS na fase de projeto, para que a obra seja resolvida antes de ser orçada e construída. Decisões de projeto tomadas cedo custam menos para mudar do que decisões já construídas. Você recebe um projeto claro, um raciocínio que pode compartilhar com o seu cliente e um projeto verificado contra o código.",
+      "button": "Conversar sobre um projeto"
+    }
+  },
+  "work": {
+    "meta": {
+      "title": "Trabalhos | Maneda Design Studios",
+      "description": "Projetos residenciais na Flórida Central, com o programa, o contexto do terreno, as decisões de projeto e o resultado."
+    },
+    "hero": {
+      "label": "Trabalhos",
+      "title": "Trabalhos selecionados.",
+      "intro": "Cada projeto mostra o programa, o contexto do terreno e do código e as decisões de projeto por trás dele."
+    },
+    "filters": {
+      "label": "Filtrar por tipo de projeto",
+      "all": "Todos",
+      "residential": "Residencial",
+      "outdoor": "Áreas externas e ampliações",
+      "commercial": "Comercial e varejo",
+      "interiors": "Interiores"
+    },
+    "noteLabel": "Os detalhes dos projetos são placeholders até a aprovação de cada projeto para publicação.",
+    "empty": "Ainda não há projetos nesta categoria."
+  },
+  "caseStudy": {
+    "facts": {
+      "type": "Tipo",
+      "location": "Local",
+      "size": "Tamanho",
+      "scope": "Escopo",
+      "role": "Função",
+      "year": "Ano"
+    },
+    "sections": {
+      "brief": "O programa",
+      "context": "O contexto",
+      "moves": "As decisões de projeto",
+      "movesIntro": "Cada decisão e o motivo por trás dela.",
+      "sketch": "Do croqui ao projeto final",
+      "sketchEarly": "Croqui inicial",
+      "sketchFinal": "Planta ou elevação final",
+      "documents": "Os documentos",
+      "documentsIntro": "Um trecho de prancha, como prova de que o projeto foi resolvido em desenhos prontos para construir.",
+      "outcome": "O resultado"
+    },
+    "back": "Todos os trabalhos",
+    "cta": {
+      "title": "Planejando algo parecido?",
+      "text": "Conte-nos sobre o seu lote e o seu programa.",
+      "button": "Solicitar orçamento"
+    },
+    "metaDescription": "{title}: o programa, o contexto do terreno, as decisões de projeto e o resultado."
+  },
+  "process": {
+    "meta": {
+      "title": "Processo | Maneda Design Studios",
+      "description": "Como funciona um projeto residencial com a MDS, da consulta ao projeto executivo: o que acontece, o que você fornece e o que você recebe."
+    },
+    "hero": {
+      "label": "Processo",
+      "title": "Como funciona um projeto.",
+      "intro": "Seis fases, em linguagem clara. A maior parte do valor está nas fases quatro e cinco, onde o projeto é decidido."
+    },
+    "labels": {
+      "happens": "O que acontece",
+      "provide": "O que você fornece",
+      "get": "O que você recebe",
+      "duration": "Duração típica",
+      "phase": "Fase"
+    },
+    "phases": [
+      {
+        "title": "Consulta e escopo",
+        "emphasis": false,
+        "happens": "Você envia o formulário. Analisamos, respondemos e conversamos sobre o projeto, o lote e a faixa de orçamento.",
+        "provide": "Descrição do projeto, localização do terreno, prazo desejado e arquivos ou fotos, se tiver.",
+        "get": "Uma leitura clara de adequação e o próximo passo.",
+        "duration": "[PLACEHOLDER: duração típica]"
+      },
+      {
+        "title": "Proposta e contrato",
+        "emphasis": false,
+        "happens": "Enviamos uma proposta escrita com escopo, entregas e honorários. Você analisa e assina o contrato.",
+        "provide": "Dúvidas, decisões e o contrato assinado.",
+        "get": "Escopo escrito, lista de entregas e honorários.",
+        "duration": "[PLACEHOLDER: duração típica]"
+      },
+      {
+        "title": "Análise do terreno e do código",
+        "emphasis": false,
+        "happens": "Analisamos o lote, o zoneamento, os recuos, a zona de inundação e as regras da prefeitura. As restrições aparecem antes de moldar o projeto.",
+        "provide": "Levantamento, planta cadastral ou escritura, se tiver. Acesso ao terreno, se for preciso visitar.",
+        "get": "Um resumo das restrições que enquadra o projeto.",
+        "duration": "[PLACEHOLDER: duração típica]"
+      },
+      {
+        "title": "Estudo preliminar e anteprojeto",
+        "emphasis": true,
+        "happens": "Testamos opções de volumetria e de planta com croquis e vistas 3D. Cada opção mostra como a casa se posiciona, como a luz entra e como os ambientes se conectam. Você escolhe uma direção.",
+        "provide": "Retorno sobre as opções. Suas prioridades de ambientes, luz e orçamento.",
+        "get": "Croquis de estudo preliminar, estudos de volumetria e de planta, vistas 3D e um conjunto de anteprojeto.",
+        "duration": "[PLACEHOLDER: duração típica]"
+      },
+      {
+        "title": "Desenvolvimento do projeto e revisões",
+        "emphasis": true,
+        "happens": "O projeto escolhido é resolvido: dimensões dos ambientes, aberturas, materiais e acabamentos. As revisões acontecem nas rodadas definidas no contrato.",
+        "provide": "Decisões sobre materiais e acabamentos e retorno dentro do prazo.",
+        "get": "Um conjunto de desenvolvimento do projeto e a direção de materiais e acabamentos.",
+        "duration": "[PLACEHOLDER: duração típica]"
+      },
+      {
+        "title": "Projeto executivo e apoio na aprovação",
+        "emphasis": false,
+        "happens": "Para clientes de projeto, o projeto aprovado é desenvolvido em projeto executivo (construction documents) e coordenado para a submissão à prefeitura (permit). O conjunto segue para o seu construtor como base de orçamento e obra.",
+        "provide": "Seu construtor e seus engenheiros, se tiver. Respostas aos comentários da análise de aprovação (plan review).",
+        "get": "Um conjunto de projeto executivo e apoio nos comentários da análise de aprovação.",
+        "duration": "[PLACEHOLDER: duração típica]"
+      }
+    ],
+    "sketch": {
+      "label": "Do croqui ao desenho final",
+      "title": "Da primeira ideia à prancha final.",
+      "early": "Croqui inicial",
+      "final": "Prancha final"
+    },
+    "faq": {
+      "label": "Perguntas frequentes",
+      "title": "Dúvidas comuns.",
+      "items": [
+        {
+          "q": "Quanto tempo leva a aprovação (permit)?",
+          "a": "Os prazos de aprovação são definidos pela prefeitura, não pelo estúdio. [PLACEHOLDER: prazos típicos de análise nos condados e cidades atendidos]"
+        },
+        {
+          "q": "Quem sela os desenhos?",
+          "a": "Quando um selo é exigido, os desenhos são revisados e selados por um profissional licenciado responsável pelo projeto. [PLACEHOLDER: como o profissional responsável é contratado e cobrado]"
+        },
+        {
+          "q": "Quantas revisões estão incluídas?",
+          "a": "[PLACEHOLDER: rodadas de revisão por fase]"
+        },
+        {
+          "q": "Em quais formatos recebo os arquivos?",
+          "a": "PDF para revisão e submissão à prefeitura. [PLACEHOLDER: confirmar entrega de arquivos CAD e de modelo]"
+        },
+        {
+          "q": "Como funciona o pagamento?",
+          "a": "Consultorias e relatórios de análise de terreno têm preço fixo. Os honorários de projeto são definidos na proposta e ligados às fases. [PLACEHOLDER: entrada e cronograma de pagamento]"
+        },
+        {
+          "q": "Onde vocês atuam?",
+          "a": "Região metropolitana de Orlando e Flórida Central. [PLACEHOLDER: confirmar os condados atendidos]"
+        },
+        {
+          "q": "Podemos trabalhar em português?",
+          "a": "Sim. Reuniões e revisões de projeto são em inglês ou em português, como você preferir. Os desenhos entregues às prefeituras são em inglês."
+        },
+        {
+          "q": "O que vocês precisam de mim para começar?",
+          "a": "Uma descrição do projeto, o endereço ou a parcela do terreno, levantamento ou plantas existentes, fotos, uma faixa de orçamento e o prazo desejado. O formulário pede essas informações."
+        },
+        {
+          "q": "Vocês gerenciam a obra?",
+          "a": "Não. A MDS projeta e documenta. A escolha do construtor e o gerenciamento da obra ficam fora do escopo."
+        },
+        {
+          "q": "Vocês aceitam trabalhos só de desenho?",
+          "a": "A MDS é um estúdio de projeto. Pedidos só de desenho são analisados caso a caso pelo formulário de contato."
+        }
+      ]
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "Sobre | Maneda Design Studios",
+      "description": "Manolo Castaneda é designer de arquitetura, com mais de 10 anos em projetos multifamiliares e de varejo, baseado na Flórida Central e bilíngue em inglês e português."
+    },
+    "hero": {
+      "label": "Sobre",
+      "title": "Manolo Castaneda",
+      "role": "Designer de Arquitetura",
+      "portraitNote": "Retrato: Manolo, em um ambiente arquitetônico"
+    },
+    "story": [
+      "Manolo Castaneda é designer de arquitetura, com mais de 10 anos de experiência em projetos multifamiliares e de varejo. Estudou arquitetura no Brasil e nos Estados Unidos, com formação pela Universidade Católica de Brasília e pelo NJIT. É bilíngue em inglês e português do Brasil e trabalha a partir da Flórida Central.",
+      "Ele projeta a partir do terreno e de como as pessoas vivem em uma edificação: espaço, luz, circulação e o uso de cada ambiente. Um projeto só está pronto quando pode ser aprovado e construído, por isso o código da Flórida e as regras de cada prefeitura entram no processo desde o primeiro croqui. Conhecer o código é o que permite que um projeto seja construído. Faz parte do trabalho, não é um serviço separado.",
+      "Manolo está concluindo o ARE rumo à licença da Flórida."
+    ],
+    "values": {
+      "label": "O que eu valorizo",
+      "title": "O que eu valorizo em um projeto.",
+      "items": [
+        "[PLACEHOLDER: reescrever com as suas palavras] Começar pelo terreno. O lote decide mais do que o catálogo.",
+        "[PLACEHOLDER: reescrever com as suas palavras] Explicar cada decisão. Se eu não sei dizer o motivo, eu mudo.",
+        "[PLACEHOLDER: reescrever com as suas palavras] Projetar para o jeito como as pessoas vivem na casa, não para a fotografia."
+      ]
+    },
+    "cta": {
+      "title": "Comece por uma conversa.",
+      "text": "Conte-nos sobre o projeto e diremos com clareza se faz sentido."
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Contato | Maneda Design Studios",
+      "description": "Solicite um orçamento à Maneda Design Studios. Conte-nos sobre o seu projeto, o seu lote e o seu prazo."
+    },
+    "hero": {
+      "label": "Contato",
+      "title": "Solicitar orçamento.",
+      "intro": "O formulário pergunta o que precisamos para dar uma resposta útil. Espere uma resposta {replyWindow}."
+    },
+    "side": {
+      "email": "E-mail",
+      "area": "Área de atendimento",
+      "social": "Redes",
+      "note": "Não publicamos endereço. As reuniões são virtuais ou no seu terreno."
+    },
+    "form": {
+      "name": "Nome",
+      "email": "E-mail",
+      "phone": "Telefone",
+      "language": "Idioma de preferência",
+      "who": "Eu sou",
+      "service": "Serviço",
+      "projectType": "Tipo de projeto",
+      "city": "Cidade e condado do projeto",
+      "size": "Tamanho aproximado (SF)",
+      "start": "Início desejado",
+      "budget": "Faixa de orçamento",
+      "description": "Descrição do projeto",
+      "descriptionHint": "O que você quer construir ou mudar e o que mais importa.",
+      "files": "Link para arquivos",
+      "filesHint": "Um link do Dropbox ou do Google Drive com levantamento, plantas ou fotos.",
+      "heard": "Como você conheceu a MDS?",
+      "choose": "Escolha uma opção",
+      "languageOptions": [
+        {
+          "value": "en",
+          "label": "Inglês"
+        },
+        {
+          "value": "pt",
+          "label": "Português"
+        }
+      ],
+      "whoOptions": [
+        {
+          "value": "owner",
+          "label": "Proprietário"
+        },
+        {
+          "value": "builder",
+          "label": "Construtor ou incorporador"
+        },
+        {
+          "value": "architect",
+          "label": "Arquiteto"
+        },
+        {
+          "value": "other",
+          "label": "Outro"
+        }
+      ],
+      "serviceOptions": [
+        {
+          "value": "residential-design",
+          "label": "Projeto residencial"
+        },
+        {
+          "value": "interior-design",
+          "label": "Design de interiores"
+        },
+        {
+          "value": "site-analysis",
+          "label": "Levantamento e análise de terreno"
+        },
+        {
+          "value": "consultations",
+          "label": "Consultoria de projeto"
+        },
+        {
+          "value": "construction-documents",
+          "label": "Projeto executivo"
+        },
+        {
+          "value": "not-sure",
+          "label": "Ainda não sei"
+        }
+      ],
+      "projectTypeOptions": [
+        {
+          "value": "custom-home",
+          "label": "Casa sob medida"
+        },
+        {
+          "value": "addition",
+          "label": "Ampliação"
+        },
+        {
+          "value": "renovation",
+          "label": "Reforma"
+        },
+        {
+          "value": "outdoor",
+          "label": "Área externa"
+        },
+        {
+          "value": "barndominium",
+          "label": "Barndominium"
+        },
+        {
+          "value": "interiors",
+          "label": "Só interiores"
+        },
+        {
+          "value": "commercial",
+          "label": "Comercial ou varejo"
+        },
+        {
+          "value": "other",
+          "label": "Outro"
+        }
+      ],
+      "startOptions": [
+        {
+          "value": "0-3",
+          "label": "Em até 3 meses"
+        },
+        {
+          "value": "3-6",
+          "label": "De 3 a 6 meses"
+        },
+        {
+          "value": "6-12",
+          "label": "De 6 a 12 meses"
+        },
+        {
+          "value": "12+",
+          "label": "Mais de 12 meses"
+        },
+        {
+          "value": "exploring",
+          "label": "Só pesquisando"
+        }
+      ],
+      "budgetOptions": [
+        {
+          "value": "under-100",
+          "label": "Menos de US$ 100.000"
+        },
+        {
+          "value": "100-250",
+          "label": "US$ 100.000 a US$ 250.000"
+        },
+        {
+          "value": "250-500",
+          "label": "US$ 250.000 a US$ 500.000"
+        },
+        {
+          "value": "500-1000",
+          "label": "US$ 500.000 a US$ 1 milhão"
+        },
+        {
+          "value": "over-1000",
+          "label": "Mais de US$ 1 milhão"
+        },
+        {
+          "value": "unsure",
+          "label": "Não sei"
+        }
+      ],
+      "heardOptions": [
+        {
+          "value": "referral",
+          "label": "Indicação"
+        },
+        {
+          "value": "search",
+          "label": "Busca"
+        },
+        {
+          "value": "instagram",
+          "label": "Instagram"
+        },
+        {
+          "value": "other",
+          "label": "Outro"
+        }
+      ],
+      "submit": "Enviar solicitação",
+      "sending": "Enviando",
+      "errorRequired": "Este campo é obrigatório.",
+      "errorEmail": "Informe um e-mail válido.",
+      "errorSend": "Não foi possível enviar a solicitação. Escreva diretamente para o estúdio.",
+      "fixErrors": "Verifique os campos destacados e tente novamente.",
+      "testMode": "Modo de teste: o formulário ainda não está conectado. Nada foi enviado."
+    },
+    "confirmationEmail": {
+      "subject": "Recebemos a sua solicitação",
+      "body": "Obrigado pela sua solicitação. Recebemos e responderemos {replyWindow}.\n\nSe você tiver levantamento, plantas ou fotos, responda a este e-mail com um link.\n\nManeda Design Studios"
+    }
+  },
+  "thankYou": {
+    "meta": {
+      "title": "Obrigado | Maneda Design Studios",
+      "description": "Sua solicitação foi recebida."
+    },
+    "title": "Obrigado.",
+    "text": "Sua solicitação foi recebida. Espere uma resposta {replyWindow}.",
+    "extra": "Se você tiver levantamento, plantas ou fotos, responda ao e-mail de confirmação com um link.",
+    "testNote": "Modo de teste: o formulário ainda não está conectado. Nada foi enviado.",
+    "back": "Voltar à página inicial"
+  },
+  "privacy": {
+    "meta": {
+      "title": "Política de privacidade | Maneda Design Studios",
+      "description": "Quais informações a Maneda Design Studios coleta neste site e como elas são usadas."
+    },
+    "title": "Política de privacidade",
+    "updated": "Última atualização: [PLACEHOLDER: data de publicação]",
+    "review": "[PLACEHOLDER: revisão jurídica antes do lançamento]",
+    "sections": [
+      {
+        "title": "O que coletamos",
+        "text": "Quando você envia uma solicitação, recebemos o que você digita no formulário: nome, e-mail, telefone (opcional), detalhes do projeto e o link de arquivos que você compartilhar. Usamos isso apenas para responder a você e definir o escopo do projeto."
+      },
+      {
+        "title": "Como o formulário funciona",
+        "text": "O formulário é processado por um serviço de formulários de terceiros, que entrega a sua mensagem ao e-mail do estúdio. Não vendemos nem compartilhamos as suas informações."
+      },
+      {
+        "title": "Cookies e armazenamento",
+        "text": "Este site não usa cookies de rastreamento. Ele guarda a sua escolha de idioma no navegador, para abrir no seu idioma na próxima visita. Você pode apagar isso nas configurações do navegador."
+      },
+      {
+        "title": "Análise de acessos",
+        "text": "Este site não usa ferramentas de análise no momento. Se uma ferramenta que respeita a privacidade for adicionada, esta página será atualizada antes."
+      },
+      {
+        "title": "Contato",
+        "text": "Para perguntar sobre ou remover informações que você nos enviou, escreva para o e-mail do estúdio."
+      }
+    ]
+  },
+  "notFound": {
+    "meta": {
+      "title": "Página não encontrada | Maneda Design Studios",
+      "description": "Esta página não existe."
+    },
+    "title": "Página não encontrada.",
+    "text": "A página que você procura não existe ou mudou de endereço.",
+    "home": "Voltar à página inicial",
+    "pt": "This page does not exist. View the English site."
+  }
+}

@@ -3,12 +3,15 @@
   "shortName": "MDS",
   "url": "https://www.example.com",
   "urlNote": "[PLACEHOLDER: replace with the real domain once confirmed]",
-  "email": "[PLACEHOLDER: studio email]",
+  "email": "manedastudios@gmail.com",
   "serviceArea": {
     "en": "Orlando metro area and Central Florida",
     "pt": "Região metropolitana de Orlando e Flórida Central"
   },
-  "languages": ["en", "pt"],
+  "languages": [
+    "en",
+    "pt"
+  ],
   "social": {
     "instagram": ""
   },

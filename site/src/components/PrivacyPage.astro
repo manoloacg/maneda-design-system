@@ -1,0 +1,22 @@
+---
+import { getLang, getPage, markPlaceholders } from '../i18n/utils';
+
+const lang = getLang(Astro.url.pathname);
+const page = getPage(lang).privacy;
+---
+
+<section style="padding-block:var(--section-space)">
+  <div class="container-site max-w-[48rem]">
+    <h1>{page.title}</h1>
+    <p class="mt-4 text-[var(--color-text-muted)]" set:html={markPlaceholders(page.updated)} />
+    <p class="mt-2" set:html={markPlaceholders(page.review)} />
+    {
+      page.sections.map((s) => (
+        <div class="mt-10 border-t border-[var(--color-rule-strong)] pt-6">
+          <h2 class="mb-3 text-[1.6rem]">{s.title}</h2>
+          <p class="text-[var(--color-text-muted)]">{s.text}</p>
+        </div>
+      ))
+    }
+  </div>
+</section>

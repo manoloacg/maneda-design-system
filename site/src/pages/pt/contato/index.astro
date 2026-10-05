@@ -1,0 +1,10 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ContactPage from '../../../components/ContactPage.astro';
+import { getLang, getPage } from '../../../i18n/utils';
+const meta = getPage(getLang(Astro.url.pathname)).contact.meta;
+---
+
+<BaseLayout title={meta.title} description={meta.description}>
+  <ContactPage />
+</BaseLayout>

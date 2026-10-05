@@ -5,7 +5,7 @@ const lang = getLang(Astro.url.pathname);
 const items = ['services', 'work', 'process', 'about', 'contact'] as const;
 const email = site.email;
 const year = new Date().getFullYear();
-const link = 'inline-flex min-h-[var(--tap)] items-center no-underline hover:underline decoration-gold underline-offset-[0.4em]';
+const link = 'inline-flex min-h-[var(--tap)] items-center no-underline hover:underline decoration-gold underline-offset-[0.4em] [overflow-wrap:anywhere]';
 ---
 
 <footer class="tone-dark" style="padding-block:clamp(3rem,2rem + 4vw,6rem)">
@@ -43,7 +43,7 @@ const link = 'inline-flex min-h-[var(--tap)] items-center no-underline hover:und
     </div>
 
     <div class="col-span-12 flex flex-col gap-4 border-t border-[var(--color-rule)] pt-8 text-sm text-[var(--color-text-muted)] md:flex-row md:items-start md:justify-between">
-      <!-- CONFIRM WITH MANOLO before launch: seal sentence (EN and PT) -->
+      <!-- Seal sentence confirmed by Manolo -->
       <p class="max-w-[60ch]">{t(lang, 'footer.seal')}</p>
       <p class="shrink-0">
         &copy; {year} {site.name}. {t(lang, 'footer.rights')}

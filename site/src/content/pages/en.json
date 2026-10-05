@@ -1,0 +1,717 @@
+{
+  "home": {
+    "meta": {
+      "title": "Residential Design, Central Florida | Maneda Design Studios",
+      "description": "Maneda Design Studios designs homes, additions, and interiors in Central Florida, and carries the design through to buildable drawings."
+    },
+    "hero": {
+      "imageNote": "Hero: real project photo, full width"
+    },
+    "positioning": {
+      "label": "The studio",
+      "title": "Design decisions come first.",
+      "text": "How a house sits on its lot, how light and air move through it, and how the rooms connect are settled before anything is drawn for permit. Each decision is explained in plain language and checked against Florida code. The design you approve is the design that gets built."
+    },
+    "audience": {
+      "label": "Who this is for",
+      "title": "Built for owners who want a designer, not only drawings.",
+      "items": [
+        {
+          "title": "Private owners",
+          "text": "You are planning a custom home, an addition, a renovation, an outdoor living space, or a barndominium in Central Florida. You want a designer to shape the project, not only draw it."
+        },
+        {
+          "title": "Portuguese-speaking owners",
+          "text": "Work with a designer in Portuguese, from the first call through design review. Drawings submitted to jurisdictions are in English, as required."
+        },
+        {
+          "title": "Builders and developers",
+          "text": "Bring MDS in at the design stage, so the project is resolved before it is priced and built.",
+          "link": "See how it works"
+        }
+      ]
+    },
+    "services": {
+      "label": "Services",
+      "title": "Five services, in the order a project needs them.",
+      "learnMore": "Read more"
+    },
+    "work": {
+      "label": "Selected work",
+      "title": "Projects, with the reasoning behind them.",
+      "viewAll": "See all work"
+    },
+    "process": {
+      "label": "Process",
+      "title": "Five steps from first call to buildable drawings.",
+      "link": "Read the full process",
+      "steps": [
+        {
+          "title": "Inquiry, scope, and agreement",
+          "text": "You describe the project. We agree on scope and fee."
+        },
+        {
+          "title": "Site and code review",
+          "text": "We check the lot, zoning, and code before drawing."
+        },
+        {
+          "title": "Concept and schematic design",
+          "text": "Sketches, massing, and plan options."
+        },
+        {
+          "title": "Design development",
+          "text": "The chosen design is refined, with revisions."
+        },
+        {
+          "title": "Construction documents",
+          "text": "The approved design becomes a buildable set."
+        }
+      ]
+    },
+    "credibility": {
+      "label": "Background",
+      "title": "Experience that shows up in the design.",
+      "items": [
+        {
+          "k": "10+",
+          "v": "years designing multifamily and retail projects"
+        },
+        {
+          "k": "Code",
+          "v": "Florida code and jurisdiction review built into the design from the first sketch"
+        },
+        {
+          "k": "EN / PT",
+          "v": "English and Brazilian Portuguese, from first call to final review"
+        },
+        {
+          "k": "US + BR",
+          "v": "Architecture education in the United States and Brazil"
+        }
+      ]
+    },
+    "cta": {
+      "label": "Start a project",
+      "title": "Tell us about your project.",
+      "text": "The inquiry form asks for what we need to give you a useful answer.",
+      "fields": [
+        "Project type",
+        "Location",
+        "Timeline"
+      ]
+    }
+  },
+  "services": {
+    "meta": {
+      "title": "Services | Maneda Design Studios",
+      "description": "Residential design, interior design, site analysis, design consultations, and construction documents for homes and additions in Central Florida."
+    },
+    "hero": {
+      "label": "Services",
+      "title": "Design first. Drawings follow.",
+      "intro": "Five services, listed in the order a project uses them. Residential design leads. Construction documents come last, as the next step for design clients."
+    },
+    "labels": {
+      "included": "What is included",
+      "notIncluded": "What is not included",
+      "deliverables": "Typical deliverables",
+      "suits": "Who it suits",
+      "pricing": "How pricing works",
+      "sheetIndex": "Sample sheet index",
+      "requestQuote": "Request a quote",
+      "bookConsultation": "Request this consultation",
+      "service": "Service",
+      "cdEyebrow": "The next step after design",
+      "fixedPrice": "Fixed price"
+    },
+    "items": {
+      "residential-design": {
+        "what": "A designer works with you from the first sketch to a resolved design. You get concept options, plan and massing studies, 3D views, and a clear explanation of why each decision was made. The project is designed for your lot, your program, and Florida code.",
+        "included": [
+          "Site and program review",
+          "Concept sketches",
+          "Massing and plan studies",
+          "3D views",
+          "Schematic design set",
+          "Design development set",
+          "Material and finish direction",
+          "Revisions as defined in the agreement"
+        ],
+        "notIncluded": [
+          "Structural, mechanical, electrical, or plumbing engineering",
+          "Surveys and geotechnical reports",
+          "Permit and impact fees"
+        ],
+        "deliverables": [
+          "Concept sketches",
+          "Massing and plan studies",
+          "3D views",
+          "Schematic design set",
+          "Design development set",
+          "Material and finish direction"
+        ],
+        "suits": "Owners building or changing a home in Central Florida who want design judgment, not only drawings."
+      },
+      "interior-design": {
+        "what": "Layout, finishes, lighting intent, and material direction, resolved together with the building. Interiors are designed as part of the plan, so rooms, light, and materials work together.",
+        "included": [
+          "Space planning and room layouts",
+          "Finish and material direction",
+          "Lighting intent and ceiling concepts",
+          "Cabinetry and millwork concepts",
+          "Selection boards"
+        ],
+        "notIncluded": [
+          "Furniture purchasing and procurement",
+          "Installation and project management",
+          "Engineering"
+        ],
+        "deliverables": [
+          "Interior plans",
+          "Material and finish boards",
+          "Interior elevations of key rooms",
+          "3D views of key rooms"
+        ],
+        "suits": "Owners of new homes, renovations, and additions who want interiors resolved with the building, not added after it."
+      },
+      "site-analysis": {
+        "what": "A written report on a lot before you buy it or design on it. It sets out what zoning, setbacks, flood zone, and access allow, and what the lot can hold. It is a design-level review of public records. It is not a survey, a legal opinion, or an engineering study.",
+        "included": [
+          "Zoning district and permitted use",
+          "Setbacks, height, and lot coverage limits",
+          "Flood zone and elevation notes",
+          "Easements and access, from available records",
+          "Utility availability notes",
+          "Buildable area diagram",
+          "A short program fit: what the lot can hold"
+        ],
+        "notIncluded": [
+          "Boundary or topographic survey",
+          "Soil or geotechnical testing",
+          "Legal or title opinion"
+        ],
+        "deliverables": [
+          "Written report (PDF)",
+          "Buildable area diagram"
+        ],
+        "suits": "Buyers comparing lots, owners planning an addition, and builders testing a site before committing.",
+        "pricingNote": "[PLACEHOLDER: what moves a site report above the starting price]"
+      },
+      "consultations": {
+        "what": "A working conversation with a designer about your lot, your program, and your options. You leave with a clear direction and the next steps. Choose virtual or in person.",
+        "included": [
+          "Review of your site, plans, or photos before the call",
+          "Design direction and options",
+          "Overview of the code and permit path",
+          "Next steps in writing"
+        ],
+        "notIncluded": [
+          "Drawings or a design set",
+          "Site visits beyond the booked session"
+        ],
+        "deliverables": [
+          "A summary of direction and next steps"
+        ],
+        "suits": "Owners deciding whether and how to start, and owners with a design that needs a second opinion."
+      },
+      "construction-documents": {
+        "what": "The next step after design. Once the design is approved, it is developed into a set of construction documents, so the design that was approved is the design that gets built. This service is offered to design clients.",
+        "included": [
+          "Construction document set developed from the approved design",
+          "Coordination with your builder and engineers",
+          "Support through permit review comments"
+        ],
+        "notIncluded": [
+          "Drawings sealed by MDS",
+          "Structural, mechanical, electrical, or plumbing engineering",
+          "Contractor services or construction administration"
+        ],
+        "deliverables": [
+          "Construction document set",
+          "Responses to permit review comments"
+        ],
+        "suits": "Design clients whose approved design is ready to be priced, permitted, and built."
+      }
+    },
+    "cdSheets": [
+      "Cover sheet",
+      "Site plan",
+      "Floor plans",
+      "Elevations",
+      "Sections",
+      "Details",
+      "Schedules",
+      "Notes"
+    ],
+    "notFit": {
+      "label": "Fit",
+      "title": "What MDS does not do.",
+      "intro": "This saves you time if you are comparing options.",
+      "items": [
+        "No stamped or sealed drawings by MDS",
+        "No structural, mechanical, electrical, or plumbing engineering",
+        "No contractor services or construction work",
+        "No drafting-only jobs. These are reviewed case by case through the contact form."
+      ]
+    },
+    "builders": {
+      "label": "Builders and developers",
+      "title": "Design partner for builders and developers.",
+      "text": "Bring MDS in at the design stage, so the project is resolved before it is priced and built. Early design decisions are cheaper to change than built ones. You get a clear design, reasoning you can share with your client, and a design that has been checked against code.",
+      "button": "Talk about a project"
+    }
+  },
+  "work": {
+    "meta": {
+      "title": "Work | Maneda Design Studios",
+      "description": "Residential design projects in Central Florida, with the brief, the site context, the design decisions, and the outcome."
+    },
+    "hero": {
+      "label": "Work",
+      "title": "Selected work.",
+      "intro": "Each project shows the brief, the site and code context, and the design decisions behind it."
+    },
+    "filters": {
+      "label": "Filter by project type",
+      "all": "All",
+      "residential": "Residential",
+      "outdoor": "Outdoor and additions",
+      "commercial": "Commercial and retail",
+      "interiors": "Interiors"
+    },
+    "noteLabel": "Project details are placeholders until each project is approved for publication.",
+    "empty": "No projects in this category yet."
+  },
+  "caseStudy": {
+    "facts": {
+      "type": "Type",
+      "location": "Location",
+      "size": "Size",
+      "scope": "Scope",
+      "role": "Role",
+      "year": "Year"
+    },
+    "sections": {
+      "brief": "The brief",
+      "context": "The context",
+      "moves": "The design moves",
+      "movesIntro": "Each decision, and the reason behind it.",
+      "sketch": "Sketch to final",
+      "sketchEarly": "Early concept sketch",
+      "sketchFinal": "Finished plan or elevation",
+      "documents": "The documents",
+      "documentsIntro": "One sheet excerpt, as proof the design was resolved into buildable drawings.",
+      "outcome": "The outcome"
+    },
+    "back": "All work",
+    "cta": {
+      "title": "Planning something similar?",
+      "text": "Tell us about your lot and your program.",
+      "button": "Request a quote"
+    },
+    "metaDescription": "{title}: the brief, the site context, the design decisions, and the outcome."
+  },
+  "process": {
+    "meta": {
+      "title": "Process | Maneda Design Studios",
+      "description": "How a residential design project works with MDS, from inquiry to construction documents, with what happens, what you provide, and what you get."
+    },
+    "hero": {
+      "label": "Process",
+      "title": "How a project works.",
+      "intro": "Six phases, in plain language. Most of the value sits in phases four and five, where the design is decided."
+    },
+    "labels": {
+      "happens": "What happens",
+      "provide": "What you provide",
+      "get": "What you get",
+      "duration": "Typical duration",
+      "phase": "Phase"
+    },
+    "phases": [
+      {
+        "title": "Inquiry and scope",
+        "emphasis": false,
+        "happens": "You send the inquiry form. We review it and reply, and we talk through the project, the lot, and the budget range.",
+        "provide": "Project description, site location, target start, and files or photos if you have them.",
+        "get": "A clear read on fit, and the next step.",
+        "duration": "[PLACEHOLDER: typical duration]"
+      },
+      {
+        "title": "Proposal and agreement",
+        "emphasis": false,
+        "happens": "We send a written proposal with scope, deliverables, and fee. You review it and sign the agreement.",
+        "provide": "Questions, decisions, and the signed agreement.",
+        "get": "A written scope, a deliverables list, and a fee.",
+        "duration": "[PLACEHOLDER: typical duration]"
+      },
+      {
+        "title": "Site and code review",
+        "emphasis": false,
+        "happens": "We review the lot, zoning, setbacks, flood zone, and the jurisdiction's rules. Constraints are found before they shape the design.",
+        "provide": "Survey, plat, or deed if you have them. Site access if a visit is needed.",
+        "get": "A constraints summary that frames the design.",
+        "duration": "[PLACEHOLDER: typical duration]"
+      },
+      {
+        "title": "Concept and schematic design",
+        "emphasis": true,
+        "happens": "We test massing and plan options with sketches and 3D views. Each option shows how the house sits, how light enters, and how the rooms connect. You choose a direction.",
+        "provide": "Feedback on the options. Your priorities for rooms, light, and budget.",
+        "get": "Concept sketches, massing and plan studies, 3D views, and a schematic design set.",
+        "duration": "[PLACEHOLDER: typical duration]"
+      },
+      {
+        "title": "Design development and revisions",
+        "emphasis": true,
+        "happens": "The chosen design is resolved: room sizes, openings, materials, and finishes. Revisions are made in the rounds defined in the agreement.",
+        "provide": "Decisions on materials and finishes, and timely feedback.",
+        "get": "A design development set and material and finish direction.",
+        "duration": "[PLACEHOLDER: typical duration]"
+      },
+      {
+        "title": "Construction documents and permit support",
+        "emphasis": false,
+        "happens": "For design clients, the approved design is developed into construction documents and coordinated for permit submittal. The set goes to your builder as the basis for pricing and construction.",
+        "provide": "Your builder and engineers, if you have them. Responses to permit review comments.",
+        "get": "A construction document set and support through permit review comments.",
+        "duration": "[PLACEHOLDER: typical duration]"
+      }
+    ],
+    "sketch": {
+      "label": "Sketch to finished drawing",
+      "title": "From the first idea to the final sheet.",
+      "early": "Early sketch",
+      "final": "Final sheet"
+    },
+    "faq": {
+      "label": "FAQ",
+      "title": "Common questions.",
+      "items": [
+        {
+          "q": "How long does a permit take?",
+          "a": "Permit timelines are set by the jurisdiction, not by the studio. [PLACEHOLDER: typical review times for the counties and cities served]"
+        },
+        {
+          "q": "Who seals the drawings?",
+          "a": "Where a seal is required, drawings are reviewed and sealed by a licensed professional of record. [PLACEHOLDER: how the professional of record is engaged and billed]"
+        },
+        {
+          "q": "How many revisions are included?",
+          "a": "[PLACEHOLDER: revision rounds per phase]"
+        },
+        {
+          "q": "What file formats do I receive?",
+          "a": "PDF for review and permit submittal. [PLACEHOLDER: confirm CAD and model file delivery]"
+        },
+        {
+          "q": "How does payment work?",
+          "a": "Consultations and site analysis reports have fixed prices. Project fees are set in the proposal and tied to phases. [PLACEHOLDER: deposit and payment schedule]"
+        },
+        {
+          "q": "Where do you work?",
+          "a": "The Orlando metro area and Central Florida. [PLACEHOLDER: confirm the counties served]"
+        },
+        {
+          "q": "Can we work in Portuguese?",
+          "a": "Yes. Meetings and design review are held in English or Portuguese, as you prefer. Drawings submitted to jurisdictions are in English."
+        },
+        {
+          "q": "What do you need from me to start?",
+          "a": "A project description, the site address or parcel, any survey or existing plans, photos, a budget range, and a target start. The inquiry form asks for these."
+        },
+        {
+          "q": "Do you manage construction?",
+          "a": "No. MDS designs and documents. Choosing a contractor and managing construction are outside the scope."
+        },
+        {
+          "q": "Do you take drawings-only work?",
+          "a": "MDS is a design studio. Requests for drawings only are reviewed case by case through the contact form."
+        }
+      ]
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "About | Maneda Design Studios",
+      "description": "Manolo Castaneda is an architectural designer with 10+ years in multifamily and retail projects, based in Central Florida and bilingual in English and Portuguese."
+    },
+    "hero": {
+      "label": "About",
+      "title": "Manolo Castaneda",
+      "role": "Architectural Designer",
+      "portraitNote": "Portrait: Manolo, in an architectural setting"
+    },
+    "story": [
+      "Manolo Castaneda is an architectural designer with more than 10 years of experience in multifamily and retail projects. He trained in architecture in Brazil and the United States, with degrees from the Catholic University of Brasilia and NJIT. He is bilingual in English and Brazilian Portuguese and works from Central Florida.",
+      "He designs from the site and from how people live in a building: space, light, circulation, and how a room is used. A design is not finished until it can be permitted and built, so Florida code and jurisdiction rules are part of the process from the first sketch. Code literacy is what lets a design get built. It is part of the work, not a separate service.",
+      "Manolo is completing the ARE toward Florida licensure."
+    ],
+    "values": {
+      "label": "What I value",
+      "title": "What I value in a project.",
+      "items": [
+        "[PLACEHOLDER: rewrite in your own words] Start with the site. The lot decides more than the brochure does.",
+        "[PLACEHOLDER: rewrite in your own words] Explain every decision. If I cannot say why, I change it.",
+        "[PLACEHOLDER: rewrite in your own words] Design for the way people live in the house, not for the photograph."
+      ]
+    },
+    "cta": {
+      "title": "Start with a conversation.",
+      "text": "Tell us about the project and we will tell you plainly if it is a fit."
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Contact | Maneda Design Studios",
+      "description": "Request a quote from Maneda Design Studios. Tell us about your project, your lot, and your timeline."
+    },
+    "hero": {
+      "label": "Contact",
+      "title": "Request a quote.",
+      "intro": "The form asks for what we need to give you a useful answer. Expect a reply {replyWindow}."
+    },
+    "side": {
+      "email": "Email",
+      "area": "Service area",
+      "social": "Social",
+      "note": "No street address is published. Meetings are virtual or at your site."
+    },
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "language": "Language preference",
+      "who": "I am a",
+      "service": "Service",
+      "projectType": "Project type",
+      "city": "Project city and county",
+      "size": "Approximate size (SF)",
+      "start": "Target start",
+      "budget": "Budget range",
+      "description": "Project description",
+      "descriptionHint": "What you want to build or change, and what matters most.",
+      "files": "Link to files",
+      "filesHint": "A Dropbox or Google Drive link to a survey, plans, or photos.",
+      "heard": "How did you hear about MDS?",
+      "choose": "Choose one",
+      "languageOptions": [
+        {
+          "value": "en",
+          "label": "English"
+        },
+        {
+          "value": "pt",
+          "label": "Portuguese"
+        }
+      ],
+      "whoOptions": [
+        {
+          "value": "owner",
+          "label": "Owner"
+        },
+        {
+          "value": "builder",
+          "label": "Builder or developer"
+        },
+        {
+          "value": "architect",
+          "label": "Architect"
+        },
+        {
+          "value": "other",
+          "label": "Other"
+        }
+      ],
+      "serviceOptions": [
+        {
+          "value": "residential-design",
+          "label": "Residential design"
+        },
+        {
+          "value": "interior-design",
+          "label": "Interior design"
+        },
+        {
+          "value": "site-analysis",
+          "label": "Site and land analysis"
+        },
+        {
+          "value": "consultations",
+          "label": "Design consultation"
+        },
+        {
+          "value": "construction-documents",
+          "label": "Construction documents"
+        },
+        {
+          "value": "not-sure",
+          "label": "Not sure yet"
+        }
+      ],
+      "projectTypeOptions": [
+        {
+          "value": "custom-home",
+          "label": "Custom home"
+        },
+        {
+          "value": "addition",
+          "label": "Addition"
+        },
+        {
+          "value": "renovation",
+          "label": "Renovation"
+        },
+        {
+          "value": "outdoor",
+          "label": "Outdoor living space"
+        },
+        {
+          "value": "barndominium",
+          "label": "Barndominium"
+        },
+        {
+          "value": "interiors",
+          "label": "Interiors only"
+        },
+        {
+          "value": "commercial",
+          "label": "Commercial or retail"
+        },
+        {
+          "value": "other",
+          "label": "Other"
+        }
+      ],
+      "startOptions": [
+        {
+          "value": "0-3",
+          "label": "Within 3 months"
+        },
+        {
+          "value": "3-6",
+          "label": "3 to 6 months"
+        },
+        {
+          "value": "6-12",
+          "label": "6 to 12 months"
+        },
+        {
+          "value": "12+",
+          "label": "More than 12 months"
+        },
+        {
+          "value": "exploring",
+          "label": "Just exploring"
+        }
+      ],
+      "budgetOptions": [
+        {
+          "value": "under-100",
+          "label": "Under $100,000"
+        },
+        {
+          "value": "100-250",
+          "label": "$100,000 to $250,000"
+        },
+        {
+          "value": "250-500",
+          "label": "$250,000 to $500,000"
+        },
+        {
+          "value": "500-1000",
+          "label": "$500,000 to $1 million"
+        },
+        {
+          "value": "over-1000",
+          "label": "Over $1 million"
+        },
+        {
+          "value": "unsure",
+          "label": "Not sure"
+        }
+      ],
+      "heardOptions": [
+        {
+          "value": "referral",
+          "label": "Referral"
+        },
+        {
+          "value": "search",
+          "label": "Search"
+        },
+        {
+          "value": "instagram",
+          "label": "Instagram"
+        },
+        {
+          "value": "other",
+          "label": "Other"
+        }
+      ],
+      "submit": "Send inquiry",
+      "sending": "Sending",
+      "errorRequired": "This field is required.",
+      "errorEmail": "Enter a valid email address.",
+      "errorSend": "The inquiry could not be sent. Please email the studio directly.",
+      "fixErrors": "Check the highlighted fields and try again.",
+      "testMode": "Test mode: the form is not connected yet. Nothing was sent."
+    },
+    "confirmationEmail": {
+      "subject": "We received your inquiry",
+      "body": "Thank you for your inquiry. We received it and will reply {replyWindow}.\n\nIf you have a survey, plans, or photos, reply to this email with a link.\n\nManeda Design Studios"
+    }
+  },
+  "thankYou": {
+    "meta": {
+      "title": "Thank you | Maneda Design Studios",
+      "description": "Your inquiry was received."
+    },
+    "title": "Thank you.",
+    "text": "Your inquiry was received. Expect a reply {replyWindow}.",
+    "extra": "If you have a survey, plans, or photos, reply to the confirmation email with a link.",
+    "testNote": "Test mode: the form is not connected yet. Nothing was sent.",
+    "back": "Back to the home page"
+  },
+  "privacy": {
+    "meta": {
+      "title": "Privacy policy | Maneda Design Studios",
+      "description": "What information Maneda Design Studios collects through this website and how it is used."
+    },
+    "title": "Privacy policy",
+    "updated": "Last updated: [PLACEHOLDER: date of publication]",
+    "review": "[PLACEHOLDER: legal review before launch]",
+    "sections": [
+      {
+        "title": "What we collect",
+        "text": "When you send an inquiry, we receive what you type in the form: name, email, optional phone, project details, and any file link you share. We use it only to reply to you and to scope your project."
+      },
+      {
+        "title": "How the form works",
+        "text": "The form is processed by a third-party form service, which delivers your message to the studio email. We do not sell or share your information."
+      },
+      {
+        "title": "Cookies and storage",
+        "text": "This site does not set tracking cookies. It stores your language choice in your browser so the site opens in your language on your next visit. You can clear it in your browser settings."
+      },
+      {
+        "title": "Analytics",
+        "text": "This site does not currently use analytics. If a privacy-friendly analytics tool is added, this page will be updated first."
+      },
+      {
+        "title": "Contact",
+        "text": "To ask about or remove information you sent us, email the studio."
+      }
+    ]
+  },
+  "notFound": {
+    "meta": {
+      "title": "Page not found | Maneda Design Studios",
+      "description": "This page does not exist."
+    },
+    "title": "Page not found.",
+    "text": "The page you are looking for does not exist or has moved.",
+    "home": "Back to the home page",
+    "pt": "Esta página não existe. Ver o site em português."
+  }
+}

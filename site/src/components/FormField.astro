@@ -14,8 +14,10 @@ interface Props {
   placeholder?: string;
   rows?: number;
   autocomplete?: string;
+  inputmode?: 'text' | 'numeric' | 'tel' | 'url' | 'email';
+  emptyLabel?: string;
 }
-const { name, label, type = 'text', required = false, hint, options = [], value = '', placeholder, rows = 5, autocomplete } = Astro.props;
+const { name, label, type = 'text', required = false, hint, options = [], value = '', placeholder, rows = 5, autocomplete, inputmode, emptyLabel } = Astro.props;
 const lang = getLang(Astro.url.pathname);
 const id = `f-${name}`;
 const describedBy = [hint ? `${id}-hint` : '', `${id}-error`].filter(Boolean).join(' ');
@@ -36,10 +38,11 @@ const control =
       <textarea id={id} name={name} rows={rows} required={required} placeholder={placeholder} aria-describedby={describedBy} class={control}>{value}</textarea>
     ) : type === 'select' ? (
       <select id={id} name={name} required={required} aria-describedby={describedBy} class={control}>
+        {emptyLabel && <option value="">{emptyLabel}</option>}
         {options.map((o) => <option value={o.value} selected={o.value === value}>{o.label}</option>)}
       </select>
     ) : (
-      <input id={id} name={name} type={type} value={value} required={required} placeholder={placeholder} autocomplete={autocomplete} aria-describedby={describedBy} class={control} />
+      <input id={id} name={name} type={type} value={value} required={required} placeholder={placeholder} autocomplete={autocomplete} inputmode={inputmode} aria-describedby={describedBy} class={control} />
     )
   }
   <p id={`${id}-error`} class="min-h-[1.25rem] text-sm text-[#9B1C1C]" aria-live="polite"></p>

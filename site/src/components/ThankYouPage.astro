@@ -1,0 +1,22 @@
+---
+import Button from './Button.astro';
+import site from '../content/site.json';
+import { fill, getLang, getPage, markPlaceholders, pick, routeFor } from '../i18n/utils';
+
+const lang = getLang(Astro.url.pathname);
+const page = getPage(lang).thankYou;
+---
+
+<section style="padding-block:var(--section-space)">
+  <div class="container-site max-w-[48rem]">
+    <h1>{page.title}</h1>
+    <p class="lead mt-6" set:html={markPlaceholders(fill(page.text, { replyWindow: pick(lang, site.replyWindow) }))} />
+    <p class="mt-4 text-[var(--color-text-muted)]">{page.extra}</p>
+    <p id="test-note" class="mt-6 bg-[var(--color-placeholder-flag)] px-3 py-2 font-medium text-obsidian" hidden>{page.testNote}</p>
+    <p class="mt-10"><Button href={routeFor(lang, 'home')} variant="secondary">{page.back}</Button></p>
+  </div>
+</section>
+
+<script>
+  if (new URLSearchParams(location.search).get('test') === '1') document.getElementById('test-note')!.hidden = false;
+</script>

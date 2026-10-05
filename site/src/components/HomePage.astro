@@ -1,0 +1,128 @@
+---
+import Section from './Section.astro';
+import Button from './Button.astro';
+import ImagePlaceholder from './ImagePlaceholder.astro';
+import ProjectCard from './ProjectCard.astro';
+import SheetLabel from './SheetLabel.astro';
+import services from '../content/services.json';
+import { getProjects } from '../lib/projects';
+import { getLang, getPage, pick, routeFor, t } from '../i18n/utils';
+
+const lang = getLang(Astro.url.pathname);
+const p = getPage(lang).home;
+const labels = getPage(lang).work.filters;
+const contact = routeFor(lang, 'contact');
+const projects = (await getProjects(lang)).slice(0, 3);
+const num = (i: number) => String(i + 1).padStart(2, '0');
+---
+
+<section style="padding-top:var(--section-space)">
+  <div class="container-site reveal">
+    <p class="sheet-label mb-6 text-[var(--color-text-muted)]">MDS</p>
+    <h1 class="max-w-[16ch]">{t(lang, 'home.headline')}</h1>
+    <p class="lead mt-8 max-w-[52ch]">{t(lang, 'home.subhead')}</p>
+    <div class="mt-10 flex flex-wrap gap-4">
+      <Button href={contact}>{t(lang, 'cta.requestQuote')}</Button>
+      <Button href={routeFor(lang, 'work')} variant="secondary">{t(lang, 'cta.seeWork')}</Button>
+    </div>
+  </div>
+  <div class="mt-14 md:mt-20">
+    <ImagePlaceholder ratio="4 / 3" note={p.hero.imageNote} class="md:hidden" />
+    <ImagePlaceholder ratio="21 / 9" note={p.hero.imageNote} class="hidden md:block" />
+  </div>
+</section>
+
+<Section label={p.positioning.label} title={p.positioning.title} intro={p.positioning.text} />
+
+<Section tone="alt" label={p.audience.label} title={p.audience.title}>
+  <div class="grid gap-10 md:grid-cols-3">
+    {
+      p.audience.items.map((item, i) => (
+        <div class="reveal border-t border-[var(--color-rule-strong)] pt-6">
+          <SheetLabel text={num(i)} class="mb-4" />
+          <h3 class="mb-4">{item.title}</h3>
+          <p class="text-[var(--color-text-muted)]">{item.text}</p>
+          {'link' in item && (
+            <p class="mt-4"><Button href={`${routeFor(lang, 'services')}#builders`} variant="text">{item.link}</Button></p>
+          )}
+        </div>
+      ))
+    }
+  </div>
+</Section>
+
+<Section label={p.services.label} title={p.services.title}>
+  <ol class="border-t border-[var(--color-rule-strong)]">
+    {
+      services.services.map((s, i) => (
+        <li class="reveal grid grid-cols-12 items-baseline gap-x-6 gap-y-2 border-b border-[var(--color-rule)] py-7">
+          <span class="sheet-label col-span-2 text-[var(--color-text-muted)] md:col-span-1">{num(i)}</span>
+          <h3 class="col-span-10 md:col-span-4">{pick(lang, s.title)}</h3>
+          <p class="col-span-12 text-[var(--color-text-muted)] md:col-span-5">{pick(lang, s.summary)}</p>
+          <p class="col-span-12 md:col-span-2 md:text-right">
+            <Button href={`${routeFor(lang, 'services')}#${s.id}`} variant="text">{p.services.learnMore}</Button>
+          </p>
+        </li>
+      ))
+    }
+  </ol>
+</Section>
+
+<Section tone="alt" label={p.work.label} title={p.work.title}>
+  <div class="grid gap-10 md:grid-cols-3">
+    {
+      projects.map((pr) => (
+        <ProjectCard
+          href={`${routeFor(lang, 'work')}${pr.slug}/`}
+          number={pr.data.number}
+          title={pr.data.title}
+          type={labels[pr.data.type]}
+          location={pr.data.location}
+          result={pr.data.result}
+          alt={pr.data.heroAlt}
+          image={pr.data.heroImage}
+        />
+      ))
+    }
+  </div>
+  <p class="mt-12"><Button href={routeFor(lang, 'work')} variant="secondary">{p.work.viewAll}</Button></p>
+</Section>
+
+<Section label={p.process.label} title={p.process.title}>
+  <ol class="grid gap-8 md:grid-cols-5">
+    {
+      p.process.steps.map((s, i) => (
+        <li class="reveal border-t border-[var(--color-rule-strong)] pt-5">
+          <SheetLabel text={num(i)} rule={false} class="mb-3" />
+          <h3 class="mb-3 text-[1.35rem]">{s.title}</h3>
+          <p class="text-sm text-[var(--color-text-muted)]">{s.text}</p>
+        </li>
+      ))
+    }
+  </ol>
+  <p class="mt-12"><Button href={routeFor(lang, 'process')} variant="text">{p.process.link}</Button></p>
+</Section>
+
+<Section tone="dark" label={p.credibility.label} title={p.credibility.title}>
+  <dl class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+    {
+      p.credibility.items.map((c) => (
+        <div class="reveal border-t border-[var(--color-rule)] pt-5">
+          <dt class="font-[family-name:var(--font-display)] text-[var(--text-h2)] font-light leading-none text-gold">{c.k}</dt>
+          <dd class="mt-4 text-[var(--color-text-muted)]">{c.v}</dd>
+        </div>
+      ))
+    }
+  </dl>
+</Section>
+
+<Section tone="alt" label={p.cta.label} title={p.cta.title} intro={p.cta.text}>
+  <div class="grid grid-cols-12 gap-6">
+    <ul class="col-span-12 border-t border-[var(--color-rule-strong)] md:col-span-6">
+      {p.cta.fields.map((f) => <li class="border-b border-[var(--color-rule)] py-4 text-[var(--color-text-muted)]">{f}</li>)}
+    </ul>
+    <div class="col-span-12 md:col-span-6 md:self-end md:text-right">
+      <Button href={contact}>{t(lang, 'cta.requestQuote')}</Button>
+    </div>
+  </div>
+</Section>

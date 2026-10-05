@@ -1,0 +1,101 @@
+---
+import Section from './Section.astro';
+import Button from './Button.astro';
+import ImagePlaceholder from './ImagePlaceholder.astro';
+import SheetLabel from './SheetLabel.astro';
+import { Image } from 'astro:assets';
+import { getLang, getPage, markPlaceholders, routeFor, t } from '../i18n/utils';
+
+const { entry } = Astro.props;
+const d = entry.data;
+const lang = getLang(Astro.url.pathname);
+const page = getPage(lang);
+const c = page.caseStudy;
+const S = c.sections;
+const typeLabel = page.work.filters[d.type as 'residential'];
+const facts: [string, string][] = [
+  [c.facts.type, typeLabel],
+  [c.facts.location, d.location],
+  [c.facts.size, d.size],
+  [c.facts.scope, d.scope],
+  [c.facts.role, d.role],
+  [c.facts.year, d.year],
+];
+const ph = markPlaceholders;
+---
+
+<article>
+  <header style="padding-top:var(--section-space)">
+    <div class="container-site reveal">
+      <p class="mb-6"><a href={routeFor(lang, 'work')} class="sheet-label text-[var(--color-text-muted)]">&larr; {c.back}</a></p>
+      <SheetLabel text={d.number} class="mb-6" />
+      <h1 class="max-w-[20ch]" set:html={ph(d.title)} />
+      <dl class="mt-12 grid grid-cols-2 gap-x-6 gap-y-6 border-t border-[var(--color-rule-strong)] pt-6 md:grid-cols-3 lg:grid-cols-6">
+        {
+          facts.map(([k, v]) => (
+            <div>
+              <dt class="sheet-label mb-2 text-[var(--color-text-muted)]">{k}</dt>
+              <dd class="text-sm" set:html={ph(v)} />
+            </div>
+          ))
+        }
+      </dl>
+    </div>
+    <div class="mt-12">
+      {
+        d.heroImage ? (
+          <Image src={d.heroImage} alt={d.heroAlt} widths={[800, 1200, 1800]} sizes="100vw" loading="eager" class="aspect-[21/9] w-full object-cover" />
+        ) : (
+          <ImagePlaceholder ratio="16 / 9" note={d.heroAlt} />
+        )
+      }
+    </div>
+  </header>
+
+  <Section label="01" title={S.brief} intro={d.brief} />
+  <Section tone="alt" label="02" title={S.context} intro={d.context} />
+
+  <Section label="03" title={S.moves} intro={S.movesIntro}>
+    <ol class="grid gap-16">
+      {
+        d.moves.map((m: { title: string; text: string; visual: string }, i: number) => (
+          <li class="reveal grid grid-cols-12 items-start md:gap-x-8 gap-y-6">
+            <div class={`col-span-12 md:col-span-7 ${i % 2 ? 'md:order-2' : ''}`}>
+              <ImagePlaceholder ratio="4 / 3" note={m.visual} />
+            </div>
+            <div class="col-span-12 md:col-span-5">
+              <SheetLabel text={String(i + 1).padStart(2, '0')} class="mb-4" />
+              <h3 class="mb-4" set:html={ph(m.title)} />
+              <p class="text-[var(--color-text-muted)]" set:html={ph(m.text)} />
+            </div>
+          </li>
+        ))
+      }
+    </ol>
+  </Section>
+
+  <Section tone="alt" label="04" title={S.sketch}>
+    <div class="grid gap-8 md:grid-cols-2">
+      <figure class="reveal">
+        <ImagePlaceholder ratio="4 / 3" note={d.sketch.early} />
+        <figcaption class="sheet-label mt-3 text-[var(--color-text-muted)]">{S.sketchEarly}</figcaption>
+      </figure>
+      <figure class="reveal">
+        <ImagePlaceholder ratio="4 / 3" note={d.sketch.final} />
+        <figcaption class="sheet-label mt-3 text-[var(--color-text-muted)]">{S.sketchFinal}</figcaption>
+      </figure>
+    </div>
+  </Section>
+
+  <Section label="05" title={S.documents} intro={S.documentsIntro}>
+    <div class="max-w-[40rem]">
+      <ImagePlaceholder ratio="3 / 2" note={d.documents} />
+    </div>
+  </Section>
+
+  <Section tone="alt" label="06" title={S.outcome} intro={d.outcome} />
+
+  <Section tone="dark" label={t(lang, 'cta.nextStep')} title={c.cta.title} intro={c.cta.text}>
+    <Button href={`${routeFor(lang, 'contact')}?service=residential-design`}>{c.cta.button}</Button>
+  </Section>
+</article>

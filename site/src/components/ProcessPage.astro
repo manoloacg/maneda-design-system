@@ -1,0 +1,64 @@
+---
+import Section from './Section.astro';
+import Button from './Button.astro';
+import Faq from './Faq.astro';
+import ImagePlaceholder from './ImagePlaceholder.astro';
+import SheetLabel from './SheetLabel.astro';
+import { getLang, getPage, markPlaceholders, routeFor, t } from '../i18n/utils';
+
+const lang = getLang(Astro.url.pathname);
+const page = getPage(lang).process;
+const L = page.labels;
+const ph = markPlaceholders;
+---
+
+<Section titleTag="h1" label={page.hero.label} title={page.hero.title} intro={page.hero.intro} />
+
+<section class="pb-[var(--section-space)]">
+  <ol class="container-site grid gap-0">
+    {
+      page.phases.map((ph_, i) => (
+        <li class={`reveal grid grid-cols-12 md:gap-x-8 gap-y-6 border-t border-[var(--color-rule-strong)] ${ph_.emphasis ? 'bg-[var(--color-bg-alt)] py-14 md:py-20' : 'py-8 md:py-10'}`}>
+          <div class="col-span-12 md:col-span-4">
+            <SheetLabel text={`${L.phase} ${i + 1}`} class="mb-3" />
+            <h2 class={ph_.emphasis ? '' : 'text-[1.6rem]'}>{ph_.title}</h2>
+            <p class="sheet-label mt-4 text-[var(--color-text-muted)]">{L.duration}</p>
+            <p class="text-sm" set:html={ph(ph_.duration)} />
+          </div>
+          <div class="col-span-12 grid gap-6 md:col-span-8 md:grid-cols-3">
+            <div>
+              <h3 class="sheet-label mb-2 text-[var(--color-text-muted)]">{L.happens}</h3>
+              <p>{ph_.happens}</p>
+            </div>
+            <div>
+              <h3 class="sheet-label mb-2 text-[var(--color-text-muted)]">{L.provide}</h3>
+              <p>{ph_.provide}</p>
+            </div>
+            <div>
+              <h3 class="sheet-label mb-2 text-[var(--color-text-muted)]">{L.get}</h3>
+              <p>{ph_.get}</p>
+            </div>
+          </div>
+        </li>
+      ))
+    }
+  </ol>
+</section>
+
+<Section tone="alt" label={page.sketch.label} title={page.sketch.title}>
+  <div class="grid gap-8 md:grid-cols-2">
+    <figure class="reveal">
+      <ImagePlaceholder ratio="4 / 3" note={page.sketch.early} />
+      <figcaption class="sheet-label mt-3 text-[var(--color-text-muted)]">{page.sketch.early}</figcaption>
+    </figure>
+    <figure class="reveal">
+      <ImagePlaceholder ratio="4 / 3" note={page.sketch.final} />
+      <figcaption class="sheet-label mt-3 text-[var(--color-text-muted)]">{page.sketch.final}</figcaption>
+    </figure>
+  </div>
+</Section>
+
+<Section label={page.faq.label} title={page.faq.title}>
+  <Faq items={page.faq.items} />
+  <p class="mt-12"><Button href={routeFor(lang, 'contact')}>{t(lang, 'cta.requestQuote')}</Button></p>
+</Section>
