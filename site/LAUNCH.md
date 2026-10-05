@@ -8,13 +8,11 @@ Prices and screen names for outside services change. Where this guide names a bu
 
 | Decision | Why it matters |
 |---|---|
-| Domain name | Everything else points to it. Nothing can go live without it. |
+| Domain name | Decided: manedastudios.com. |
 | Studio email | The form sends inquiries here. Currently manedastudios@gmail.com. |
 | Which real projects are public | Each case study needs your approval and real content. |
 
-Domain ideas. Check each one is free and not confusing:
-- manedadesignstudios.com
-- manedastudios.com. Your brand file lists this for Maneda Photography. If it belongs to the photography business, decide whether the two businesses share a domain.
+Domain: manedastudios.com, bought by you.
 
 A .com usually costs about $10 to $15 per year. Check the price when you buy.
 
@@ -55,12 +53,15 @@ While `"indexing": false` is set in `site.json`, the preview tells search engine
 
 ## 5. Connect the domain
 
-**Check first.** Your brand file lists manedastudios.com as the website of Maneda Photography. If a site already lives there, pointing the domain at this one replaces it. If photography uses it, give MDS the main address and move photography to a subdomain such as photo.manedastudios.com first. Ask me and I will write those steps.
+You bought manedastudios.com and nothing is hosted on it, so there is nothing to replace. Your brand file lists the same name for Maneda Photography. If you later put a photography site on it, give that site a subdomain such as photo.manedastudios.com.
 
-1. Buy the domain in Cloudflare, or add your existing domain to Cloudflare so it manages the DNS.
-2. In the Pages project, open Custom domains and add the domain. Cloudflare sets up the DNS records and the HTTPS certificate.
-3. Choose one main address, with or without `www`, and send the other to it. Use a redirect rule in Cloudflare.
-4. Put the exact main address in `site.json` (`url`), for example `https://manedadesignstudios.com`. The sitemap, canonical tags and share links all use it.
+Where you bought it decides the first step:
+- **Bought at Cloudflare:** the domain is already in your account. Go to the numbered steps below.
+- **Bought elsewhere (GoDaddy, Namecheap, Google, and so on):** in Cloudflare, choose Add a domain, enter manedastudios.com, and pick the free plan. Cloudflare shows two nameserver addresses. Paste them into the nameserver setting at the place you bought the domain. This can take from a few minutes to a day. You do not need to transfer the domain itself.
+
+1. In the Pages project, open Custom domains and add the domain. Cloudflare sets up the DNS records and the HTTPS certificate.
+2. Choose one main address, with or without `www`, and send the other to it. Use a redirect rule in Cloudflare.
+3. Put the exact main address in `site.json` (`url`), it is already set to `https://manedastudios.com`. The sitemap, canonical tags and share links all use it.
 
 ## 6. Launch day, in this order
 

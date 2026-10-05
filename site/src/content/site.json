@@ -2,7 +2,7 @@
   "name": "Maneda Design Studios",
   "shortName": "MDS",
   "url": "https://manedastudios.com",
-  "urlNote": "Confirmed by Manolo: manedastudios.com is his. Main address is the version without www.",
+  "urlNote": "Confirmed by Manolo: manedastudios.com is his, newly purchased, nothing hosted on it yet. Main address is the version without www.",
   "email": "manedastudios@gmail.com",
   "serviceArea": {
     "en": "Based in Orlando, Florida. Projects across the United States.",
@@ -21,8 +21,8 @@
     "accessKey": "bce18b7e-18da-42a9-91aa-5b75f0d3a46c"
   },
   "replyWindow": {
-    "en": "[PLACEHOLDER: within 1 business day, confirm with Manolo]",
-    "pt": "[PLACEHOLDER: em até 1 dia útil, confirmar com o Manolo]"
+    "en": "within 1 business day",
+    "pt": "em até 1 dia útil"
   },
   "indexing": false,
   "indexingNote": "Keep false until launch. While false, every page is marked noindex and robots.txt blocks crawlers.",

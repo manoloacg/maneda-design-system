@@ -4,13 +4,12 @@ Every placeholder on the site is written `[PLACEHOLDER: ...]` in the source and 
 
 Done already: studio email (manedastudios@gmail.com), seal sentence in English (confirmed), home hero photo, Web3Forms access key (the form now sends real email).
 
-Domain: manedastudios.com, confirmed as Manolo's. Check whether anything already lives there (see LAUNCH.md section 5) before connecting it.
+Domain: manedastudios.com, newly bought by Manolo, nothing hosted on it. Reply promise: within 1 business day (confirmed).
 
 ## Must have before launch
 
 | # | Item | Where it goes |
 |---|---|---|
-| 3 | Reply promise, for example "within 1 business day", in English and Portuguese | `site.json` (`replyWindow`) |
 | 5 | Which of the three projects you approve for public case studies | `src/content/projects/` |
 | 6 | For each approved project: the brief, the site and code context, 3 design moves with a sketch, diagram or 3D view each, an early sketch beside the final plan or elevation, one sheet excerpt, and the outcome | `src/content/projects/en/*.md` and `pt/*.md` |
 | 7 | Written client approval before any real name or address appears (`clientApproved: true`) | Same files |
