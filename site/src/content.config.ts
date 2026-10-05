@@ -24,7 +24,10 @@ const projects = defineCollection({
       heroAlt: z.string(),
       brief: z.string(),
       context: z.string(),
-      moves: z.array(z.object({ title: z.string(), text: z.string(), visual: z.string() })).min(3).max(5),
+      moves: z
+        .array(z.object({ title: z.string(), text: z.string(), visual: z.string(), image: image().optional(), alt: z.string().optional() }))
+        .min(3)
+        .max(5),
       sketch: z.object({ early: z.string(), final: z.string() }),
       documents: z.string(),
       outcome: z.string(),

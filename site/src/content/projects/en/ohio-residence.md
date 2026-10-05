@@ -3,15 +3,16 @@ title: "Three-level residence, Ohio"
 number: "MDS-26-01"
 order: 1
 type: residential
-published: false # DRAFT: set to true only after the client and Manolo approve
+published: true
 location: "Ohio"
 size: "[PLACEHOLDER: size in SF]"
 scope: "Layout, elevations, and interior design"
 role: "Designer"
 year: "2026"
 result: "Plan, elevations, and interiors resolved with the owner and the builder."
-clientApproved: false
-heroAlt: "[PLACEHOLDER: hero image of the residence, with the owner approval to publish it]"
+clientApproved: false # Owner OK to publish given verbally via Manolo on 2026-10-05. Get it in writing. Keep false: no real names or address are used.
+heroImage: ../../../assets/hero-home.jpg
+heroAlt: "3D rendering of a white three-level residence with dark metal roofs, a tall gabled entry, a stone-clad wing, and a three-car garage, seen across a paved motor court and lawn."
 brief: "The owners wanted a modern house that reads right on a farm-type setting without turning into a farmhouse. The priorities: an open, connected plan where people can see and hear between spaces, a light exterior with gray or black stone accents, a three to four season room, and a finished walkout level with a gym, sauna, theater, and guest suite."
 context: "The site is a rural lot in Ohio, so the design follows Ohio code. The builder was ready to start soon, so layout and structure were fixed first and finishes followed in a separate phase. Structural stamping is by a licensed Ohio engineer of record, coordinated separately."
 moves:
@@ -21,6 +22,8 @@ moves:
   - title: "A room that works in all seasons"
     text: "A three to four season room has to be finished and conditioned underneath, to avoid condensation on the underside of the second floor. Its 14 by 30 ft size comes from the clearance the owner wanted around a table and chairs."
     visual: "[PLACEHOLDER: Section or plan of the season room]"
+    image: ../../../assets/ohio-rear.webp
+    alt: "3D rendering of the rear of the residence: a white three-level facade with a dark-framed angled glass room, a long deck with a stair, and a walkout lower level opening to the lawn."
   - title: "See and hear across the house"
     text: "The owners wanted spaces that connect instead of divide. The theater is aligned with the main living space so both screens can be seen at once, and an interior window between the living room and the gym was raised as one way to keep that connection."
     visual: "[PLACEHOLDER: Plan or 3D view showing the sight lines]"

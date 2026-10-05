@@ -2,6 +2,7 @@
 title: "Summer kitchen"
 number: "MDS-26-03"
 order: 3
+published: false
 type: outdoor
 location: "[PLACEHOLDER: city and state]"
 size: "[PLACEHOLDER: size]"

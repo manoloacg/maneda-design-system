@@ -2,6 +2,7 @@
 title: "Barndominium"
 number: "MDS-26-01"
 order: 1
+published: false
 type: residential
 location: "[PLACEHOLDER: city and state]"
 size: "50 by 100 ft"

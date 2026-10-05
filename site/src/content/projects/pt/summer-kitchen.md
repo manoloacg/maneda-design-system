@@ -2,6 +2,7 @@
 title: "Cozinha externa (summer kitchen)"
 number: "MDS-26-03"
 order: 3
+published: false
 type: outdoor
 location: "[PLACEHOLDER: cidade e estado]"
 size: "[PLACEHOLDER: tamanho]"

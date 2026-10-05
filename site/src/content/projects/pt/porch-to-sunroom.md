@@ -2,6 +2,7 @@
 title: "Varanda telada convertida em sunroom"
 number: "MDS-26-02"
 order: 2
+published: false
 type: outdoor
 location: "[PLACEHOLDER: cidade e estado]"
 size: "[PLACEHOLDER: tamanho]"

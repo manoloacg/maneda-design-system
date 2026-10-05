@@ -2,24 +2,31 @@
 import Section from './Section.astro';
 import ProjectCard from './ProjectCard.astro';
 import { getProjects } from '../lib/projects';
+import { hasPlaceholder } from '../lib/journal';
 import { getLang, getPage, routeFor } from '../i18n/utils';
 
 const lang = getLang(Astro.url.pathname);
 const page = getPage(lang).work;
 const f = page.filters;
 const projects = await getProjects(lang);
-const types = ['residential', 'outdoor', 'commercial', 'interiors'] as const;
+const types = (['residential', 'outdoor', 'commercial', 'interiors'] as const).filter((t) => projects.some((p) => p.data.type === t));
+const showFilters = types.length > 1;
+const unfinished = projects.some((p) => hasPlaceholder(p.data));
 const btn = 'inline-flex min-h-[var(--tap)] items-center border border-obsidian px-5 text-[0.75rem] font-medium uppercase tracking-[0.18em] aria-pressed:bg-obsidian aria-pressed:text-ivory hover:bg-linen aria-pressed:hover:bg-obsidian';
 ---
 
 <Section titleTag="h1" label={page.hero.label} title={page.hero.title} intro={page.hero.intro}>
-  <div role="group" aria-label={f.label} class="flex flex-wrap gap-3" id="filters">
-    <button type="button" class={btn} data-filter="all" aria-pressed="true">{f.all}</button>
-    {types.map((t) => <button type="button" class={btn} data-filter={t} aria-pressed="false">{f[t]}</button>)}
-  </div>
-  <p class="sheet-label mt-6 text-[var(--color-text-muted)]">{page.noteLabel}</p>
+  {
+    showFilters && (
+      <div role="group" aria-label={f.label} class="flex flex-wrap gap-3" id="filters">
+        <button type="button" class={btn} data-filter="all" aria-pressed="true">{f.all}</button>
+        {types.map((t) => <button type="button" class={btn} data-filter={t} aria-pressed="false">{f[t]}</button>)}
+      </div>
+    )
+  }
+  {unfinished && <p class="sheet-label mt-6 text-[var(--color-text-muted)]">{page.noteLabel}</p>}
 
-  <div id="grid" class="mt-12 grid gap-10 md:grid-cols-3">
+  <div id="grid" class={`${showFilters || unfinished ? "mt-12" : "mt-0"} grid gap-10 md:grid-cols-3`}>
     {
       projects.map((pr) => (
         <div data-type={pr.data.type}>

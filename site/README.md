@@ -43,6 +43,10 @@ Open `src/content/pricing.json`. Change the `amount` numbers for the three consu
 
 Replace `src/assets/hero-home.jpg` with another image of at least 2000 pixels wide, ideally 4:3 or wider with the house in the lower half. Update its description in `home.hero.alt` in both page files.
 
+## How to add an image to a design move
+
+Put the image in `src/assets/`. In the project file, under that move, add two lines: `image: ../../../assets/your-image.jpg` and `alt: "A real description of the image"`. Remove the matching `[PLACEHOLDER: ...]` text from `visual`. See move 2 in `src/content/projects/en/ohio-residence.md`.
+
 ## How to add a photo
 
 Put the image in `src/assets/` (create the folder if needed), then add `heroImage: ../../../assets/your-photo.jpg` to the project file. The site resizes it automatically. Always write a real description in `heroAlt`.
