@@ -701,7 +701,8 @@
         "title": "Contact",
         "text": "To ask about or remove information you sent us, email the studio."
       }
-    ]
+    ],
+    "analyticsOn": "This site uses Cloudflare Web Analytics. It does not use cookies and does not track you across sites. It reports page views and general location in aggregate."
   },
   "notFound": {
     "meta": {
@@ -712,5 +713,73 @@
     "text": "The page you are looking for does not exist or has moved.",
     "home": "Back to the home page",
     "pt": "Esta página não existe. Ver o site em português."
+  },
+  "journal": {
+    "meta": {
+      "title": "Journal | Maneda Design Studios",
+      "description": "Practical notes on starting a residential design project in Central Florida: lots, code, builders, and cost."
+    },
+    "hero": {
+      "label": "Journal",
+      "title": "Notes on designing a home.",
+      "intro": "Short, practical answers to questions owners ask before and during a design project."
+    },
+    "draftLabel": "Outline",
+    "draftNote": "This is an outline. The full article is not written yet.",
+    "back": "All notes",
+    "empty": "No notes yet.",
+    "read": "Read",
+    "cta": {
+      "title": "Have a project in mind?",
+      "text": "Tell us about your lot and your program."
+    }
+  },
+  "resources": {
+    "meta": {
+      "title": "Free Checklist: Before You Hire a Designer | Maneda Design Studios",
+      "description": "A free checklist for Central Florida homeowners deciding how to hire a designer for a home, addition, or renovation."
+    },
+    "hero": {
+      "label": "Resources",
+      "title": "Before You Hire a Designer.",
+      "intro": "A checklist for Central Florida homeowners. Use it to compare designers and to prepare for a first conversation."
+    },
+    "contents": {
+      "title": "What the checklist covers",
+      "items": [
+        "[PLACEHOLDER: checklist section 1]",
+        "[PLACEHOLDER: checklist section 2]",
+        "[PLACEHOLDER: checklist section 3]"
+      ]
+    },
+    "form": {
+      "title": "Get the checklist",
+      "name": "Name",
+      "email": "Email",
+      "language": "Language",
+      "submit": "Send me the checklist",
+      "consent": "Your email is used only to send you the checklist.",
+      "privacy": "Read the privacy policy"
+    },
+    "file": "/resources/before-you-hire-a-designer.pdf"
+  },
+  "resourcesThankYou": {
+    "meta": {
+      "title": "Your checklist | Maneda Design Studios",
+      "description": "Download the checklist."
+    },
+    "title": "Your checklist is ready.",
+    "text": "Download it below.",
+    "button": "Download the checklist (PDF)",
+    "file": "/resources/before-you-hire-a-designer.pdf",
+    "testNote": "Test mode: the form is not connected yet. Nothing was sent.",
+    "next": "Ready to talk about your project?"
+  },
+  "cities": {
+    "title": "Residential design in {city}",
+    "jurisdiction": "Local jurisdiction notes",
+    "projects": "Typical projects",
+    "related": "Related work",
+    "label": "Service area"
   }
 }

@@ -43,6 +43,30 @@ Open `src/content/pricing.json`. Change the `amount` numbers for the three consu
 
 Put the image in `src/assets/` (create the folder if needed), then add `heroImage: ../../../assets/your-photo.jpg` to the project file. The site resizes it automatically. Always write a real description in `heroAlt`.
 
+## Search visibility switch (important)
+
+In `src/content/site.json`, `"indexing": false` keeps the whole site hidden from Google. Every page is marked noindex and `robots.txt` blocks crawlers. Change it to `true` only on launch day. Separately, three kinds of page stay hidden even after launch until they are real: case studies and journal posts that still contain `[PLACEHOLDER]` text, journal posts marked `draft: true`, and the thank-you pages. They are also left out of `sitemap.xml`.
+
+## Journal
+
+Add a post by copying `src/content/journal/en/start-a-custom-home.md` and its Portuguese twin in `pt/`, same file name in both. Write the article below the dashes. Set `draft: false` and add `date: 2026-11-01` (use the real date) when it is ready.
+
+## City pages
+
+None are built, on purpose. A thin or repeated city page hurts search. To add one, copy `src/content/cities/_TEMPLATE.md` to `en/<city>.md` and `pt/<city>.md`, write real local content, and set `published: true`. The build refuses to publish a city page that still has `[PLACEHOLDER]` text.
+
+## Structured data
+
+Search engines read hidden data on each page: the studio (home, services, contact), each service with its fixed prices, the FAQ, and case studies and journal posts once they are real. It never includes an address or personal phone number.
+
+## Analytics
+
+Off. To turn on Cloudflare Web Analytics, set `analytics.enabled` to `true` and paste the token in `site.json`. The privacy page switches to the matching wording by itself. Do this only after you approve it.
+
+## The checklist PDF
+
+Replace `public/resources/before-you-hire-a-designer.pdf` and `antes-de-contratar-um-designer.pdf` with the real files, keeping the same names. The visitor gets the download on the thank-you page. Following up by email later needs an email tool such as Buttondown or Mailchimp. That is a separate decision.
+
 ## The inquiry form
 
 The form uses Web3Forms. Until a real access key is added in `src/content/site.json` (`form.accessKey`), the form runs in test mode: it checks the fields, shows the thank-you page with a test note, and sends nothing. The confirmation email text is in `src/content/pages/en.json` and `pt.json` under `contact.confirmationEmail`.

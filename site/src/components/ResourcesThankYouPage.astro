@@ -1,0 +1,24 @@
+---
+import Button from './Button.astro';
+import { getLang, getPage, routeFor, t } from '../i18n/utils';
+
+const lang = getLang(Astro.url.pathname);
+const page = getPage(lang).resourcesThankYou;
+---
+
+<section style="padding-block:var(--section-space)">
+  <div class="container-site max-w-[48rem]">
+    <h1>{page.title}</h1>
+    <p class="lead mt-6">{page.text}</p>
+    <p class="mt-8"><Button href={page.file} download>{page.button}</Button></p>
+    <p id="test-note" class="mt-6 bg-[var(--color-placeholder-flag)] px-3 py-2 font-medium text-obsidian" hidden>{page.testNote}</p>
+    <div class="mt-16 border-t border-[var(--color-rule-strong)] pt-8">
+      <p class="mb-6 text-lg">{page.next}</p>
+      <Button href={routeFor(lang, 'contact')} variant="secondary">{t(lang, 'cta.requestQuote')}</Button>
+    </div>
+  </div>
+</section>
+
+<script>
+  if (new URLSearchParams(location.search).get('test') === '1') document.getElementById('test-note')!.hidden = false;
+</script>

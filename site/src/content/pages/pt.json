@@ -701,7 +701,8 @@
         "title": "Contato",
         "text": "Para perguntar sobre ou remover informações que você nos enviou, escreva para o e-mail do estúdio."
       }
-    ]
+    ],
+    "analyticsOn": "Este site usa o Cloudflare Web Analytics. Ele não usa cookies e não rastreia você entre sites. Ele informa, de forma agregada, as visualizações de página e a localização geral."
   },
   "notFound": {
     "meta": {
@@ -712,5 +713,73 @@
     "text": "A página que você procura não existe ou mudou de endereço.",
     "home": "Voltar à página inicial",
     "pt": "This page does not exist. View the English site."
+  },
+  "journal": {
+    "meta": {
+      "title": "Artigos | Maneda Design Studios",
+      "description": "Notas práticas sobre como começar um projeto residencial na Flórida Central: terreno, código, construtores e custo."
+    },
+    "hero": {
+      "label": "Artigos",
+      "title": "Notas sobre como projetar uma casa.",
+      "intro": "Respostas curtas e práticas para as perguntas que os proprietários fazem antes e durante um projeto."
+    },
+    "draftLabel": "Esboço",
+    "draftNote": "Este é um esboço. O artigo completo ainda não foi escrito.",
+    "back": "Todos os artigos",
+    "empty": "Ainda não há artigos.",
+    "read": "Ler",
+    "cta": {
+      "title": "Tem um projeto em mente?",
+      "text": "Conte-nos sobre o seu lote e o seu programa."
+    }
+  },
+  "resources": {
+    "meta": {
+      "title": "Checklist Gratuito: Antes de Contratar um Designer | Maneda Design Studios",
+      "description": "Um checklist gratuito para proprietários na Flórida Central que estão decidindo como contratar um designer para casa, ampliação ou reforma."
+    },
+    "hero": {
+      "label": "Recursos",
+      "title": "Antes de Contratar um Designer.",
+      "intro": "Um checklist para proprietários na Flórida Central. Use para comparar designers e se preparar para a primeira conversa."
+    },
+    "contents": {
+      "title": "O que o checklist cobre",
+      "items": [
+        "[PLACEHOLDER: seção 1 do checklist]",
+        "[PLACEHOLDER: seção 2 do checklist]",
+        "[PLACEHOLDER: seção 3 do checklist]"
+      ]
+    },
+    "form": {
+      "title": "Receba o checklist",
+      "name": "Nome",
+      "email": "E-mail",
+      "language": "Idioma",
+      "submit": "Quero o checklist",
+      "consent": "O seu e-mail é usado apenas para enviar o checklist.",
+      "privacy": "Leia a política de privacidade"
+    },
+    "file": "/resources/antes-de-contratar-um-designer.pdf"
+  },
+  "resourcesThankYou": {
+    "meta": {
+      "title": "Seu checklist | Maneda Design Studios",
+      "description": "Baixe o checklist."
+    },
+    "title": "Seu checklist está pronto.",
+    "text": "Baixe abaixo.",
+    "button": "Baixar o checklist (PDF)",
+    "file": "/resources/antes-de-contratar-um-designer.pdf",
+    "testNote": "Modo de teste: o formulário ainda não está conectado. Nada foi enviado.",
+    "next": "Pronto para conversar sobre o seu projeto?"
+  },
+  "cities": {
+    "title": "Projeto residencial em {city}",
+    "jurisdiction": "Notas sobre a jurisdição local",
+    "projects": "Projetos típicos",
+    "related": "Trabalhos relacionados",
+    "label": "Área de atendimento"
   }
 }

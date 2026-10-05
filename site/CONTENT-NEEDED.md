@@ -33,6 +33,17 @@ Every placeholder on the site is marked `[PLACEHOLDER: ...]` in the source and s
 | Privacy policy date and legal review | `privacy` | Open |
 | Web3Forms access key | `site.json` | Open. Form stays in test mode until set. |
 
+## Needed for Phase 3 content
+
+| Item | Where it goes | Status |
+|---|---|---|
+| Checklist PDF in English and Portuguese | `public/resources/` | Open. Placeholder files are in place. |
+| The three checklist section titles | `resources.contents.items` | Open |
+| Journal article: start a custom home (4 sections) | `src/content/journal/en` and `pt` | Open. Currently an outline. |
+| Three more journal topics (site analysis, working with a builder, design cost vs construction cost) | `src/content/journal/` | Open. Not started. |
+| Real jurisdiction notes for each city before any city page is published | `src/content/cities/` | Open. No city pages exist. |
+| Decision on follow-up emails for the checklist | n/a | Open |
+
 ## Coming in later phases
 
 Hero photo, project photos and drawings, project approvals (`clientApproved`), portrait, real jurisdictions, typical durations per phase, FAQ answers, the checklist PDF content.

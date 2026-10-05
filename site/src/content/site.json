@@ -23,5 +23,12 @@
   "replyWindow": {
     "en": "[PLACEHOLDER: within 1 business day, confirm with Manolo]",
     "pt": "[PLACEHOLDER: em até 1 dia útil, confirmar com o Manolo]"
+  },
+  "indexing": false,
+  "indexingNote": "Keep false until launch. While false, every page is marked noindex and robots.txt blocks crawlers.",
+  "analytics": {
+    "provider": "cloudflare-web-analytics",
+    "enabled": false,
+    "token": ""
   }
 }

@@ -2,7 +2,7 @@
 import site from '../content/site.json';
 import { getLang, isPlaceholder, markPlaceholders, pick, routeFor, t } from '../i18n/utils';
 const lang = getLang(Astro.url.pathname);
-const items = ['services', 'work', 'process', 'about', 'contact'] as const;
+const items = ['services', 'work', 'process', 'about', 'contact', 'journal', 'resources'] as const;
 const email = site.email;
 const year = new Date().getFullYear();
 const link = 'inline-flex min-h-[var(--tap)] items-center no-underline hover:underline decoration-gold underline-offset-[0.4em] [overflow-wrap:anywhere]';

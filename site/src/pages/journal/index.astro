@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import JournalIndex from '../../components/JournalIndex.astro';
+import { getLang, getPage } from '../../i18n/utils';
+const lang = getLang(Astro.url.pathname);
+const meta = getPage(lang).journal.meta;
+---
+
+<BaseLayout title={meta.title} description={meta.description}>
+  <JournalIndex />
+</BaseLayout>

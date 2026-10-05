@@ -1,0 +1,26 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import JournalPost from '../../../components/JournalPost.astro';
+import { articleSchema } from '../../../lib/schema';
+import { hasPlaceholder } from '../../../lib/journal';
+import { getLang, routeFor } from '../../../i18n/utils';
+
+export async function getStaticPaths() {
+  const all = await getCollection('journal');
+  return all.filter((p) => p.id.startsWith('pt/')).map((entry) => ({ params: { slug: entry.id.split('/')[1] }, props: { entry } }));
+}
+const { entry } = Astro.props;
+const lang = getLang(Astro.url.pathname);
+const unfinished = entry.data.draft || hasPlaceholder(entry.data) || hasPlaceholder(entry.body);
+const url = `${routeFor(lang, 'journal')}${Astro.params.slug}/`;
+---
+
+<BaseLayout
+  title={`${entry.data.title} | Maneda Design Studios`}
+  description={entry.data.description}
+  noindex={unfinished}
+  schema={unfinished ? [] : [articleSchema(lang, entry.data, url)]}
+>
+  <JournalPost entry={entry} />
+</BaseLayout>

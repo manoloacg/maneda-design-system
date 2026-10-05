@@ -1,0 +1,28 @@
+---
+import { render } from 'astro:content';
+import Section from './Section.astro';
+import Button from './Button.astro';
+import { getLang, getPage, routeFor, t } from '../i18n/utils';
+
+const { entry } = Astro.props;
+const lang = getLang(Astro.url.pathname);
+const page = getPage(lang).journal;
+const { Content } = await render(entry);
+---
+
+<article>
+  <header style="padding-top:var(--section-space)">
+    <div class="container-site reveal">
+      <p class="mb-6"><a href={routeFor(lang, 'journal')} class="sheet-label text-[var(--color-text-muted)]">&larr; {page.back}</a></p>
+      {entry.data.draft && <p class="sheet-label mb-4 inline-block bg-[var(--color-placeholder-flag)] px-2 py-1 text-obsidian">{page.draftLabel}</p>}
+      <h1 class="max-w-[22ch]">{entry.data.title}</h1>
+      <p class="lead mt-6 max-w-[60ch]">{entry.data.description}</p>
+    </div>
+  </header>
+  <div class="container-site" style="padding-block:clamp(2rem, 1rem + 4vw, 5rem)">
+    <div class="prose-site"><Content /></div>
+  </div>
+  <Section tone="alt" title={page.cta.title} intro={page.cta.text}>
+    <Button href={routeFor(lang, 'contact')}>{t(lang, 'cta.requestQuote')}</Button>
+  </Section>
+</article>

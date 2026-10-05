@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ResourcesThankYouPage from '../../../components/ResourcesThankYouPage.astro';
+import { getLang, getPage } from '../../../i18n/utils';
+const lang = getLang(Astro.url.pathname);
+const meta = getPage(lang).resourcesThankYou.meta;
+---
+
+<BaseLayout title={meta.title} description={meta.description} noindex>
+  <ResourcesThankYouPage />
+</BaseLayout>

@@ -19,9 +19,12 @@ interface Props {
   description?: string;
   image?: string;
   noindex?: boolean;
+  schema?: object[];
 }
 const lang = getLang(Astro.url.pathname);
-const { title = t(lang, 'meta.defaultTitle'), description = t(lang, 'meta.defaultDescription'), image = '/images/og-default.png', noindex = false } = Astro.props;
+const { title = t(lang, 'meta.defaultTitle'), description = t(lang, 'meta.defaultDescription'), image = '/images/og-default.png', noindex = false, schema = [] } = Astro.props;
+// Until launch, every page is noindex. Flip "indexing" in site.json when the site goes live.
+const hidden = noindex || !site.indexing;
 const path = Astro.url.pathname;
 const abs = (p: string) => new URL(p, Astro.site).href;
 const canonical = abs(path);
@@ -39,7 +42,11 @@ const og = { en: 'en_US', pt: 'pt_BR' } as const;
     <link rel="alternate" hreflang="en" href={abs(alternatePath(path, 'en'))} />
     <link rel="alternate" hreflang="pt-BR" href={abs(alternatePath(path, 'pt'))} />
     <link rel="alternate" hreflang="x-default" href={abs(alternatePath(path, 'en'))} />
-    {noindex && <meta name="robots" content="noindex, nofollow" />}
+    {hidden && <meta name="robots" content="noindex, nofollow" />}
+    {schema.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
+    {site.analytics.enabled && site.analytics.token && (
+      <script is:inline defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon={JSON.stringify({ token: site.analytics.token })}></script>
+    )}
 
     <meta property="og:site_name" content={site.name} />
     <meta property="og:type" content="website" />

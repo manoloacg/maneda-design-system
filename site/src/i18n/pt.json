@@ -13,7 +13,9 @@
     "primary": "Principal",
     "menuOpen": "Menu",
     "menuClose": "Fechar",
-    "home": "Maneda Design Studios, página inicial"
+    "home": "Maneda Design Studios, página inicial",
+    "journal": "Artigos",
+    "resources": "Recursos"
   },
   "cta": {
     "requestQuote": "Solicitar orçamento",

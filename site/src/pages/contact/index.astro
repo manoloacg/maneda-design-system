@@ -2,9 +2,11 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ContactPage from '../../components/ContactPage.astro';
 import { getLang, getPage } from '../../i18n/utils';
-const meta = getPage(getLang(Astro.url.pathname)).contact.meta;
+import { studioSchema } from '../../lib/schema';
+const lang = getLang(Astro.url.pathname);
+const meta = getPage(lang).contact.meta;
 ---
 
-<BaseLayout title={meta.title} description={meta.description}>
+<BaseLayout title={meta.title} description={meta.description} schema={[studioSchema(lang)]}>
   <ContactPage />
 </BaseLayout>

@@ -73,6 +73,10 @@
     line-height: var(--leading-relaxed);
     color: var(--color-text-muted);
   }
+  .prose-site { max-width: 65ch; }
+  .prose-site h2 { font-size: var(--text-h3); margin: 3rem 0 1rem; }
+  .prose-site p { margin-bottom: 1rem; }
+  .prose-site ul { list-style: disc; padding-left: 1.25rem; margin-bottom: 1rem; }
   .tone-dark {
     background: var(--obsidian);
     color: var(--ivory);

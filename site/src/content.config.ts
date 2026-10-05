@@ -30,4 +30,37 @@ const projects = defineCollection({
     }),
 });
 
-export const collections = { projects };
+/* Journal posts: src/content/journal/en/<slug>.md and pt/<slug>.md (same slug in both).
+   draft: true marks an outline. Drafts are noindex and left out of the sitemap and structured data. */
+const journal = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/journal' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    date: z.string().optional(), // YYYY-MM-DD, required before a post is published
+    draft: z.boolean().default(true),
+  }),
+});
+
+/* City pages: src/content/cities/en/<slug>.md and pt/<slug>.md.
+   A page is only built when published: true. Publishing requires real, distinct local content,
+   so any leftover [PLACEHOLDER] text makes the build fail on purpose. */
+const cities = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/cities' }),
+  schema: z
+    .object({
+      city: z.string(),
+      county: z.string(),
+      published: z.boolean().default(false),
+      intro: z.string(),
+      jurisdictionNotes: z.array(z.string()).min(2),
+      typicalProjects: z.array(z.string()).min(2),
+    })
+    .superRefine((v, ctx) => {
+      if (v.published && JSON.stringify(v).includes('[PLACEHOLDER')) {
+        ctx.addIssue({ code: 'custom', message: 'A published city page cannot contain [PLACEHOLDER] text.' });
+      }
+    }),
+});
+
+export const collections = { projects, journal, cities };

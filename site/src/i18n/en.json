@@ -13,7 +13,9 @@
     "primary": "Primary",
     "menuOpen": "Menu",
     "menuClose": "Close",
-    "home": "Maneda Design Studios, home"
+    "home": "Maneda Design Studios, home",
+    "journal": "Journal",
+    "resources": "Resources"
   },
   "cta": {
     "requestQuote": "Request a quote",

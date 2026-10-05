@@ -1,0 +1,25 @@
+---
+import Section from './Section.astro';
+import Button from './Button.astro';
+import { fill, getLang, getPage, routeFor, t } from '../i18n/utils';
+
+const { entry } = Astro.props;
+const d = entry.data;
+const lang = getLang(Astro.url.pathname);
+const C = getPage(lang).cities;
+const li = 'border-b border-[var(--color-rule)] py-4';
+---
+
+<Section titleTag="h1" label={`${C.label} · ${d.county}`} title={fill(C.title, { city: d.city })} intro={d.intro} />
+
+<Section tone="alt" title={C.jurisdiction}>
+  <ul class="max-w-[48rem] border-t border-[var(--color-rule-strong)]">{d.jurisdictionNotes.map((n: string) => <li class={li}>{n}</li>)}</ul>
+</Section>
+
+<Section title={C.projects}>
+  <ul class="max-w-[48rem] border-t border-[var(--color-rule-strong)]">{d.typicalProjects.map((n: string) => <li class={li}>{n}</li>)}</ul>
+  <p class="mt-12 flex flex-wrap gap-4">
+    <Button href={routeFor(lang, 'contact')}>{t(lang, 'cta.requestQuote')}</Button>
+    <Button href={routeFor(lang, 'work')} variant="secondary">{C.related}</Button>
+  </p>
+</Section>

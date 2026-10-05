@@ -73,6 +73,11 @@ if (existsSync('dist')) {
         if (!new RegExp(`id="${hash}"`).test(target)) fail(`missing anchor #${hash} for ${url} in ${page}`);
       }
     }
+    for (const m of text.matchAll(/<script type="application\/ld\+json">([^<]*)<\/script>/g)) {
+      try { JSON.parse(m[1]); } catch { fail(`invalid JSON-LD in ${page}`); }
+      if (m[1].includes('PLACEHOLDER')) fail(`[PLACEHOLDER] inside JSON-LD in ${page}`);
+      if (/streetAddress|telephone/.test(m[1])) fail(`address or phone in JSON-LD in ${page}`);
+    }
     const h1 = (text.match(/<h1[\s>]/g) || []).length;
     if (h1 !== 1 && !page.includes('404')) fail(`${h1} h1 tags in ${page}`);
     for (const m of text.matchAll(/<img\b[^>]*>/g)) if (!/\balt=/.test(m[0])) fail(`img without alt in ${page}`);

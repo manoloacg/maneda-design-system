@@ -2,7 +2,9 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CaseStudy from '../../components/CaseStudy.astro';
-import { fill, getLang, getPage } from '../../i18n/utils';
+import { caseStudySchema } from '../../lib/schema';
+import { hasPlaceholder } from '../../lib/journal';
+import { fill, getLang, getPage, routeFor } from '../../i18n/utils';
 
 export async function getStaticPaths() {
   const all = await getCollection('projects');
@@ -13,8 +15,10 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const lang = getLang(Astro.url.pathname);
 const description = fill(getPage(lang).caseStudy.metaDescription, { title: entry.data.title });
+const unfinished = hasPlaceholder(entry.data);
+const url = `${routeFor(lang, 'work')}${Astro.params.slug}/`;
 ---
 
-<BaseLayout title={`${entry.data.title} | Maneda Design Studios`} description={description}>
+<BaseLayout noindex={unfinished} schema={unfinished ? [] : [caseStudySchema(lang, entry.data, url)]} title={`${entry.data.title} | Maneda Design Studios`} description={description}>
   <CaseStudy entry={entry} />
 </BaseLayout>

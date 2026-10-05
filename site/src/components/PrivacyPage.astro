@@ -1,8 +1,10 @@
 ---
+import site from '../content/site.json';
 import { getLang, getPage, markPlaceholders } from '../i18n/utils';
 
 const lang = getLang(Astro.url.pathname);
 const page = getPage(lang).privacy;
+const analyticsTitle = page.sections[3].title;
 ---
 
 <section style="padding-block:var(--section-space)">
@@ -11,7 +13,7 @@ const page = getPage(lang).privacy;
     <p class="mt-4 text-[var(--color-text-muted)]" set:html={markPlaceholders(page.updated)} />
     <p class="mt-2" set:html={markPlaceholders(page.review)} />
     {
-      page.sections.map((s) => (
+      page.sections.map((s) => s.title === analyticsTitle ? { ...s, text: site.analytics.enabled ? page.analyticsOn : s.text } : s).map((s) => (
         <div class="mt-10 border-t border-[var(--color-rule-strong)] pt-6">
           <h2 class="mb-3 text-[1.6rem]">{s.title}</h2>
           <p class="text-[var(--color-text-muted)]">{s.text}</p>

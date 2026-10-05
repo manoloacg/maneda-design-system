@@ -1,0 +1,29 @@
+---
+import Section from './Section.astro';
+import { getPosts } from '../lib/journal';
+import { getLang, getPage, routeFor } from '../i18n/utils';
+
+const lang = getLang(Astro.url.pathname);
+const page = getPage(lang).journal;
+const posts = await getPosts(lang);
+---
+
+<Section titleTag="h1" label={page.hero.label} title={page.hero.title} intro={page.hero.intro}>
+  {
+    posts.length === 0 ? (
+      <p class="text-[var(--color-text-muted)]">{page.empty}</p>
+    ) : (
+      <ul class="border-t border-[var(--color-rule-strong)]">
+        {posts.map((p) => (
+          <li class="reveal border-b border-[var(--color-rule)] py-8">
+            <a href={`${routeFor(lang, 'journal')}${p.slug}/`} class="grid grid-cols-12 gap-x-6 gap-y-3 no-underline">
+              <h2 class="col-span-12 text-[var(--text-h3)] md:col-span-6">{p.data.title}</h2>
+              <p class="col-span-12 text-[var(--color-text-muted)] md:col-span-5">{p.data.description}</p>
+              <p class="sheet-label col-span-12 md:col-span-1 md:text-right">{p.data.draft ? page.draftLabel : page.read}</p>
+            </a>
+          </li>
+        ))}
+      </ul>
+    )
+  }
+</Section>

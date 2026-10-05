@@ -1,0 +1,96 @@
+/* Structured data (JSON-LD). Builders return plain objects that BaseLayout prints.
+   Rules: no street address, no personal phone, and never any [PLACEHOLDER] text. */
+import site from '../content/site.json';
+import services from '../content/services.json';
+import pricing from '../content/pricing.json';
+import { getPage, isPlaceholder, pick, routeFor, t, type Lang } from '../i18n/utils';
+
+export const abs = (path: string) => new URL(path, site.url).href;
+export const stripPlaceholders = (text: string) => text.replace(/\s*\[PLACEHOLDER[^\]]*\]/g, '').trim();
+const ctx = 'https://schema.org';
+const studioId = () => abs('/#studio');
+
+export function studioSchema(lang: Lang) {
+  return {
+    '@context': ctx,
+    '@type': 'ProfessionalService',
+    '@id': studioId(),
+    name: site.name,
+    url: abs(routeFor(lang, 'home')),
+    description: t(lang, 'meta.defaultDescription'),
+    logo: abs('/images/logo/logo-horizontal-black.png'),
+    image: abs('/images/og-default.png'),
+    ...(isPlaceholder(site.email) ? {} : { email: site.email }),
+    areaServed: [
+      { '@type': 'AdministrativeArea', name: 'Central Florida' },
+      { '@type': 'City', name: 'Orlando' },
+    ],
+    knowsLanguage: ['en', 'pt-BR'],
+    founder: { '@type': 'Person', name: 'Manolo Castaneda', jobTitle: 'Architectural Designer' },
+    ...(site.social.instagram ? { sameAs: [site.social.instagram] } : {}),
+  };
+}
+
+export function servicesSchema(lang: Lang) {
+  const items = getPage(lang).services.items as Record<string, { what: string }>;
+  return services.services.map((s) => {
+    const offers =
+      s.pricing === 'consultations'
+        ? pricing.consultations.map((c) => ({
+            '@type': 'Offer',
+            name: pick(lang, c.duration),
+            price: c.amount,
+            priceCurrency: pricing.currency,
+          }))
+        : s.pricing === 'siteAnalysis'
+          ? {
+              '@type': 'Offer',
+              priceSpecification: { '@type': 'PriceSpecification', minPrice: pricing.siteAnalysis.from, priceCurrency: pricing.currency },
+            }
+          : undefined;
+    return {
+      '@context': ctx,
+      '@type': 'Service',
+      name: pick(lang, s.title),
+      description: stripPlaceholders(items[s.id].what),
+      url: `${abs(routeFor(lang, 'services'))}#${s.id}`,
+      provider: { '@id': studioId() },
+      areaServed: 'Central Florida',
+      ...(offers ? { offers } : {}),
+    };
+  });
+}
+
+export function faqSchema(items: { q: string; a: string }[]) {
+  const entities = items
+    .map((i) => ({ q: i.q, a: stripPlaceholders(i.a) }))
+    .filter((i) => i.a.length > 0)
+    .map((i) => ({ '@type': 'Question', name: i.q, acceptedAnswer: { '@type': 'Answer', text: i.a } }));
+  return { '@context': ctx, '@type': 'FAQPage', mainEntity: entities };
+}
+
+export function caseStudySchema(lang: Lang, d: { title: string; brief: string; context: string; outcome: string; year: string }, url: string) {
+  return {
+    '@context': ctx,
+    '@type': 'CreativeWork',
+    name: d.title,
+    url: abs(url),
+    description: d.brief,
+    creator: { '@id': studioId() },
+    inLanguage: lang === 'pt' ? 'pt-BR' : 'en',
+  };
+}
+
+export function articleSchema(lang: Lang, d: { title: string; description: string; date?: string }, url: string) {
+  return {
+    '@context': ctx,
+    '@type': 'Article',
+    headline: d.title,
+    description: d.description,
+    url: abs(url),
+    ...(d.date ? { datePublished: d.date } : {}),
+    author: { '@type': 'Person', name: 'Manolo Castaneda' },
+    publisher: { '@id': studioId() },
+    inLanguage: lang === 'pt' ? 'pt-BR' : 'en',
+  };
+}

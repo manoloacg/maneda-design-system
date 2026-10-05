@@ -1,0 +1,64 @@
+---
+import Section from './Section.astro';
+import Button from './Button.astro';
+import FormField from './FormField.astro';
+import site from '../content/site.json';
+import { getLang, getPage, isPlaceholder, markPlaceholders, routeFor } from '../i18n/utils';
+
+const lang = getLang(Astro.url.pathname);
+const page = getPage(lang);
+const R = page.resources;
+const F = page.contact.form;
+const testMode = isPlaceholder(site.form.accessKey);
+---
+
+<Section titleTag="h1" label={R.hero.label} title={R.hero.title} intro={R.hero.intro} />
+
+<section class="pb-[var(--section-space)]">
+  <div class="container-site grid grid-cols-12 gap-y-12 md:gap-x-10">
+    <div class="reveal col-span-12 md:col-span-6">
+      <h2 class="mb-6 text-[var(--text-h3)]">{R.contents.title}</h2>
+      <ul class="border-t border-[var(--color-rule-strong)]">
+        {R.contents.items.map((i) => <li class="border-b border-[var(--color-rule)] py-4" set:html={markPlaceholders(i)} />)}
+      </ul>
+    </div>
+
+    <form
+      id="lead"
+      class="col-span-12 grid min-w-0 gap-5 bg-[var(--color-bg-alt)] p-6 md:col-span-6 md:p-10"
+      method="post"
+      action={site.form.endpoint}
+      novalidate
+      data-endpoint={site.form.endpoint}
+      data-thanks={routeFor(lang, 'resourcesThankYou')}
+      data-test={String(testMode)}
+      data-required={F.errorRequired}
+      data-email={F.errorEmail}
+      data-send={F.errorSend}
+      data-fix={F.fixErrors}
+      data-sending={F.sending}
+    >
+      <h2 class="text-[var(--text-h3)]">{R.form.title}</h2>
+      <input type="hidden" name="access_key" value={site.form.accessKey} />
+      <input type="hidden" name="subject" value="Checklist download request, Maneda Design Studios website" />
+      <input type="hidden" name="from_name" value="Maneda Design Studios website" />
+      <input type="hidden" name="page_language" value={lang} />
+      <input type="checkbox" name="botcheck" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none" />
+      <FormField name="name" label={R.form.name} autocomplete="name" />
+      <FormField name="email" label={R.form.email} type="email" required autocomplete="email" />
+      <FormField name="language" label={R.form.language} type="select" options={F.languageOptions} value={lang} required />
+      <p class="text-sm text-[var(--color-text-muted)]">
+        {R.form.consent} <a href={routeFor(lang, 'privacy')} class="underline decoration-gold">{R.form.privacy}</a>.
+      </p>
+      <div>
+        <p data-status class="mb-4 min-h-[1.5rem] text-[#9B1C1C]" role="alert"></p>
+        <Button type="submit">{R.form.submit}</Button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<script>
+  import { initForm } from '../lib/form';
+  initForm(document.getElementById('lead') as HTMLFormElement);
+</script>
