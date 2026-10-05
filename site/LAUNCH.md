@@ -44,7 +44,7 @@ You can see the real site online before it is public.
 3. Use these settings:
    - Framework preset: Astro
    - Root directory: `site`
-   - Build command: `npm run build`
+   - Build command: `npm run build:safe` (it builds, then runs the checks, so a broken edit can never go live)
    - Build output directory: `dist`
    - Environment variable: `NODE_VERSION` = `22`
 4. Cloudflare builds the branch and gives you a `.pages.dev` address.

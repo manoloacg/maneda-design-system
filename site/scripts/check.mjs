@@ -53,9 +53,15 @@ for (const [a, b] of [['src/i18n/en.json', 'src/i18n/pt.json'], ['src/content/pa
   B.filter((k) => !A.includes(k)).forEach((k) => fail(`missing in EN: ${k}`));
 }
 
+// 2b. The visual editor settings must match the content files, or saving could drop fields
+{
+  const { build } = await import('./gen-cms-config.mjs');
+  if (readFileSync('public/admin/config.yml', 'utf8') !== build()) fail('public/admin/config.yml is out of date. Run: npm run cms:config');
+}
+
 // 3. Internal links in the built site
 if (existsSync('dist')) {
-  const pages = walk('dist').filter((f) => f.endsWith('.html'));
+  const pages = walk('dist').filter((f) => f.endsWith('.html') && !f.startsWith('dist/admin/'));
   const ids = new Map();
   const html = new Map(pages.map((p) => [p, readFileSync(p, 'utf8')]));
   const toFile = (url) => {

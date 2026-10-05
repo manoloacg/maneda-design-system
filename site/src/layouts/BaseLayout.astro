@@ -28,6 +28,8 @@ const hidden = noindex || !site.indexing || site.showPlaceholders;
 const path = Astro.url.pathname;
 const abs = (p: string) => new URL(p, Astro.site).href;
 const canonical = abs(path);
+// Strict content policy for public pages. If you add a new outside service, add its address here.
+const csp = "default-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://api.web3forms.com https://cloudflareinsights.com; form-action 'self' https://api.web3forms.com; base-uri 'self'";
 const og = { en: 'en_US', pt: 'pt_BR' } as const;
 ---
 
@@ -36,6 +38,7 @@ const og = { en: 'en_US', pt: 'pt_BR' } as const;
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {import.meta.env.PROD && <meta http-equiv="Content-Security-Policy" content={csp} />}
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />

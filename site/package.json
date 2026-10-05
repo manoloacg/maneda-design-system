@@ -8,7 +8,9 @@
     "build": "astro build",
     "preview": "astro preview",
     "check": "node scripts/check.mjs",
-    "launch-check": "node scripts/launch-check.mjs"
+    "launch-check": "node scripts/launch-check.mjs",
+    "cms:config": "node scripts/gen-cms-config.mjs",
+    "build:safe": "astro build && node scripts/check.mjs"
   },
   "dependencies": {
     "@fontsource/cormorant-garamond": "^5.3.0",

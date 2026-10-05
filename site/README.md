@@ -22,6 +22,10 @@ Written for a non-developer. This file grows as the build moves through its phas
 | Portuguese interface text | `src/i18n/pt.json` |
 | Logos and images | `public/images/` |
 
+## The visual editor (start here)
+
+The easiest way to edit is the form-based editor at `/admin` on your site. See `EDITING.md` for the one-time setup and how to use it.
+
 ## How to edit text
 
 - Page copy (home, services, process, about, contact, privacy): `src/content/pages/en.json` (English) and `src/content/pages/pt.json` (Portuguese). The two files have the same structure. Edit one line in one, then the matching line in the other.
