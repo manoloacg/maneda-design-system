@@ -290,6 +290,7 @@
       "items": [
         "Every engagement is confirmed in writing before work begins.",
         "Each project gets a written fixed fee at the proposal stage, set by phase, so the cost is known before work starts.",
+        "Each phase fee is invoiced in two parts: half to start the phase and half on delivery. Invoices are due within 7 days, and the next phase starts when the invoice is paid.",
         "Two rounds of revisions are included in each phase. Added rounds are billed at an hourly rate.",
         "The schedule pauses while the project waits on your approvals or information. Durations assume approvals within 5 business days.",
         "Fees cover design services only. Construction, permit fees, furnishings, contractor costs, and engineering are separate. Engineers and other consultants are hired and paid by the owner under separate contracts.",
@@ -443,7 +444,7 @@
         },
         {
           "q": "How does payment work?",
-          "a": "Consultations and site analysis reports have fixed prices. Each project gets a written fixed fee at the proposal stage, set by phase, so the cost is known before work starts. [PLACEHOLDER: deposit and payment schedule]"
+          "a": "Each project gets a written fixed fee at the proposal stage, set by phase, so the cost is known before work starts. Each phase fee is invoiced in two parts: half to start the phase and half on delivery. The next phase starts when the invoice is paid. Invoices are due within 7 days. Consultations, site analysis reports, and site visits are paid in advance."
         },
         {
           "q": "Where do you work?",

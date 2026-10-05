@@ -290,6 +290,7 @@
       "items": [
         "Toda contratação é confirmada por escrito antes do início do trabalho.",
         "Cada projeto recebe um honorário fixo por escrito na fase de proposta, definido por fase, para que o custo seja conhecido antes de o trabalho começar.",
+        "O honorário de cada fase é cobrado em duas partes: metade para iniciar a fase e metade na entrega. As faturas vencem em até 7 dias, e a fase seguinte começa quando a fatura é paga.",
         "Duas rodadas de revisão estão incluídas em cada fase. Rodadas adicionais são cobradas por hora.",
         "O cronograma pausa enquanto o projeto espera por aprovações ou informações suas. Os prazos supõem aprovações em até 5 dias úteis.",
         "Os honorários cobrem apenas serviços de projeto. Obra, taxas de aprovação, mobiliário, custos do construtor e engenharia são separados. Engenheiros e outros consultores são contratados e pagos pelo proprietário, em contratos separados.",
@@ -443,7 +444,7 @@
         },
         {
           "q": "Como funciona o pagamento?",
-          "a": "Consultorias e relatórios de análise de terreno têm preço fixo. Cada projeto recebe um honorário fixo por escrito na fase de proposta, definido por fase, para que o custo seja conhecido antes de o trabalho começar. [PLACEHOLDER: entrada e cronograma de pagamento]"
+          "a": "Cada projeto recebe um honorário fixo por escrito na fase de proposta, definido por fase, para que o custo seja conhecido antes de o trabalho começar. O honorário de cada fase é cobrado em duas partes: metade para iniciar a fase e metade na entrega. A fase seguinte começa quando a fatura é paga. As faturas vencem em até 7 dias. Consultorias, relatórios de análise de terreno e visitas ao terreno são pagos adiantado."
         },
         {
           "q": "Onde vocês atuam?",
