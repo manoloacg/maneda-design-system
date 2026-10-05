@@ -68,7 +68,7 @@ const priceFig = 'font-[family-name:var(--font-display)] text-[1.6rem] leading-n
 <nav
   id="service-nav"
   aria-label={L.jump}
-  class="sticky top-[var(--header-h)] z-40 border-y border-[var(--color-rule)] bg-[var(--color-bg)]/95 backdrop-blur"
+  class="sticky top-[var(--header-h)] z-40 border-y border-[var(--color-rule)] bg-[var(--color-bg)]"
   style="height:var(--subnav-h)"
 >
   <ul class="container-site flex h-full items-center gap-2 overflow-x-auto whitespace-nowrap">
@@ -263,16 +263,24 @@ const priceFig = 'font-[family-name:var(--font-display)] text-[1.6rem] leading-n
 
 <script>
   // Highlight the quick-jump link for the section on screen.
+  // Never call scrollIntoView here: on a pinned bar it drags the whole page back up while you scroll.
+  const nav = document.getElementById('service-nav');
+  const list = nav?.querySelector<HTMLElement>('ul');
   const links = document.querySelectorAll<HTMLAnchorElement>('#service-nav a[data-target]');
   const sections = document.querySelectorAll<HTMLElement>('[data-service-section]');
-  if ('IntersectionObserver' in window) {
+  let current = '';
+  if ('IntersectionObserver' in window && list) {
     const io = new IntersectionObserver(
       (entries) =>
         entries.forEach((e) => {
-          if (!e.isIntersecting) return;
-          links.forEach((a) => a.setAttribute('aria-current', String(a.dataset.target === e.target.id)));
-          const active = document.querySelector<HTMLAnchorElement>('#service-nav a[aria-current="true"]');
-          active?.scrollIntoView({ inline: 'center', block: 'nearest' });
+          if (!e.isIntersecting || e.target.id === current) return;
+          current = e.target.id;
+          links.forEach((a) => a.setAttribute('aria-current', String(a.dataset.target === current)));
+          // On narrow screens the bar scrolls sideways. Move only that bar, never the page.
+          const active = list.querySelector<HTMLElement>('a[aria-current="true"]');
+          if (active && list.scrollWidth > list.clientWidth) {
+            list.scrollTo({ left: active.offsetLeft - (list.clientWidth - active.offsetWidth) / 2, behavior: 'auto' });
+          }
         }),
       { rootMargin: '-40% 0px -55% 0px' }
     );
