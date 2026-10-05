@@ -372,7 +372,7 @@
         "happens": "You send the inquiry form. We review it and reply, and we talk through the project, the lot, and the budget range.",
         "provide": "Project description, site location, target start, and files or photos if you have them.",
         "get": "A clear read on fit, and the next step.",
-        "duration": "[PLACEHOLDER: typical duration]"
+        "duration": "Reply within 1 business day. Scoping call within 3 business days."
       },
       {
         "title": "Proposal and agreement",
@@ -380,7 +380,7 @@
         "happens": "We send a written proposal with scope, deliverables, and fee. You review it and sign the agreement.",
         "provide": "Questions, decisions, and the signed agreement.",
         "get": "A written scope, a deliverables list, and a fee.",
-        "duration": "[PLACEHOLDER: typical duration]"
+        "duration": "Written proposal within 5 business days of the call. The schedule starts when the agreement is signed."
       },
       {
         "title": "Site and code review",

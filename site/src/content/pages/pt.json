@@ -372,7 +372,7 @@
         "happens": "Você envia o formulário. Analisamos, respondemos e conversamos sobre o projeto, o lote e a faixa de orçamento.",
         "provide": "Descrição do projeto, localização do terreno, prazo desejado e arquivos ou fotos, se tiver.",
         "get": "Uma leitura clara de adequação e o próximo passo.",
-        "duration": "[PLACEHOLDER: duração típica]"
+        "duration": "Resposta em até 1 dia útil. Conversa de escopo em até 3 dias úteis."
       },
       {
         "title": "Proposta e contrato",
@@ -380,7 +380,7 @@
         "happens": "Enviamos uma proposta escrita com escopo, entregas e honorários. Você analisa e assina o contrato.",
         "provide": "Dúvidas, decisões e o contrato assinado.",
         "get": "Escopo escrito, lista de entregas e honorários.",
-        "duration": "[PLACEHOLDER: duração típica]"
+        "duration": "Proposta por escrito em até 5 dias úteis após a conversa. O cronograma começa quando o contrato é assinado."
       },
       {
         "title": "Análise do terreno e do código",
