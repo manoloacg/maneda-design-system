@@ -1,8 +1,8 @@
 {
   "meta": {
     "siteName": "Maneda Design Studios",
-    "defaultTitle": "Maneda Design Studios | Residential design for Central Florida",
-    "defaultDescription": "Maneda Design Studios designs homes, additions, and interiors in Central Florida, and carries the design through to buildable drawings."
+    "defaultTitle": "Maneda Design Studios | Residential design from Orlando",
+    "defaultDescription": "Residential design from Orlando, Florida. Homes, additions, and interiors, carried through to buildable drawings. Projects across the United States."
   },
   "nav": {
     "services": "Services",
@@ -35,7 +35,7 @@
     "skip": "Skip to main content"
   },
   "footer": {
-    "about": "Maneda Design Studios is a residential design studio serving Central Florida.",
+    "about": "Maneda Design Studios is a residential design studio based in Orlando, Florida.",
     "seal": "Where a seal is required, drawings are reviewed and sealed by a licensed professional of record.",
     "serviceArea": "Service area",
     "email": "Email",
@@ -64,7 +64,7 @@
     "heading": "Questions"
   },
   "home": {
-    "headline": "Residential design for Central Florida.",
+    "headline": "Residential design, based in Orlando.",
     "subhead": "Maneda Design Studios designs homes, additions, and interiors, and carries the design through to buildable drawings."
   },
   "styleguide": {

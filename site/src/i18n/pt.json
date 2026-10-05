@@ -1,8 +1,8 @@
 {
   "meta": {
     "siteName": "Maneda Design Studios",
-    "defaultTitle": "Maneda Design Studios | Projeto residencial na Flórida Central",
-    "defaultDescription": "A Maneda Design Studios projeta casas, ampliações e interiores na Flórida Central e leva o projeto até o projeto executivo."
+    "defaultTitle": "Maneda Design Studios | Projeto residencial com base em Orlando",
+    "defaultDescription": "Projeto residencial com base em Orlando, Flórida. Casas, ampliações e interiores até o projeto executivo. Projetos em todos os Estados Unidos."
   },
   "nav": {
     "services": "Serviços",
@@ -35,7 +35,7 @@
     "skip": "Ir para o conteúdo principal"
   },
   "footer": {
-    "about": "A Maneda Design Studios é um estúdio de projeto residencial na Flórida Central.",
+    "about": "A Maneda Design Studios é um estúdio de projeto residencial com sede em Orlando, Flórida.",
     "seal": "Quando um selo é exigido, os desenhos são revisados e selados por um profissional licenciado responsável pelo projeto.",
     "serviceArea": "Área de atendimento",
     "email": "E-mail",
@@ -64,7 +64,7 @@
     "heading": "Perguntas"
   },
   "home": {
-    "headline": "Projeto residencial na Flórida Central.",
+    "headline": "Projeto residencial, com base em Orlando.",
     "subhead": "A Maneda Design Studios projeta casas, ampliações e interiores, e leva o projeto até os desenhos prontos para construir."
   },
   "styleguide": {

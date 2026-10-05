@@ -91,7 +91,7 @@ Do these only after you approve. None are set up.
 - Choose "service area business". You can hide your address from the public. Google may still ask for it to verify you.
 - Use the exact name "Maneda Design Studios".
 - Pick a business category from Google's list that describes design work. Do not choose the architect category. You are not a licensed architect.
-- Add services, the Central Florida service area, and the website address.
+- Add services and the website address. Google limits a profile's service area to places within about two hours' drive of your base, so check Google's current rules. Work outside that range is reached through the website, not the profile.
 - Add photos only of real MDS work.
 - Verification may need a video or a postcard. Follow what Google asks.
 

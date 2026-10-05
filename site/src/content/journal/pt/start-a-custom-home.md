@@ -1,5 +1,5 @@
 ---
-title: "Como começar um projeto de casa sob medida na Flórida Central"
+title: "Como começar um projeto de casa sob medida"
 description: "Um esboço em linguagem clara dos primeiros passos de um projeto de casa sob medida: o lote, o programa e as perguntas a resolver antes de começar o projeto."
 draft: true
 ---

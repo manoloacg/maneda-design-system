@@ -1,8 +1,8 @@
 {
   "home": {
     "meta": {
-      "title": "Projeto Residencial na Flórida Central | Maneda Design Studios",
-      "description": "A Maneda Design Studios projeta casas, ampliações e interiores na Flórida Central e leva o projeto até os desenhos prontos para construir."
+      "title": "Projeto Residencial com Base em Orlando | Maneda Design Studios",
+      "description": "Projeto residencial com base em Orlando, Flórida. Casas, ampliações e interiores até os desenhos prontos para construir. Projetos em todos os Estados Unidos."
     },
     "hero": {
       "alt": "Renderização 3D de uma residência branca de dois pavimentos com coberturas metálicas escuras, entrada em empena alta, ala com revestimento em pedra e garagem para três carros, vista a partir do pátio pavimentado e do gramado."
@@ -10,7 +10,7 @@
     "positioning": {
       "label": "O estúdio",
       "title": "As decisões de projeto vêm primeiro.",
-      "text": "Como a casa se posiciona no lote, como a luz e o ar circulam e como os ambientes se conectam são definidos antes de qualquer desenho para aprovação. Cada decisão é explicada em linguagem clara e verificada contra o código da Flórida. O projeto que você aprova é o projeto que será construído."
+      "text": "Como a casa se posiciona no lote, como a luz e o ar circulam e como os ambientes se conectam são definidos antes de qualquer desenho para aprovação. Cada decisão é explicada em linguagem clara e verificada contra o código que se aplica ao seu lote. O projeto que você aprova é o projeto que será construído."
     },
     "audience": {
       "label": "Para quem é",
@@ -18,7 +18,7 @@
       "items": [
         {
           "title": "Proprietários",
-          "text": "Você planeja uma casa sob medida, uma ampliação, uma reforma, uma área externa ou um barndominium na Flórida Central. Quer um designer que dê forma ao projeto, não só que desenhe."
+          "text": "Você planeja uma casa sob medida, uma ampliação, uma reforma, uma área externa ou um barndominium. Quer um designer que dê forma ao projeto, não só que desenhe."
         },
         {
           "title": "Clientes de língua portuguesa",
@@ -79,7 +79,7 @@
         },
         {
           "k": "Código",
-          "v": "Análise do código da Flórida e da prefeitura desde o primeiro croqui"
+          "v": "Análise do código e da jurisdição de cada terreno, desde o primeiro croqui"
         },
         {
           "k": "EN / PT",
@@ -105,7 +105,7 @@
   "services": {
     "meta": {
       "title": "Serviços | Maneda Design Studios",
-      "description": "Projeto residencial, design de interiores, análise de terreno, consultorias de projeto e projeto executivo para casas e ampliações na Flórida Central."
+      "description": "Projeto residencial, design de interiores, análise de terreno, consultorias de projeto e projeto executivo para casas e ampliações."
     },
     "hero": {
       "label": "Serviços",
@@ -127,7 +127,7 @@
     },
     "items": {
       "residential-design": {
-        "what": "Um designer trabalha com você do primeiro croqui até um projeto resolvido. Você recebe opções de estudo preliminar, estudos de volumetria e de planta, vistas 3D e uma explicação clara do motivo de cada decisão. O projeto é feito para o seu lote, o seu programa e o código da Flórida.",
+        "what": "Um designer trabalha com você do primeiro croqui até um projeto resolvido. Você recebe opções de estudo preliminar, estudos de volumetria e de planta, vistas 3D e uma explicação clara do motivo de cada decisão. O projeto é feito para o seu lote, o seu programa e o código que se aplica ao seu terreno.",
         "included": [
           "Análise do terreno e do programa",
           "Croquis de estudo preliminar",
@@ -151,7 +151,7 @@
           "Conjunto de desenvolvimento do projeto",
           "Direção de materiais e acabamentos"
         ],
-        "suits": "Proprietários que constroem ou reformam uma casa na Flórida Central e querem critério de projeto, não só desenhos."
+        "suits": "Proprietários que constroem ou reformam uma casa e querem critério de projeto, não só desenhos."
       },
       "interior-design": {
         "what": "Layout, acabamentos, intenção de iluminação e direção de materiais, resolvidos junto com a edificação. Os interiores são projetados como parte da planta, para que ambientes, luz e materiais funcionem juntos.",
@@ -265,7 +265,7 @@
   "work": {
     "meta": {
       "title": "Trabalhos | Maneda Design Studios",
-      "description": "Projetos residenciais na Flórida Central, com o programa, o contexto do terreno, as decisões de projeto e o resultado."
+      "description": "Projetos residenciais, com o programa, o contexto do terreno, as decisões de projeto e o resultado."
     },
     "hero": {
       "label": "Trabalhos",
@@ -395,7 +395,7 @@
         },
         {
           "q": "Quem sela os desenhos?",
-          "a": "Quando um selo é exigido, os desenhos são revisados e selados por um profissional licenciado responsável pelo projeto. [PLACEHOLDER: como o profissional responsável é contratado e cobrado]"
+          "a": "Quando um selo é exigido, os desenhos são revisados e selados por um profissional licenciado responsável pelo projeto. [PLACEHOLDER: como o profissional responsável é contratado e cobrado, inclusive em projetos fora da Flórida]"
         },
         {
           "q": "Quantas revisões estão incluídas?",
@@ -411,7 +411,7 @@
         },
         {
           "q": "Onde vocês atuam?",
-          "a": "Região metropolitana de Orlando e Flórida Central. [PLACEHOLDER: confirmar os condados atendidos]"
+          "a": "Com base em Orlando, Flórida. Projetos por todos os Estados Unidos. [PLACEHOLDER: confirmar os estados e jurisdições atendidos e como funciona a análise do código local fora da Flórida]"
         },
         {
           "q": "Podemos trabalhar em português?",
@@ -435,7 +435,7 @@
   "about": {
     "meta": {
       "title": "Sobre | Maneda Design Studios",
-      "description": "Manolo Castaneda é designer de arquitetura, com mais de 10 anos em projetos multifamiliares e de varejo, baseado na Flórida Central e bilíngue em inglês e português."
+      "description": "Manolo Castaneda, designer de arquitetura. Mais de 10 anos em projetos multifamiliares e de varejo. Baseado em Orlando, Flórida. Bilíngue em inglês e português."
     },
     "hero": {
       "label": "Sobre",
@@ -444,8 +444,8 @@
       "portraitNote": "Retrato: Manolo, em um ambiente arquitetônico"
     },
     "story": [
-      "Manolo Castaneda é designer de arquitetura, com mais de 10 anos de experiência em projetos multifamiliares e de varejo. Estudou arquitetura no Brasil e nos Estados Unidos, com formação pela Universidade Católica de Brasília e pelo NJIT. É bilíngue em inglês e português do Brasil e trabalha a partir da Flórida Central.",
-      "Ele projeta a partir do terreno e de como as pessoas vivem em uma edificação: espaço, luz, circulação e o uso de cada ambiente. Um projeto só está pronto quando pode ser aprovado e construído, por isso o código da Flórida e as regras de cada prefeitura entram no processo desde o primeiro croqui. Conhecer o código é o que permite que um projeto seja construído. Faz parte do trabalho, não é um serviço separado."
+      "Manolo Castaneda é designer de arquitetura, com mais de 10 anos de experiência em projetos multifamiliares e de varejo. Estudou arquitetura no Brasil e nos Estados Unidos, com formação pela Universidade Católica de Brasília e pelo NJIT. É bilíngue em inglês e português do Brasil e é baseado em Orlando, Flórida.",
+      "Ele projeta a partir do terreno e de como as pessoas vivem em uma edificação: espaço, luz, circulação e o uso de cada ambiente. Um projeto só está pronto quando pode ser aprovado e construído, por isso o código local e as regras de cada prefeitura entram no processo desde o primeiro croqui. Conhecer o código é o que permite que um projeto seja construído. Faz parte do trabalho, não é um serviço separado."
     ],
     "values": {
       "label": "O que eu valorizo",
@@ -718,7 +718,7 @@
   "journal": {
     "meta": {
       "title": "Artigos | Maneda Design Studios",
-      "description": "Notas práticas sobre como começar um projeto residencial na Flórida Central: terreno, código, construtores e custo."
+      "description": "Notas práticas sobre como começar um projeto residencial: terreno, código, construtores e custo."
     },
     "hero": {
       "label": "Artigos",
@@ -738,12 +738,12 @@
   "resources": {
     "meta": {
       "title": "Checklist: Antes de Contratar um Designer | Maneda Design Studios",
-      "description": "Um checklist gratuito para proprietários na Flórida Central que estão decidindo como contratar um designer para casa, ampliação ou reforma."
+      "description": "Um checklist gratuito para proprietários que estão decidindo como contratar um designer para casa, ampliação ou reforma."
     },
     "hero": {
       "label": "Recursos",
       "title": "Antes de Contratar um Designer.",
-      "intro": "Um checklist para proprietários na Flórida Central. Use para comparar designers e se preparar para a primeira conversa."
+      "intro": "Um checklist para proprietários. Use para comparar designers e se preparar para a primeira conversa."
     },
     "contents": {
       "title": "O que o checklist cobre",

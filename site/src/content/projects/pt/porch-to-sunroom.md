@@ -1,16 +1,16 @@
 ---
-title: "Varanda telada convertida em sunroom, Flórida Central"
+title: "Varanda telada convertida em sunroom"
 number: "MDS-26-02"
 order: 2
 type: outdoor
-location: "Flórida Central"
+location: "[PLACEHOLDER: cidade e estado]"
 size: "[PLACEHOLDER: tamanho]"
 scope: "[PLACEHOLDER: escopo]"
 role: "[PLACEHOLDER: a sua função]"
 year: "[PLACEHOLDER: ano]"
 result: "[PLACEHOLDER: resultado em uma linha]"
 clientApproved: false
-heroAlt: "Imagem do projeto a ser enviada: Varanda telada convertida em sunroom, Flórida Central"
+heroAlt: "Imagem do projeto a ser enviada: Varanda telada convertida em sunroom"
 brief: "[PLACEHOLDER: o que o proprietário precisava, em duas ou três frases]"
 context: "[PLACEHOLDER: condições do terreno, zoneamento e restrições de código ou da prefeitura]"
 moves:

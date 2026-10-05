@@ -1,16 +1,16 @@
 ---
-title: "Summer kitchen, Central Florida"
+title: "Summer kitchen"
 number: "MDS-26-03"
 order: 3
 type: outdoor
-location: "Central Florida"
+location: "[PLACEHOLDER: city and state]"
 size: "[PLACEHOLDER: size]"
 scope: "[PLACEHOLDER: scope]"
 role: "[PLACEHOLDER: your role]"
 year: "[PLACEHOLDER: year]"
 result: "[PLACEHOLDER: one-line result]"
 clientApproved: false
-heroAlt: "Project image to be supplied: Summer kitchen, Central Florida"
+heroAlt: "Project image to be supplied: Summer kitchen"
 brief: "[PLACEHOLDER: what the owner needed, in two or three sentences]"
 context: "[PLACEHOLDER: site conditions, zoning, and code or jurisdiction constraints]"
 moves:

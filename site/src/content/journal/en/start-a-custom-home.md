@@ -1,5 +1,5 @@
 ---
-title: "How to start a custom home project in Central Florida"
+title: "How to start a custom home project"
 description: "A plain-language outline of the first steps in a custom home project: the lot, the program, and the questions to settle before design starts."
 draft: true
 ---

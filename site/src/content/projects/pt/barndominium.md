@@ -1,16 +1,16 @@
 ---
-title: "Barndominium, Flórida Central"
+title: "Barndominium"
 number: "MDS-26-01"
 order: 1
 type: residential
-location: "Flórida Central"
+location: "[PLACEHOLDER: cidade e estado]"
 size: "50 por 100 ft (cerca de 15 por 30 m)"
 scope: "[PLACEHOLDER: escopo, por exemplo estudo preliminar até desenvolvimento do projeto]"
 role: "[PLACEHOLDER: a sua função]"
 year: "[PLACEHOLDER: ano]"
 result: "[PLACEHOLDER: resultado em uma linha]"
 clientApproved: false
-heroAlt: "Imagem do projeto a ser enviada: Barndominium, Flórida Central"
+heroAlt: "Imagem do projeto a ser enviada: Barndominium"
 brief: "[PLACEHOLDER: o que o proprietário precisava, em duas ou três frases]"
 context: "[PLACEHOLDER: condições do terreno, zoneamento e restrições de código ou da prefeitura]"
 moves:

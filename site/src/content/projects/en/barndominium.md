@@ -1,16 +1,16 @@
 ---
-title: "Barndominium, Central Florida"
+title: "Barndominium"
 number: "MDS-26-01"
 order: 1
 type: residential
-location: "Central Florida"
+location: "[PLACEHOLDER: city and state]"
 size: "50 by 100 ft"
 scope: "[PLACEHOLDER: scope, for example concept through design development]"
 role: "[PLACEHOLDER: your role]"
 year: "[PLACEHOLDER: year]"
 result: "[PLACEHOLDER: one-line result]"
 clientApproved: false
-heroAlt: "Project image to be supplied: Barndominium, Central Florida"
+heroAlt: "Project image to be supplied: Barndominium"
 brief: "[PLACEHOLDER: what the owner needed, in two or three sentences]"
 context: "[PLACEHOLDER: site conditions, zoning, and code or jurisdiction constraints]"
 moves:

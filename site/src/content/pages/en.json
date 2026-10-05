@@ -1,8 +1,8 @@
 {
   "home": {
     "meta": {
-      "title": "Residential Design, Central Florida | Maneda Design Studios",
-      "description": "Maneda Design Studios designs homes, additions, and interiors in Central Florida, and carries the design through to buildable drawings."
+      "title": "Residential Design from Orlando | Maneda Design Studios",
+      "description": "Residential design from Orlando, Florida. Homes, additions, and interiors, carried through to buildable drawings. Projects across the United States."
     },
     "hero": {
       "alt": "3D rendering of a two-story white residence with dark metal roofs, a tall gabled entry, a stone-clad wing, and a three-car garage, seen across a paved motor court and lawn."
@@ -10,7 +10,7 @@
     "positioning": {
       "label": "The studio",
       "title": "Design decisions come first.",
-      "text": "How a house sits on its lot, how light and air move through it, and how the rooms connect are settled before anything is drawn for permit. Each decision is explained in plain language and checked against Florida code. The design you approve is the design that gets built."
+      "text": "How a house sits on its lot, how light and air move through it, and how the rooms connect are settled before anything is drawn for permit. Each decision is explained in plain language and checked against the code that applies to your lot. The design you approve is the design that gets built."
     },
     "audience": {
       "label": "Who this is for",
@@ -18,7 +18,7 @@
       "items": [
         {
           "title": "Private owners",
-          "text": "You are planning a custom home, an addition, a renovation, an outdoor living space, or a barndominium in Central Florida. You want a designer to shape the project, not only draw it."
+          "text": "You are planning a custom home, an addition, a renovation, an outdoor living space, or a barndominium. You want a designer to shape the project, not only draw it."
         },
         {
           "title": "Portuguese-speaking owners",
@@ -79,7 +79,7 @@
         },
         {
           "k": "Code",
-          "v": "Florida code and jurisdiction review built into the design from the first sketch"
+          "v": "Code and jurisdiction review for each site, built into the design from the first sketch"
         },
         {
           "k": "EN / PT",
@@ -105,7 +105,7 @@
   "services": {
     "meta": {
       "title": "Services | Maneda Design Studios",
-      "description": "Residential design, interior design, site analysis, design consultations, and construction documents for homes and additions in Central Florida."
+      "description": "Residential design, interior design, site analysis, design consultations, and construction documents for homes and additions."
     },
     "hero": {
       "label": "Services",
@@ -127,7 +127,7 @@
     },
     "items": {
       "residential-design": {
-        "what": "A designer works with you from the first sketch to a resolved design. You get concept options, plan and massing studies, 3D views, and a clear explanation of why each decision was made. The project is designed for your lot, your program, and Florida code.",
+        "what": "A designer works with you from the first sketch to a resolved design. You get concept options, plan and massing studies, 3D views, and a clear explanation of why each decision was made. The project is designed for your lot, your program, and the code that applies to your site.",
         "included": [
           "Site and program review",
           "Concept sketches",
@@ -151,7 +151,7 @@
           "Design development set",
           "Material and finish direction"
         ],
-        "suits": "Owners building or changing a home in Central Florida who want design judgment, not only drawings."
+        "suits": "Owners building or changing a home who want design judgment, not only drawings."
       },
       "interior-design": {
         "what": "Layout, finishes, lighting intent, and material direction, resolved together with the building. Interiors are designed as part of the plan, so rooms, light, and materials work together.",
@@ -265,7 +265,7 @@
   "work": {
     "meta": {
       "title": "Work | Maneda Design Studios",
-      "description": "Residential design projects in Central Florida, with the brief, the site context, the design decisions, and the outcome."
+      "description": "Residential design projects, with the brief, the site context, the design decisions, and the outcome."
     },
     "hero": {
       "label": "Work",
@@ -395,7 +395,7 @@
         },
         {
           "q": "Who seals the drawings?",
-          "a": "Where a seal is required, drawings are reviewed and sealed by a licensed professional of record. [PLACEHOLDER: how the professional of record is engaged and billed]"
+          "a": "Where a seal is required, drawings are reviewed and sealed by a licensed professional of record. [PLACEHOLDER: how the professional of record is engaged and billed, including for projects outside Florida]"
         },
         {
           "q": "How many revisions are included?",
@@ -411,7 +411,7 @@
         },
         {
           "q": "Where do you work?",
-          "a": "The Orlando metro area and Central Florida. [PLACEHOLDER: confirm the counties served]"
+          "a": "Based in Orlando, Florida. Projects across the United States. [PLACEHOLDER: confirm the states and jurisdictions served, and how local code review works outside Florida]"
         },
         {
           "q": "Can we work in Portuguese?",
@@ -435,7 +435,7 @@
   "about": {
     "meta": {
       "title": "About | Maneda Design Studios",
-      "description": "Manolo Castaneda is an architectural designer with 10+ years in multifamily and retail projects, based in Central Florida and bilingual in English and Portuguese."
+      "description": "Manolo Castaneda, architectural designer. 10+ years in multifamily and retail projects. Based in Orlando, Florida. Bilingual in English and Portuguese."
     },
     "hero": {
       "label": "About",
@@ -444,8 +444,8 @@
       "portraitNote": "Portrait: Manolo, in an architectural setting"
     },
     "story": [
-      "Manolo Castaneda is an architectural designer with more than 10 years of experience in multifamily and retail projects. He trained in architecture in Brazil and the United States, with degrees from the Catholic University of Brasilia and NJIT. He is bilingual in English and Brazilian Portuguese and works from Central Florida.",
-      "He designs from the site and from how people live in a building: space, light, circulation, and how a room is used. A design is not finished until it can be permitted and built, so Florida code and jurisdiction rules are part of the process from the first sketch. Code literacy is what lets a design get built. It is part of the work, not a separate service."
+      "Manolo Castaneda is an architectural designer with more than 10 years of experience in multifamily and retail projects. He trained in architecture in Brazil and the United States, with degrees from the Catholic University of Brasilia and NJIT. He is bilingual in English and Brazilian Portuguese and is based in Orlando, Florida.",
+      "He designs from the site and from how people live in a building: space, light, circulation, and how a room is used. A design is not finished until it can be permitted and built, so local code and jurisdiction rules are part of the process from the first sketch. Code literacy is what lets a design get built. It is part of the work, not a separate service."
     ],
     "values": {
       "label": "What I value",
@@ -718,7 +718,7 @@
   "journal": {
     "meta": {
       "title": "Journal | Maneda Design Studios",
-      "description": "Practical notes on starting a residential design project in Central Florida: lots, code, builders, and cost."
+      "description": "Practical notes on starting a residential design project: lots, code, builders, and cost."
     },
     "hero": {
       "label": "Journal",
@@ -737,13 +737,13 @@
   },
   "resources": {
     "meta": {
-      "title": "Free Checklist: Before You Hire a Designer | Maneda Design Studios",
-      "description": "A free checklist for Central Florida homeowners deciding how to hire a designer for a home, addition, or renovation."
+      "title": "Checklist: Before You Hire a Designer | Maneda Design Studios",
+      "description": "A free checklist for homeowners deciding how to hire a designer for a home, addition, or renovation."
     },
     "hero": {
       "label": "Resources",
       "title": "Before You Hire a Designer.",
-      "intro": "A checklist for Central Florida homeowners. Use it to compare designers and to prepare for a first conversation."
+      "intro": "A checklist for homeowners. Use it to compare designers and to prepare for a first conversation."
     },
     "contents": {
       "title": "What the checklist covers",

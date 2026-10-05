@@ -16,7 +16,7 @@ Tentative: domain manedastudios.com. Confirm it is registered to MDS. Your brand
 | 6 | For each approved project: the brief, the site and code context, 3 design moves with a sketch, diagram or 3D view each, an early sketch beside the final plan or elevation, one sheet excerpt, and the outcome | `src/content/projects/en/*.md` and `pt/*.md` |
 | 7 | Written client approval before any real name or address appears (`clientApproved: true`) | Same files |
 | 8 | Typical duration for each of the 6 process phases | `pages/en.json` and `pt.json`, `process.phases` |
-| 9 | FAQ answers: permit timelines by county and city, how the professional of record is engaged and billed, revision rounds per phase, CAD and model file delivery, deposit and payment schedule, counties served | `process.faq` |
+| 9 | FAQ answers: permit timelines for the places you serve, how the professional of record is engaged and billed (including outside Florida), revision rounds per phase, CAD and model file delivery, deposit and payment schedule, which states and jurisdictions you serve and how local code review works outside Florida | `process.faq` |
 | 10 | Portrait of Manolo, in an architectural setting | About page |
 | 11 | "What I value" in Manolo's own words (three short statements) | `about.values` |
 | 12 | Confirm or correct the service inclusions, exclusions and deliverables for all five services, especially consultations. These were drafted by Claude. | `services.items` in both page files |
@@ -30,7 +30,7 @@ Tentative: domain manedastudios.com. Confirm it is registered to MDS. Your brand
 | Item | Notes |
 |---|---|
 | Outlines for three more journal topics: what a site analysis includes, how a designer works with a builder, design cost versus construction cost | Journal template is ready |
-| Real jurisdiction notes for any city page | None are built. Only add a city when the content is real and different from the others. |
+| Real jurisdiction notes for any place page (Orlando area or elsewhere) | None are built. Only add a city when the content is real and different from the others. |
 | Instagram link once the account is live | `site.json` (`social.instagram`). Hidden until filled. |
 | Vector (SVG) logo files | The brand folder has PNG only. Also re-export `primary-square-white.png`, which is a cropped file with no wordmark. |
 | A studio email on your own domain | Better for credibility than Gmail. Cloudflare Email Routing can forward it to Gmail. |
@@ -42,3 +42,7 @@ Tentative: domain manedastudios.com. Confirm it is registered to MDS. Your brand
 - Whether to follow up with checklist downloads by email. This needs an email tool and is a separate decision.
 - Whether Maneda Photography is ever linked from this site. Default: no.
 - The launch switch: `"indexing": true` in `site.json`. Nothing is public to search engines until this is set.
+
+## Location decision
+
+The site no longer says "Central Florida". It says the studio is based in Orlando, Florida, with projects across the United States. Confirm the claim holds in practice, especially how seals and local code review work for projects outside Florida. The FAQ placeholders on this are marked.

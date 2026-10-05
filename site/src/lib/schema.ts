@@ -21,10 +21,9 @@ export function studioSchema(lang: Lang) {
     logo: abs('/images/logo/logo-horizontal-black.png'),
     image: abs('/images/og-default.png'),
     ...(isPlaceholder(site.email) ? {} : { email: site.email }),
-    areaServed: [
-      { '@type': 'AdministrativeArea', name: 'Central Florida' },
-      { '@type': 'City', name: 'Orlando' },
-    ],
+    // City level only. No street address is published.
+    address: { '@type': 'PostalAddress', addressLocality: 'Orlando', addressRegion: 'FL', addressCountry: 'US' },
+    areaServed: { '@type': 'Country', name: 'United States' },
     knowsLanguage: ['en', 'pt-BR'],
     founder: { '@type': 'Person', name: 'Manolo Castaneda', jobTitle: 'Architectural Designer' },
     ...(site.social.instagram ? { sameAs: [site.social.instagram] } : {}),
@@ -55,7 +54,7 @@ export function servicesSchema(lang: Lang) {
       description: stripPlaceholders(items[s.id].what),
       url: `${abs(routeFor(lang, 'services'))}#${s.id}`,
       provider: { '@id': studioId() },
-      areaServed: 'Central Florida',
+      areaServed: 'United States',
       ...(offers ? { offers } : {}),
     };
   });

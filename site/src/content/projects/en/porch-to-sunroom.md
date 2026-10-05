@@ -1,16 +1,16 @@
 ---
-title: "Screened porch to sunroom, Central Florida"
+title: "Screened porch to sunroom"
 number: "MDS-26-02"
 order: 2
 type: outdoor
-location: "Central Florida"
+location: "[PLACEHOLDER: city and state]"
 size: "[PLACEHOLDER: size]"
 scope: "[PLACEHOLDER: scope]"
 role: "[PLACEHOLDER: your role]"
 year: "[PLACEHOLDER: year]"
 result: "[PLACEHOLDER: one-line result]"
 clientApproved: false
-heroAlt: "Project image to be supplied: Screened porch to sunroom, Central Florida"
+heroAlt: "Project image to be supplied: Screened porch to sunroom"
 brief: "[PLACEHOLDER: what the owner needed, in two or three sentences]"
 context: "[PLACEHOLDER: site conditions, zoning, and code or jurisdiction constraints]"
 moves:

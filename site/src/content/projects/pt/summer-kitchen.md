@@ -1,16 +1,16 @@
 ---
-title: "Cozinha externa (summer kitchen), Flórida Central"
+title: "Cozinha externa (summer kitchen)"
 number: "MDS-26-03"
 order: 3
 type: outdoor
-location: "Flórida Central"
+location: "[PLACEHOLDER: cidade e estado]"
 size: "[PLACEHOLDER: tamanho]"
 scope: "[PLACEHOLDER: escopo]"
 role: "[PLACEHOLDER: a sua função]"
 year: "[PLACEHOLDER: ano]"
 result: "[PLACEHOLDER: resultado em uma linha]"
 clientApproved: false
-heroAlt: "Imagem do projeto a ser enviada: Cozinha externa (summer kitchen), Flórida Central"
+heroAlt: "Imagem do projeto a ser enviada: Cozinha externa (summer kitchen)"
 brief: "[PLACEHOLDER: o que o proprietário precisava, em duas ou três frases]"
 context: "[PLACEHOLDER: condições do terreno, zoneamento e restrições de código ou da prefeitura]"
 moves:
