@@ -12,7 +12,9 @@ const L = page.labels;
 const ph = markPlaceholders;
 ---
 
-<Section titleTag="h1" label={page.hero.label} title={page.hero.title} intro={page.hero.intro} />
+<Section titleTag="h1" label={page.hero.label} title={page.hero.title} intro={page.hero.intro}>
+  <p class="max-w-[65ch] text-sm text-[var(--color-text-muted)]">{page.durationNote}</p>
+</Section>
 
 <section class="pb-[var(--section-space)]">
   <ol class="container-site grid gap-0">

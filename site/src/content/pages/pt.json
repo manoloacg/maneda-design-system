@@ -123,115 +123,138 @@
       "bookConsultation": "Solicitar esta consultoria",
       "service": "Serviço",
       "cdEyebrow": "O próximo passo depois do projeto",
-      "fixedPrice": "Preço fixo"
+      "fixedPrice": "Preço fixo",
+      "duration": "Prazo típico",
+      "credit": "de crédito para um pacote completo contratado em até 14 dias",
+      "addons": "Adicionais",
+      "siteVisitTitle": "Também disponível"
     },
     "items": {
       "residential-design": {
-        "what": "Um designer trabalha com você do primeiro croqui até um projeto resolvido. Você recebe opções de estudo preliminar, estudos de volumetria e de planta, vistas 3D e uma explicação clara do motivo de cada decisão. O projeto é feito para o seu lote, o seu programa e o código que se aplica ao seu terreno.",
+        "what": "Um designer trabalha com você do primeiro croqui até um projeto resolvido. O pré-projeto define o programa, os limites de código e de zoneamento e uma primeira estimativa de custo. O anteprojeto (schematic design) testa, em geral, três opções, e você escolhe uma. O desenvolvimento do projeto refina a opção escolhida. Os desenhos apenas de projeto não servem para aprovação (permit) nem para obra. Quem contrata o projeto pode seguir para o projeto executivo com a MDS.",
         "included": [
-          "Análise do terreno e do programa",
-          "Croquis de estudo preliminar",
-          "Estudos de volumetria e de planta",
-          "Vistas 3D",
-          "Conjunto de anteprojeto",
-          "Conjunto de desenvolvimento do projeto",
-          "Direção de materiais e acabamentos",
-          "Revisões conforme definido no contrato"
+          "Pré-projeto: análise do terreno, do código e do zoneamento, e documento de programa",
+          "Estimativa preliminar de custo a partir do programa",
+          "Anteprojeto, em geral com três opções, com croquis e estudos de volumetria",
+          "Plantas, elevações e cortes",
+          "Modelos e vistas 3D",
+          "Exploração da paleta de materiais e cores",
+          "Desenvolvimento do projeto: plantas, elevações e cortes refinados, e seleção de materiais, acabamentos e equipamentos",
+          "Plantas conceituais de iluminação e elétrica",
+          "Duas rodadas de revisão em cada fase"
         ],
         "notIncluded": [
+          "Projeto executivo, conjunto para aprovação (permit set) e protocolo na prefeitura. Esse é o próximo passo, abaixo.",
           "Engenharia estrutural, mecânica, elétrica ou hidráulica",
-          "Levantamentos topográficos e laudos geotécnicos",
+          "Levantamentos topográficos e sondagens do solo. O pré-projeto recomenda quando forem necessários.",
           "Taxas de aprovação e de impacto"
         ],
         "deliverables": [
-          "Croquis de estudo preliminar",
-          "Estudos de volumetria e de planta",
-          "Vistas 3D",
-          "Conjunto de anteprojeto",
-          "Conjunto de desenvolvimento do projeto",
-          "Direção de materiais e acabamentos"
+          "Documento de programa",
+          "Conjunto de anteprojeto em escala 1/4 de polegada: plantas baixas e elevações",
+          "Estudos de volumetria e vistas 3D",
+          "Pacote de desenvolvimento do projeto: plantas, elevações, cortes e seleção de materiais"
         ],
-        "suits": "Proprietários que constroem ou reformam uma casa e querem critério de projeto, não só desenhos."
+        "suits": "Proprietários que constroem ou reformam uma casa e querem critério de projeto, não só desenhos.",
+        "duration": "Cerca de 9 a 15 semanas até o desenvolvimento do projeto: o pré-projeto leva de 1 a 3 semanas, o anteprojeto de 4 a 6 e o desenvolvimento de 4 a 6."
       },
       "interior-design": {
-        "what": "Layout, acabamentos, intenção de iluminação e direção de materiais, resolvidos junto com a edificação. Os interiores são projetados como parte da planta, para que ambientes, luz e materiais funcionem juntos.",
+        "what": "Design de interiores completo, das plantas ao mobiliário. O trabalho tem quatro fases: descoberta e conceito, projeto e documentação, mobiliário e decoração, e apoio opcional em compras e instalação. Em projetos residenciais completos, os interiores podem andar junto com o projeto da edificação, e o total fica em cerca de 5 a 7 meses, não na soma dos dois prazos.",
         "included": [
-          "Planejamento de espaço e layouts dos ambientes",
-          "Direção de acabamentos e materiais",
-          "Intenção de iluminação e conceitos de forro",
-          "Conceitos de marcenaria",
-          "Pranchas de seleção"
+          "Entrevista com o cliente, visita e painéis de conceito visual",
+          "Plantas de layout e elevações internas de cozinha, banheiros e marcenaria",
+          "Plantas de forro (reflected ceiling plans) com layout de iluminação",
+          "Quadros de materiais e acabamentos: revestimentos, pisos, pintura e bancadas",
+          "Seleção de louças, metais e eletrodomésticos, e caderno de especificações para o construtor",
+          "Planta de mobiliário por ambiente, lista de fornecedores e planilha de orçamento",
+          "Decoração, cortinas e luminárias",
+          "Opcional: apoio em compras, coordenação de pedidos e vistoria final de decoração"
         ],
         "notIncluded": [
-          "Compra e fornecimento de mobiliário",
-          "Instalação e gerenciamento de obra",
+          "Obra, mobiliário e custos do construtor. São separados.",
+          "Taxas de aprovação",
           "Engenharia"
         ],
         "deliverables": [
-          "Plantas de interiores",
-          "Pranchas de materiais e acabamentos",
-          "Elevações internas dos ambientes principais",
-          "Vistas 3D dos ambientes principais"
+          "Painéis de referência e folha de inspiração de materiais",
+          "Plantas baixas, plantas de forro e elevações internas em CAD e PDF",
+          "Quadro de acabamentos e caderno de especificações",
+          "Lista de fornecedores e planilha de orçamento",
+          "Checklist do dia de instalação, se o apoio em compras for contratado"
         ],
-        "suits": "Proprietários de casas novas, reformas e ampliações que querem os interiores resolvidos junto com a edificação, e não depois dela."
+        "suits": "Proprietários de casas novas, reformas e ampliações que querem os interiores resolvidos junto com a edificação, e não depois dela.",
+        "duration": "O prazo típico é de 12 a 18 semanas. Menos de 1.500 SF levam de 10 a 14 semanas, de 1.500 a 2.500 SF levam de 12 a 18, e de 2.500 a 3.500 SF ou mais levam de 16 a 24."
       },
       "site-analysis": {
-        "what": "Um relatório escrito sobre o lote, antes de comprar ou projetar. Ele mostra o que zoneamento, recuos, zona de inundação e acesso permitem, e o que o lote comporta. É uma análise de projeto feita sobre registros públicos. Não é levantamento topográfico, parecer jurídico nem estudo de engenharia.",
+        "what": "Um relatório escrito sobre o lote, antes de comprar ou projetar. Ele mostra o que zoneamento, recuos, zona de inundação e acesso permitem, e o que o lote comporta, com base em registros públicos e em uma visita ao terreno. É um resumo informal de zoneamento para planejamento de projeto. Não é levantamento topográfico, parecer jurídico nem estudo de engenharia. Os direitos finais de construção devem ser confirmados por um profissional licenciado ou pela prefeitura.",
         "included": [
-          "Zona de uso e usos permitidos",
-          "Recuos, altura e taxa de ocupação",
-          "Zona de inundação e notas de cota",
-          "Servidões e acesso, conforme os registros disponíveis",
-          "Notas sobre infraestrutura disponível",
-          "Diagrama da área edificável",
-          "Um resumo do programa: o que o lote comporta"
+          "Pesquisa prévia: zona de uso, recuos, taxa de ocupação, altura máxima e áreas livres mínimas",
+          "Análise de imagens aéreas e camadas de GIS, e verificação básica da zona de inundação",
+          "Visita ao terreno de até 1,5 hora, com registro fotográfico",
+          "Notas sobre acesso, garagem, drenagem, vistas, trajetória do sol, ruído, privacidade, topografia e vegetação",
+          "Diagramas de bolhas e croquis de volumetria",
+          "Texto de oportunidades e restrições",
+          "Roteiro dos próximos passos, com os serviços sugeridos",
+          "Conceito de layout, opcional"
         ],
         "notIncluded": [
           "Levantamento topográfico ou de divisas",
           "Sondagem do solo ou ensaios geotécnicos",
-          "Parecer jurídico ou de titularidade"
+          "Parecer jurídico ou de titularidade",
+          "Determinação oficial de zoneamento"
         ],
         "deliverables": [
-          "Relatório escrito (PDF)",
-          "Diagrama da área edificável"
+          "Relatório em PDF de 5 a 7 páginas",
+          "Fotos anotadas do terreno",
+          "Quadro-resumo de zoneamento (informal)",
+          "Croquis de volumetria"
         ],
         "suits": "Compradores que comparam lotes, proprietários que planejam uma ampliação e construtores que testam um terreno antes de se comprometer.",
-        "pricingNote": "[PLACEHOLDER: o que leva um relatório acima do preço inicial]"
+        "duration": "A visita ao terreno acontece de 3 a 5 dias após a contratação. O relatório sai 5 dias úteis depois da visita."
       },
       "consultations": {
-        "what": "Uma conversa de trabalho com um designer sobre o seu terreno, o seu programa e as suas opções. Você sai com uma direção clara e os próximos passos. Escolha virtual ou presencial.",
+        "what": "Uma sessão de trabalho com um designer sobre um ambiente ou um conjunto de ambientes: layout, materiais, cores, mobiliário e iluminação. Escolha uma videochamada de 1 hora, uma visita de 90 minutos ou uma sessão aprofundada de 2 horas. Você recebe um retorno por escrito, e um crédito vale para um pacote completo contratado em até 14 dias.",
         "included": [
-          "Análise do seu terreno, plantas ou fotos antes da conversa",
-          "Direção de projeto e opções",
-          "Visão geral do código e do caminho de aprovação (permit)",
-          "Próximos passos por escrito"
+          "Virtual, 1 hora: videochamada ao vivo, com análise do ambiente a partir de fotos, vídeos ou plantas enviados antes",
+          "Presencial, 90 minutos: visita a até 2 ambientes, conferência de medidas e croqui rápido de layout, se necessário",
+          "Aprofundada, 2 horas: visita completa e entrevista para até 3 ambientes, estratégia de layout e de fluxo, sugestões de acabamentos e materiais, orientação de mobiliário e iluminação, e marcações rápidas em planta e elevação"
         ],
         "notIncluded": [
-          "Desenhos ou conjunto de projeto",
-          "Visitas ao terreno além da sessão agendada"
+          "Conjunto de projeto ou desenhos para obra",
+          "Visitas além da sessão agendada"
         ],
         "deliverables": [
-          "Um resumo da direção e dos próximos passos"
+          "Virtual: e-mail de acompanhamento, com resumo em tópicos, em até 24 horas",
+          "Presencial: e-mail de resumo em até 48 horas e croqui rápido de layout",
+          "Aprofundada: resumo conceitual de uma página em PDF em até 3 dias úteis e e-mail com links e recomendações"
         ],
-        "suits": "Proprietários que decidem se e como começar, e proprietários com um projeto que precisa de uma segunda opinião."
+        "suits": "Proprietários que precisam de direção antes de um projeto completo, clientes que fazem o projeto por conta própria e proprietários que preparam a reforma de um ambiente ou de vários.",
+        "duration": "Resumo por escrito em 24 horas a 3 dias úteis, conforme a sessão."
       },
       "construction-documents": {
-        "what": "O próximo passo depois do projeto. Com o projeto aprovado, ele é desenvolvido em um conjunto de projeto executivo (construction documents), para que o projeto aprovado seja o projeto construído. Este serviço é oferecido a clientes de projeto.",
+        "what": "O próximo passo depois do projeto. Com o projeto aprovado, ele é desenvolvido em um conjunto de projeto executivo (construction documents), para que o projeto aprovado seja o projeto construído. O projeto executivo leva cerca de 8 a 12 semanas. Se você quiser, a MDS segue com apoio na aprovação (permit), apoio na cotação com construtores e administração de obra. Este serviço é oferecido a clientes de projeto. Ações formais de revisão, aprovação e certificação são feitas pelo profissional licenciado responsável pelo projeto.",
         "included": [
-          "Conjunto de projeto executivo desenvolvido a partir do projeto aprovado",
-          "Coordenação com o seu construtor e os engenheiros",
-          "Apoio nos comentários da análise de aprovação (plan review)"
+          "Desenhos e especificações de construção: plantas, cortes, elevações e detalhes",
+          "Detalhes internos e externos",
+          "Coordenação com consultores de estrutura, mecânica, elétrica e hidráulica",
+          "Preparação do conjunto para aprovação (permit set), protocolo e acompanhamento, e respostas aos comentários da análise",
+          "Opcional: pacotes de cotação, reuniões com construtores e análise das propostas",
+          "Opcional: administração de obra, com visitas, pedidos de informação, controle de submissões e revisão da lista de pendências"
         ],
         "notIncluded": [
           "Desenhos selados pela MDS",
-          "Engenharia estrutural, mecânica, elétrica ou hidráulica",
-          "Serviços de construtor ou administração de obra"
+          "Engenharia estrutural. Um engenheiro estrutural prepara esses desenhos em contrato separado.",
+          "Engenharia mecânica, elétrica ou hidráulica",
+          "Serviços de construtor ou execução de obra",
+          "Taxas de aprovação"
         ],
         "deliverables": [
           "Conjunto de projeto executivo",
-          "Respostas aos comentários da análise de aprovação"
+          "Respostas aos comentários da análise de aprovação",
+          "Documentos de encerramento, se a administração de obra for contratada"
         ],
-        "suits": "Clientes de projeto cujo projeto aprovado está pronto para ser orçado, aprovado e construído."
+        "suits": "Clientes de projeto cujo projeto aprovado está pronto para ser orçado, aprovado e construído.",
+        "duration": "O projeto executivo leva de 8 a 12 semanas. A aprovação leva de 3 a 8 semanas, conforme a prefeitura. A cotação leva de 2 a 4 semanas. A administração de obra dura o tempo da obra."
       }
     },
     "cdSheets": [
@@ -258,8 +281,21 @@
     "builders": {
       "label": "Construtores e incorporadores",
       "title": "Parceiro de projeto para construtores e incorporadores.",
-      "text": "Chame a MDS na fase de projeto, para que a obra seja resolvida antes de ser orçada e construída. Decisões de projeto tomadas cedo custam menos para mudar do que decisões já construídas. Você recebe um projeto claro, um raciocínio que pode compartilhar com o seu cliente e um projeto verificado contra o código.",
+      "text": "Chame a MDS na fase de projeto, para que a obra seja resolvida antes de ser orçada e construída. Decisões de projeto tomadas cedo custam menos para mudar do que decisões já construídas. Você pode contratar só o projeto, anteprojeto e desenvolvimento, e entregá-lo ao profissional de sua escolha para o projeto executivo. Ou seguir com a MDS no projeto executivo.",
       "button": "Conversar sobre um projeto"
+    },
+    "terms": {
+      "label": "Condições",
+      "title": "Como funciona a contratação.",
+      "items": [
+        "Toda contratação é confirmada por escrito antes do início do trabalho.",
+        "Cada projeto recebe um honorário fixo por escrito na fase de proposta, definido por fase, para que o custo seja conhecido antes de o trabalho começar.",
+        "Duas rodadas de revisão estão incluídas em cada fase. Rodadas adicionais são cobradas por hora.",
+        "O cronograma pausa enquanto o projeto espera por aprovações ou informações suas. Os prazos supõem aprovações em até 5 dias úteis.",
+        "Os honorários cobrem apenas serviços de projeto. Obra, taxas de aprovação, mobiliário e custos do construtor são separados.",
+        "Resumos de zoneamento e de código são informais e não são pareceres jurídicos.",
+        "Os créditos de consultoria e de visita valem para um pacote completo contratado em até 14 dias. Os créditos não podem ser transferidos."
+      ]
     }
   },
   "work": {
@@ -349,18 +385,18 @@
       {
         "title": "Análise do terreno e do código",
         "emphasis": false,
-        "happens": "Analisamos o lote, o zoneamento, os recuos, a zona de inundação e as regras da prefeitura. As restrições aparecem antes de moldar o projeto.",
+        "happens": "Analisamos o lote, o zoneamento, os recuos, a zona de inundação e as regras da prefeitura. As restrições aparecem antes de moldar o projeto. Também recomendamos trabalhos prévios adicionais quando forem necessários, como levantamento topográfico ou sondagem do solo.",
         "provide": "Levantamento, planta cadastral ou escritura, se tiver. Acesso ao terreno, se for preciso visitar.",
         "get": "Um resumo das restrições que enquadra o projeto.",
-        "duration": "[PLACEHOLDER: duração típica]"
+        "duration": "1 a 3 semanas"
       },
       {
         "title": "Estudo preliminar e anteprojeto",
         "emphasis": true,
-        "happens": "Testamos opções de volumetria e de planta com croquis e vistas 3D. Cada opção mostra como a casa se posiciona, como a luz entra e como os ambientes se conectam. Você escolhe uma direção.",
+        "happens": "Desenvolvemos, em geral, três opções, com croquis, plantas, elevações e estudos de volumetria. Cada opção mostra como a casa se posiciona, como a luz entra e como os ambientes se conectam. Você escolhe uma.",
         "provide": "Retorno sobre as opções. Suas prioridades de ambientes, luz e orçamento.",
         "get": "Croquis de estudo preliminar, estudos de volumetria e de planta, vistas 3D e um conjunto de anteprojeto.",
-        "duration": "[PLACEHOLDER: duração típica]"
+        "duration": "4 a 6 semanas"
       },
       {
         "title": "Desenvolvimento do projeto e revisões",
@@ -368,15 +404,15 @@
         "happens": "O projeto escolhido é resolvido: dimensões dos ambientes, aberturas, materiais e acabamentos. As revisões acontecem nas rodadas definidas no contrato.",
         "provide": "Decisões sobre materiais e acabamentos e retorno dentro do prazo.",
         "get": "Um conjunto de desenvolvimento do projeto e a direção de materiais e acabamentos.",
-        "duration": "[PLACEHOLDER: duração típica]"
+        "duration": "4 a 6 semanas"
       },
       {
         "title": "Projeto executivo e apoio na aprovação",
         "emphasis": false,
-        "happens": "Para clientes de projeto, o projeto aprovado é desenvolvido em projeto executivo (construction documents) e coordenado para a submissão à prefeitura (permit). O conjunto segue para o seu construtor como base de orçamento e obra.",
+        "happens": "Para clientes de projeto, o projeto aprovado é desenvolvido em projeto executivo (construction documents) e coordenado para a submissão à prefeitura (permit). O conjunto segue para o seu construtor como base de orçamento e obra. Os desenhos estruturais são feitos por um engenheiro estrutural, em contrato separado.",
         "provide": "Seu construtor e seus engenheiros, se tiver. Respostas aos comentários da análise de aprovação (plan review).",
         "get": "Um conjunto de projeto executivo e apoio nos comentários da análise de aprovação.",
-        "duration": "[PLACEHOLDER: duração típica]"
+        "duration": "Projeto executivo de 8 a 12 semanas, depois aprovação de 3 a 8 semanas, conforme a prefeitura"
       }
     ],
     "sketch": {
@@ -391,23 +427,23 @@
       "items": [
         {
           "q": "Quanto tempo leva a aprovação (permit)?",
-          "a": "Os prazos de aprovação são definidos pela prefeitura, não pelo estúdio. [PLACEHOLDER: prazos típicos de análise nos condados e cidades atendidos]"
+          "a": "A aprovação (permit) leva, em geral, de 3 a 8 semanas, conforme a prefeitura. O prazo de análise é definido pela prefeitura, não pelo estúdio."
         },
         {
           "q": "Quem sela os desenhos?",
-          "a": "Quando um selo é exigido, os desenhos são revisados e selados por um profissional licenciado responsável pelo projeto. [PLACEHOLDER: como o profissional responsável é contratado e cobrado, inclusive em projetos fora da Flórida]"
+          "a": "Quando um selo é exigido, os desenhos são revisados e selados por um profissional licenciado responsável pelo projeto. Os desenhos estruturais são feitos por um engenheiro estrutural, em contrato separado. A MDS coordena os documentos que precisam de selo com o profissional licenciado responsável. [PLACEHOLDER: quem contrata e paga o profissional responsável, inclusive em projetos fora da Flórida]"
         },
         {
           "q": "Quantas revisões estão incluídas?",
-          "a": "[PLACEHOLDER: rodadas de revisão por fase]"
+          "a": "Duas rodadas de revisão estão incluídas em cada fase. Rodadas adicionais são cobradas por hora."
         },
         {
           "q": "Em quais formatos recebo os arquivos?",
-          "a": "PDF para revisão e submissão à prefeitura. [PLACEHOLDER: confirmar entrega de arquivos CAD e de modelo]"
+          "a": "PDF para revisão e submissão à prefeitura. Os pacotes de interiores incluem plantas baixas em CAD e PDF. [PLACEHOLDER: confirmar se arquivos nativos do Revit são entregues em projetos de arquitetura]"
         },
         {
           "q": "Como funciona o pagamento?",
-          "a": "Consultorias e relatórios de análise de terreno têm preço fixo. Os honorários de projeto são definidos na proposta e ligados às fases. [PLACEHOLDER: entrada e cronograma de pagamento]"
+          "a": "Consultorias e relatórios de análise de terreno têm preço fixo. Cada projeto recebe um honorário fixo por escrito na fase de proposta, definido por fase, para que o custo seja conhecido antes de o trabalho começar. [PLACEHOLDER: entrada e cronograma de pagamento]"
         },
         {
           "q": "Onde vocês atuam?",
@@ -423,14 +459,15 @@
         },
         {
           "q": "Vocês gerenciam a obra?",
-          "a": "Não. A MDS projeta e documenta. A escolha do construtor e o gerenciamento da obra ficam fora do escopo."
+          "a": "A MDS não constrói nem conduz um canteiro de obras. A administração de obra é oferecida como opção: visitas, pedidos de informação, controle de submissões e revisão da lista de pendências. Ações formais de revisão, aprovação e certificação são feitas pelo profissional licenciado responsável pelo projeto."
         },
         {
           "q": "Vocês aceitam trabalhos só de desenho?",
           "a": "A MDS é um estúdio de projeto. Pedidos só de desenho são analisados caso a caso pelo formulário de contato."
         }
       ]
-    }
+    },
+    "durationNote": "Os prazos supõem uma residência unifamiliar de cerca de 2.000 a 3.500 SF e aprovações suas em até 5 dias úteis. Do pré-projeto ao projeto executivo leva de 16 a 24 semanas. Projetos comerciais e de varejo somam de 30% a 50% por causa da coordenação com engenheiros e locatários."
   },
   "about": {
     "meta": {

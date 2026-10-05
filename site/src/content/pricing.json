@@ -5,28 +5,86 @@
     {
       "id": "virtual",
       "amount": 200,
-      "duration": { "en": "1 hour, virtual", "pt": "1 hora, virtual" }
+      "duration": {
+        "en": "1 hour, virtual",
+        "pt": "1 hora, virtual"
+      },
+      "credit": 200
     },
     {
       "id": "in-person",
       "amount": 300,
-      "duration": { "en": "90 minutes, in person", "pt": "90 minutos, presencial" }
+      "duration": {
+        "en": "90 minutes, in person",
+        "pt": "90 minutos, presencial"
+      },
+      "credit": 100
     },
     {
       "id": "deep-dive",
       "amount": 450,
-      "duration": { "en": "2 hours, in person, deep dive", "pt": "2 horas, presencial, análise aprofundada" }
+      "duration": {
+        "en": "2 hours, in person, deep dive",
+        "pt": "2 horas, presencial, análise aprofundada"
+      },
+      "credit": 150
     }
   ],
   "siteAnalysis": {
     "from": 700,
-    "label": { "en": "From $700", "pt": "A partir de US$ 700" }
+    "label": {
+      "en": "From $700",
+      "pt": "A partir de US$ 700"
+    },
+    "tiers": [
+      {
+        "amount": 700,
+        "label": {
+          "en": "Under half an acre",
+          "pt": "Menos de meio acre"
+        }
+      },
+      {
+        "amount": 1000,
+        "label": {
+          "en": "Half an acre and larger",
+          "pt": "Meio acre ou mais"
+        }
+      }
+    ],
+    "addons": [
+      {
+        "amount": 250,
+        "label": {
+          "en": "3D massing",
+          "pt": "Volumetria 3D"
+        }
+      },
+      {
+        "amount": 100,
+        "label": {
+          "en": "Follow-up consultation, 30 minutes",
+          "pt": "Consultoria de acompanhamento, 30 minutos"
+        }
+      }
+    ]
   },
   "quoted": {
-    "label": { "en": "Quoted per project scope", "pt": "Orçado conforme o escopo do projeto" },
+    "label": {
+      "en": "Quoted per project scope",
+      "pt": "Orçado conforme o escopo do projeto"
+    },
     "explanation": {
-      "en": "Scope drives price. Size, complexity, and the number of revisions change the work, so each project is quoted after a short conversation.",
-      "pt": "O escopo define o preço. Tamanho, complexidade e número de revisões mudam o trabalho, por isso cada projeto é orçado depois de uma conversa curta."
+      "en": "Scope drives price. Each project gets a written fixed fee at the proposal stage, set by phase, so the cost is known before work starts.",
+      "pt": "O escopo define o preço. Cada projeto recebe um honorário fixo por escrito na fase de proposta, definido por fase, para que o custo seja conhecido antes de o trabalho começar."
+    }
+  },
+  "siteVisit": {
+    "amount": 200,
+    "credit": 100,
+    "label": {
+      "en": "Site visit, 90 minutes",
+      "pt": "Visita ao terreno, 90 minutos"
     }
   }
 }

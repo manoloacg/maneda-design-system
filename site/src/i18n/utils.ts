@@ -79,7 +79,8 @@ export const getPage = (lang: Lang): PageCopy => (lang === 'pt' ? pagesPt : page
 export const fill = (text: string, vars: Record<string, string>) =>
   text.replace(/\{(\w+)\}/g, (_, k) => vars[k] ?? '');
 
-export const formatUsd = (lang: Lang, amount: number) => (lang === 'pt' ? `US$ ${amount}` : `$${amount}`);
+export const formatUsd = (lang: Lang, amount: number) =>
+  lang === 'pt' ? `US$ ${amount.toLocaleString('pt-BR')}` : `$${amount.toLocaleString('en-US')}`;
 
 /** "Title | Maneda Design Studios", shortened to "| MDS" when the full form is too long for a search result. */
 export const withSiteName = (title: string) => {

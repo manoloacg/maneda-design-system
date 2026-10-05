@@ -3,7 +3,7 @@ import Section from './Section.astro';
 import Button from './Button.astro';
 import services from '../content/services.json';
 import pricing from '../content/pricing.json';
-import { fill, formatUsd, getLang, getPage, markPlaceholders, pick, routeFor, t } from '../i18n/utils';
+import { formatUsd, getLang, getPage, pick, routeFor, t } from '../i18n/utils';
 
 const lang = getLang(Astro.url.pathname);
 const page = getPage(lang).services;
@@ -11,7 +11,7 @@ const L = page.labels;
 const contact = routeFor(lang, 'contact');
 const num = (i: number) => String(i + 1).padStart(2, '0');
 const quoteHref = (id: string) => `${contact}?service=${id}`;
-const items = page.items as Record<string, (typeof page.items)['residential-design'] & { pricingNote?: string }>;
+const items = page.items as Record<string, (typeof page.items)['residential-design']>;
 const listClass = 'border-t border-[var(--color-rule-strong)]';
 const li = 'border-b border-[var(--color-rule)] py-3';
 ---
@@ -57,10 +57,14 @@ const li = 'border-b border-[var(--color-rule)] py-3';
           </div>
         )}
 
-        <div class="mt-12 grid gap-8 md:grid-cols-2">
+        <div class="mt-12 grid gap-8 md:grid-cols-3">
           <div class="reveal">
             <h3 class="sheet-label mb-3 text-[var(--color-text-muted)]">{L.suits}</h3>
             <p>{d.suits}</p>
+          </div>
+          <div class="reveal">
+            <h3 class="sheet-label mb-3 text-[var(--color-text-muted)]">{L.duration}</h3>
+            <p>{d.duration}</p>
           </div>
           <div class="reveal">
             <h3 class="sheet-label mb-3 text-[var(--color-text-muted)]">{L.pricing}</h3>
@@ -72,19 +76,51 @@ const li = 'border-b border-[var(--color-rule)] py-3';
             )}
             {s.pricing === 'siteAnalysis' && (
               <>
-                <p class="font-medium">{pick(lang, pricing.siteAnalysis.label)}</p>
-                {d.pricingNote && <p class="mt-2 text-[var(--color-text-muted)]" set:html={markPlaceholders(d.pricingNote)} />}
+                <ul class={listClass}>
+                  {pricing.siteAnalysis.tiers.map((t) => (
+                    <li class={`${li} flex items-baseline justify-between gap-6`}>
+                      <span>{pick(lang, t.label)}</span>
+                      <span class="font-[family-name:var(--font-display)] text-[1.6rem]">{formatUsd(lang, t.amount)}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p class="sheet-label mb-2 mt-6 text-[var(--color-text-muted)]">{L.addons}</p>
+                <ul class={listClass}>
+                  {pricing.siteAnalysis.addons.map((a) => (
+                    <li class={`${li} flex items-baseline justify-between gap-6 text-sm`}>
+                      <span>{pick(lang, a.label)}</span>
+                      <span>{formatUsd(lang, a.amount)}</span>
+                    </li>
+                  ))}
+                </ul>
               </>
             )}
             {s.pricing === 'consultations' && (
               <ul class={listClass}>
                 {pricing.consultations.map((c) => (
-                  <li class={`${li} flex items-baseline justify-between gap-6`}>
-                    <span>{pick(lang, c.duration)}</span>
-                    <span class="font-[family-name:var(--font-display)] text-[1.6rem]">{formatUsd(lang, c.amount)}</span>
+                  <li class={li}>
+                    <div class="flex items-baseline justify-between gap-6">
+                      <span>{pick(lang, c.duration)}</span>
+                      <span class="font-[family-name:var(--font-display)] text-[1.6rem]">{formatUsd(lang, c.amount)}</span>
+                    </div>
+                    <p class="mt-1 text-sm text-[var(--color-text-muted)]">{formatUsd(lang, c.credit)} {L.credit}</p>
                   </li>
                 ))}
               </ul>
+            )}
+            {isCd && (
+              <>
+                <p class="sheet-label mb-2 mt-6 text-[var(--color-text-muted)]">{L.siteVisitTitle}</p>
+                <ul class={listClass}>
+                  <li class={li}>
+                    <div class="flex items-baseline justify-between gap-6">
+                      <span>{pick(lang, pricing.siteVisit.label)}</span>
+                      <span class="font-[family-name:var(--font-display)] text-[1.6rem]">{formatUsd(lang, pricing.siteVisit.amount)}</span>
+                    </div>
+                    <p class="mt-1 text-sm text-[var(--color-text-muted)]">{formatUsd(lang, pricing.siteVisit.credit)} {L.credit}</p>
+                  </li>
+                </ul>
+              </>
             )}
           </div>
         </div>
@@ -96,6 +132,10 @@ const li = 'border-b border-[var(--color-rule)] py-3';
     );
   })
 }
+
+<Section tone="alt" label={page.terms.label} title={page.terms.title}>
+  <ul class={`${listClass} max-w-[48rem]`}>{page.terms.items.map((x) => <li class={li}>{x}</li>)}</ul>
+</Section>
 
 <Section tone="light" label={page.notFit.label} title={page.notFit.title} intro={page.notFit.intro}>
   <ul class={`${listClass} max-w-[48rem]`}>{page.notFit.items.map((x) => <li class={li}>{x}</li>)}</ul>

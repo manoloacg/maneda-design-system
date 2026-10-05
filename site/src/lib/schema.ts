@@ -42,10 +42,12 @@ export function servicesSchema(lang: Lang) {
             priceCurrency: pricing.currency,
           }))
         : s.pricing === 'siteAnalysis'
-          ? {
+          ? pricing.siteAnalysis.tiers.map((t) => ({
               '@type': 'Offer',
-              priceSpecification: { '@type': 'PriceSpecification', minPrice: pricing.siteAnalysis.from, priceCurrency: pricing.currency },
-            }
+              name: pick(lang, t.label),
+              price: t.amount,
+              priceCurrency: pricing.currency,
+            }))
           : undefined;
     return {
       '@context': ctx,

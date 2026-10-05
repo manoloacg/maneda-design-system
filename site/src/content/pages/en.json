@@ -123,115 +123,138 @@
       "bookConsultation": "Request this consultation",
       "service": "Service",
       "cdEyebrow": "The next step after design",
-      "fixedPrice": "Fixed price"
+      "fixedPrice": "Fixed price",
+      "duration": "Typical duration",
+      "credit": "credit toward a full-service package booked within 14 days",
+      "addons": "Add-ons",
+      "siteVisitTitle": "Also available"
     },
     "items": {
       "residential-design": {
-        "what": "A designer works with you from the first sketch to a resolved design. You get concept options, plan and massing studies, 3D views, and a clear explanation of why each decision was made. The project is designed for your lot, your program, and the code that applies to your site.",
+        "what": "A designer works with you from the first sketch to a resolved design. Predesign sets the program, the code and zoning limits, and a first cost estimate. Schematic design then tests, usually, three options, and you choose one. Design development refines the chosen option. Design-only drawings are not permit-ready and are not for construction. A design client can continue into construction documents with MDS.",
         "included": [
-          "Site and program review",
-          "Concept sketches",
-          "Massing and plan studies",
-          "3D views",
-          "Schematic design set",
-          "Design development set",
-          "Material and finish direction",
-          "Revisions as defined in the agreement"
+          "Predesign: site, code, and zoning review, and a program document",
+          "Preliminary cost estimate from the program",
+          "Schematic design, usually three options, with sketches and massing studies",
+          "Plans, elevations, and sections",
+          "Models and 3D views",
+          "Material and color palette exploration",
+          "Design development: refined plans, elevations, and sections, and material, finish, and fixture selection",
+          "Lighting and electrical concept plans",
+          "Two rounds of revisions in each phase"
         ],
         "notIncluded": [
+          "Construction documents, permit set, and permit submittal. These are the next step, below.",
           "Structural, mechanical, electrical, or plumbing engineering",
-          "Surveys and geotechnical reports",
+          "Surveys and soils tests. Predesign recommends them when they are needed.",
           "Permit and impact fees"
         ],
         "deliverables": [
-          "Concept sketches",
-          "Massing and plan studies",
-          "3D views",
-          "Schematic design set",
-          "Design development set",
-          "Material and finish direction"
+          "Program document",
+          "Schematic design set at 1/4 inch scale: floor plans and elevations",
+          "Massing studies and 3D views",
+          "Design development package: plans, elevations, sections, and material selections"
         ],
-        "suits": "Owners building or changing a home who want design judgment, not only drawings."
+        "suits": "Owners building or changing a home who want design judgment, not only drawings.",
+        "duration": "About 9 to 15 weeks through design development: predesign takes 1 to 3 weeks, schematic design 4 to 6, and design development 4 to 6."
       },
       "interior-design": {
-        "what": "Layout, finishes, lighting intent, and material direction, resolved together with the building. Interiors are designed as part of the plan, so rooms, light, and materials work together.",
+        "what": "Full-service interior design, from plans to furnishings. The work runs in four phases: discovery and concept, design and documentation, furniture and styling, and optional procurement and installation support. On full-scope residential projects, interiors can run alongside the building design, so the total is about 5 to 7 months, not the sum of both.",
         "included": [
-          "Space planning and room layouts",
-          "Finish and material direction",
-          "Lighting intent and ceiling concepts",
-          "Cabinetry and millwork concepts",
-          "Selection boards"
+          "Client interview, site visit, and visual concept boards",
+          "Space plans and interior elevations for kitchen, bath, and millwork",
+          "Reflected ceiling plans with lighting layout",
+          "Material and finish schedules: tile, flooring, paint, and counters",
+          "Fixture and appliance selections, and a spec book for the contractor",
+          "Furniture plan by room, sourcing list, and budget tracker",
+          "Decor, window treatments, and light fixtures",
+          "Optional: procurement support, order coordination, and a final styling walkthrough"
         ],
         "notIncluded": [
-          "Furniture purchasing and procurement",
-          "Installation and project management",
+          "Construction, furnishings, and contractor costs. These are separate.",
+          "Permit fees",
           "Engineering"
         ],
         "deliverables": [
-          "Interior plans",
-          "Material and finish boards",
-          "Interior elevations of key rooms",
-          "3D views of key rooms"
+          "Mood boards and a material inspiration sheet",
+          "CAD and PDF floor plans, reflected ceiling plans, and interior elevations",
+          "Finish schedule and spec book",
+          "Sourcing list and budget sheet",
+          "Install day checklist, if procurement support is chosen"
         ],
-        "suits": "Owners of new homes, renovations, and additions who want interiors resolved with the building, not added after it."
+        "suits": "Owners of new homes, renovations, and additions who want interiors resolved with the building, not added after it.",
+        "duration": "Typical length is 12 to 18 weeks. Under 1,500 SF takes 10 to 14 weeks, 1,500 to 2,500 SF takes 12 to 18, and 2,500 to 3,500 SF or more takes 16 to 24."
       },
       "site-analysis": {
-        "what": "A written report on a lot before you buy it or design on it. It sets out what zoning, setbacks, flood zone, and access allow, and what the lot can hold. It is a design-level review of public records. It is not a survey, a legal opinion, or an engineering study.",
+        "what": "A written report on a lot before you buy it or design on it. It sets out what zoning, setbacks, flood zone, and access allow, and what the lot can hold, using public records and a site visit. It is an informal zoning summary for design planning. It is not a survey, a legal opinion, or an engineering study. Final development rights must be confirmed by a licensed professional or the local building department.",
         "included": [
-          "Zoning district and permitted use",
-          "Setbacks, height, and lot coverage limits",
-          "Flood zone and elevation notes",
-          "Easements and access, from available records",
-          "Utility availability notes",
-          "Buildable area diagram",
-          "A short program fit: what the lot can hold"
+          "Pre-visit research: zoning district, setbacks, lot coverage, height limits, and open space requirements",
+          "Aerial and GIS overlay analysis, and a basic flood zone check",
+          "Site visit of up to 1.5 hours, with photo documentation",
+          "Notes on access, driveway, drainage, views, sun path, noise, privacy, topography, and tree cover",
+          "Bubble diagrams and massing sketches",
+          "Opportunities and constraints narrative",
+          "Next step roadmap with suggested services",
+          "An optional layout concept"
         ],
         "notIncluded": [
           "Boundary or topographic survey",
           "Soil or geotechnical testing",
-          "Legal or title opinion"
+          "Legal or title opinion",
+          "Certified zoning determination"
         ],
         "deliverables": [
-          "Written report (PDF)",
-          "Buildable area diagram"
+          "5 to 7 page PDF report",
+          "Annotated site photos",
+          "Zoning summary table (informal)",
+          "Massing sketches"
         ],
         "suits": "Buyers comparing lots, owners planning an addition, and builders testing a site before committing.",
-        "pricingNote": "[PLACEHOLDER: what moves a site report above the starting price]"
+        "duration": "The site visit is 3 to 5 days after booking. The report follows 5 business days after the visit."
       },
       "consultations": {
-        "what": "A working conversation with a designer about your lot, your program, and your options. You leave with a clear direction and the next steps. Choose virtual or in person.",
+        "what": "A working session with a designer on a room or a set of rooms: layout, materials, color, furniture, and lighting. Choose a 1 hour video call, a 90 minute visit, or a 2 hour deep dive. You get a written follow-up, and a credit applies toward a full-service package booked within 14 days.",
         "included": [
-          "Review of your site, plans, or photos before the call",
-          "Design direction and options",
-          "Overview of the code and permit path",
-          "Next steps in writing"
+          "Virtual, 1 hour: live video call, with a room review from photos, videos, or floor plans you send in advance",
+          "In person, 90 minutes: walkthrough of up to 2 spaces, a measurement check, and a rough layout sketch if needed",
+          "Deep dive, 2 hours: full walkthrough and interview for up to 3 spaces, layout and space flow strategy, finish and material suggestions, furniture and lighting advice, and rough plan and elevation markups"
         ],
         "notIncluded": [
-          "Drawings or a design set",
-          "Site visits beyond the booked session"
+          "A full design set or drawings for construction",
+          "Visits beyond the booked session"
         ],
         "deliverables": [
-          "A summary of direction and next steps"
+          "Virtual: follow-up email with a bullet summary within 24 hours",
+          "In person: summary email within 48 hours, and a rough layout sketch",
+          "Deep dive: one-page concept summary PDF within 3 business days, and a follow-up email with links and recommendations"
         ],
-        "suits": "Owners deciding whether and how to start, and owners with a design that needs a second opinion."
+        "suits": "Homeowners who need direction before a full project, DIY clients, and owners preparing a room overhaul or a multi-room refresh.",
+        "duration": "Written summary within 24 hours to 3 business days, depending on the session."
       },
       "construction-documents": {
-        "what": "The next step after design. Once the design is approved, it is developed into a set of construction documents, so the design that was approved is the design that gets built. This service is offered to design clients.",
+        "what": "The next step after design. Once the design is approved, it is developed into a set of construction documents, so the design that was approved is the design that gets built. Construction documents take about 8 to 12 weeks. If you want, MDS continues with permit support, bidding support, and construction administration. This service is offered to design clients. Formal review, approval, and certification actions are performed by the licensed professional of record.",
         "included": [
-          "Construction document set developed from the approved design",
-          "Coordination with your builder and engineers",
-          "Support through permit review comments"
+          "Construction drawings and specifications: plans, sections, elevations, and details",
+          "Interior and exterior details",
+          "Coordination with structural, mechanical, electrical, and plumbing consultants",
+          "Permit set preparation, permit submittal and tracking, and responses to review comments",
+          "Optional: bid packages, pre-bid meetings, and review of bids",
+          "Optional: construction administration with site visits, requests for information, submittal tracking, and punch list review"
         ],
         "notIncluded": [
           "Drawings sealed by MDS",
-          "Structural, mechanical, electrical, or plumbing engineering",
-          "Contractor services or construction administration"
+          "Structural engineering. A structural engineer prepares these drawings under a separate contract.",
+          "Mechanical, electrical, or plumbing engineering",
+          "Contractor services or construction work",
+          "Permit fees"
         ],
         "deliverables": [
           "Construction document set",
-          "Responses to permit review comments"
+          "Responses to permit review comments",
+          "Closeout documents, if construction administration is chosen"
         ],
-        "suits": "Design clients whose approved design is ready to be priced, permitted, and built."
+        "suits": "Design clients whose approved design is ready to be priced, permitted, and built.",
+        "duration": "Construction documents take 8 to 12 weeks. Permitting takes 3 to 8 weeks, depending on the jurisdiction. Bidding takes 2 to 4 weeks. Construction administration lasts as long as construction."
       }
     },
     "cdSheets": [
@@ -258,8 +281,21 @@
     "builders": {
       "label": "Builders and developers",
       "title": "Design partner for builders and developers.",
-      "text": "Bring MDS in at the design stage, so the project is resolved before it is priced and built. Early design decisions are cheaper to change than built ones. You get a clear design, reasoning you can share with your client, and a design that has been checked against code.",
+      "text": "Bring MDS in at the design stage, so the project is resolved before it is priced and built. Early design decisions are cheaper to change than built ones. You can take design only, schematic design and design development, and hand it to the professional of your choice for construction documents. Or continue with MDS into construction documents.",
       "button": "Talk about a project"
+    },
+    "terms": {
+      "label": "Terms",
+      "title": "How engagements work.",
+      "items": [
+        "Every engagement is confirmed in writing before work begins.",
+        "Each project gets a written fixed fee at the proposal stage, set by phase, so the cost is known before work starts.",
+        "Two rounds of revisions are included in each phase. Added rounds are billed at an hourly rate.",
+        "The schedule pauses while the project waits on your approvals or information. Durations assume approvals within 5 business days.",
+        "Fees cover design services only. Construction, permit fees, furnishings, and contractor costs are separate.",
+        "Zoning and code summaries are informal and are not legal opinions.",
+        "Consultation and site visit credits apply to a full-service package booked within 14 days. Credits cannot be transferred."
+      ]
     }
   },
   "work": {
@@ -349,18 +385,18 @@
       {
         "title": "Site and code review",
         "emphasis": false,
-        "happens": "We review the lot, zoning, setbacks, flood zone, and the jurisdiction's rules. Constraints are found before they shape the design.",
+        "happens": "We review the lot, zoning, setbacks, flood zone, and the jurisdiction's rules. Constraints are found before they shape the design. We also recommend added pre-work when it is needed, such as a survey or soils tests.",
         "provide": "Survey, plat, or deed if you have them. Site access if a visit is needed.",
         "get": "A constraints summary that frames the design.",
-        "duration": "[PLACEHOLDER: typical duration]"
+        "duration": "1 to 3 weeks"
       },
       {
         "title": "Concept and schematic design",
         "emphasis": true,
-        "happens": "We test massing and plan options with sketches and 3D views. Each option shows how the house sits, how light enters, and how the rooms connect. You choose a direction.",
+        "happens": "We develop, usually, three options with sketches, plans, elevations, and massing studies. Each option shows how the house sits, how light enters, and how the rooms connect. You choose one.",
         "provide": "Feedback on the options. Your priorities for rooms, light, and budget.",
         "get": "Concept sketches, massing and plan studies, 3D views, and a schematic design set.",
-        "duration": "[PLACEHOLDER: typical duration]"
+        "duration": "4 to 6 weeks"
       },
       {
         "title": "Design development and revisions",
@@ -368,15 +404,15 @@
         "happens": "The chosen design is resolved: room sizes, openings, materials, and finishes. Revisions are made in the rounds defined in the agreement.",
         "provide": "Decisions on materials and finishes, and timely feedback.",
         "get": "A design development set and material and finish direction.",
-        "duration": "[PLACEHOLDER: typical duration]"
+        "duration": "4 to 6 weeks"
       },
       {
         "title": "Construction documents and permit support",
         "emphasis": false,
-        "happens": "For design clients, the approved design is developed into construction documents and coordinated for permit submittal. The set goes to your builder as the basis for pricing and construction.",
+        "happens": "For design clients, the approved design is developed into construction documents and coordinated for permit submittal. The set goes to your builder as the basis for pricing and construction. Structural drawings are prepared by a structural engineer under a separate contract.",
         "provide": "Your builder and engineers, if you have them. Responses to permit review comments.",
         "get": "A construction document set and support through permit review comments.",
-        "duration": "[PLACEHOLDER: typical duration]"
+        "duration": "Construction documents 8 to 12 weeks, then permitting 3 to 8 weeks, depending on the jurisdiction"
       }
     ],
     "sketch": {
@@ -391,23 +427,23 @@
       "items": [
         {
           "q": "How long does a permit take?",
-          "a": "Permit timelines are set by the jurisdiction, not by the studio. [PLACEHOLDER: typical review times for the counties and cities served]"
+          "a": "Permitting typically takes 3 to 8 weeks, depending on the jurisdiction. The jurisdiction sets the review time, not the studio."
         },
         {
           "q": "Who seals the drawings?",
-          "a": "Where a seal is required, drawings are reviewed and sealed by a licensed professional of record. [PLACEHOLDER: how the professional of record is engaged and billed, including for projects outside Florida]"
+          "a": "Where a seal is required, drawings are reviewed and sealed by a licensed professional of record. Structural drawings are prepared by a structural engineer under a separate contract. MDS coordinates the documents that need a seal with the licensed professional of record. [PLACEHOLDER: who engages and pays the professional of record, including for projects outside Florida]"
         },
         {
           "q": "How many revisions are included?",
-          "a": "[PLACEHOLDER: revision rounds per phase]"
+          "a": "Two rounds of revisions are included in each phase. Added rounds are billed at an hourly rate."
         },
         {
           "q": "What file formats do I receive?",
-          "a": "PDF for review and permit submittal. [PLACEHOLDER: confirm CAD and model file delivery]"
+          "a": "PDF for review and permit submittal. Interior packages include CAD and PDF floor plans. [PLACEHOLDER: confirm whether native Revit files are shared for architectural work]"
         },
         {
           "q": "How does payment work?",
-          "a": "Consultations and site analysis reports have fixed prices. Project fees are set in the proposal and tied to phases. [PLACEHOLDER: deposit and payment schedule]"
+          "a": "Consultations and site analysis reports have fixed prices. Each project gets a written fixed fee at the proposal stage, set by phase, so the cost is known before work starts. [PLACEHOLDER: deposit and payment schedule]"
         },
         {
           "q": "Where do you work?",
@@ -423,14 +459,15 @@
         },
         {
           "q": "Do you manage construction?",
-          "a": "No. MDS designs and documents. Choosing a contractor and managing construction are outside the scope."
+          "a": "MDS does not build or run a construction site. Construction administration is offered as an option: site visits, requests for information, submittal tracking, and punch list review. Formal review, approval, and certification actions are performed by the licensed professional of record."
         },
         {
           "q": "Do you take drawings-only work?",
           "a": "MDS is a design studio. Requests for drawings only are reviewed case by case through the contact form."
         }
       ]
-    }
+    },
+    "durationNote": "Durations assume a single-family residence of about 2,000 to 3,500 SF and your approvals within 5 business days. Predesign through construction documents takes 16 to 24 weeks. Commercial and retail projects add 30 to 50 percent for engineer and tenant coordination."
   },
   "about": {
     "meta": {

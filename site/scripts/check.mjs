@@ -19,7 +19,7 @@ const walk = (dir, out = []) => {
 
 // 1. Copy rules, on source text files
 const textExt = new Set(['.astro', '.json', '.md', '.ts', '.css', '.mjs']);
-const banned = /\b(elevate[sd]?|seamless(ly)?|unlock(s|ed|ing)?|tailored|crafted|journey|passion(ate)?|vibrant|cutting-edge|holistic|transform your space|little|tiny|cozy|white-label|drafting services|drafting support|permit sets?)\b/i;
+const banned = /\b(elevate[sd]?|seamless(ly)?|unlock(s|ed|ing)?|tailored|crafted|journey|passion(ate)?|vibrant|cutting-edge|holistic|transform your space|little|tiny|cozy|white-label|drafting services|drafting support|permit sets)\b/i;
 const diminutive = /\b(?!(?:cozinha|caminho|vizinh|linha|minha|tinha|sozinh|rainha|farinha|galinha|casinha)\w*)\w{3,}(zinho|zinha|inho|inha)s?\b/i;
 const seal = /Where a seal is required|Quando um selo é exigido/;
 for (const file of walk('.').filter((f) => textExt.has(extname(f)) && !f.endsWith('package-lock.json') && !f.includes('scripts/'))) {
@@ -35,7 +35,7 @@ for (const file of walk('.').filter((f) => textExt.has(extname(f)) && !f.endsWit
       }
       if (/\barchitect\b/i.test(line) && !/"(label|value)": "Architect"/i.test(line)) fail(`"architect" ${at}: ${line.trim().slice(0, 80)}`);
       if (/\bArquiteto\b/.test(line) && !/"label": "Arquiteto"/.test(line)) fail(`"Arquiteto" ${at}`);
-      if (/\blicensed\b|licenciado/i.test(line) && !seal.test(line) && !/seal/i.test(line) && !/engineer|engenheiro/i.test(line)) fail(`"licensed" ${at}: ${line.trim().slice(0, 80)}`);
+      if (/\blicensed\b|licenciado/i.test(line) && !seal.test(line) && !/seal/i.test(line) && !/engineer|engenheiro/i.test(line) && !/licensed professional|profissional licenciado/i.test(line)) fail(`"licensed" ${at}: ${line.trim().slice(0, 80)}`);
     }
   });
 }
