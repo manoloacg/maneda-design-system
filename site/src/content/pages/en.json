@@ -353,7 +353,15 @@
       "button": "Request a quote"
     },
     "metaDescription": "{title}: the brief, the site context, the design decisions, and the outcome.",
-    "rearAlt": "3D rendering of the rear of the residence: a white three-level facade with a dark-framed angled glass room, a long deck with a stair, and a walkout lower level opening to the lawn."
+    "rearAlt": "3D rendering of the rear of the residence: a white three-level facade with a dark-framed angled glass room, a long deck with a stair, and a walkout lower level opening to the lawn.",
+    "placeholders": {
+      "size": "[PLACEHOLDER: size in SF]",
+      "outcome": "[PLACEHOLDER: permit status, build status, and result]",
+      "visual": "Sketch, diagram, or 3D view for this decision",
+      "sketchEarly": "Early concept sketch",
+      "sketchFinal": "Finished plan or elevation",
+      "documents": "One sheet excerpt from the construction documents, with the title block, owner name, and address removed"
+    }
   },
   "process": {
     "meta": {
@@ -503,6 +511,10 @@
     "cta": {
       "title": "Start with a conversation.",
       "text": "Tell us about the project and we will tell you plainly if it is a fit."
+    },
+    "studio": {
+      "label": "Studio",
+      "title": "How the work happens."
     }
   },
   "contact": {
@@ -825,5 +837,75 @@
     "projects": "Typical projects",
     "related": "Related work",
     "label": "Service area"
+  },
+  "slots": {
+    "home-band": {
+      "note": "Wide image: an early sketch beside the finished drawing",
+      "alt": "An early sketch beside the finished drawing"
+    },
+    "home-audience-owners": {
+      "note": "Photo: a finished residence or an interior",
+      "alt": "A finished residence or an interior"
+    },
+    "home-audience-pt": {
+      "note": "Photo: a design review with a client, or a sketch review",
+      "alt": "A design review with a client"
+    },
+    "home-audience-builders": {
+      "note": "Photo: a design coordination meeting or a site visit",
+      "alt": "A design coordination meeting or a site visit"
+    },
+    "process-1": {
+      "note": "Image: the first conversation, or an intake sketch",
+      "alt": "The first conversation or an intake sketch"
+    },
+    "process-2": {
+      "note": "Image: a page from a sample proposal, with names removed",
+      "alt": "A page from a sample proposal"
+    },
+    "process-3": {
+      "note": "Image: a site and zoning diagram",
+      "alt": "A site and zoning diagram"
+    },
+    "process-4": {
+      "note": "Image: concept sketches and massing options",
+      "alt": "Concept sketches and massing options"
+    },
+    "process-5": {
+      "note": "Image: a design development plan or material board",
+      "alt": "A design development plan or material board"
+    },
+    "process-6": {
+      "note": "Image: drawing sheets from a construction document set, with names removed",
+      "alt": "Drawing sheets from a construction document set"
+    },
+    "about-portrait": {
+      "note": "Portrait: Manolo, in an architectural setting",
+      "alt": "Portrait of Manolo Castaneda, Architectural Designer"
+    },
+    "about-studio-1": {
+      "note": "Photo: Manolo sketching",
+      "alt": "Manolo sketching a design"
+    },
+    "about-studio-2": {
+      "note": "Photo: on a site visit",
+      "alt": "Manolo on a site visit"
+    },
+    "about-studio-3": {
+      "note": "Photo: reviewing a model or 3D view",
+      "alt": "Reviewing a model or 3D view"
+    },
+    "contact-side": {
+      "note": "Photo: the studio desk or a sketch in progress",
+      "alt": "The studio desk with a sketch in progress"
+    },
+    "process-sketch-early": {
+      "note": "Image: an early concept sketch",
+      "alt": "An early concept sketch"
+    },
+    "process-sketch-final": {
+      "note": "Image: the finished sheet",
+      "alt": "The finished sheet"
+    }
   }
 }

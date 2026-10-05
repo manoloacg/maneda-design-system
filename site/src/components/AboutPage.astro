@@ -3,6 +3,8 @@ import Section from './Section.astro';
 import Button from './Button.astro';
 import { Image } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
+import Slot from './Slot.astro';
+import { slotVisible } from '../lib/slots';
 import { getLang, getPage, markPlaceholders, routeFor, t } from '../i18n/utils';
 
 const lang = getLang(Astro.url.pathname);
@@ -10,6 +12,9 @@ const page = getPage(lang).about;
 // Add the portrait by saving a file named portrait.jpg (or .jpeg, .png, .webp) in src/assets/.
 const portraits = import.meta.glob<ImageMetadata>('../assets/portrait.{jpg,jpeg,png,webp}', { eager: true, import: 'default' });
 const portrait = Object.values(portraits)[0];
+const showPortrait = !!portrait || slotVisible('about-portrait');
+const studioSlots = ['about-studio-1', 'about-studio-2', 'about-studio-3'];
+const showStudio = studioSlots.some((id) => slotVisible(id));
 ---
 
 <section style="padding-block:var(--section-space)">
@@ -23,14 +28,28 @@ const portrait = Object.values(portraits)[0];
       </div>
     </div>
     {
-      portrait && (
+      showPortrait && (
         <div class="reveal col-span-12 md:col-span-5">
-          <Image src={portrait} alt={page.hero.portraitAlt} widths={[480, 800, 1000]} sizes="(min-width: 768px) 40vw, 100vw" loading="eager" class="aspect-[4/5] w-full object-cover" />
+          {portrait ? (
+            <Image src={portrait} alt={page.hero.portraitAlt} widths={[480, 800, 1000]} sizes="(min-width: 768px) 40vw, 100vw" loading="eager" class="aspect-[4/5] w-full object-cover" />
+          ) : (
+            <Slot id="about-portrait" ratio="4 / 5" sizes="(min-width: 768px) 40vw, 100vw" eager />
+          )}
         </div>
       )
     }
   </div>
 </section>
+
+{
+  showStudio && (
+    <Section label={page.studio.label} title={page.studio.title}>
+      <div class="grid gap-6 md:grid-cols-3">
+        {studioSlots.map((id) => slotVisible(id) && <div class="reveal"><Slot id={id} ratio="4 / 3" sizes="(min-width: 768px) 30vw, 100vw" /></div>)}
+      </div>
+    </Section>
+  )
+}
 
 <Section tone="alt" label={page.values.label} title={page.values.title}>
   <ul class="grid gap-8 md:grid-cols-3">

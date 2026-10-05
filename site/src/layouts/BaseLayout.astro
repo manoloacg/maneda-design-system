@@ -24,7 +24,7 @@ interface Props {
 const lang = getLang(Astro.url.pathname);
 const { title = t(lang, 'meta.defaultTitle'), description = t(lang, 'meta.defaultDescription'), image = '/images/og-default.png', noindex = false, schema = [] } = Astro.props;
 // Until launch, every page is noindex. Flip "indexing" in site.json when the site goes live.
-const hidden = noindex || !site.indexing;
+const hidden = noindex || !site.indexing || site.showPlaceholders;
 const path = Astro.url.pathname;
 const abs = (p: string) => new URL(p, Astro.site).href;
 const canonical = abs(path);

@@ -6,6 +6,8 @@ import hero from '../assets/hero-home.jpg';
 import ProjectCard from './ProjectCard.astro';
 import SheetLabel from './SheetLabel.astro';
 import ServiceArt from './ServiceArt.astro';
+import Slot from './Slot.astro';
+import { slotVisible } from '../lib/slots';
 import services from '../content/services.json';
 import { getProjects } from '../lib/projects';
 import { getLang, getPage, pick, routeFor, t } from '../i18n/utils';
@@ -16,6 +18,7 @@ const labels = getPage(lang).work.filters;
 const contact = routeFor(lang, 'contact');
 const projects = (await getProjects(lang)).slice(0, 3);
 const num = (i: number) => String(i + 1).padStart(2, '0');
+const audienceSlots = ['home-audience-owners', 'home-audience-pt', 'home-audience-builders'];
 ---
 
 <section class="relative">
@@ -48,11 +51,14 @@ const num = (i: number) => String(i + 1).padStart(2, '0');
 
 <Section label={p.positioning.label} title={p.positioning.title} intro={p.positioning.text} />
 
+{slotVisible('home-band') && <div class="reveal"><Slot id="home-band" ratio="21 / 9" sizes="100vw" /></div>}
+
 <Section tone="alt" label={p.audience.label} title={p.audience.title}>
   <div class="grid gap-10 md:grid-cols-3">
     {
       p.audience.items.map((item, i) => (
         <div class="reveal border-t border-[var(--color-rule-strong)] pt-6">
+          {slotVisible(audienceSlots[i]) && <div class="mb-6"><Slot id={audienceSlots[i]} ratio="4 / 3" sizes="(min-width: 768px) 30vw, 100vw" /></div>}
           <SheetLabel text={num(i)} class="mb-4" />
           <h3 class="mb-4">{item.title}</h3>
           <p class="text-[var(--color-text-muted)]">{item.text}</p>

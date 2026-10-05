@@ -23,6 +23,12 @@ need(!site.email.includes('PLACEHOLDER'), `Studio email set: ${site.email}`, 'St
 need(!site.form.accessKey.includes('PLACEHOLDER'), 'Form access key set. The form will send real email.', 'Form is in test mode. Add the Web3Forms access key in site.json ("form.accessKey").');
 need(!site.replyWindow.en.includes('PLACEHOLDER') && !site.replyWindow.pt.includes('PLACEHOLDER'), 'Reply window promise set.', 'Reply window promise is still a placeholder (site.json, "replyWindow").');
 
+// Image slots: every slot id in the page copy, and which ones already have a file in src/assets/slots.
+const slotIds = Object.keys(JSON.parse(readFileSync('src/content/pages/en.json', 'utf8')).slots ?? {});
+const slotFiles = existsSync('src/assets/slots') ? readdirSync('src/assets/slots') : [];
+const empty = slotIds.filter((id) => !slotFiles.some((f) => f.startsWith(id + '.')));
+if (site.showPlaceholders) blockers.push(`Gray placeholder frames are ON (site.json "showPlaceholders": true). Set it to false at launch. ${empty.length} of ${slotIds.length} image slots are still empty and will simply disappear. Fill them from src/assets/slots (file name = slot id) if you want them shown.`);
+else done.push(`Placeholder frames are off. ${slotIds.length - empty.length} of ${slotIds.length} image slots have images; the rest are hidden.`);
 const sealEn = 'Where a seal is required, drawings are reviewed and sealed by a licensed professional of record.';
 need(site.legalReviewDone === true, 'Privacy policy and standard agreement reviewed by a lawyer.', 'Legal review not done. See LEGAL-CHECKLIST.md, then set "legalReviewDone": true in site.json.');
 need(JSON.parse(readFileSync('src/i18n/en.json', 'utf8')).footer.seal === sealEn, 'Seal sentence present and exact.', 'Seal sentence changed or missing in src/i18n/en.json.');

@@ -2,6 +2,8 @@
 import Section from './Section.astro';
 import Button from './Button.astro';
 import FormField from './FormField.astro';
+import Slot from './Slot.astro';
+import { slotVisible } from '../lib/slots';
 import site from '../content/site.json';
 import { fill, getLang, getPage, isPlaceholder, markPlaceholders, pick, routeFor } from '../i18n/utils';
 
@@ -71,6 +73,7 @@ const link = 'underline decoration-gold';
     </form>
 
     <aside class="col-span-12 md:col-span-4">
+      {slotVisible('contact-side') && <div class="mb-8"><Slot id="contact-side" ratio="4 / 3" sizes="(min-width: 768px) 30vw, 100vw" /></div>}
       <div class="border-t border-[var(--color-rule-strong)] pt-6">
         <p class="sheet-label mb-2 text-[var(--color-text-muted)]">{page.side.email}</p>
         <p class="mb-8">

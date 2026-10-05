@@ -43,6 +43,12 @@ Open `src/content/pricing.json`. Change the `amount` numbers for the three consu
 
 Replace `src/assets/hero-home.jpg` with another image of at least 2000 pixels wide, ideally 4:3 or wider with the house in the lower half. Update its description in `home.hero.alt` in both page files.
 
+## Image slots (gray frames)
+
+Gray frames with a yellow PLACEHOLDER tag mark where an image will go. To fill one, save your image in `src/assets/slots/` with the slot's name, for example `home-band.jpg` or `process-4.webp`. Slot names: `home-band`, `home-audience-owners`, `home-audience-pt`, `home-audience-builders`, `process-1` to `process-6`, `process-sketch-early`, `process-sketch-final`, `about-portrait`, `about-studio-1` to `about-studio-3`, `contact-side`. After saving, update the image description in `src/content/pages/en.json` and `pt.json` under `slots`, so it describes your real image.
+
+At launch, set `"showPlaceholders": false` in `src/content/site.json`. Every slot that is still empty then disappears, and the site shows only what is real. While it is `true`, the whole site is hidden from search engines.
+
 ## How to add your own images to the Services page
 
 Each service shows a drawing-style diagram until you add an image. To replace one, save your image in `src/assets/services/` named after the service: `residential-design.jpg`, `interior-design.jpg`, `site-analysis.jpg`, `consultations.jpg`, or `construction-documents.jpg` (`.webp` and `.png` work too). Use `builders.jpg` for the builders and developers section. The site picks it up on the next build. Use only your own work, and remove names and addresses first.

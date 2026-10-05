@@ -18,14 +18,18 @@ context: "The site is a rural lot in Ohio, so the design follows Ohio code. The 
 moves:
   - title: "Two doors, a larger sauna"
     text: "A corner glass sauna with three access points was tested. It left room for only one usable bench. The final sauna has two access points, from the hallway and the bathroom, and a larger footprint that uses the space freed by the new layout."
+    visual: "Plan of the sauna, hallway, and bathroom"
   - title: "A room that works in all seasons"
     text: "A three to four season room has to be finished and conditioned underneath, to avoid condensation on the underside of the second floor. Its 14 by 30 ft size comes from the clearance the owner wanted around a table and chairs."
     image: ../../../assets/ohio-rear.webp
     alt: "3D rendering of the rear of the residence: a white three-level facade with a dark-framed angled glass room, a long deck with a stair, and a walkout lower level opening to the lawn."
   - title: "See and hear across the house"
     text: "The owners wanted spaces that connect instead of divide. The theater is aligned with the main living space so both screens can be seen at once, and an interior window between the living room and the gym was raised as one way to keep that connection."
+    visual: "Plan or 3D view showing the sight lines"
   - title: "Code first on bedroom egress"
     text: "The south bedroom egress window had to move to give code-compliant emergency access. The bathroom and closet shifted to the gym-side wall and the bedroom to the east side of the room, so the fix was resolved in the layout."
+    visual: "Plan of the bedroom, before and after"
   - title: "Room for a car to back out"
     text: "The garage, foyer, and coat closet block was shifted sideways so a car backing out of the garage clears the roof overhang of the covered entry."
+    visual: "Plan or elevation of the garage and entry"
 ---

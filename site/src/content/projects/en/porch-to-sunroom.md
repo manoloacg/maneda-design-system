@@ -1,8 +1,7 @@
 ---
 title: "Screened porch to sunroom"
 number: "MDS-26-02"
-order: 2
-published: false
+order: 3
 type: outdoor
 location: "[PLACEHOLDER: city and state]"
 size: "[PLACEHOLDER: size]"

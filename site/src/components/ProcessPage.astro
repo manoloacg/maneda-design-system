@@ -2,7 +2,8 @@
 import Section from './Section.astro';
 import Button from './Button.astro';
 import Faq from './Faq.astro';
-import ImagePlaceholder from './ImagePlaceholder.astro';
+import Slot from './Slot.astro';
+import { slotVisible } from '../lib/slots';
 import SheetLabel from './SheetLabel.astro';
 import { getLang, getPage, markPlaceholders, routeFor, t } from '../i18n/utils';
 
@@ -26,6 +27,7 @@ const ph = markPlaceholders;
             <h2 class={ph_.emphasis ? '' : 'text-[1.6rem]'}>{ph_.title}</h2>
             <p class="sheet-label mt-4 text-[var(--color-text-muted)]">{L.duration}</p>
             <p class="text-sm" set:html={ph(ph_.duration)} />
+            {slotVisible(`process-${i + 1}`) && <div class="mt-6"><Slot id={`process-${i + 1}`} ratio="4 / 3" sizes="(min-width: 768px) 30vw, 100vw" /></div>}
           </div>
           <div class="col-span-12 grid gap-6 md:col-span-8 md:grid-cols-3">
             <div>
@@ -47,18 +49,20 @@ const ph = markPlaceholders;
   </ol>
 </section>
 
+{(slotVisible('process-sketch-early') || slotVisible('process-sketch-final')) && (
 <Section tone="alt" label={page.sketch.label} title={page.sketch.title}>
   <div class="grid gap-8 md:grid-cols-2">
     <figure class="reveal">
-      <ImagePlaceholder ratio="4 / 3" note={page.sketch.early} />
+      <Slot id="process-sketch-early" ratio="4 / 3" sizes="(min-width: 768px) 50vw, 100vw" />
       <figcaption class="sheet-label mt-3 text-[var(--color-text-muted)]">{page.sketch.early}</figcaption>
     </figure>
     <figure class="reveal">
-      <ImagePlaceholder ratio="4 / 3" note={page.sketch.final} />
+      <Slot id="process-sketch-final" ratio="4 / 3" sizes="(min-width: 768px) 50vw, 100vw" />
       <figcaption class="sheet-label mt-3 text-[var(--color-text-muted)]">{page.sketch.final}</figcaption>
     </figure>
   </div>
 </Section>
+)}
 
 <Section label={page.faq.label} title={page.faq.title}>
   <Faq items={page.faq.items} />

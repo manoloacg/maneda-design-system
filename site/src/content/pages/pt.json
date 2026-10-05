@@ -353,7 +353,15 @@
       "button": "Solicitar orçamento"
     },
     "metaDescription": "{title}: o programa, o contexto do terreno, as decisões de projeto e o resultado.",
-    "rearAlt": "Renderização 3D da parte de trás da residência: fachada branca de três níveis com uma sala de vidro angulada de esquadrias escuras, um deck longo com escada e um pavimento inferior com saída para o gramado."
+    "rearAlt": "Renderização 3D da parte de trás da residência: fachada branca de três níveis com uma sala de vidro angulada de esquadrias escuras, um deck longo com escada e um pavimento inferior com saída para o gramado.",
+    "placeholders": {
+      "size": "[PLACEHOLDER: tamanho em SF]",
+      "outcome": "[PLACEHOLDER: situação da aprovação, situação da obra e resultado]",
+      "visual": "Croqui, diagrama ou vista 3D desta decisão",
+      "sketchEarly": "Croqui inicial",
+      "sketchFinal": "Planta ou elevação final",
+      "documents": "Um trecho de prancha do projeto executivo, sem carimbo de título, nome do proprietário e endereço"
+    }
   },
   "process": {
     "meta": {
@@ -503,6 +511,10 @@
     "cta": {
       "title": "Comece por uma conversa.",
       "text": "Conte-nos sobre o projeto e diremos com clareza se faz sentido."
+    },
+    "studio": {
+      "label": "Estúdio",
+      "title": "Como o trabalho acontece."
     }
   },
   "contact": {
@@ -825,5 +837,75 @@
     "projects": "Projetos típicos",
     "related": "Trabalhos relacionados",
     "label": "Área de atendimento"
+  },
+  "slots": {
+    "home-band": {
+      "note": "Imagem larga: um croqui inicial ao lado do desenho final",
+      "alt": "Um croqui inicial ao lado do desenho final"
+    },
+    "home-audience-owners": {
+      "note": "Foto: uma residência pronta ou um interior",
+      "alt": "Uma residência pronta ou um interior"
+    },
+    "home-audience-pt": {
+      "note": "Foto: uma revisão de projeto com um cliente, ou de croquis",
+      "alt": "Uma revisão de projeto com um cliente"
+    },
+    "home-audience-builders": {
+      "note": "Foto: uma reunião de coordenação de projeto ou uma visita à obra",
+      "alt": "Uma reunião de coordenação de projeto ou uma visita à obra"
+    },
+    "process-1": {
+      "note": "Imagem: a primeira conversa, ou um croqui de levantamento",
+      "alt": "A primeira conversa ou um croqui de levantamento"
+    },
+    "process-2": {
+      "note": "Imagem: uma página de uma proposta de exemplo, sem nomes",
+      "alt": "Uma página de uma proposta de exemplo"
+    },
+    "process-3": {
+      "note": "Imagem: um diagrama de terreno e zoneamento",
+      "alt": "Um diagrama de terreno e zoneamento"
+    },
+    "process-4": {
+      "note": "Imagem: croquis de estudo preliminar e opções de volumetria",
+      "alt": "Croquis de estudo preliminar e opções de volumetria"
+    },
+    "process-5": {
+      "note": "Imagem: uma planta de desenvolvimento do projeto ou um painel de materiais",
+      "alt": "Uma planta de desenvolvimento do projeto ou um painel de materiais"
+    },
+    "process-6": {
+      "note": "Imagem: pranchas de um conjunto de projeto executivo, sem nomes",
+      "alt": "Pranchas de um conjunto de projeto executivo"
+    },
+    "about-portrait": {
+      "note": "Retrato: Manolo, em um ambiente arquitetônico",
+      "alt": "Retrato de Manolo Castaneda, Designer de Arquitetura"
+    },
+    "about-studio-1": {
+      "note": "Foto: Manolo desenhando croquis",
+      "alt": "Manolo desenhando um croqui"
+    },
+    "about-studio-2": {
+      "note": "Foto: em uma visita ao terreno",
+      "alt": "Manolo em uma visita ao terreno"
+    },
+    "about-studio-3": {
+      "note": "Foto: analisando um modelo ou uma vista 3D",
+      "alt": "Analisando um modelo ou uma vista 3D"
+    },
+    "contact-side": {
+      "note": "Foto: a mesa do estúdio ou um croqui em andamento",
+      "alt": "A mesa do estúdio com um croqui em andamento"
+    },
+    "process-sketch-early": {
+      "note": "Imagem: um croqui inicial",
+      "alt": "Um croqui inicial"
+    },
+    "process-sketch-final": {
+      "note": "Imagem: a prancha final",
+      "alt": "A prancha final"
+    }
   }
 }
