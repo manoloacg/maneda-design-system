@@ -448,7 +448,7 @@
         },
         {
           "q": "Where do you work?",
-          "a": "Based in Orlando, Florida. Projects across the United States. [PLACEHOLDER: confirm the states and jurisdictions served, and how local code review works outside Florida]"
+          "a": "Based in Orlando, Florida. Projects across the United States. At the start of every project, MDS researches the jurisdiction: which code applies, size and height limits, seal and engineering triggers, and the submittal format."
         },
         {
           "q": "Can we work in Portuguese?",

@@ -17,7 +17,7 @@ Domain: manedastudios.com, newly bought by Manolo, nothing hosted on it. Reply p
 | 10 | Portrait of Manolo, in an architectural setting | About page |
 | 11 | "What I value" in Manolo's own words (three short statements) | `about.values` |
 | 12 | Final read of the five service descriptions, now rewritten from your Service Pricing Guide, in both languages | `services.items` in both page files |
-| 14 | Checklist PDF, English and Portuguese, plus the three section titles for the Resources page | `public/resources/` and `resources.contents.items` |
+| 14 | Later, not needed for launch: checklist PDF, English and Portuguese, plus the three section titles for the Resources page. The page is off until then. | `public/resources/` and `resources.contents.items` |
 | 15 | Privacy policy date and a legal review | `privacy` in both page files |
 | 16 | A native Portuguese read of all Portuguese copy, including the Portuguese seal sentence | `pt.json` files |
 
@@ -25,7 +25,7 @@ Domain: manedastudios.com, newly bought by Manolo, nothing hosted on it. Reply p
 
 | Item | Notes |
 |---|---|
-| Outlines for three more journal topics: what a site analysis includes, how a designer works with a builder, design cost versus construction cost | Journal template is ready |
+| Journal and Resources are switched off in `site.json` (`features`) until real content exists. Journal needs a finished article. Resources needs the checklist PDFs and three section titles. Optional outlines for three more journal topics: what a site analysis includes, how a designer works with a builder, design cost versus construction cost | Journal template is ready |
 | Real jurisdiction notes for any place page (Orlando area or elsewhere) | None are built. Only add a city when the content is real and different from the others. |
 | Instagram link once the account is live | `site.json` (`social.instagram`). Hidden until filled. |
 | Vector (SVG) logo files | The brand folder has PNG only. Also re-export `primary-square-white.png`, which is a cropped file with no wordmark. |

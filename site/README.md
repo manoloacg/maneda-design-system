@@ -55,6 +55,10 @@ Put the image in `src/assets/` (create the folder if needed), then add `heroImag
 
 In `src/content/site.json`, `"indexing": false` keeps the whole site hidden from Google. Every page is marked noindex and `robots.txt` blocks crawlers. Change it to `true` only on launch day. Separately, three kinds of page stay hidden even after launch until they are real: case studies and journal posts that still contain `[PLACEHOLDER]` text, journal posts marked `draft: true`, and the thank-you pages. They are also left out of `sitemap.xml`.
 
+## Turning sections on and off
+
+In `src/content/site.json`, `features.resources` and `features.journal` are both `false`. While false, those pages are left out of the website completely: no pages, no footer links, no sitemap entries. Set one to `true` when its content is real (the checklist PDFs for Resources, a finished article for Journal).
+
 ## Journal
 
 Add a post by copying `src/content/journal/en/start-a-custom-home.md` and its Portuguese twin in `pt/`, same file name in both. Write the article below the dashes. Set `draft: false` and add `date: 2026-11-01` (use the real date) when it is ready.

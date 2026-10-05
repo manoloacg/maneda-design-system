@@ -9,13 +9,15 @@ import { hasPlaceholder } from '../lib/journal';
    and any case study that still contains [PLACEHOLDER] text. */
 export const GET: APIRoute = async () => {
   const skip = new Set(['styleguide', 'thankYou', 'resourcesThankYou', 'areas']);
+  if (!site.features.resources) skip.add('resources');
+  if (!site.features.journal) skip.add('journal');
   const paths: string[] = Object.entries(routes)
     .filter(([key]) => !skip.has(key))
     .map(([, r]) => r.en);
 
   const projects = await getCollection('projects');
   for (const p of projects.filter((p) => p.id.startsWith('en/') && p.data.published && !hasPlaceholder(p.data))) paths.push(`${routes.work.en}${p.id.split('/')[1]}/`);
-  const posts = await getCollection('journal');
+  const posts = site.features.journal ? await getCollection('journal') : [];
   for (const p of posts.filter((p) => p.id.startsWith('en/') && !p.data.draft && !hasPlaceholder(p.data))) paths.push(`${routes.journal.en}${p.id.split('/')[1]}/`);
   const cities = await getCollection('cities');
   for (const c of cities.filter((c) => c.id.startsWith('en/') && c.data.published)) paths.push(`${routes.areas.en}${c.id.split('/')[1]}/`);

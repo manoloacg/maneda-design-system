@@ -20,8 +20,8 @@ need(JSON.parse(readFileSync('src/i18n/en.json', 'utf8')).footer.seal === sealEn
 const groups = [
   ['Page copy (src/content/pages)', walk('src/content/pages')],
   ['Site settings and UI text', ['src/content/site.json', ...walk('src/i18n').filter((f) => f.endsWith('.json'))]],
-  ['Case studies (src/content/projects)', walk('src/content/projects')],
-  ['Journal posts (src/content/journal)', walk('src/content/journal')],
+  ['Case studies (src/content/projects)', walk('src/content/projects').filter((f) => !/^published:\s*false/m.test(readFileSync(f, 'utf8')))],
+  ...(site.features?.journal ? [['Journal posts (src/content/journal)', walk('src/content/journal')]] : []),
 ];
 for (const [name, files] of groups) {
   const n = files.reduce((sum, f) => sum + count(f), 0);
@@ -33,8 +33,13 @@ for (const f of walk('src/content/projects').filter((f) => f.includes('/en/'))) 
   warnings.push(`${f.split('/').pop()}: clientApproved is ${approved}. Keep it false unless the client approved real names in writing.`);
 }
 if (existsSync('src/pages/styleguide.astro')) warnings.push('The internal style guide pages still exist (/styleguide/ and /pt/styleguide/). Delete src/pages/styleguide.astro, src/pages/pt/styleguide.astro and src/components/StyleGuide.astro before launch.');
-if (!existsSync('public/resources/before-you-hire-a-designer.pdf')) blockers.push('Checklist PDF missing.');
-else if (readFileSync('public/resources/before-you-hire-a-designer.pdf', 'latin1').includes('PLACEHOLDER')) blockers.push('The checklist PDFs are still the placeholder files (public/resources).');
+if (site.features?.resources) {
+  if (!existsSync('public/resources/before-you-hire-a-designer.pdf')) blockers.push('Checklist PDF missing.');
+  else if (readFileSync('public/resources/before-you-hire-a-designer.pdf', 'latin1').includes('PLACEHOLDER')) blockers.push('The checklist PDFs are still the placeholder files (public/resources).');
+} else {
+  warnings.push('Resources page is OFF (site.json features.resources). Turn it on after the real checklist PDFs are in public/resources.');
+}
+if (!site.features?.journal) warnings.push('Journal is OFF (site.json features.journal). Turn it on after at least one article is finished.');
 (site.indexing ? done : warnings).push(site.indexing ? 'Search indexing is ON.' : 'Search indexing is OFF. Turn it on only on launch day ("indexing": true in site.json).');
 (site.analytics.enabled ? done : warnings).push(site.analytics.enabled ? 'Analytics is on.' : 'Analytics is off. Optional. Turn on only after you approve it.');
 
