@@ -1,49 +1,44 @@
-# Content still needed from Manolo
+# Content I still need from Manolo
 
-Every placeholder on the site is marked `[PLACEHOLDER: ...]` in the source and shows as a yellow flag in the preview. This list grows each phase.
+Every placeholder on the site is written `[PLACEHOLDER: ...]` in the source and shows as a yellow flag in the preview. Run `npm run launch-check` to see the live count.
 
-## Needed now (Phase 1)
+Done already: studio email (manedastudios@gmail.com), seal sentence in English (confirmed).
 
-| Item | Where it goes | Status |
+## Must have before launch
+
+| # | Item | Where it goes |
 |---|---|---|
-| Studio email | `src/content/site.json` (`email`) | Done: manedastudios@gmail.com. A domain email is better for credibility later. |
-| Domain name | `src/content/site.json` (`url`) | Open. Canonical and hreflang tags use a temporary address until set. |
-| Web3Forms access key | `src/content/site.json` (`form.accessKey`) | Open. Created in Phase 2 setup. |
-| Seal sentence (EN) | `src/i18n/en.json` (`footer.seal`) | Confirmed by Manolo. The Portuguese version is a translation and still needs a native read. |
-| Reply window promise | `src/content/site.json` (`replyWindow`) | Open |
-| Instagram link, once live | `src/content/site.json` (`social.instagram`) | Open. Hidden until filled. |
-| Vector (SVG) logo source | `Logos/` | Open. Web PNGs are generated from the large PNGs. |
-| Replacement for `Logos/primary-square-white.png` | `Logos/` | That file is a cropped piece of the mark with no wordmark. The site uses a white version derived from the horizontal black lockup instead. |
+| 1 | Domain name | `src/content/site.json` (`url`) |
+| 2 | Web3Forms access key (see LAUNCH.md section 3) | `site.json` (`form.accessKey`) |
+| 3 | Reply promise, for example "within 1 business day", in English and Portuguese | `site.json` (`replyWindow`) |
+| 4 | Hero photo for the home page, wide, of a real MDS project | Home page |
+| 5 | Which of the three projects you approve for public case studies | `src/content/projects/` |
+| 6 | For each approved project: the brief, the site and code context, 3 design moves with a sketch, diagram or 3D view each, an early sketch beside the final plan or elevation, one sheet excerpt, and the outcome | `src/content/projects/en/*.md` and `pt/*.md` |
+| 7 | Written client approval before any real name or address appears (`clientApproved: true`) | Same files |
+| 8 | Typical duration for each of the 6 process phases | `pages/en.json` and `pt.json`, `process.phases` |
+| 9 | FAQ answers: permit timelines by county and city, how the professional of record is engaged and billed, revision rounds per phase, CAD and model file delivery, deposit and payment schedule, counties served | `process.faq` |
+| 10 | Portrait of Manolo, in an architectural setting | About page |
+| 11 | "What I value" in Manolo's own words (three short statements) | `about.values` |
+| 12 | Confirm or correct the service inclusions, exclusions and deliverables for all five services, especially consultations. These were drafted by Claude. | `services.items` in both page files |
+| 13 | What moves a site analysis above the $700 starting price | `services.items.site-analysis.pricingNote` |
+| 14 | Checklist PDF, English and Portuguese, plus the three section titles for the Resources page | `public/resources/` and `resources.contents.items` |
+| 15 | Privacy policy date and a legal review | `privacy` in both page files |
+| 16 | A native Portuguese read of all Portuguese copy, including the Portuguese seal sentence | `pt.json` files |
 
-## Needed for Phase 2 content
+## Should have
 
-| Item | Where it goes | Status |
-|---|---|---|
-| Hero photo | Home page hero | Open |
-| Details for the 3 case studies (brief, context, 3 design moves each with a sketch or 3D view, sketch to final pair, one sheet excerpt, outcome) | `src/content/projects/en/*.md` and `pt/*.md` | Open. Do not publish until each project is approved. |
-| Permission for each project (`clientApproved`) | Same files | Open. Defaults to false. |
-| Typical duration for each of the 6 phases | `pages/en.json` and `pt.json`, `process.phases` | Open |
-| FAQ answers: permit timelines, professional of record, revision rounds, file formats, payment schedule, counties served | `process.faq` | Open |
-| Reply window promise | `site.json` (`replyWindow`) | Open |
-| Portrait | About page | Open |
-| About page "What I value" in your own words | `about.values` | Open |
-| Confirm service inclusions and not-included lists for all five services, especially consultations | `services.items` | Open. Drafted by Claude, not by Manolo. |
-| What moves a site analysis above $700 | `services.items.site-analysis.pricingNote` | Open |
-| Native Portuguese read of all Portuguese copy | `pt.json` files | Open |
-| Privacy policy date and legal review | `privacy` | Open |
-| Web3Forms access key | `site.json` | Open. Form stays in test mode until set. |
+| Item | Notes |
+|---|---|
+| Outlines for three more journal topics: what a site analysis includes, how a designer works with a builder, design cost versus construction cost | Journal template is ready |
+| Real jurisdiction notes for any city page | None are built. Only add a city when the content is real and different from the others. |
+| Instagram link once the account is live | `site.json` (`social.instagram`). Hidden until filled. |
+| Vector (SVG) logo files | The brand folder has PNG only. Also re-export `primary-square-white.png`, which is a cropped file with no wordmark. |
+| A studio email on your own domain | Better for credibility than Gmail. Cloudflare Email Routing can forward it to Gmail. |
+| Share images per page | Case studies use their own hero photo once supplied. Other pages use the default image in `public/images/og-default.png`. Supply branded images if you want them. |
 
-## Needed for Phase 3 content
+## Decisions that stay with Manolo
 
-| Item | Where it goes | Status |
-|---|---|---|
-| Checklist PDF in English and Portuguese | `public/resources/` | Open. Placeholder files are in place. |
-| The three checklist section titles | `resources.contents.items` | Open |
-| Journal article: start a custom home (4 sections) | `src/content/journal/en` and `pt` | Open. Currently an outline. |
-| Three more journal topics (site analysis, working with a builder, design cost vs construction cost) | `src/content/journal/` | Open. Not started. |
-| Real jurisdiction notes for each city before any city page is published | `src/content/cities/` | Open. No city pages exist. |
-| Decision on follow-up emails for the checklist | n/a | Open |
-
-## Coming in later phases
-
-Hero photo, project photos and drawings, project approvals (`clientApproved`), portrait, real jurisdictions, typical durations per phase, FAQ answers, the checklist PDF content.
+- Whether to turn on analytics (LAUNCH.md section 9).
+- Whether to follow up with checklist downloads by email. This needs an email tool and is a separate decision.
+- Whether Maneda Photography is ever linked from this site. Default: no.
+- The launch switch: `"indexing": true` in `site.json`. Nothing is public to search engines until this is set.

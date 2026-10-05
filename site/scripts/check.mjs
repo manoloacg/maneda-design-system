@@ -22,10 +22,12 @@ const textExt = new Set(['.astro', '.json', '.md', '.ts', '.css', '.mjs']);
 const banned = /\b(elevate[sd]?|seamless(ly)?|unlock(s|ed|ing)?|tailored|crafted|journey|passion(ate)?|vibrant|cutting-edge|holistic|transform your space|little|tiny|cozy|white-label|drafting services|drafting support|permit sets?)\b/i;
 const diminutive = /\b(?!(?:cozinha|caminho|vizinh|linha|minha|tinha|sozinh|rainha|farinha|galinha|casinha)\w*)\w{3,}(zinho|zinha|inho|inha)s?\b/i;
 const seal = /Where a seal is required|Quando um selo é exigido/;
-for (const file of walk('.').filter((f) => textExt.has(extname(f)) && !f.endsWith('package-lock.json') && !f.includes('scripts/') && f !== 'README.md')) {
+for (const file of walk('.').filter((f) => textExt.has(extname(f)) && !f.endsWith('package-lock.json') && !f.includes('scripts/'))) {
   readFileSync(file, 'utf8').split('\n').forEach((line, i) => {
     const at = `${file}:${i + 1}`;
     if (/[—–]/.test(line)) fail(`dash ${at}: ${line.trim().slice(0, 80)}`);
+    const internalDoc = ['README.md', 'LAUNCH.md', 'CONTENT-NEEDED.md', 'QUALITY-REPORT.md'].includes(file);
+    if (internalDoc) return;
     if (!file.endsWith('.css') && !file.endsWith('.ts') && !file.endsWith('.astro') || file.endsWith('.json')) {
       const b = line.match(banned); if (b) fail(`banned word "${b[0]}" ${at}`);
       if (file.includes('/pt.json') || file.includes('/pt/') || file.endsWith('pt.json')) {

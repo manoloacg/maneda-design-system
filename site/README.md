@@ -67,6 +67,10 @@ Off. To turn on Cloudflare Web Analytics, set `analytics.enabled` to `true` and 
 
 Replace `public/resources/before-you-hire-a-designer.pdf` and `antes-de-contratar-um-designer.pdf` with the real files, keeping the same names. The visitor gets the download on the thank-you page. Following up by email later needs an email tool such as Buttondown or Mailchimp. That is a separate decision.
 
+## How to publish
+
+Read `LAUNCH.md`. It walks through the form key, the Cloudflare setup, the domain, the launch-day order, and the Google and Bing checklists. Run `npm run launch-check` at any time to see what still blocks launch. Nothing goes live until you say so.
+
 ## The inquiry form
 
 The form uses Web3Forms. Until a real access key is added in `src/content/site.json` (`form.accessKey`), the form runs in test mode: it checks the fields, shows the thank-you page with a test note, and sends nothing. The confirmation email text is in `src/content/pages/en.json` and `pt.json` under `contact.confirmationEmail`.
