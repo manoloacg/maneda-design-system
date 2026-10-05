@@ -24,6 +24,7 @@ const btn = 'inline-flex min-h-[var(--tap)] items-center border border-obsidian 
       projects.map((pr) => (
         <div data-type={pr.data.type}>
           <ProjectCard
+            as="h2"
             href={`${routeFor(lang, 'work')}${pr.slug}/`}
             number={pr.data.number}
             title={pr.data.title}

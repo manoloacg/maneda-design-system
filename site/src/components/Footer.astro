@@ -5,7 +5,7 @@ const lang = getLang(Astro.url.pathname);
 const items = ['services', 'work', 'process', 'about', 'contact', 'journal', 'resources'] as const;
 const email = site.email;
 const year = new Date().getFullYear();
-const link = 'inline-flex min-h-[var(--tap)] items-center no-underline hover:underline decoration-gold underline-offset-[0.4em] [overflow-wrap:anywhere]';
+const link = 'inline-flex min-h-[var(--tap)] min-w-[var(--tap)] items-center no-underline hover:underline decoration-gold underline-offset-[0.4em] [overflow-wrap:anywhere]';
 ---
 
 <footer class="tone-dark" style="padding-block:clamp(3rem,2rem + 4vw,6rem)">
@@ -15,7 +15,7 @@ const link = 'inline-flex min-h-[var(--tap)] items-center no-underline hover:und
       <p class="max-w-[38ch] text-[var(--color-text-muted)]">{t(lang, 'footer.about')}</p>
     </div>
 
-    <nav aria-label={t(lang, 'nav.primary')} class="col-span-6 md:col-span-3">
+    <nav aria-label={t(lang, 'nav.footer')} class="col-span-6 md:col-span-3">
       <ul>
         {items.map((key) => <li><a href={routeFor(lang, key)} class={link}>{t(lang, `nav.${key}`)}</a></li>)}
       </ul>

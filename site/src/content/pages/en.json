@@ -34,7 +34,8 @@
     "services": {
       "label": "Services",
       "title": "Five services, in the order a project needs them.",
-      "learnMore": "Read more"
+      "learnMore": "Read more",
+      "learnMoreAbout": "about"
     },
     "work": {
       "label": "Selected work",

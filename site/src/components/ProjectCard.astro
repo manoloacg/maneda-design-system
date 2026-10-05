@@ -15,8 +15,9 @@ interface Props {
   title: string;
   image?: ImageMetadata;
   alt?: string;
+  as?: 'h2' | 'h3';
 }
-const { href, number, type, location, result, title, image, alt = '' } = Astro.props;
+const { href, number, type, location, result, title, image, alt = '', as: Heading = 'h3' } = Astro.props;
 ---
 
 <article class="reveal group">
@@ -32,7 +33,7 @@ const { href, number, type, location, result, title, image, alt = '' } = Astro.p
     </div>
     <div class="mt-5 border-t border-[var(--color-rule-strong)] pt-4">
       <SheetLabel text={number} class="mb-3" />
-      <h3 class="mb-2" set:html={markPlaceholders(title)} />
+      <Heading class="mb-2 text-[var(--text-h3)]" set:html={markPlaceholders(title)} />
       <p class="sheet-label mb-3 text-[var(--color-text-muted)]">{type} · {location}</p>
       <p class="text-[var(--color-text-muted)]" set:html={markPlaceholders(result)} />
     </div>

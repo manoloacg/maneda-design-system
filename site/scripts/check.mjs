@@ -78,6 +78,14 @@ if (existsSync('dist')) {
       if (m[1].includes('PLACEHOLDER')) fail(`[PLACEHOLDER] inside JSON-LD in ${page}`);
       if (/streetAddress|telephone/.test(m[1])) fail(`address or phone in JSON-LD in ${page}`);
     }
+    const noindex = /name="robots" content="noindex/.test(text);
+    const title = text.match(/<title>(.*?)<\/title>/)?.[1] ?? '';
+    const desc = text.match(/<meta name="description" content="(.*?)"/)?.[1] ?? '';
+    if (title.length > 70) fail(`title over 70 characters in ${page}`);
+    if (!noindex && (desc.length < 50 || desc.length > 165)) fail(`description length ${desc.length} in ${page}`);
+    for (const need of ['rel="canonical"', 'hreflang="en"', 'hreflang="pt-BR"', 'property="og:title"', 'property="og:image"']) {
+      if (!text.includes(need)) fail(`missing ${need} in ${page}`);
+    }
     const h1 = (text.match(/<h1[\s>]/g) || []).length;
     if (h1 !== 1 && !page.includes('404')) fail(`${h1} h1 tags in ${page}`);
     for (const m of text.matchAll(/<img\b[^>]*>/g)) if (!/\balt=/.test(m[0])) fail(`img without alt in ${page}`);

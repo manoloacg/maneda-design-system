@@ -5,16 +5,16 @@ import { getLang, routeFor, t } from '../i18n/utils';
 const lang = getLang(Astro.url.pathname);
 const items = ['services', 'work', 'process', 'about', 'contact'] as const;
 const here = Astro.url.pathname;
-const link = 'inline-flex min-h-[var(--tap)] items-center text-[0.8rem] font-medium uppercase tracking-[0.18em] no-underline hover:underline decoration-gold underline-offset-[0.5em]';
+const link = 'inline-flex min-h-[var(--tap)] min-w-[var(--tap)] items-center text-[0.8rem] font-medium uppercase tracking-[0.18em] no-underline hover:underline decoration-gold underline-offset-[0.5em]';
 ---
 
 <header class="border-b border-[var(--color-rule)] bg-[var(--color-bg)]">
   <div class="container-site flex items-center justify-between gap-4 py-3">
-    <a href={routeFor(lang, 'home')} class="shrink-0" aria-label={t(lang, 'nav.home')}>
+    <a href={routeFor(lang, 'home')} class="inline-flex min-h-[var(--tap)] shrink-0 items-center" aria-label={t(lang, 'nav.home')}>
       <img src="/images/logo/logo-horizontal-black.png" alt="Maneda Studios" width="155" height="40" class="h-8 w-auto sm:h-10" />
     </a>
 
-    <nav id="site-nav" aria-label={t(lang, 'nav.primary')} class="hidden items-center gap-8 lg:flex">
+    <nav id="site-nav" aria-label={t(lang, 'nav.primary')} class="hidden items-center gap-8 xl:flex">
       {
         items.map((key) => (
           <a href={routeFor(lang, key)} class={link} aria-current={here.startsWith(routeFor(lang, key)) ? 'page' : undefined}>
@@ -26,20 +26,20 @@ const link = 'inline-flex min-h-[var(--tap)] items-center text-[0.8rem] font-med
 
     <div class="flex items-center gap-3">
       <LangSwitcher />
-      <span class="hidden lg:block"><Button href={routeFor(lang, 'contact')}>{t(lang, 'cta.requestQuote')}</Button></span>
+      <span class="hidden xl:block"><Button href={routeFor(lang, 'contact')}>{t(lang, 'cta.requestQuote')}</Button></span>
       <button
         type="button"
         id="menu-toggle"
         aria-expanded="false"
         aria-controls="mobile-nav"
-        class="inline-flex min-h-[var(--tap)] items-center border border-obsidian px-3 text-[0.8rem] font-medium uppercase tracking-[0.18em] lg:hidden"
+        class="inline-flex min-h-[var(--tap)] items-center border border-obsidian px-3 text-[0.8rem] font-medium uppercase tracking-[0.18em] xl:hidden"
         data-open={t(lang, 'nav.menuOpen')}
         data-close={t(lang, 'nav.menuClose')}
       >{t(lang, 'nav.menuOpen')}</button>
     </div>
   </div>
 
-  <nav id="mobile-nav" aria-label={t(lang, 'nav.primary')} hidden class="border-t border-[var(--color-rule)] lg:hidden">
+  <nav id="mobile-nav" aria-label={t(lang, 'nav.primary')} hidden class="border-t border-[var(--color-rule)] xl:hidden">
     <ul class="container-site flex flex-col py-2">
       {
         items.map((key) => (

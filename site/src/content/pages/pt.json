@@ -34,7 +34,8 @@
     "services": {
       "label": "Serviços",
       "title": "Cinco serviços, na ordem em que um projeto os usa.",
-      "learnMore": "Saiba mais"
+      "learnMore": "Saiba mais",
+      "learnMoreAbout": "sobre"
     },
     "work": {
       "label": "Trabalhos selecionados",
@@ -182,7 +183,7 @@
           "Zona de inundação e notas de cota",
           "Servidões e acesso, conforme os registros disponíveis",
           "Notas sobre infraestrutura disponível",
-          "Diagrama da área construível",
+          "Diagrama da área edificável",
           "Um resumo do programa: o que o lote comporta"
         ],
         "notIncluded": [
@@ -192,7 +193,7 @@
         ],
         "deliverables": [
           "Relatório escrito (PDF)",
-          "Diagrama da área construível"
+          "Diagrama da área edificável"
         ],
         "suits": "Compradores que comparam lotes, proprietários que planejam uma ampliação e construtores que testam um terreno antes de se comprometer.",
         "pricingNote": "[PLACEHOLDER: o que leva um relatório acima do preço inicial]"
@@ -736,7 +737,7 @@
   },
   "resources": {
     "meta": {
-      "title": "Checklist Gratuito: Antes de Contratar um Designer | Maneda Design Studios",
+      "title": "Checklist: Antes de Contratar um Designer | Maneda Design Studios",
       "description": "Um checklist gratuito para proprietários na Flórida Central que estão decidindo como contratar um designer para casa, ampliação ou reforma."
     },
     "hero": {

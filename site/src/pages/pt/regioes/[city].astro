@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import CityPage from '../../../components/CityPage.astro';
-import { fill, getLang, getPage } from '../../../i18n/utils';
+import { fill, getLang, getPage, withSiteName } from '../../../i18n/utils';
 
 export async function getStaticPaths() {
   const all = await getCollection('cities');
@@ -15,6 +15,6 @@ const lang = getLang(Astro.url.pathname);
 const title = fill(getPage(lang).cities.title, { city: entry.data.city });
 ---
 
-<BaseLayout title={`${title} | Maneda Design Studios`} description={entry.data.intro}>
+<BaseLayout title={withSiteName(title)} description={entry.data.intro}>
   <CityPage entry={entry} />
 </BaseLayout>

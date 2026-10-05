@@ -4,7 +4,7 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import JournalPost from '../../../components/JournalPost.astro';
 import { articleSchema } from '../../../lib/schema';
 import { hasPlaceholder } from '../../../lib/journal';
-import { getLang, routeFor } from '../../../i18n/utils';
+import { getLang, routeFor, withSiteName } from '../../../i18n/utils';
 
 export async function getStaticPaths() {
   const all = await getCollection('journal');
@@ -17,7 +17,7 @@ const url = `${routeFor(lang, 'journal')}${Astro.params.slug}/`;
 ---
 
 <BaseLayout
-  title={`${entry.data.title} | Maneda Design Studios`}
+  title={withSiteName(entry.data.title)}
   description={entry.data.description}
   noindex={unfinished}
   schema={unfinished ? [] : [articleSchema(lang, entry.data, url)]}
