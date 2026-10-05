@@ -1,17 +1,17 @@
 ---
 import site from '../content/site.json';
-import { getLang, getPage, markPlaceholders } from '../i18n/utils';
+import { getLang, getPage } from '../i18n/utils';
 
 const lang = getLang(Astro.url.pathname);
 const page = getPage(lang).privacy;
+const updated = new Date(site.privacyUpdated).toLocaleDateString(lang === 'pt' ? 'pt-BR' : 'en-US', { dateStyle: 'long', timeZone: 'UTC' });
 const analyticsTitle = page.sections[3].title;
 ---
 
 <section style="padding-block:var(--section-space)">
   <div class="container-site max-w-[48rem]">
     <h1>{page.title}</h1>
-    <p class="mt-4 text-[var(--color-text-muted)]" set:html={markPlaceholders(page.updated)} />
-    <p class="mt-2" set:html={markPlaceholders(page.review)} />
+    <p class="mt-4 text-[var(--color-text-muted)]">{page.updated} {updated}</p>
     {
       page.sections.map((s) => s.title === analyticsTitle ? { ...s, text: site.analytics.enabled ? page.analyticsOn : s.text } : s).map((s) => (
         <div class="mt-10 border-t border-[var(--color-rule-strong)] pt-6">

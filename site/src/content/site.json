@@ -35,5 +35,9 @@
     "resources": false,
     "journal": false
   },
-  "featuresNote": "Set to true only when real content exists. While false, those pages are left out of the build and the sitemap, and their links disappear."
+  "featuresNote": "Set to true only when real content exists. While false, those pages are left out of the build and the sitemap, and their links disappear.",
+  "privacyUpdated": "2026-10-05",
+  "privacyUpdatedNote": "Change this date whenever the privacy policy text changes, and on launch day.",
+  "legalReviewDone": false,
+  "legalReviewNote": "Set to true after a lawyer has reviewed the privacy policy and your standard agreement. See LEGAL-CHECKLIST.md."
 }

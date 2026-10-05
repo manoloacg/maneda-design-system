@@ -479,7 +479,7 @@
       "label": "About",
       "title": "Manolo Castaneda",
       "role": "Architectural Designer",
-      "portraitNote": "Portrait: Manolo, in an architectural setting"
+      "portraitAlt": "Portrait of Manolo Castaneda, Architectural Designer."
     },
     "story": [
       "Manolo Castaneda is an architectural designer with more than 10 years of experience in multifamily and retail projects. He trained in architecture in Brazil and the United States, with degrees from the Catholic University of Brasilia and NJIT. He is bilingual in English and Brazilian Portuguese and is based in Orlando, Florida.",
@@ -489,9 +489,9 @@
       "label": "What I value",
       "title": "What I value in a project.",
       "items": [
-        "[PLACEHOLDER: rewrite in your own words] Start with the site. The lot decides more than the brochure does.",
-        "[PLACEHOLDER: rewrite in your own words] Explain every decision. If I cannot say why, I change it.",
-        "[PLACEHOLDER: rewrite in your own words] Design for the way people live in the house, not for the photograph."
+        "Start with the site. The lot and the way the owners live decide more than the style does.",
+        "Test the idea against how the room is used. If it looks good and works badly, I drop it.",
+        "Say why. Every decision has a reason I can explain to the owner and to the builder."
       ]
     },
     "cta": {
@@ -717,8 +717,7 @@
       "description": "What information Maneda Design Studios collects through this website and how it is used."
     },
     "title": "Privacy policy",
-    "updated": "Last updated: [PLACEHOLDER: date of publication]",
-    "review": "[PLACEHOLDER: legal review before launch]",
+    "updated": "Last updated:",
     "sections": [
       {
         "title": "What we collect",

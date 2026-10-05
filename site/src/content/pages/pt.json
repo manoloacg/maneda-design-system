@@ -479,7 +479,7 @@
       "label": "Sobre",
       "title": "Manolo Castaneda",
       "role": "Designer de Arquitetura",
-      "portraitNote": "Retrato: Manolo, em um ambiente arquitetônico"
+      "portraitAlt": "Retrato de Manolo Castaneda, Designer de Arquitetura."
     },
     "story": [
       "Manolo Castaneda é designer de arquitetura, com mais de 10 anos de experiência em projetos multifamiliares e de varejo. Estudou arquitetura no Brasil e nos Estados Unidos, com formação pela Universidade Católica de Brasília e pelo NJIT. É bilíngue em inglês e português do Brasil e é baseado em Orlando, Flórida.",
@@ -489,9 +489,9 @@
       "label": "O que eu valorizo",
       "title": "O que eu valorizo em um projeto.",
       "items": [
-        "[PLACEHOLDER: reescrever com as suas palavras] Começar pelo terreno. O lote decide mais do que o catálogo.",
-        "[PLACEHOLDER: reescrever com as suas palavras] Explicar cada decisão. Se eu não sei dizer o motivo, eu mudo.",
-        "[PLACEHOLDER: reescrever com as suas palavras] Projetar para o jeito como as pessoas vivem na casa, não para a fotografia."
+        "Começar pelo terreno. O lote e o jeito como os proprietários vivem decidem mais do que o estilo.",
+        "Testar a ideia contra o uso do ambiente. Se parece bom e funciona mal, eu descarto.",
+        "Explicar o motivo. Cada decisão tem uma razão que eu sei explicar ao proprietário e ao construtor."
       ]
     },
     "cta": {
@@ -717,8 +717,7 @@
       "description": "Quais informações a Maneda Design Studios coleta neste site e como elas são usadas."
     },
     "title": "Política de privacidade",
-    "updated": "Última atualização: [PLACEHOLDER: data de publicação]",
-    "review": "[PLACEHOLDER: revisão jurídica antes do lançamento]",
+    "updated": "Última atualização:",
     "sections": [
       {
         "title": "O que coletamos",

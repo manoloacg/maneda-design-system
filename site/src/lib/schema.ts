@@ -70,7 +70,7 @@ export function faqSchema(items: { q: string; a: string }[]) {
   return { '@context': ctx, '@type': 'FAQPage', mainEntity: entities };
 }
 
-export function caseStudySchema(lang: Lang, d: { title: string; brief: string; context: string; outcome: string; year: string }, url: string) {
+export function caseStudySchema(lang: Lang, d: { title: string; brief: string }, url: string) {
   return {
     '@context': ctx,
     '@type': 'CreativeWork',

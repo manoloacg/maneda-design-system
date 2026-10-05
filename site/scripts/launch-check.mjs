@@ -5,7 +5,16 @@ import { join } from 'node:path';
 
 const site = JSON.parse(readFileSync('src/content/site.json', 'utf8'));
 const walk = (d, o = []) => { for (const f of readdirSync(d)) { const p = join(d, f); statSync(p).isDirectory() ? walk(p, o) : o.push(p); } return o; };
-const count = (file) => (readFileSync(file, 'utf8').match(/\[PLACEHOLDER/g) || []).length;
+const off = ['resources', 'resourcesThankYou', 'journal'].filter((k) => !site.features?.[k === 'resourcesThankYou' ? 'resources' : k]);
+const count = (file) => {
+  let text = readFileSync(file, 'utf8');
+  if (file.includes('src/content/pages/')) {
+    const data = JSON.parse(text);
+    off.forEach((k) => delete data[k]);
+    text = JSON.stringify(data);
+  }
+  return (text.match(/\[PLACEHOLDER/g) || []).length;
+};
 const blockers = [], warnings = [], done = [];
 const need = (ok, okMsg, badMsg) => (ok ? done.push(okMsg) : blockers.push(badMsg));
 
@@ -15,6 +24,7 @@ need(!site.form.accessKey.includes('PLACEHOLDER'), 'Form access key set. The for
 need(!site.replyWindow.en.includes('PLACEHOLDER') && !site.replyWindow.pt.includes('PLACEHOLDER'), 'Reply window promise set.', 'Reply window promise is still a placeholder (site.json, "replyWindow").');
 
 const sealEn = 'Where a seal is required, drawings are reviewed and sealed by a licensed professional of record.';
+need(site.legalReviewDone === true, 'Privacy policy and standard agreement reviewed by a lawyer.', 'Legal review not done. See LEGAL-CHECKLIST.md, then set "legalReviewDone": true in site.json.');
 need(JSON.parse(readFileSync('src/i18n/en.json', 'utf8')).footer.seal === sealEn, 'Seal sentence present and exact.', 'Seal sentence changed or missing in src/i18n/en.json.');
 
 const groups = [

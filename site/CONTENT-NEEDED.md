@@ -11,14 +11,13 @@ Domain: manedastudios.com, newly bought by Manolo, nothing hosted on it. Reply p
 | # | Item | Where it goes |
 |---|---|---|
 | 5 | Written confirmation from the Ohio owner that the project, hero render and rear render may be published (verbal OK received) | Keep in your files |
-| 6 | Ohio residence case study, still missing: size in SF, the outcome (permit and build status), images for design moves 1, 3, 4 and 5 (sauna plan, sight lines, bedroom egress before and after, garage and entry), an early sketch beside the final plan or elevation, and one sheet excerpt with the title block, owner name and address removed. Text drafted by Claude from the August 22 meeting minutes, still needs Manolo's read. | `src/content/projects/en/ohio-residence.md` and `pt/` |
+| 6 | Ohio residence case study (optional, adds to the page): size in SF, the outcome (permit and build status), images for design moves 1, 3, 4 and 5, an early sketch beside the final plan or elevation, and one sheet excerpt with the title block, owner name and address removed. The page shows only what exists, so it is publishable now. | `src/content/projects/en/ohio-residence.md` and `pt/` |
 | 7 | Written client approval before any real name or address appears (`clientApproved: true`). Not needed while the project stays anonymous. | Same files |
 | 9 | FAQ: which states and jurisdictions you serve, if you want any named. Payment schedule is settled: half to start each phase, half on delivery, due in 7 days. Native Revit files: not shared (settled). Professional of record is settled: the owner hires and pays the structural engineer. | `process.faq` |
-| 10 | Portrait of Manolo, in an architectural setting | About page |
-| 11 | "What I value" in Manolo's own words (three short statements) | `about.values` |
+| 10 | Portrait: save a file named `portrait.jpg` (or .webp, .png) in `src/assets/`. The About page shows it automatically and shows no frame until then. | `src/assets/portrait.jpg` |
 | 12 | Final read of the five service descriptions, now rewritten from your Service Pricing Guide, in both languages | `services.items` in both page files |
 | 14 | Later, not needed for launch: checklist PDF, English and Portuguese, plus the three section titles for the Resources page. The page is off until then. | `public/resources/` and `resources.contents.items` |
-| 15 | Privacy policy date and a legal review | `privacy` in both page files |
+| 15 | One legal review: see `LEGAL-CHECKLIST.md`. Then set `legalReviewDone` to true in `site.json`. | `LEGAL-CHECKLIST.md` |
 | 16 | A native Portuguese read of all Portuguese copy, including the Portuguese seal sentence | `pt.json` files |
 
 ## Should have

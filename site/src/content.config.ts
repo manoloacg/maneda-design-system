@@ -14,7 +14,7 @@ const projects = defineCollection({
       published: z.boolean().default(true), // false hides the project everywhere without deleting the file
       type: z.enum(['residential', 'outdoor', 'commercial', 'interiors']),
       location: z.string(), // city or county level only
-      size: z.string(),
+      size: z.string().optional(),
       scope: z.string(),
       role: z.string(),
       year: z.string(),
@@ -25,12 +25,24 @@ const projects = defineCollection({
       brief: z.string(),
       context: z.string(),
       moves: z
-        .array(z.object({ title: z.string(), text: z.string(), visual: z.string(), image: image().optional(), alt: z.string().optional() }))
+        .array(z.object({ title: z.string(), text: z.string(), visual: z.string().optional(), image: image().optional(), alt: z.string().optional() }))
         .min(3)
         .max(5),
-      sketch: z.object({ early: z.string(), final: z.string() }),
-      documents: z.string(),
-      outcome: z.string(),
+      // Optional parts. Leave a field out and its section is left out of the page.
+      sketch: z
+        .object({
+          early: z.string().optional(),
+          final: z.string().optional(),
+          earlyImage: image().optional(),
+          earlyAlt: z.string().optional(),
+          finalImage: image().optional(),
+          finalAlt: z.string().optional(),
+        })
+        .optional(),
+      documents: z.string().optional(),
+      documentsImage: image().optional(),
+      documentsAlt: z.string().optional(),
+      outcome: z.string().optional(),
     }),
 });
 

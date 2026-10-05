@@ -1,11 +1,15 @@
 ---
 import Section from './Section.astro';
 import Button from './Button.astro';
-import ImagePlaceholder from './ImagePlaceholder.astro';
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
 import { getLang, getPage, markPlaceholders, routeFor, t } from '../i18n/utils';
 
 const lang = getLang(Astro.url.pathname);
 const page = getPage(lang).about;
+// Add the portrait by saving a file named portrait.jpg (or .jpeg, .png, .webp) in src/assets/.
+const portraits = import.meta.glob<ImageMetadata>('../assets/portrait.{jpg,jpeg,png,webp}', { eager: true, import: 'default' });
+const portrait = Object.values(portraits)[0];
 ---
 
 <section style="padding-block:var(--section-space)">
@@ -18,9 +22,13 @@ const page = getPage(lang).about;
         {page.story.map((para) => <p>{para}</p>)}
       </div>
     </div>
-    <div class="reveal col-span-12 md:col-span-5">
-      <ImagePlaceholder ratio="4 / 5" note={page.hero.portraitNote} />
-    </div>
+    {
+      portrait && (
+        <div class="reveal col-span-12 md:col-span-5">
+          <Image src={portrait} alt={page.hero.portraitAlt} widths={[480, 800, 1000]} sizes="(min-width: 768px) 40vw, 100vw" loading="eager" class="aspect-[4/5] w-full object-cover" />
+        </div>
+      )
+    }
   </div>
 </section>
 

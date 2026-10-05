@@ -65,6 +65,7 @@ Where you bought it decides the first step:
 
 ## 6. Launch day, in this order
 
+0. Do the legal review in `LEGAL-CHECKLIST.md`, then set `legalReviewDone` to `true` in `site.json`. Update `privacyUpdated` to the launch date.
 1. Replace every placeholder. Run `npm run launch-check` to see what is left. It lists blockers in plain language.
 2. Resources and Journal are switched off in `site.json` (`features`). To launch them, put the real checklist PDFs in `public/resources` and finish an article, then set the matching feature to `true`.
 3. Delete the internal style guide: `src/pages/styleguide.astro`, `src/pages/pt/styleguide.astro`, and `src/components/StyleGuide.astro`.
