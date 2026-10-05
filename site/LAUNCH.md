@@ -55,6 +55,8 @@ While `"indexing": false` is set in `site.json`, the preview tells search engine
 
 ## 5. Connect the domain
 
+**Check first.** Your brand file lists manedastudios.com as the website of Maneda Photography. If a site already lives there, pointing the domain at this one replaces it. If photography uses it, give MDS the main address and move photography to a subdomain such as photo.manedastudios.com first. Ask me and I will write those steps.
+
 1. Buy the domain in Cloudflare, or add your existing domain to Cloudflare so it manages the DNS.
 2. In the Pages project, open Custom domains and add the domain. Cloudflare sets up the DNS records and the HTTPS certificate.
 3. Choose one main address, with or without `www`, and send the other to it. Use a redirect rule in Cloudflare.
