@@ -12,7 +12,7 @@ year: "2026"
 result: "Um conjunto de desenhos para alvará preparado a partir de um projeto existente."
 clientApproved: false # Aprovação para mostrar este projeto confirmada por Manolo (2026-10-06). Mantido false: legenda, endereço e município foram cortados de todas as imagens.
 heroImage: ../../../assets/shop-render-hero.webp
-cardImage: ../../../assets/shop-render-hero.webp
+cardImage: ../../../assets/shop-card.webp
 heroAlt: "Renderização de uma oficina de marcenaria com estuque claro, cobertura metálica escura de junta em pé, lanternim, janelas com venezianas, porta estilo celeiro na empena e uma ala de estúdio envidraçada com chaminé de tijolos, atrás de um gramado e de uma cerca de estacas."
 heroCaption: "Renderização de inspiração fornecida pelo proprietário. O projeto mudou durante o processo de alvará, então os desenhos deste estudo de caso diferem desta imagem."
 brief: "O proprietário trouxe uma renderização de inspiração e um projeto existente. A tarefa foi transformá-lo em um conjunto de desenhos para alvará: planta do pavimento térreo, planta de cobertura, elevações externas, um corte do edifício e notas gerais que explicam como a construção se monta. O projeto mudou durante o processo de alvará, então os desenhos diferem da renderização."
