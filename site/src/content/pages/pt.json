@@ -509,17 +509,17 @@
   },
   "about": {
     "meta": {
-      "title": "Designer de Arquitetura em Orlando | Maneda Design Studios",
-      "description": "Manolo Castaneda, designer de arquitetura. Mais de 10 anos em projetos multifamiliares e de varejo. Baseado em Orlando, Flórida. Bilíngue em inglês e português."
+      "title": "Designer Residencial em Orlando | Maneda Design Studios",
+      "description": "Manolo Castaneda, designer residencial. Mais de 10 anos em projetos multifamiliares e de varejo. Baseado em Orlando, Flórida. Bilíngue em inglês e português."
     },
     "hero": {
       "label": "Sobre",
       "title": "Manolo Castaneda",
-      "role": "Designer de Arquitetura",
-      "portraitAlt": "Retrato de Manolo Castaneda, Designer de Arquitetura."
+      "role": "Designer Residencial",
+      "portraitAlt": "Retrato de Manolo Castaneda, Designer Residencial."
     },
     "story": [
-      "Manolo Castaneda é designer de arquitetura, com mais de 10 anos de experiência em projetos multifamiliares e de varejo. Estudou arquitetura no Brasil e nos Estados Unidos, com formação pela Universidade Católica de Brasília e pelo NJIT. É bilíngue em inglês e português do Brasil e é baseado em Orlando, Flórida.",
+      "Manolo Castaneda é designer residencial, com mais de 10 anos de experiência em projetos multifamiliares e de varejo. Estudou arquitetura no Brasil e nos Estados Unidos, com formação pela Universidade Católica de Brasília e pelo NJIT. É bilíngue em inglês e português do Brasil e é baseado em Orlando, Flórida.",
       "Ele projeta a partir do terreno e de como as pessoas vivem em uma edificação: espaço, luz, circulação e o uso de cada ambiente. Um projeto só está pronto quando pode ser aprovado e construído, por isso o código local e as regras de cada prefeitura entram no processo desde o primeiro croqui. Conhecer o código é o que permite que um projeto seja construído. Faz parte do trabalho, não é um serviço separado."
     ],
     "values": {
@@ -903,8 +903,8 @@
       "alt": "Pranchas de um conjunto de projeto executivo"
     },
     "about-portrait": {
-      "note": "Retrato: Manolo, em um ambiente arquitetônico",
-      "alt": "Retrato de Manolo Castaneda, Designer de Arquitetura"
+      "note": "Retrato: Manolo, em um ambiente de estúdio",
+      "alt": "Retrato de Manolo Castaneda, Designer Residencial"
     },
     "about-studio-1": {
       "note": "Foto: Manolo desenhando croquis",

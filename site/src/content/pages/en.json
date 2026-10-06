@@ -509,17 +509,17 @@
   },
   "about": {
     "meta": {
-      "title": "Architectural Designer in Orlando | Maneda Design Studios",
-      "description": "Manolo Castaneda, architectural designer. 10+ years in multifamily and retail projects. Based in Orlando, Florida. Bilingual in English and Portuguese."
+      "title": "Residential Designer in Orlando | Maneda Design Studios",
+      "description": "Manolo Castaneda, residential designer. 10+ years in multifamily and retail projects. Based in Orlando, Florida. Bilingual in English and Portuguese."
     },
     "hero": {
       "label": "About",
       "title": "Manolo Castaneda",
-      "role": "Architectural Designer",
-      "portraitAlt": "Portrait of Manolo Castaneda, Architectural Designer."
+      "role": "Residential Designer",
+      "portraitAlt": "Portrait of Manolo Castaneda, Residential Designer."
     },
     "story": [
-      "Manolo Castaneda is an architectural designer with more than 10 years of experience in multifamily and retail projects. He trained in architecture in Brazil and the United States, with degrees from the Catholic University of Brasilia and NJIT. He is bilingual in English and Brazilian Portuguese and is based in Orlando, Florida.",
+      "Manolo Castaneda is a residential designer with more than 10 years of experience in multifamily and retail projects. He trained in architecture in Brazil and the United States, with degrees from the Catholic University of Brasilia and NJIT. He is bilingual in English and Brazilian Portuguese and is based in Orlando, Florida.",
       "He designs from the site and from how people live in a building: space, light, circulation, and how a room is used. A design is not finished until it can be permitted and built, so local code and jurisdiction rules are part of the process from the first sketch. Code literacy is what lets a design get built. It is part of the work, not a separate service."
     ],
     "values": {
@@ -903,8 +903,8 @@
       "alt": "Drawing sheets from a construction document set"
     },
     "about-portrait": {
-      "note": "Portrait: Manolo, in an architectural setting",
-      "alt": "Portrait of Manolo Castaneda, Architectural Designer"
+      "note": "Portrait: Manolo, in a studio setting",
+      "alt": "Portrait of Manolo Castaneda, Residential Designer"
     },
     "about-studio-1": {
       "note": "Photo: Manolo sketching",

@@ -6631,7 +6631,7 @@
               "public_folder": "/src/assets/slots"
             },
             {
-              "label": "Portrait: Manolo, in an architectural setting",
+              "label": "Portrait: Manolo, in a studio setting",
               "name": "about-portrait",
               "widget": "image",
               "required": false,

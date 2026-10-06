@@ -36,7 +36,7 @@ export function studioSchema(lang: Lang) {
     address: { '@type': 'PostalAddress', addressLocality: 'Orlando', addressRegion: 'FL', addressCountry: 'US' },
     areaServed: { '@type': 'Country', name: 'United States' },
     knowsLanguage: ['en', 'pt-BR'],
-    founder: { '@type': 'Person', name: 'Manolo Castaneda', jobTitle: 'Architectural Designer' },
+    founder: { '@type': 'Person', name: 'Manolo Castaneda', jobTitle: 'Residential Designer' },
     ...(site.social.instagram ? { sameAs: [site.social.instagram] } : {}),
   };
 }
@@ -125,7 +125,7 @@ export function personSchema(lang: Lang) {
     '@type': 'Person',
     '@id': abs('/#manolo'),
     name: 'Manolo Castaneda',
-    jobTitle: 'Architectural Designer',
+    jobTitle: 'Residential Designer',
     worksFor: { '@id': studioId() },
     url: abs(routeFor(lang, 'about')),
     address: { '@type': 'PostalAddress', addressLocality: 'Orlando', addressRegion: 'FL', addressCountry: 'US' },
