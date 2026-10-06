@@ -149,7 +149,9 @@
       "otherServices": "Other services",
       "readMore": "Full details",
       "buildersLine": "Builder or developer?",
-      "buildersLink": "See how MDS works with builders"
+      "buildersLink": "See how MDS works with builders",
+      "creditLabel": "Credit",
+      "creditNote": "Credits apply toward a full-service package booked within 14 days."
     },
     "items": {
       "residential-design": {

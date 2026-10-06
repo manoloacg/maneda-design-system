@@ -158,11 +158,12 @@ const priceFig = 'font-[family-name:var(--font-display)] text-[1.6rem] leading-n
                           <span>{pick(lang, c.duration)}</span>
                           <span class={priceFig}>{formatUsd(lang, c.amount)}</span>
                         </div>
-                        <p class="mt-1 text-sm text-[var(--color-text-muted)]">{formatUsd(lang, c.credit)} {L.credit}</p>
+                        <p class="mt-1 text-sm text-[var(--color-text-muted)]">{L.creditLabel} {formatUsd(lang, c.credit)}</p>
                       </li>
                     ))}
                   </ul>
                 )}
+                {s.pricing === 'consultations' && <p class="mt-4 text-sm text-[var(--color-text-muted)]">{L.creditNote}</p>}
                 {isCd && (
                   <>
                     <p class="sheet-label mb-1 mt-5 text-[var(--color-text-muted)]">{L.siteVisitTitle}</p>
@@ -171,8 +172,9 @@ const priceFig = 'font-[family-name:var(--font-display)] text-[1.6rem] leading-n
                         <span>{pick(lang, pricing.siteVisit.label)}</span>
                         <span class={priceFig}>{formatUsd(lang, pricing.siteVisit.amount)}</span>
                       </div>
-                      <p class="mt-1 text-sm text-[var(--color-text-muted)]">{formatUsd(lang, pricing.siteVisit.credit)} {L.credit}</p>
+                      <p class="mt-1 text-sm text-[var(--color-text-muted)]">{L.creditLabel} {formatUsd(lang, pricing.siteVisit.credit)}</p>
                     </div>
+                    <p class="mt-4 text-sm text-[var(--color-text-muted)]">{L.creditNote}</p>
                   </>
                 )}
               </div>

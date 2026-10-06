@@ -149,7 +149,9 @@
       "otherServices": "Outros serviços",
       "readMore": "Detalhes completos",
       "buildersLine": "Construtor ou incorporador?",
-      "buildersLink": "Veja como a MDS trabalha com construtores"
+      "buildersLink": "Veja como a MDS trabalha com construtores",
+      "creditLabel": "Crédito",
+      "creditNote": "Os créditos se aplicam a um pacote completo contratado em até 14 dias."
     },
     "items": {
       "residential-design": {
