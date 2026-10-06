@@ -49,7 +49,7 @@ const skipCrumbs = ['/404/', '/contact/thank-you/', '/pt/contato/obrigado/', '/r
 const homePath = routes.home[lang];
 const auto: object[] = [];
 if (path === homePath) auto.push(websiteSchema(lang));
-else if (!skipCrumbs.includes(path) && !path.includes('styleguide')) {
+else if (!skipCrumbs.includes(path)) {
   const label = (v: string) => v.replace(/\s*\|\s*Maneda Design Studios$/, '');
   const crumbs = [{ name: site.name, path: homePath }];
   const top = navKeys.find((k) => path.startsWith(routes[k as RouteKey][lang]));

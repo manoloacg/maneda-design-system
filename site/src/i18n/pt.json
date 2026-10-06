@@ -66,17 +66,5 @@
   "home": {
     "headline": "Projeto residencial, com base em Orlando.",
     "subhead": "A Maneda Design Studios projeta casas, ampliações e interiores, e leva o projeto até os desenhos prontos para construir."
-  },
-  "styleguide": {
-    "title": "Guia de estilo",
-    "intro": "Referência interna do sistema de design da Fase 1. Esta página não é indexada e será removida antes do lançamento.",
-    "colors": "Cor",
-    "type": "Tipografia",
-    "buttons": "Botões",
-    "form": "Campos de formulário",
-    "cards": "Cartão de projeto",
-    "faq": "Perguntas frequentes",
-    "placeholders": "Placeholders",
-    "sections": "Tons de seção"
   }
 }

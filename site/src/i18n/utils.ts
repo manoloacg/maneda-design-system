@@ -22,7 +22,6 @@ export const routes = {
   areas: { en: '/areas/', pt: '/pt/regioes/' },
   thankYou: { en: '/contact/thank-you/', pt: '/pt/contato/obrigado/' },
   privacy: { en: '/privacy/', pt: '/pt/privacidade/' },
-  styleguide: { en: '/styleguide/', pt: '/pt/styleguide/' },
 } as const;
 export type RouteKey = keyof typeof routes;
 

@@ -66,17 +66,5 @@
   "home": {
     "headline": "Residential design, based in Orlando.",
     "subhead": "Maneda Design Studios designs homes, additions, and interiors, and carries the design through to buildable drawings."
-  },
-  "styleguide": {
-    "title": "Style guide",
-    "intro": "Internal reference for the Phase 1 design system. This page is not indexed and will be removed before launch.",
-    "colors": "Color",
-    "type": "Typography",
-    "buttons": "Buttons",
-    "form": "Form fields",
-    "cards": "Project card",
-    "faq": "FAQ",
-    "placeholders": "Placeholders",
-    "sections": "Section tones"
   }
 }

@@ -48,7 +48,6 @@ for (const f of walk('src/content/projects').filter((f) => f.includes('/en/'))) 
   const approved = /clientApproved:\s*true/.test(readFileSync(f, 'utf8'));
   warnings.push(`${f.split('/').pop()}: clientApproved is ${approved}. Keep it false unless the client approved real names in writing.`);
 }
-if (existsSync('src/pages/styleguide.astro')) warnings.push('The internal style guide pages still exist (/styleguide/ and /pt/styleguide/). Delete src/pages/styleguide.astro, src/pages/pt/styleguide.astro and src/components/StyleGuide.astro before launch.');
 if (site.features?.resources) {
   if (!existsSync('public/resources/before-you-hire-a-designer.pdf')) blockers.push('Checklist PDF missing.');
   else if (readFileSync('public/resources/before-you-hire-a-designer.pdf', 'latin1').includes('PLACEHOLDER')) blockers.push('The checklist PDFs are still the placeholder files (public/resources).');

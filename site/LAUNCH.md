@@ -68,12 +68,11 @@ Where you bought it decides the first step:
 0. Do the legal review in `LEGAL-CHECKLIST.md`, then set `legalReviewDone` to `true` in `site.json`. Update `privacyUpdated` to the launch date.
 1. Replace every placeholder. Run `npm run launch-check` to see what is left. It lists blockers in plain language.
 2. Resources and Journal are switched off in `site.json` (`features`). To launch them, put the real checklist PDFs in `public/resources` and finish an article, then set the matching feature to `true`.
-3. Delete the internal style guide: `src/pages/styleguide.astro`, `src/pages/pt/styleguide.astro`, and `src/components/StyleGuide.astro`.
-4. Set `"url"` to the real domain in `site.json`.
-5. Set `"indexing": true` in `site.json`. This is the switch that lets Google see the site.
-6. Run `npm run build`, then `npm run check`. Both must pass.
-7. Merge to the main branch. Cloudflare publishes it.
-8. Verify the live site (section 7).
+3. Set `"url"` to the real domain in `site.json`.
+4. Set `"indexing": true` in `site.json`. This is the switch that lets Google see the site.
+5. Run `npm run build`, then `npm run check`. Both must pass.
+6. Merge to the main branch. Cloudflare publishes it.
+7. Verify the live site (section 7).
 
 If anything looks wrong, set `"indexing": false` again and push. Cloudflare also keeps every earlier version, and you can roll back to one from the Pages dashboard.
 

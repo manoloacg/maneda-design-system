@@ -9,7 +9,7 @@ import services from '../content/services.json';
    Left out on purpose: style guide, thank-you pages, 404, journal outlines,
    and any case study that still contains [PLACEHOLDER] text. */
 export const GET: APIRoute = async () => {
-  const skip = new Set(['styleguide', 'thankYou', 'resourcesThankYou', 'areas']);
+  const skip = new Set(['thankYou', 'resourcesThankYou', 'areas']);
   if (!site.features.resources) skip.add('resources');
   if (!site.features.journal) skip.add('journal');
   const paths: string[] = Object.entries(routes)

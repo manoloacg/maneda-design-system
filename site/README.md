@@ -105,10 +105,6 @@ The form uses Web3Forms. Until a real access key is added in `src/content/site.j
 
 Run `npm run build`, then `npm run check`. It looks for em dashes, banned words, possible diminutives, the word "architect" used as a title, broken internal links, missing alt text, and English and Portuguese files that no longer match.
 
-## Style guide
-
-Open `/styleguide/` (English) or `/pt/styleguide/` (Portuguese) while the site is running. It shows every color, type size, button, form field, card and placeholder. It is hidden from search engines and gets removed before launch.
-
 ## Rules for all copy
 
 No em dashes. No diminutives. No emojis. Never use the word "architect" as a title for Manolo, and never say "licensed" about him. Anything unfinished is written as `[PLACEHOLDER: ...]` and listed in `CONTENT-NEEDED.md`.
