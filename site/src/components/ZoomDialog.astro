@@ -1,0 +1,54 @@
+---
+import { getLang, getPage } from '../i18n/utils';
+const S = getPage(getLang(Astro.url.pathname)).caseStudy.sections as { close: string };
+---
+
+<dialog id="zoom-dialog" class="m-0 h-full max-h-none w-full max-w-none border-0 bg-transparent p-0 backdrop:bg-black/85" aria-label="Image viewer">
+  <div class="relative h-full w-full" data-zoom-wrap>
+    <button type="button" data-zoom-close class="fixed right-4 top-4 z-10 min-h-[var(--tap)] bg-[var(--color-bg)] px-5 text-[0.72rem] font-medium uppercase tracking-[0.16em]">{S.close}</button>
+    <div class="h-full w-full overflow-auto" data-zoom-scroll>
+      <img alt="" class="mx-auto block max-h-full max-w-full cursor-zoom-in object-contain" data-zoom-img />
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const dlg = document.getElementById('zoom-dialog') as HTMLDialogElement | null;
+  const img = dlg?.querySelector<HTMLImageElement>('[data-zoom-img]');
+  const scroll = dlg?.querySelector<HTMLElement>('[data-zoom-scroll]');
+  let opener: HTMLElement | null = null;
+  const fit = () => {
+    if (!img) return;
+    img.classList.add('max-h-full', 'max-w-full', 'cursor-zoom-in');
+    img.classList.remove('cursor-zoom-out');
+    img.style.maxWidth = '';
+    img.style.maxHeight = '';
+    img.style.width = '';
+    img.removeAttribute('data-full');
+  };
+  const full = () => {
+    if (!img) return;
+    img.classList.remove('max-h-full', 'max-w-full', 'cursor-zoom-in');
+    img.classList.add('cursor-zoom-out');
+    img.style.maxWidth = 'none';
+    img.style.maxHeight = 'none';
+    img.style.width = `${img.naturalWidth}px`;
+    img.setAttribute('data-full', '');
+  };
+  document.querySelectorAll<HTMLElement>('[data-zoom]').forEach((b) =>
+    b.addEventListener('click', () => {
+      if (!dlg || !img) return;
+      opener = b;
+      fit();
+      img.src = b.dataset.zoom ?? '';
+      img.alt = b.dataset.zoomAlt ?? '';
+      dlg.showModal();
+      scroll?.scrollTo(0, 0);
+    })
+  );
+  img?.addEventListener('click', () => (img.hasAttribute('data-full') ? fit() : full()));
+  dlg?.querySelector('[data-zoom-close]')?.addEventListener('click', () => dlg.close());
+  // A click on the dark area outside the picture closes the viewer.
+  scroll?.addEventListener('click', (e) => { if (e.target === scroll) dlg?.close(); });
+  dlg?.addEventListener('close', () => { opener?.focus(); if (img) img.src = ''; });
+</script>

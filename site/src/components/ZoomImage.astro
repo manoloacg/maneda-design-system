@@ -1,0 +1,15 @@
+---
+/* An image that opens larger when clicked. Used for drawings, where the detail is the point.
+   The enlarged view fits the screen first. A second click shows it at full size, and you can scroll around it.
+   Needs <ZoomDialog /> once on the page. */
+import { Image, getImage } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+interface Props { src: ImageMetadata; alt: string; widths?: number[]; sizes?: string; class?: string; loading?: 'lazy' | 'eager'; label: string }
+const { src, alt, widths = [640, 960, 1200], sizes, class: cls = '', loading = 'lazy', label } = Astro.props;
+const big = await getImage({ src, width: Math.min(src.width, 2600), format: 'webp' });
+---
+
+<button type="button" class="group relative block w-full cursor-zoom-in text-left" data-zoom={big.src} data-zoom-alt={alt} aria-label={`${label}: ${alt}`}>
+  <Image src={src} alt="" widths={widths} sizes={sizes} class={cls} loading={loading} />
+  <span aria-hidden="true" class="pointer-events-none absolute bottom-3 right-3 bg-[var(--color-bg)] px-3 py-1 text-[0.65rem] font-medium uppercase tracking-[0.16em] opacity-0 transition-opacity group-hover:opacity-100 group-focus-visible:opacity-100">{label}</span>
+</button>

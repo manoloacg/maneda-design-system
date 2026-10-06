@@ -3,6 +3,8 @@ import Section from './Section.astro';
 import Button from './Button.astro';
 import ImagePlaceholder from './ImagePlaceholder.astro';
 import SheetLabel from './SheetLabel.astro';
+import ZoomImage from './ZoomImage.astro';
+import ZoomDialog from './ZoomDialog.astro';
 import { Image } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
 import site from '../content/site.json';
@@ -73,7 +75,7 @@ const ph = markPlaceholders;
             <li class="reveal grid grid-cols-12 items-start md:gap-x-8 gap-y-6">
               <div class={`col-span-12 md:col-span-7 ${i % 2 ? 'md:order-2' : ''}`}>
                 {m.image ? (
-                  <Image src={m.image} alt={m.alt ?? ''} widths={[640, 960, 1200]} sizes="(min-width: 768px) 58vw, 100vw" class="aspect-[4/3] w-full object-cover" loading="lazy" />
+                  <ZoomImage src={m.image} alt={m.alt ?? ''} widths={[640, 960, 1200]} sizes="(min-width: 768px) 58vw, 100vw" class="aspect-[4/3] w-full object-cover" label={S.zoom} />
                 ) : (
                   <ImagePlaceholder ratio="4 / 3" note={m.visual ?? PH.visual} />
                 )}
@@ -103,7 +105,7 @@ const ph = markPlaceholders;
           {d.sheets.map((sh: { image: ImageMetadata; alt: string; caption: string }) => (
             <li class="reveal">
               <figure>
-                <Image src={sh.image} alt={sh.alt} widths={[640, 960, 1200]} sizes="(min-width: 768px) 50vw, 100vw" class="h-auto w-full border border-[var(--color-rule)]" loading="lazy" />
+                <ZoomImage src={sh.image} alt={sh.alt} widths={[640, 960, 1200]} sizes="(min-width: 768px) 50vw, 100vw" class="h-auto w-full border border-[var(--color-rule)]" label={S.zoom} />
                 <figcaption class="sheet-label mt-3 text-[var(--color-text-muted)]">{sh.caption}</figcaption>
               </figure>
             </li>
@@ -134,7 +136,7 @@ const ph = markPlaceholders;
     hasDocs && (
       <Section label={nextLabel()} title={S.documents} intro={S.documentsIntro}>
         <div class={d.documentsImage && d.documentsImage.width / d.documentsImage.height > 1.2 ? 'max-w-[64rem]' : 'max-w-[40rem]'}>
-          {d.documentsImage ? <Image src={d.documentsImage} alt={d.documentsAlt ?? ''} widths={[640, 960, 1200, 1800]} sizes="(min-width: 1024px) 64rem, 100vw" class="w-full" loading="lazy" /> : <ImagePlaceholder ratio="3 / 2" note={d.documents ?? PH.documents} />}
+          {d.documentsImage ? <ZoomImage src={d.documentsImage} alt={d.documentsAlt ?? ''} widths={[640, 960, 1200, 1800]} sizes="(min-width: 1024px) 64rem, 100vw" class="w-full" label={S.zoom} /> : <ImagePlaceholder ratio="3 / 2" note={d.documents ?? PH.documents} />}
         </div>
       </Section>
     )
@@ -146,3 +148,4 @@ const ph = markPlaceholders;
     <Button href={`${routeFor(lang, 'contact')}?service=residential-design`}>{c.cta.button}</Button>
   </Section>
 </article>
+<ZoomDialog />

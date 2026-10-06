@@ -96,7 +96,7 @@ if (existsSync('dist')) {
     }
     const h1 = (text.match(/<h1[\s>]/g) || []).length;
     if (h1 !== 1 && !page.includes('404')) fail(`${h1} h1 tags in ${page}`);
-    for (const m of text.matchAll(/<img\b[^>]*>/g)) if (!/\balt=/.test(m[0])) fail(`img without alt in ${page}`);
+    for (const m of text.matchAll(/<img\b[^>]*>/g)) if (!/\balt(=|\s|>)/.test(m[0])) fail(`img without alt in ${page}`);
   }
   console.log(`checked ${pages.length} built pages`);
 }

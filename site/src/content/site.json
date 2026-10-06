@@ -41,5 +41,9 @@
   "legalReviewDone": true,
   "legalReviewNote": "Set to true after a lawyer has reviewed the privacy policy and your standard agreement. See LEGAL-CHECKLIST.md.",
   "showPlaceholders": true,
-  "showPlaceholdersNote": "true shows gray frames where images will go (preview). Set to false at launch: every empty image slot then disappears and the site is also hidden from search while it is true."
+  "showPlaceholdersNote": "true shows gray frames where images will go (preview). Set to false at launch: every empty image slot then disappears and the site is also hidden from search while it is true.",
+  "booking": {
+    "_help": "Paste the address of your scheduling page (for example a Cal.com link) in \"url\" to show a \"Book a scoping call\" button on the home and contact pages. Leave it empty to hide the button.",
+    "url": ""
+  }
 }

@@ -99,6 +99,34 @@ export function build() {
       projects('en', 'Projects: English'),
       projects('pt', 'Projects: Portuguese'),
       { label: 'Studio settings', name: 'settings', files: [file('Email, switches, form, address', 'site.json', 'site')] },
+      {
+        label: 'Client words',
+        name: 'voices',
+        files: [
+          {
+            label: 'Quotes (written permission only)',
+            name: 'voices',
+            file: `${ROOT}/testimonials.json`,
+            format: 'json',
+            fields: [
+              { label: 'Rule', name: '_help', widget: 'text', required: false },
+              {
+                label: 'Quotes',
+                name: 'items',
+                widget: 'list',
+                required: false,
+                fields: [
+                  { label: 'Quote, English', name: 'quoteEn', widget: 'text', required: false },
+                  { label: 'Quote, Portuguese', name: 'quotePt', widget: 'text', required: false },
+                  { label: 'Name, exactly as approved', name: 'name', widget: 'string', required: false },
+                  { label: 'Role or place, exactly as approved', name: 'role', widget: 'string', required: false },
+                  { label: 'Written permission received', name: 'approved', widget: 'boolean', required: false },
+                ],
+              },
+            ],
+          },
+        ],
+      },
       { label: 'Menus, buttons, footer', name: 'ui', files: [file('Menus and buttons, English', '../i18n/en.json', 'ui_en'), file('Menus and buttons, Portuguese', '../i18n/pt.json', 'ui_pt')] },
       journal('en', 'Journal: English'),
       journal('pt', 'Journal: Portuguese'),

@@ -321,6 +321,72 @@
                       }
                     }
                   ]
+                },
+                {
+                  "label": "Start",
+                  "name": "start",
+                  "widget": "object",
+                  "required": false,
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "label": "Label",
+                      "name": "label",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Title",
+                      "name": "title",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Text",
+                      "name": "text",
+                      "widget": "text",
+                      "required": false
+                    },
+                    {
+                      "label": "Button",
+                      "name": "button",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "More",
+                      "name": "more",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Book Call",
+                      "name": "bookCall",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
+                },
+                {
+                  "label": "Voices",
+                  "name": "voices",
+                  "widget": "object",
+                  "required": false,
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "label": "Label",
+                      "name": "label",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Title",
+                      "name": "title",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
                 }
               ]
             },
@@ -521,6 +587,18 @@
                     {
                       "label": "Read More",
                       "name": "readMore",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Builders Line",
+                      "name": "buildersLine",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Builders Link",
+                      "name": "buildersLink",
                       "widget": "string",
                       "required": false
                     }
@@ -1316,6 +1394,18 @@
                     {
                       "label": "Sheets Intro",
                       "name": "sheetsIntro",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Zoom",
+                      "name": "zoom",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Close",
+                      "name": "close",
                       "widget": "string",
                       "required": false
                     }
@@ -3406,6 +3496,72 @@
                       }
                     }
                   ]
+                },
+                {
+                  "label": "Start",
+                  "name": "start",
+                  "widget": "object",
+                  "required": false,
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "label": "Label",
+                      "name": "label",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Title",
+                      "name": "title",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Text",
+                      "name": "text",
+                      "widget": "text",
+                      "required": false
+                    },
+                    {
+                      "label": "Button",
+                      "name": "button",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "More",
+                      "name": "more",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Book Call",
+                      "name": "bookCall",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
+                },
+                {
+                  "label": "Voices",
+                  "name": "voices",
+                  "widget": "object",
+                  "required": false,
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "label": "Label",
+                      "name": "label",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Title",
+                      "name": "title",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
                 }
               ]
             },
@@ -3606,6 +3762,18 @@
                     {
                       "label": "Read More",
                       "name": "readMore",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Builders Line",
+                      "name": "buildersLine",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Builders Link",
+                      "name": "buildersLink",
                       "widget": "string",
                       "required": false
                     }
@@ -4401,6 +4569,18 @@
                     {
                       "label": "Sheets Intro",
                       "name": "sheetsIntro",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Zoom",
+                      "name": "zoom",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Close",
+                      "name": "close",
                       "widget": "string",
                       "required": false
                     }
@@ -7414,6 +7594,85 @@
               "name": "showPlaceholdersNote",
               "widget": "text",
               "required": false
+            },
+            {
+              "label": "Booking",
+              "name": "booking",
+              "widget": "object",
+              "required": false,
+              "collapsed": true,
+              "fields": [
+                {
+                  "label": " help",
+                  "name": "_help",
+                  "widget": "text",
+                  "required": false
+                },
+                {
+                  "label": "Url",
+                  "name": "url",
+                  "widget": "string",
+                  "required": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Client words",
+      "name": "voices",
+      "files": [
+        {
+          "label": "Quotes (written permission only)",
+          "name": "voices",
+          "file": "site/src/content/testimonials.json",
+          "format": "json",
+          "fields": [
+            {
+              "label": "Rule",
+              "name": "_help",
+              "widget": "text",
+              "required": false
+            },
+            {
+              "label": "Quotes",
+              "name": "items",
+              "widget": "list",
+              "required": false,
+              "fields": [
+                {
+                  "label": "Quote, English",
+                  "name": "quoteEn",
+                  "widget": "text",
+                  "required": false
+                },
+                {
+                  "label": "Quote, Portuguese",
+                  "name": "quotePt",
+                  "widget": "text",
+                  "required": false
+                },
+                {
+                  "label": "Name, exactly as approved",
+                  "name": "name",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "label": "Role or place, exactly as approved",
+                  "name": "role",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "label": "Written permission received",
+                  "name": "approved",
+                  "widget": "boolean",
+                  "required": false
+                }
+              ]
             }
           ]
         }

@@ -1,0 +1,4 @@
+{
+  "_help": "Add a client quote only with that client's written permission, and use the name and role exactly as they approved. Set \"approved\" to true only when you have it. Nothing shows on the site until at least one item is approved. Never write a quote the client did not give.",
+  "items": []
+}

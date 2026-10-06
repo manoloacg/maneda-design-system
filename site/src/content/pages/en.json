@@ -100,6 +100,18 @@
         "Location",
         "Timeline"
       ]
+    },
+    "start": {
+      "label": "Where to start",
+      "title": "Start with a consultation.",
+      "text": "A working session with a designer, virtual or in person. You get a written follow-up, and a credit applies toward a full-service package booked within 14 days.",
+      "button": "Book a consultation",
+      "more": "See all consultation options",
+      "bookCall": "Book a free scoping call"
+    },
+    "voices": {
+      "label": "Client words",
+      "title": "What clients say."
     }
   },
   "services": {
@@ -135,7 +147,9 @@
       "glance": "Choose where you are",
       "allServices": "All services",
       "otherServices": "Other services",
-      "readMore": "Full details"
+      "readMore": "Full details",
+      "buildersLine": "Builder or developer?",
+      "buildersLink": "See how MDS works with builders"
     },
     "items": {
       "residential-design": {
@@ -369,7 +383,9 @@
       "documentsIntro": "One sheet excerpt, as proof the design was resolved into buildable drawings.",
       "outcome": "The outcome",
       "sheets": "Selected sheets",
-      "sheetsIntro": "Plans and elevations from the drawing set."
+      "sheetsIntro": "Plans and elevations from the drawing set.",
+      "zoom": "Enlarge image",
+      "close": "Close"
     },
     "back": "All work",
     "cta": {

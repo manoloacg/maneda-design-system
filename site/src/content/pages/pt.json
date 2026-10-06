@@ -100,6 +100,18 @@
         "Localização",
         "Prazo"
       ]
+    },
+    "start": {
+      "label": "Por onde começar",
+      "title": "Comece com uma consultoria.",
+      "text": "Uma sessão de trabalho com um designer, virtual ou presencial. Você recebe um resumo por escrito, e um crédito é aplicado a um pacote completo contratado em até 14 dias.",
+      "button": "Agendar uma consultoria",
+      "more": "Ver todas as opções de consultoria",
+      "bookCall": "Agendar uma conversa de escopo gratuita"
+    },
+    "voices": {
+      "label": "Palavras de clientes",
+      "title": "O que dizem os clientes."
     }
   },
   "services": {
@@ -135,7 +147,9 @@
       "glance": "Escolha em que ponto você está",
       "allServices": "Todos os serviços",
       "otherServices": "Outros serviços",
-      "readMore": "Detalhes completos"
+      "readMore": "Detalhes completos",
+      "buildersLine": "Construtor ou incorporador?",
+      "buildersLink": "Veja como a MDS trabalha com construtores"
     },
     "items": {
       "residential-design": {
@@ -369,7 +383,9 @@
       "documentsIntro": "Um trecho de prancha, como prova de que o projeto foi resolvido em desenhos prontos para construir.",
       "outcome": "O resultado",
       "sheets": "Pranchas selecionadas",
-      "sheetsIntro": "Plantas e elevações do conjunto de desenhos."
+      "sheetsIntro": "Plantas e elevações do conjunto de desenhos.",
+      "zoom": "Ampliar imagem",
+      "close": "Fechar"
     },
     "back": "Todos os trabalhos",
     "cta": {

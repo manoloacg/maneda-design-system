@@ -89,6 +89,7 @@ const link = 'underline decoration-gold';
             </>
           )
         }
+        {site.booking?.url && <p class="mb-8"><a href={site.booking.url} class={link} rel="noopener">{getPage(lang).home.start.bookCall}</a></p>}
         <p class="text-sm text-[var(--color-text-muted)]">{page.side.note}</p>
       </div>
     </aside>

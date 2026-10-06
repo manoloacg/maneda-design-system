@@ -57,6 +57,9 @@ if (site.features?.resources) {
 if (!site.features?.journal) warnings.push('Journal is OFF (site.json features.journal). Turn it on after at least one article is finished.');
 (site.indexing ? done : warnings).push(site.indexing ? 'Search indexing is ON.' : 'Search indexing is OFF. Turn it on only on launch day ("indexing": true in site.json).');
 (site.analytics.enabled ? done : warnings).push(site.analytics.enabled ? 'Analytics is on.' : 'Analytics is off. Optional. Turn on only after you approve it.');
+(site.booking && site.booking.url ? done : warnings).push(site.booking && site.booking.url ? 'Booking link is set.' : 'No booking link set (site.json booking.url). Optional. Adds a "Book a scoping call" button on the home and contact pages.');
+const quotesFile = JSON.parse(readFileSync('src/content/testimonials.json', 'utf8'));
+(quotesFile.items.some((q) => q.approved) ? done : warnings).push(quotesFile.items.some((q) => q.approved) ? 'Client quotes: approved quotes are showing.' : 'No client quotes yet (src/content/testimonials.json). Add one only with the client\'s written permission.');
 
 const show = (title, list, mark) => { if (list.length) { console.log(`\n${title}`); list.forEach((l) => console.log(`  ${mark} ${l}`)); } };
 show('DONE', done, '[ok]');

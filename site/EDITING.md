@@ -45,6 +45,11 @@ Each Save is a published change. A few seconds later Cloudflare starts rebuildin
 ## Cloudflare setting (one time)
 In Cloudflare: Workers and Pages, your project, **Settings**, **Build configuration**. Change **Build command** from `npm run build` to `npm run build:safe`. Save.
 
+## Click to enlarge, booking link, client quotes
+- **Click to enlarge.** Drawings on the case study pages open larger when clicked. A second click shows them at full size.
+- **Booking link.** Paste your scheduling page address in Studio settings, under booking, to show a "Book a free scoping call" button on the home and contact pages. Leave it empty to hide it.
+- **Client quotes.** Under "Client words," add a quote only with the client's written permission, use the name and role exactly as they approved, and tick "Written permission received". Nothing shows until at least one quote is approved.
+
 ## Short videos
 Short looping clips (muted, no sound, no controls) can fill an image slot or a service photo. They are added as files, not in the editor.
 - For a slot: save `src/assets/videos/slots/<slot-id>.mp4`, a matching `.webm`, and a poster `<slot-id>.jpg`. The slot ids are the ones listed under "Image slots".

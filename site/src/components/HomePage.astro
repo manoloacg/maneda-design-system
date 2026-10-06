@@ -9,8 +9,11 @@ import ServiceArt from './ServiceArt.astro';
 import Slot from './Slot.astro';
 import { slotVisible } from '../lib/slots';
 import services from '../content/services.json';
+import pricing from '../content/pricing.json';
+import site from '../content/site.json';
+import voices from '../content/testimonials.json';
 import { getProjects } from '../lib/projects';
-import { getLang, getPage, pick, routeFor, t } from '../i18n/utils';
+import { formatUsd, getLang, getPage, pick, routeFor, t } from '../i18n/utils';
 
 const lang = getLang(Astro.url.pathname);
 const p = getPage(lang).home;
@@ -18,6 +21,10 @@ const labels = getPage(lang).work.filters;
 const contact = routeFor(lang, 'contact');
 const projects = (await getProjects(lang)).slice(0, 3);
 const num = (i: number) => String(i + 1).padStart(2, '0');
+const L = getPage(lang).services.labels;
+const quotes = (voices.items as { quoteEn?: string; quotePt?: string; name?: string; role?: string; approved?: boolean }[])
+  .filter((q) => q.approved && (lang === 'pt' ? q.quotePt || q.quoteEn : q.quoteEn || q.quotePt))
+  .map((q) => ({ text: (lang === 'pt' ? q.quotePt || q.quoteEn : q.quoteEn || q.quotePt) as string, name: q.name, role: q.role }));
 const audienceSlots = ['home-audience-owners', 'home-audience-pt', 'home-audience-builders'];
 ---
 
@@ -53,7 +60,26 @@ const audienceSlots = ['home-audience-owners', 'home-audience-pt', 'home-audienc
 
 {slotVisible('home-band') && <div class="reveal"><Slot id="home-band" ratio="21 / 9" sizes="100vw" /></div>}
 
-<Section tone="alt" label={p.audience.label} title={p.audience.title}>
+<Section tone="alt" label={p.start.label} title={p.start.title} intro={p.start.text}>
+  <ul class="grid gap-px border border-[var(--color-rule-strong)] bg-[var(--color-rule-strong)] md:grid-cols-3">
+    {
+      pricing.consultations.map((c) => (
+        <li class="reveal bg-[var(--color-bg)] p-6">
+          <p class="font-[family-name:var(--font-display)] text-[2.2rem] leading-none">{formatUsd(lang, c.amount)}</p>
+          <p class="mt-3">{pick(lang, c.duration)}</p>
+          <p class="mt-1 text-sm text-[var(--color-text-muted)]">{formatUsd(lang, c.credit)} {L.credit}</p>
+        </li>
+      ))
+    }
+  </ul>
+  <div class="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
+    <Button href={`${contact}?service=consultations`}>{p.start.button}</Button>
+    {site.booking?.url && <Button href={site.booking.url} variant="secondary">{p.start.bookCall}</Button>}
+    <Button href={`${routeFor(lang, 'services')}consultations/`} variant="text">{p.start.more}</Button>
+  </div>
+</Section>
+
+<Section label={p.audience.label} title={p.audience.title}>
   <div class="grid gap-10 md:grid-cols-3">
     {
       p.audience.items.map((item, i) => (
@@ -71,7 +97,7 @@ const audienceSlots = ['home-audience-owners', 'home-audience-pt', 'home-audienc
   </div>
 </Section>
 
-<Section label={p.services.label} title={p.services.title}>
+<Section tone="alt" label={p.services.label} title={p.services.title}>
   <ol class="border-t border-[var(--color-rule-strong)]">
     {
       services.services.map((s, i) => (
@@ -85,7 +111,7 @@ const audienceSlots = ['home-audience-owners', 'home-audience-pt', 'home-audienc
           </h3>
           <p class="col-span-12 text-[var(--color-text-muted)] md:col-span-5">{pick(lang, s.summary)}</p>
           <p class="col-span-12 md:col-span-2 md:text-right">
-            <Button href={`${routeFor(lang, 'services')}#${s.id}`} variant="text">{p.services.learnMore}<span class="sr-only">&nbsp;{p.services.learnMoreAbout} {pick(lang, s.title)}</span></Button>
+            <Button href={`${routeFor(lang, 'services')}${s.id}/`} variant="text">{p.services.learnMore}<span class="sr-only">&nbsp;{p.services.learnMoreAbout} {pick(lang, s.title)}</span></Button>
           </p>
         </li>
       ))
@@ -93,7 +119,7 @@ const audienceSlots = ['home-audience-owners', 'home-audience-pt', 'home-audienc
   </ol>
 </Section>
 
-<Section tone="alt" label={p.work.label} title={p.work.title}>
+<Section label={p.work.label} title={p.work.title}>
   <div class="grid gap-10 md:grid-cols-3">
     {
       projects.map((pr) => (
@@ -113,7 +139,22 @@ const audienceSlots = ['home-audience-owners', 'home-audience-pt', 'home-audienc
   <p class="mt-12"><Button href={routeFor(lang, 'work')} variant="secondary">{p.work.viewAll}</Button></p>
 </Section>
 
-<Section label={p.process.label} title={p.process.title}>
+{
+  quotes.length > 0 && (
+    <Section tone="alt" label={p.voices.label} title={p.voices.title}>
+      <ul class="grid gap-10 md:grid-cols-2">
+        {quotes.map((q) => (
+          <li class="reveal border-t border-[var(--color-rule-strong)] pt-6">
+            <blockquote class="font-[family-name:var(--font-display)] text-[1.6rem] leading-snug">&ldquo;{q.text}&rdquo;</blockquote>
+            {(q.name || q.role) && <p class="sheet-label mt-4 text-[var(--color-text-muted)]">{[q.name, q.role].filter(Boolean).join(', ')}</p>}
+          </li>
+        ))}
+      </ul>
+    </Section>
+  )
+}
+
+<Section tone={quotes.length > 0 ? 'light' : 'alt'} label={p.process.label} title={p.process.title}>
   <ol class="grid gap-8 md:grid-cols-5">
     {
       p.process.steps.map((s, i) => (
