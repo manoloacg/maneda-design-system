@@ -139,7 +139,7 @@
     },
     "items": {
       "residential-design": {
-        "what": "Um designer trabalha com você do primeiro croqui até um projeto resolvido. O pré-projeto define o programa, os limites de código e de zoneamento e uma primeira estimativa de custo. O anteprojeto (schematic design) testa, em geral, três opções, e você escolhe uma. O desenvolvimento do projeto refina a opção escolhida. Os desenhos apenas de projeto não servem para aprovação (permit) nem para obra. Quem contrata o projeto pode seguir para o projeto executivo com a MDS.",
+        "what": "Este é o serviço para projeto de casas sob medida, plantas de casas e ampliações. Um designer trabalha com você do primeiro croqui até um projeto resolvido. O pré-projeto define o programa, os limites de código e de zoneamento e uma primeira estimativa de custo. O anteprojeto (schematic design) testa, em geral, três opções, e você escolhe uma. O desenvolvimento do projeto refina a opção escolhida. Os desenhos apenas de projeto não servem para aprovação (permit) nem para obra. Quem contrata o projeto pode seguir para o projeto executivo com a MDS.",
         "included": [
           "Pré-projeto: análise do terreno, do código e do zoneamento, e documento de programa",
           "Estimativa preliminar de custo a partir do programa",
@@ -167,7 +167,7 @@
         "duration": "Cerca de 9 a 15 semanas até o desenvolvimento do projeto: o pré-projeto leva de 1 a 3 semanas, o anteprojeto de 4 a 6 e o desenvolvimento de 4 a 6.",
         "meta": {
           "title": "Projeto de Casas e Ampliações | Maneda Design Studios",
-          "description": "Estudo preliminar, anteprojeto e desenvolvimento para casas sob medida, ampliações e reformas. Cerca de 9 a 15 semanas, orçamento após uma conversa."
+          "description": "Projeto de casas sob medida, plantas de casas e ampliações: estudo preliminar, anteprojeto e desenvolvimento. Cerca de 9 a 15 semanas, orçamento após uma conversa."
         }
       },
       "interior-design": {
@@ -281,7 +281,7 @@
         "duration": "O projeto executivo leva de 8 a 12 semanas. A aprovação leva de 3 a 8 semanas, conforme a prefeitura. A cotação leva de 2 a 4 semanas. A administração de obra dura o tempo da obra.",
         "meta": {
           "title": "Projeto Executivo para Casas | Maneda Design Studios",
-          "description": "Projeto executivo para casas e ampliações, a partir do projeto aprovado, em cerca de 8 a 12 semanas, com apoio ao alvará se você quiser."
+          "description": "Projeto executivo e desenhos para alvará de casas e ampliações, a partir do projeto aprovado, em cerca de 8 a 12 semanas, com apoio ao alvará se você quiser."
         }
       }
     },

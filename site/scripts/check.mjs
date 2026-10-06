@@ -26,7 +26,7 @@ for (const file of walk('.').filter((f) => textExt.has(extname(f)) && !f.endsWit
   readFileSync(file, 'utf8').split('\n').forEach((line, i) => {
     const at = `${file}:${i + 1}`;
     if (/[—–]/.test(line)) fail(`dash ${at}: ${line.trim().slice(0, 80)}`);
-    const internalDoc = ['README.md', 'LAUNCH.md', 'CONTENT-NEEDED.md', 'QUALITY-REPORT.md', 'LEGAL-CHECKLIST.md', 'EDITING.md'].includes(file);
+    const internalDoc = ['README.md', 'LAUNCH.md', 'CONTENT-NEEDED.md', 'QUALITY-REPORT.md', 'LEGAL-CHECKLIST.md', 'EDITING.md'].includes(file) || file.startsWith('docs-drafts/');
     if (internalDoc) return;
     if (!file.endsWith('.css') && !file.endsWith('.ts') && !file.endsWith('.astro') || file.endsWith('.json')) {
       const b = line.match(banned); if (b) fail(`banned word "${b[0]}" ${at}`);

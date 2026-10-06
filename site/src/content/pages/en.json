@@ -139,7 +139,7 @@
     },
     "items": {
       "residential-design": {
-        "what": "A designer works with you from the first sketch to a resolved design. Predesign sets the program, the code and zoning limits, and a first cost estimate. Schematic design then tests, usually, three options, and you choose one. Design development refines the chosen option. Design-only drawings are not permit-ready and are not for construction. A design client can continue into construction documents with MDS.",
+        "what": "This is the service for custom home design, house plans, and home additions. A designer works with you from the first sketch to a resolved design. Predesign sets the program, the code and zoning limits, and a first cost estimate. Schematic design then tests, usually, three options, and you choose one. Design development refines the chosen option. Design-only drawings are not permit-ready and are not for construction. A design client can continue into construction documents with MDS.",
         "included": [
           "Predesign: site, code, and zoning review, and a program document",
           "Preliminary cost estimate from the program",
@@ -167,7 +167,7 @@
         "duration": "About 9 to 15 weeks through design development: predesign takes 1 to 3 weeks, schematic design 4 to 6, and design development 4 to 6.",
         "meta": {
           "title": "Custom Home and Addition Design | Maneda Design Studios",
-          "description": "Predesign, schematic design and design development for custom homes, additions and renovations. About 9 to 15 weeks, quoted after a conversation."
+          "description": "Custom home design, house plans and addition design: predesign, schematic design and design development. About 9 to 15 weeks, quoted after a conversation."
         }
       },
       "interior-design": {
@@ -281,7 +281,7 @@
         "duration": "Construction documents take 8 to 12 weeks. Permitting takes 3 to 8 weeks, depending on the jurisdiction. Bidding takes 2 to 4 weeks. Construction administration lasts as long as construction.",
         "meta": {
           "title": "Construction Documents for Homes | Maneda Design Studios",
-          "description": "Construction documents for homes and additions, developed from the approved design in about 8 to 12 weeks, with permit support if you want it."
+          "description": "Construction documents and permit drawings for homes and additions, developed from the approved design in about 8 to 12 weeks, with permit support if you want it."
         }
       }
     },
