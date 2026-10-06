@@ -601,6 +601,18 @@
                       "name": "buildersLink",
                       "widget": "string",
                       "required": false
+                    },
+                    {
+                      "label": "Credit Label",
+                      "name": "creditLabel",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Credit Note",
+                      "name": "creditNote",
+                      "widget": "string",
+                      "required": false
                     }
                   ]
                 },
@@ -3774,6 +3786,18 @@
                     {
                       "label": "Builders Link",
                       "name": "buildersLink",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Credit Label",
+                      "name": "creditLabel",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Credit Note",
+                      "name": "creditNote",
                       "widget": "string",
                       "required": false
                     }
