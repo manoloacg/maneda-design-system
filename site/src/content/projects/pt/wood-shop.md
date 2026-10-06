@@ -42,4 +42,17 @@ moves:
 documents: "As notas gerais têm doze itens: como as cotas são medidas, instalação de janelas e portas, laje no solo, altura de parede, portas de garagem, nomes dos ambientes, acabamentos internos, blocos de apoio para armários fixados na parede, os requisitos de código que se aplicam se um ambiente passar a ser usado como espaço habitável, e a propriedade dos desenhos."
 documentsImage: ../../../assets/shop-notes.webp
 documentsAlt: "Doze notas gerais do conjunto para alvará, em letras maiúsculas laranja."
+sheets:
+  - image: ../../../assets/shop-wallsec.webp
+    alt: "Corte típico de parede, do beiral à fundação, com notas sobre cobertura metálica, fascia, calha, parede de estuque, laje, barreira de vapor, brita e sapata."
+    caption: "Corte de parede"
+  - image: ../../../assets/shop-walltypes.webp
+    alt: "Quatro tipos de parede sem exigência de resistência ao fogo, cada um com diagrama de camadas, corte em planta e quadro de dados."
+    caption: "Tipos de parede"
+  - image: ../../../assets/shop-details-1.webp
+    alt: "Detalhes de passagens na parede: fixação de tomadas, torneira externa, passagem de fios, passagem de luvas e envolvimento da membrana."
+    caption: "Detalhes de passagens na parede"
+  - image: ../../../assets/shop-details-2.webp
+    alt: "Detalhes de beiral e drenagem da cobertura: fascia, calha, empena, rufo e suporte do condutor, com notas gerais."
+    caption: "Detalhes de beiral e drenagem"
 ---

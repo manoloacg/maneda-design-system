@@ -42,4 +42,17 @@ moves:
 documents: "The general notes carry twelve items: how dimensions are measured, window and door installation, slab on grade, wall height, garage doors, room names, interior finishes, solid blocking for wall-mounted cabinets, the code triggers that apply if a room is later used as habitable space, and ownership of the drawings."
 documentsImage: ../../../assets/shop-notes.webp
 documentsAlt: "Twelve general notes from the permit set, set in orange capitals."
+sheets:
+  - image: ../../../assets/shop-wallsec.webp
+    alt: "Typical wall section from the roof edge to the footing, with callouts for the metal roof, fascia, gutter, stucco wall, slab, vapor retarder, gravel, and footing."
+    caption: "Wall section"
+  - image: ../../../assets/shop-walltypes.webp
+    alt: "Four zero-hour rated wall types, each with a layer diagram, a plan section, and a data block."
+    caption: "Wall types"
+  - image: ../../../assets/shop-details-1.webp
+    alt: "Wall penetration details: electrical device mounting, hose bibb, wire penetration, sleeve penetration, and membrane wrapping."
+    caption: "Wall penetration details"
+  - image: ../../../assets/shop-details-2.webp
+    alt: "Roof edge and drainage details: fascia, gutter, rake, roof flashing, and downspout hanger, with general notes."
+    caption: "Roof edge and drainage details"
 ---
