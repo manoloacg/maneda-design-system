@@ -611,7 +611,7 @@
                     {
                       "label": "Credit Note",
                       "name": "creditNote",
-                      "widget": "string",
+                      "widget": "text",
                       "required": false
                     }
                   ]
@@ -3798,7 +3798,7 @@
                     {
                       "label": "Credit Note",
                       "name": "creditNote",
-                      "widget": "string",
+                      "widget": "text",
                       "required": false
                     }
                   ]

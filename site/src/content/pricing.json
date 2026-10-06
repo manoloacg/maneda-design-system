@@ -9,7 +9,7 @@
         "en": "1 hour, virtual",
         "pt": "1 hora, virtual"
       },
-      "credit": 200
+      "credit": 100
     },
     {
       "id": "in-person",
@@ -18,7 +18,7 @@
         "en": "90 minutes, in person",
         "pt": "90 minutos, presencial"
       },
-      "credit": 100
+      "credit": 150
     },
     {
       "id": "deep-dive",
@@ -27,7 +27,7 @@
         "en": "2 hours, in person, deep dive",
         "pt": "2 horas, presencial, análise aprofundada"
       },
-      "credit": 150
+      "credit": 225
     }
   ],
   "siteAnalysis": {
