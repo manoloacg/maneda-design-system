@@ -574,7 +574,8 @@
     "side": {
       "email": "Email",
       "area": "Service area",
-      "social": "Social"
+      "social": "Social",
+      "note": "Meetings are virtual or at your site."
     },
     "form": {
       "name": "Name",
