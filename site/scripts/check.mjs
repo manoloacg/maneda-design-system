@@ -27,15 +27,17 @@ for (const file of walk('.').filter((f) => textExt.has(extname(f)) && !f.endsWit
     const at = `${file}:${i + 1}`;
     if (/[—–]/.test(line)) fail(`dash ${at}: ${line.trim().slice(0, 80)}`);
     const internalDoc = ['README.md', 'LAUNCH.md', 'CONTENT-NEEDED.md', 'QUALITY-REPORT.md', 'LEGAL-CHECKLIST.md', 'EDITING.md'].includes(file) || file.startsWith('docs-drafts/');
+    // One approved article explains the architect and designer difference, so it names the licensed profession. Every other file keeps the rules.
+    const approvedArticle = file.includes('journal/') && file.endsWith('architect-or-residential-designer.md');
     if (internalDoc) return;
     if (!file.endsWith('.css') && !file.endsWith('.ts') && !file.endsWith('.astro') || file.endsWith('.json')) {
       const b = line.match(banned); if (b) fail(`banned word "${b[0]}" ${at}`);
       if (file.includes('/pt.json') || file.includes('/pt/') || file.endsWith('pt.json')) {
         const d = line.match(diminutive); if (d) fail(`possible diminutive "${d[0]}" ${at}`);
       }
-      if (/\barchitect\b/i.test(line) && !/"(label|value)": "Architect"/i.test(line)) fail(`"architect" ${at}: ${line.trim().slice(0, 80)}`);
-      if (/\bArquiteto\b/.test(line) && !/"label": "Arquiteto"/.test(line)) fail(`"Arquiteto" ${at}`);
-      if (/\blicensed\b|licenciado/i.test(line) && !seal.test(line) && !/seal/i.test(line) && !/engineer|engenheiro/i.test(line) && !/licensed professional|profissional licenciado/i.test(line)) fail(`"licensed" ${at}: ${line.trim().slice(0, 80)}`);
+      if (!approvedArticle && /\barchitect\b/i.test(line) && !/"(label|value)": "Architect"/i.test(line)) fail(`"architect" ${at}: ${line.trim().slice(0, 80)}`);
+      if (!approvedArticle && /\bArquiteto\b/.test(line) && !/"label": "Arquiteto"/.test(line)) fail(`"Arquiteto" ${at}`);
+      if (!approvedArticle && /\blicensed\b|licenciado/i.test(line) && !seal.test(line) && !/seal/i.test(line) && !/engineer|engenheiro/i.test(line) && !/licensed professional|profissional licenciado/i.test(line)) fail(`"licensed" ${at}: ${line.trim().slice(0, 80)}`);
     }
   });
 }

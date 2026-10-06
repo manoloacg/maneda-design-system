@@ -33,7 +33,7 @@
   },
   "features": {
     "resources": false,
-    "journal": false
+    "journal": true
   },
   "featuresNote": "Set to true only when real content exists. While false, those pages are left out of the build and the sitemap, and their links disappear.",
   "privacyUpdated": "2026-10-05",

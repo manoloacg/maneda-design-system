@@ -8,7 +8,7 @@ import { getLang, routeFor, withSiteName } from '../../../i18n/utils';
 
 export async function getStaticPaths() {
   const all = await getCollection('journal');
-  return all.filter((p) => p.id.startsWith('pt/')).map((entry) => ({ params: { slug: entry.id.split('/')[1] }, props: { entry } }));
+  return all.filter((p) => p.id.startsWith('pt/') && !p.data.draft).map((entry) => ({ params: { slug: entry.id.split('/')[1] }, props: { entry } }));
 }
 const { entry } = Astro.props;
 const lang = getLang(Astro.url.pathname);

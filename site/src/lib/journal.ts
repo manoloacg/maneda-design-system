@@ -7,7 +7,7 @@ export const hasPlaceholder = (value: unknown) => JSON.stringify(value).includes
 export async function getPosts(lang: Lang) {
   const all = await getCollection('journal');
   return all
-    .filter((p) => p.id.startsWith(`${lang}/`))
+    .filter((p) => p.id.startsWith(`${lang}/`) && !p.data.draft)
     .map((p) => ({ ...p, slug: p.id.split('/')[1] }))
     .sort((a, b) => (b.data.date ?? '').localeCompare(a.data.date ?? ''));
 }
