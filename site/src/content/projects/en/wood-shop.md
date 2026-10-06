@@ -12,7 +12,7 @@ year: "2026"
 result: "A permit drawing set prepared from an existing design."
 clientApproved: false # Approval to show this project confirmed by Manolo (2026-10-06). Kept false: title block, address, and township are cropped out of every image.
 heroImage: ../../../assets/shop-render-hero.webp
-cardImage: ../../../assets/shop-render.webp
+cardImage: ../../../assets/shop-render-hero.webp
 heroAlt: "Rendering of a cream stucco wood shop with a dark standing seam metal roof, a cupola, shuttered windows, a barn-style door on the gable end, and a glazed studio wing with a brick chimney, behind a lawn and a picket fence."
 heroCaption: "Inspiration render provided by the owner. The design changed during the permit process, so the drawings in this case study differ from this image."
 brief: "The owner brought an inspiration render and an existing design. The task was to turn it into a permit drawing set: a ground floor plan, a roof plan, exterior elevations, a building section, and general notes that say how the building goes together. The design changed during the permit process, so the drawings differ from the render."

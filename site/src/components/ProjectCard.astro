@@ -25,7 +25,7 @@ const { href, number, type, location, result, title, image, alt = '', as: Headin
     <div class="overflow-hidden">
       {
         image ? (
-          <Image src={image} alt={alt} widths={[480, 800, 1200]} sizes="(min-width: 1024px) 380px, 100vw" class="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]" loading="lazy" />
+          <Image src={image} alt={alt} widths={[480, 800, 1200]} sizes="(min-width: 1024px) 380px, 100vw" class="aspect-[16/9] w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]" loading="lazy" />
         ) : (
           <ImagePlaceholder ratio="4 / 3" note={alt} />
         )
