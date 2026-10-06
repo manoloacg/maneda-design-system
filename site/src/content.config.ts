@@ -12,7 +12,7 @@ const projects = defineCollection({
       number: z.string(), // sheet-style number, for example MDS-26-01
       order: z.number(),
       published: z.boolean().default(true), // false hides the project everywhere without deleting the file
-      type: z.enum(['residential', 'outdoor', 'commercial', 'interiors']),
+      type: z.enum(['site-analysis', 'residential', 'outdoor', 'commercial', 'interiors']),
       location: z.string(), // city or county level only
       size: z.string().optional(),
       scope: z.string(),
@@ -44,6 +44,8 @@ const projects = defineCollection({
         })
         .optional(),
       sheets: z.array(z.object({ image: image(), alt: z.string(), caption: z.string() })).optional(), // selected drawing sheets, cropped to leave out the title block
+      documentsTitle: z.string().optional(), // overrides the heading of the documents section
+      documentsIntro: z.string().optional(),
       documents: z.string().optional(),
       documentsImage: image().optional(),
       documentsAlt: z.string().optional(),

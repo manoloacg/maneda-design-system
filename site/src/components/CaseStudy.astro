@@ -134,7 +134,7 @@ const ph = markPlaceholders;
 
   {
     hasDocs && (
-      <Section label={nextLabel()} title={S.documents} intro={S.documentsIntro}>
+      <Section label={nextLabel()} title={d.documentsTitle ?? S.documents} intro={d.documentsIntro ?? S.documentsIntro}>
         <div class={d.documentsImage && d.documentsImage.width / d.documentsImage.height > 1.2 ? 'max-w-[64rem]' : 'max-w-[40rem]'}>
           {d.documentsImage ? <ZoomImage src={d.documentsImage} alt={d.documentsAlt ?? ''} widths={[640, 960, 1200, 1800]} sizes="(min-width: 1024px) 64rem, 100vw" class="w-full" label={S.zoom} /> : <ImagePlaceholder ratio="3 / 2" note={d.documents ?? PH.documents} />}
         </div>

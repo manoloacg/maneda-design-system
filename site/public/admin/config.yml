@@ -1284,6 +1284,12 @@
                       "required": false
                     },
                     {
+                      "label": "Site analysis",
+                      "name": "site-analysis",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
                       "label": "Residential",
                       "name": "residential",
                       "widget": "string",
@@ -4512,6 +4518,12 @@
                     {
                       "label": "All",
                       "name": "all",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Site analysis",
+                      "name": "site-analysis",
                       "widget": "string",
                       "required": false
                     },

@@ -374,6 +374,7 @@
     "filters": {
       "label": "Filtrar por tipo de projeto",
       "all": "Todos",
+      "site-analysis": "Análise de terreno",
       "residential": "Residencial",
       "outdoor": "Áreas externas e ampliações",
       "commercial": "Comercial e varejo",

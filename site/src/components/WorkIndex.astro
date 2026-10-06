@@ -9,7 +9,7 @@ const lang = getLang(Astro.url.pathname);
 const page = getPage(lang).work;
 const f = page.filters;
 const projects = await getProjects(lang);
-const types = (['residential', 'outdoor', 'commercial', 'interiors'] as const).filter((t) => projects.some((p) => p.data.type === t));
+const types = (['site-analysis', 'residential', 'outdoor', 'commercial', 'interiors'] as const).filter((t) => projects.some((p) => p.data.type === t));
 const showFilters = types.length > 1;
 const unfinished = projects.some((p) => hasPlaceholder(p.data));
 const btn = 'inline-flex min-h-[var(--tap)] items-center border border-obsidian px-5 text-[0.75rem] font-medium uppercase tracking-[0.18em] aria-pressed:bg-obsidian aria-pressed:text-ivory hover:bg-linen aria-pressed:hover:bg-obsidian';

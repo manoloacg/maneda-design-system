@@ -374,6 +374,7 @@
     "filters": {
       "label": "Filter by project type",
       "all": "All",
+      "site-analysis": "Site analysis",
       "residential": "Residential",
       "outdoor": "Outdoor and additions",
       "commercial": "Commercial and retail",
