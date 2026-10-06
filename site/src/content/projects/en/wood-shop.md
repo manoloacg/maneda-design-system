@@ -11,10 +11,11 @@ role: "Permit documents, for a design developed by others"
 year: "2026"
 result: "A permit drawing set prepared from an existing design."
 clientApproved: false # Approval to show this project confirmed by Manolo (2026-10-06). Kept false: title block, address, and township are cropped out of every image.
-heroImage: ../../../assets/shop-hero.webp
-cardImage: ../../../assets/shop-plan.webp
-heroAlt: "Right elevation of a wood shop with a standing seam metal roof, a cupola, stucco walls, and a gabled studio wing, drawn at one quarter inch scale."
-brief: "The design was already settled when MDS joined the project. The task was to turn it into a permit drawing set: a ground floor plan, a roof plan, exterior elevations, a building section, and general notes that say how the building goes together."
+heroImage: ../../../assets/shop-render-hero.webp
+cardImage: ../../../assets/shop-render.webp
+heroAlt: "Rendering at sunset of a cream stucco wood shop with a brown standing seam metal roof, a cupola, a barn-style door on the gable end, and a glazed studio wing, behind a picket fence and an arbor."
+heroCaption: "Inspiration render provided by the owner. The design changed during the permit process, so the drawings in this case study differ from this image."
+brief: "The owner brought an inspiration render and an existing design. The task was to turn it into a permit drawing set: a ground floor plan, a roof plan, exterior elevations, a building section, and general notes that say how the building goes together. The design changed during the permit process, so the drawings differ from the render."
 context: "The site is in Ohio, so the notes cite the Residential Code of Ohio. The building is slab on grade with no basement and 10 ft walls. The roof uses prefabricated scissor trusses. Truss layout and design are by others, and the stamped truss drawings are kept on site for the structural inspection."
 movesTitle: "What the set covers"
 movesIntro: "Five sheets from the set, and what each one settles."
@@ -43,6 +44,9 @@ documents: "The general notes carry twelve items: how dimensions are measured, w
 documentsImage: ../../../assets/shop-notes.webp
 documentsAlt: "Twelve general notes from the permit set, set in orange capitals."
 sheets:
+  - image: ../../../assets/shop-hero.webp
+    alt: "Right elevation of the wood shop with a standing seam metal roof, a cupola, stucco walls, and a gabled studio wing, drawn at one quarter inch scale."
+    caption: "Right elevation"
   - image: ../../../assets/shop-wallsec.webp
     alt: "Typical wall section from the roof edge to the footing, with callouts for the metal roof, fascia, gutter, stucco wall, slab, vapor retarder, gravel, and footing."
     caption: "Wall section"

@@ -11,10 +11,11 @@ role: "Documentos para alvará, a partir de um projeto desenvolvido por terceiro
 year: "2026"
 result: "Um conjunto de desenhos para alvará preparado a partir de um projeto existente."
 clientApproved: false # Aprovação para mostrar este projeto confirmada por Manolo (2026-10-06). Mantido false: legenda, endereço e município foram cortados de todas as imagens.
-heroImage: ../../../assets/shop-hero.webp
-cardImage: ../../../assets/shop-plan.webp
-heroAlt: "Elevação direita de uma oficina de marcenaria com cobertura metálica de junta em pé, um lanternim, paredes de estuque e uma ala de estúdio com empena, desenhada na escala de um quarto de polegada."
-brief: "O projeto já estava definido quando a MDS entrou. A tarefa foi transformá-lo em um conjunto de desenhos para alvará: planta do pavimento térreo, planta de cobertura, elevações externas, um corte do edifício e notas gerais que explicam como a construção se monta."
+heroImage: ../../../assets/shop-render-hero.webp
+cardImage: ../../../assets/shop-render.webp
+heroAlt: "Renderização ao pôr do sol de uma oficina de marcenaria com estuque claro, cobertura metálica marrom de junta em pé, lanternim, porta estilo celeiro na empena e uma ala de estúdio envidraçada, atrás de uma cerca de estacas e um pergolado."
+heroCaption: "Renderização de inspiração fornecida pelo proprietário. O projeto mudou durante o processo de alvará, então os desenhos deste estudo de caso diferem desta imagem."
+brief: "O proprietário trouxe uma renderização de inspiração e um projeto existente. A tarefa foi transformá-lo em um conjunto de desenhos para alvará: planta do pavimento térreo, planta de cobertura, elevações externas, um corte do edifício e notas gerais que explicam como a construção se monta. O projeto mudou durante o processo de alvará, então os desenhos diferem da renderização."
 context: "O terreno fica em Ohio, então as notas citam o Residential Code of Ohio. A construção é sobre laje no solo, sem porão, com paredes de 3 m (10 ft). A cobertura usa tesouras pré-fabricadas. O layout e o projeto das tesouras são feitos por terceiros, e os desenhos carimbados das tesouras ficam na obra para a inspeção estrutural."
 movesTitle: "O que o conjunto cobre"
 movesIntro: "Cinco pranchas do conjunto, e o que cada uma define."
@@ -43,6 +44,9 @@ documents: "As notas gerais têm doze itens: como as cotas são medidas, instala
 documentsImage: ../../../assets/shop-notes.webp
 documentsAlt: "Doze notas gerais do conjunto para alvará, em letras maiúsculas laranja."
 sheets:
+  - image: ../../../assets/shop-hero.webp
+    alt: "Elevação direita da oficina com cobertura metálica de junta em pé, lanternim, paredes de estuque e uma ala de estúdio com empena, desenhada na escala de um quarto de polegada."
+    caption: "Elevação direita"
   - image: ../../../assets/shop-wallsec.webp
     alt: "Corte típico de parede, do beiral à fundação, com notas sobre cobertura metálica, fascia, calha, parede de estuque, laje, barreira de vapor, brita e sapata."
     caption: "Corte de parede"

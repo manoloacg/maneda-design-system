@@ -23,6 +23,7 @@ const projects = defineCollection({
       heroImage: image().optional(),
       cardImage: image().optional(), // image for the project card, if different from the hero
       heroAlt: z.string(),
+      heroCaption: z.string().optional(), // a line under the hero image, for example to say a render is only an inspiration image
       brief: z.string(),
       context: z.string(),
       movesTitle: z.string().optional(), // overrides the section heading, for projects where MDS did not design (for example permit documents only)
