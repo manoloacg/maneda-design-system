@@ -12,7 +12,8 @@ import Footer from '../components/Footer.astro';
 import LangBanner from '../components/LangBanner.astro';
 import MobileCta from '../components/MobileCta.astro';
 import site from '../content/site.json';
-import { alternatePath, getLang, t } from '../i18n/utils';
+import { alternatePath, getLang, routes, t, type RouteKey } from '../i18n/utils';
+import { breadcrumbSchema, websiteSchema } from '../lib/schema';
 
 interface Props {
   title?: string;
@@ -31,6 +32,21 @@ const canonical = abs(path);
 // Strict content policy for public pages. If you add a new outside service, add its address here.
 const csp = "default-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://api.web3forms.com https://cloudflareinsights.com; form-action 'self' https://api.web3forms.com; base-uri 'self'";
 const og = { en: 'en_US', pt: 'pt_BR' } as const;
+
+// Structured data added to every page: the site entry on the home page, a breadcrumb trail elsewhere.
+const navKeys = ['services', 'work', 'process', 'about', 'contact', 'journal', 'resources'] as const;
+const skipCrumbs = ['/404/', '/contact/thank-you/', '/pt/contato/obrigado/', '/resources/thank-you/', '/pt/recursos/obrigado/'];
+const homePath = routes.home[lang];
+const auto: object[] = [];
+if (path === homePath) auto.push(websiteSchema(lang));
+else if (!skipCrumbs.includes(path) && !path.includes('styleguide')) {
+  const label = (v: string) => v.replace(/\s*\|\s*Maneda Design Studios$/, '');
+  const crumbs = [{ name: site.name, path: homePath }];
+  const top = navKeys.find((k) => path.startsWith(routes[k as RouteKey][lang]));
+  if (top) crumbs.push({ name: t(lang, `nav.${top}`), path: routes[top as RouteKey][lang] });
+  if (!top || path !== routes[top as RouteKey][lang]) crumbs.push({ name: label(title), path });
+  auto.push(breadcrumbSchema(crumbs));
+}
 ---
 
 <!doctype html>
@@ -46,7 +62,7 @@ const og = { en: 'en_US', pt: 'pt_BR' } as const;
     <link rel="alternate" hreflang="pt-BR" href={abs(alternatePath(path, 'pt'))} />
     <link rel="alternate" hreflang="x-default" href={abs(alternatePath(path, 'en'))} />
     {hidden && <meta name="robots" content="noindex, nofollow" />}
-    {schema.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
+    {[...schema, ...auto].map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
     {site.analytics.enabled && site.analytics.token && (
       <script is:inline defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon={JSON.stringify({ token: site.analytics.token })}></script>
     )}

@@ -104,8 +104,8 @@
   },
   "services": {
     "meta": {
-      "title": "Services | Maneda Design Studios",
-      "description": "Residential design, interior design, site analysis, design consultations, and construction documents for homes and additions."
+      "title": "Residential Design Services, Orlando | Maneda Design Studios",
+      "description": "Residential design, interior design, site analysis, consultations and construction documents for homes and additions, with fixed published prices."
     },
     "hero": {
       "label": "Services",
@@ -306,8 +306,8 @@
   },
   "work": {
     "meta": {
-      "title": "Work | Maneda Design Studios",
-      "description": "Residential design projects, with the brief, the site context, the design decisions, and the outcome."
+      "title": "Residential Design Projects | Maneda Design Studios",
+      "description": "Residential design projects from Maneda Design Studios, with the brief, the site context, the design decisions and the outcome behind each one."
     },
     "hero": {
       "label": "Work",
@@ -365,7 +365,7 @@
   },
   "process": {
     "meta": {
-      "title": "Process | Maneda Design Studios",
+      "title": "Home Design Process and Timeline | Maneda Design Studios",
       "description": "How a residential design project works with MDS, from inquiry to construction documents, with what happens, what you provide, and what you get."
     },
     "hero": {
@@ -486,7 +486,7 @@
   },
   "about": {
     "meta": {
-      "title": "About | Maneda Design Studios",
+      "title": "Architectural Designer in Orlando | Maneda Design Studios",
       "description": "Manolo Castaneda, architectural designer. 10+ years in multifamily and retail projects. Based in Orlando, Florida. Bilingual in English and Portuguese."
     },
     "hero": {
@@ -519,8 +519,8 @@
   },
   "contact": {
     "meta": {
-      "title": "Contact | Maneda Design Studios",
-      "description": "Request a quote from Maneda Design Studios. Tell us about your project, your lot, and your timeline."
+      "title": "Request a Residential Design Quote | Maneda Design Studios",
+      "description": "Tell us about your project, your lot and your timeline. Based in Orlando, working across the United States, in English or Portuguese."
     },
     "hero": {
       "label": "Contact",
@@ -732,7 +732,7 @@
   "privacy": {
     "meta": {
       "title": "Privacy policy | Maneda Design Studios",
-      "description": "What information Maneda Design Studios collects through this website and how it is used."
+      "description": "What information Maneda Design Studios collects through this website, how it is used, and how to contact us about your data."
     },
     "title": "Privacy policy",
     "updated": "Last updated:",

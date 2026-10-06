@@ -104,8 +104,8 @@
   },
   "services": {
     "meta": {
-      "title": "Serviços | Maneda Design Studios",
-      "description": "Projeto residencial, design de interiores, análise de terreno, consultorias de projeto e projeto executivo para casas e ampliações."
+      "title": "Serviços de Projeto Residencial | Maneda Design Studios",
+      "description": "Projeto residencial, design de interiores, análise de terreno, consultorias e projeto executivo para casas e ampliações, com preços fixos publicados."
     },
     "hero": {
       "label": "Serviços",
@@ -306,8 +306,8 @@
   },
   "work": {
     "meta": {
-      "title": "Trabalhos | Maneda Design Studios",
-      "description": "Projetos residenciais, com o programa, o contexto do terreno, as decisões de projeto e o resultado."
+      "title": "Projetos Residenciais | Maneda Design Studios",
+      "description": "Projetos residenciais da Maneda Design Studios, com o programa, o contexto do terreno, as decisões de projeto e o resultado de cada um."
     },
     "hero": {
       "label": "Trabalhos",
@@ -365,7 +365,7 @@
   },
   "process": {
     "meta": {
-      "title": "Processo | Maneda Design Studios",
+      "title": "Processo e Prazos do Projeto | Maneda Design Studios",
       "description": "Como funciona um projeto residencial com a MDS, da consulta ao projeto executivo: o que acontece, o que você fornece e o que você recebe."
     },
     "hero": {
@@ -486,7 +486,7 @@
   },
   "about": {
     "meta": {
-      "title": "Sobre | Maneda Design Studios",
+      "title": "Designer de Arquitetura em Orlando | Maneda Design Studios",
       "description": "Manolo Castaneda, designer de arquitetura. Mais de 10 anos em projetos multifamiliares e de varejo. Baseado em Orlando, Flórida. Bilíngue em inglês e português."
     },
     "hero": {
@@ -519,8 +519,8 @@
   },
   "contact": {
     "meta": {
-      "title": "Contato | Maneda Design Studios",
-      "description": "Solicite um orçamento à Maneda Design Studios. Conte-nos sobre o seu projeto, o seu lote e o seu prazo."
+      "title": "Solicite um Orçamento de Projeto | Maneda Design Studios",
+      "description": "Conte-nos sobre o seu projeto, o seu lote e o seu prazo. A Maneda Design Studios tem base em Orlando, atende todo o país e responde em português ou inglês."
     },
     "hero": {
       "label": "Contato",
@@ -732,7 +732,7 @@
   "privacy": {
     "meta": {
       "title": "Política de privacidade | Maneda Design Studios",
-      "description": "Quais informações a Maneda Design Studios coleta neste site e como elas são usadas."
+      "description": "Quais informações a Maneda Design Studios coleta neste site, como são usadas e como falar conosco sobre os seus dados."
     },
     "title": "Política de privacidade",
     "updated": "Última atualização:",

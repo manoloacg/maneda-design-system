@@ -7,6 +7,17 @@ import { getPage, isPlaceholder, pick, routeFor, t, type Lang } from '../i18n/ut
 
 export const abs = (path: string) => new URL(path, site.url).href;
 export const stripPlaceholders = (text: string) => text.replace(/\s*\[PLACEHOLDER[^\]]*\]/g, '').trim();
+/** First sentences of a text, up to a character limit, for short structured-data descriptions. */
+export function shorten(text: string, limit = 200) {
+  const clean = stripPlaceholders(text);
+  const sentences = clean.match(/[^.!?]+[.!?]+(\s|$)/g) ?? [clean];
+  let out = '';
+  for (const sentence of sentences) {
+    if ((out + sentence).trim().length > limit) break;
+    out += sentence;
+  }
+  return (out || sentences[0]).trim();
+}
 const ctx = 'https://schema.org';
 const studioId = () => abs('/#studio');
 
@@ -53,7 +64,7 @@ export function servicesSchema(lang: Lang) {
       '@context': ctx,
       '@type': 'Service',
       name: pick(lang, s.title),
-      description: stripPlaceholders(items[s.id].what),
+      description: shorten(items[s.id].what),
       url: `${abs(routeFor(lang, 'services'))}#${s.id}`,
       provider: { '@id': studioId() },
       areaServed: 'United States',
@@ -93,5 +104,39 @@ export function articleSchema(lang: Lang, d: { title: string; description: strin
     author: { '@type': 'Person', name: 'Manolo Castaneda' },
     publisher: { '@id': studioId() },
     inLanguage: lang === 'pt' ? 'pt-BR' : 'en',
+  };
+}
+
+export function websiteSchema(lang: Lang) {
+  return {
+    '@context': ctx,
+    '@type': 'WebSite',
+    '@id': abs('/#website'),
+    name: site.name,
+    url: abs(routeFor(lang, 'home')),
+    inLanguage: lang === 'pt' ? 'pt-BR' : 'en',
+    publisher: { '@id': studioId() },
+  };
+}
+
+export function personSchema(lang: Lang) {
+  return {
+    '@context': ctx,
+    '@type': 'Person',
+    '@id': abs('/#manolo'),
+    name: 'Manolo Castaneda',
+    jobTitle: 'Architectural Designer',
+    worksFor: { '@id': studioId() },
+    url: abs(routeFor(lang, 'about')),
+    address: { '@type': 'PostalAddress', addressLocality: 'Orlando', addressRegion: 'FL', addressCountry: 'US' },
+    knowsLanguage: ['en', 'pt-BR'],
+  };
+}
+
+export function breadcrumbSchema(crumbs: { name: string; path: string }[]) {
+  return {
+    '@context': ctx,
+    '@type': 'BreadcrumbList',
+    itemListElement: crumbs.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.name, item: abs(c.path) })),
   };
 }

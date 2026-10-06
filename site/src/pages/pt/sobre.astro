@@ -1,10 +1,12 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AboutPage from '../../components/AboutPage.astro';
+import { personSchema } from '../../lib/schema';
 import { getLang, getPage } from '../../i18n/utils';
-const meta = getPage(getLang(Astro.url.pathname)).about.meta;
+const lang = getLang(Astro.url.pathname);
+const meta = getPage(lang).about.meta;
 ---
 
-<BaseLayout title={meta.title} description={meta.description}>
+<BaseLayout title={meta.title} description={meta.description} schema={[personSchema(lang)]}>
   <AboutPage />
 </BaseLayout>
