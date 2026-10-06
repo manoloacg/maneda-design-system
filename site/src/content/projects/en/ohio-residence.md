@@ -5,6 +5,7 @@ order: 1
 type: residential
 published: true
 location: "Ohio"
+size: "15,990 SF conditioned, 18,997 SF total construction"
 scope: "Layout, elevations, and interior design"
 role: "Designer"
 year: "2026"
@@ -52,4 +53,5 @@ sheets:
 documents: "Rear and front elevations from the set, with keynotes that tie each exterior finish to a specification section."
 documentsImage: ../../../assets/ohio-docs.webp
 documentsAlt: "Rear and front elevations of the residence with keynote tags, roof pitch marks, floor levels, and grade lines."
+outcome: "The permit set has been submitted, and the project is in permit review."
 ---

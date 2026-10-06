@@ -5,6 +5,7 @@ order: 1
 type: residential
 published: true
 location: "Ohio"
+size: "15.990 SF climatizados, 18.997 SF de construção total"
 scope: "Planta, elevações e design de interiores"
 role: "Designer"
 year: "2026"
@@ -52,4 +53,5 @@ sheets:
 documents: "Elevações posterior e frontal do conjunto, com notas que ligam cada acabamento externo a uma seção da especificação."
 documentsImage: ../../../assets/ohio-docs.webp
 documentsAlt: "Elevações posterior e frontal da residência com notas de chamada, inclinações da cobertura, níveis dos pisos e linhas do terreno."
+outcome: "O conjunto para alvará foi protocolado, e o projeto está em análise para aprovação."
 ---
