@@ -64,7 +64,7 @@ const ph = markPlaceholders;
   <Section label="01" title={S.brief} intro={d.brief} />
   <Section tone="alt" label="02" title={S.context} intro={d.context} />
 
-  <Section label="03" title={S.moves} intro={S.movesIntro}>
+  <Section label="03" title={d.movesTitle ?? S.moves} intro={d.movesIntro ?? S.movesIntro}>
     <ol class="grid gap-16">
       {
         d.moves.map((m: { title: string; text: string; visual?: string; image?: ImageMetadata; alt?: string }, i: number) =>

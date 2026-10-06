@@ -25,6 +25,8 @@ const projects = defineCollection({
       heroAlt: z.string(),
       brief: z.string(),
       context: z.string(),
+      movesTitle: z.string().optional(), // overrides the section heading, for projects where MDS did not design (for example permit documents only)
+      movesIntro: z.string().optional(),
       moves: z
         .array(z.object({ title: z.string(), text: z.string(), visual: z.string().optional(), image: image().optional(), alt: z.string().optional() }))
         .min(3)
