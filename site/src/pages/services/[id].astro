@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ServiceDetail from '../../components/ServiceDetail.astro';
+import services from '../../content/services.json';
+import { getLang, getPage, pick, routeFor } from '../../i18n/utils';
+import { servicesSchema, studioSchema } from '../../lib/schema';
+
+export function getStaticPaths() {
+  return services.services.map((s) => ({ params: { id: s.id } }));
+}
+const { id } = Astro.params;
+const lang = getLang(Astro.url.pathname);
+const meta = (getPage(lang).services.items as Record<string, { meta: { title: string; description: string } }>)[id!].meta;
+const index = services.services.findIndex((s) => s.id === id);
+const schema = servicesSchema(lang)[index];
+---
+
+<BaseLayout title={meta.title} description={meta.description} schema={[studioSchema(lang), schema]}>
+  <ServiceDetail id={id!} />
+</BaseLayout>

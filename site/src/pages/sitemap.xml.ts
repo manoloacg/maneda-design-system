@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import site from '../content/site.json';
 import { alternatePath, routes, type Lang } from '../i18n/utils';
 import { hasPlaceholder } from '../lib/journal';
+import services from '../content/services.json';
 
 /* XML sitemap with English and Portuguese alternates.
    Left out on purpose: style guide, thank-you pages, 404, journal outlines,
@@ -15,6 +16,7 @@ export const GET: APIRoute = async () => {
     .filter(([key]) => !skip.has(key))
     .map(([, r]) => r.en);
 
+  for (const sv of services.services) paths.push(`${routes.services.en}${sv.id}/`);
   const projects = await getCollection('projects');
   for (const p of projects.filter((p) => p.id.startsWith('en/') && p.data.published && !hasPlaceholder(p.data))) paths.push(`${routes.work.en}${p.id.split('/')[1]}/`);
   const posts = site.features.journal ? await getCollection('journal') : [];

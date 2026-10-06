@@ -132,7 +132,10 @@
       "to": "a",
       "seeWork": "Ver os trabalhos",
       "overview": "Os cinco serviços",
-      "glance": "Escolha em que ponto você está"
+      "glance": "Escolha em que ponto você está",
+      "allServices": "Todos os serviços",
+      "otherServices": "Outros serviços",
+      "readMore": "Detalhes completos"
     },
     "items": {
       "residential-design": {
@@ -161,7 +164,11 @@
           "Pacote de desenvolvimento do projeto: plantas, elevações, cortes e seleção de materiais"
         ],
         "suits": "Proprietários que constroem ou reformam uma casa e querem critério de projeto, não só desenhos.",
-        "duration": "Cerca de 9 a 15 semanas até o desenvolvimento do projeto: o pré-projeto leva de 1 a 3 semanas, o anteprojeto de 4 a 6 e o desenvolvimento de 4 a 6."
+        "duration": "Cerca de 9 a 15 semanas até o desenvolvimento do projeto: o pré-projeto leva de 1 a 3 semanas, o anteprojeto de 4 a 6 e o desenvolvimento de 4 a 6.",
+        "meta": {
+          "title": "Projeto de Casas e Ampliações | Maneda Design Studios",
+          "description": "Estudo preliminar, anteprojeto e desenvolvimento para casas sob medida, ampliações e reformas. Cerca de 9 a 15 semanas, orçamento após uma conversa."
+        }
       },
       "interior-design": {
         "what": "Design de interiores completo, das plantas ao mobiliário. O trabalho tem quatro fases: descoberta e conceito, projeto e documentação, mobiliário e decoração, e apoio opcional em compras e instalação. Em projetos residenciais completos, os interiores podem andar junto com o projeto da edificação, e o total fica em cerca de 5 a 7 meses, não na soma dos dois prazos.",
@@ -188,7 +195,11 @@
           "Checklist do dia de instalação, se o apoio em compras for contratado"
         ],
         "suits": "Proprietários de casas novas, reformas e ampliações que querem os interiores resolvidos junto com a edificação, e não depois dela.",
-        "duration": "O prazo típico é de 12 a 18 semanas. Menos de 1.500 SF levam de 10 a 14 semanas, de 1.500 a 2.500 SF levam de 12 a 18, e de 2.500 a 3.500 SF ou mais levam de 16 a 24."
+        "duration": "O prazo típico é de 12 a 18 semanas. Menos de 1.500 SF levam de 10 a 14 semanas, de 1.500 a 2.500 SF levam de 12 a 18, e de 2.500 a 3.500 SF ou mais levam de 16 a 24.",
+        "meta": {
+          "title": "Design de Interiores Completo | Maneda Design Studios",
+          "description": "Design de interiores dos desenhos à mobília, em quatro fases, junto com o projeto da edificação. Orçamento após uma conversa."
+        }
       },
       "site-analysis": {
         "what": "Um relatório escrito sobre o lote, antes de comprar ou projetar. Ele mostra o que zoneamento, recuos, zona de inundação e acesso permitem, e o que o lote comporta, com base em registros públicos e em uma visita ao terreno. É um resumo informal de zoneamento para planejamento de projeto. Não é levantamento topográfico, parecer jurídico nem estudo de engenharia. Os direitos finais de construção devem ser confirmados por um profissional licenciado ou pela prefeitura.",
@@ -215,7 +226,11 @@
           "Croquis de volumetria"
         ],
         "suits": "Compradores que comparam lotes, proprietários que planejam uma ampliação e construtores que testam um terreno antes de se comprometer.",
-        "duration": "A visita ao terreno acontece de 3 a 5 dias após a contratação. O relatório sai 5 dias úteis depois da visita."
+        "duration": "A visita ao terreno acontece de 3 a 5 dias após a contratação. O relatório sai 5 dias úteis depois da visita.",
+        "meta": {
+          "title": "Relatório de Análise de Terreno | Maneda Design Studios",
+          "description": "Relatório escrito sobre o que zoneamento, recuos, inundação e acesso permitem em um lote, antes de comprar ou projetar. Dois preços fixos."
+        }
       },
       "consultations": {
         "what": "Uma sessão de trabalho com um designer sobre um ambiente ou um conjunto de ambientes: layout, materiais, cores, mobiliário e iluminação. Escolha uma videochamada de 1 hora, uma visita de 90 minutos ou uma sessão aprofundada de 2 horas. Você recebe um retorno por escrito, e um crédito vale para um pacote completo contratado em até 14 dias.",
@@ -234,7 +249,11 @@
           "Aprofundada: resumo conceitual de uma página em PDF em até 3 dias úteis e e-mail com links e recomendações"
         ],
         "suits": "Proprietários que precisam de direção antes de um projeto completo, clientes que fazem o projeto por conta própria e proprietários que preparam a reforma de um ambiente ou de vários.",
-        "duration": "Resumo por escrito em 24 horas a 3 dias úteis, conforme a sessão."
+        "duration": "Resumo por escrito em 24 horas a 3 dias úteis, conforme a sessão.",
+        "meta": {
+          "title": "Consultorias de Projeto | Maneda Design Studios",
+          "description": "Sessão de trabalho com um designer sobre layout, materiais, cor, mobiliário e iluminação. Virtual ou presencial, com resumo por escrito."
+        }
       },
       "construction-documents": {
         "what": "O próximo passo depois do projeto. Com o projeto aprovado, ele é desenvolvido em um conjunto de projeto executivo (construction documents), para que o projeto aprovado seja o projeto construído. O projeto executivo leva cerca de 8 a 12 semanas. Se você quiser, a MDS segue com apoio na aprovação (permit), apoio na cotação com construtores e administração de obra. Este serviço é oferecido a clientes de projeto. Ações formais de revisão, aprovação e certificação são feitas pelo profissional licenciado responsável pelo projeto.",
@@ -259,7 +278,11 @@
           "Documentos de encerramento, se a administração de obra for contratada"
         ],
         "suits": "Clientes de projeto cujo projeto aprovado está pronto para ser orçado, aprovado e construído.",
-        "duration": "O projeto executivo leva de 8 a 12 semanas. A aprovação leva de 3 a 8 semanas, conforme a prefeitura. A cotação leva de 2 a 4 semanas. A administração de obra dura o tempo da obra."
+        "duration": "O projeto executivo leva de 8 a 12 semanas. A aprovação leva de 3 a 8 semanas, conforme a prefeitura. A cotação leva de 2 a 4 semanas. A administração de obra dura o tempo da obra.",
+        "meta": {
+          "title": "Projeto Executivo para Casas | Maneda Design Studios",
+          "description": "Projeto executivo para casas e ampliações, a partir do projeto aprovado, em cerca de 8 a 12 semanas, com apoio ao alvará se você quiser."
+        }
       }
     },
     "cdSheets": [

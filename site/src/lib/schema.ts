@@ -65,7 +65,7 @@ export function servicesSchema(lang: Lang) {
       '@type': 'Service',
       name: pick(lang, s.title),
       description: shorten(items[s.id].what),
-      url: `${abs(routeFor(lang, 'services'))}#${s.id}`,
+      url: `${abs(routeFor(lang, 'services'))}${s.id}/`,
       provider: { '@id': studioId() },
       areaServed: 'United States',
       ...(offers ? { offers } : {}),

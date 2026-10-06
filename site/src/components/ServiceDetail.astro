@@ -5,37 +5,35 @@ import ServiceArt from './ServiceArt.astro';
 import { Image } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
 import hero from '../assets/hero-home.jpg';
-import rear from '../assets/ohio-rear.webp';
 import services from '../content/services.json';
 import pricing from '../content/pricing.json';
 import { formatUsd, getLang, getPage, pick, routeFor, t } from '../i18n/utils';
 
+interface Props { id: string }
+const { id } = Astro.props;
 const lang = getLang(Astro.url.pathname);
 const full = getPage(lang);
 const page = full.services;
 const L = page.labels;
 const contact = routeFor(lang, 'contact');
-const num = (i: number) => String(i + 1).padStart(2, '0');
-const quoteHref = (id: string) => `${contact}?service=${id}`;
+const servicesHref = routeFor(lang, 'services');
+const quoteHref = (sid: string) => `${contact}?service=${sid}`;
 const items = page.items as Record<string, (typeof page.items)['residential-design']>;
+const s = services.services.find((x) => x.id === id)!;
+const d = items[id];
+const i = services.services.findIndex((x) => x.id === id);
+const others = services.services.filter((x) => x.id !== id);
+const num = (n: number) => String(n + 1).padStart(2, '0');
 
-// Your own image for a service: save it as src/assets/services/<service-id>.jpg (or .webp, .png).
 const custom = import.meta.glob<ImageMetadata>('../assets/services/*.{jpg,jpeg,png,webp}', { eager: true, import: 'default' });
-const customFor = (id: string) => Object.entries(custom).find(([k]) => (k.split('/').pop() ?? '').startsWith(`${id}.`))?.[1];
-const photoFor = (id: string): { src: ImageMetadata; alt: string } | undefined => {
+const customFor = (sid: string) => Object.entries(custom).find(([k]) => (k.split('/').pop() ?? '').startsWith(`${sid}.`))?.[1];
+const photo = (() => {
   const c = customFor(id);
-  if (c) return { src: c, alt: pick(lang, services.services.find((s) => s.id === id)!.title) };
+  if (c) return { src: c, alt: pick(lang, s.title) };
   if (id === 'residential-design') return { src: hero, alt: full.home.hero.alt };
   return undefined;
-};
-
-const amounts = pricing.consultations.map((c) => c.amount);
-const glancePrice = (s: (typeof services.services)[number]) =>
-  s.pricing === 'consultations'
-    ? `${formatUsd(lang, Math.min(...amounts))} ${L.to} ${formatUsd(lang, Math.max(...amounts))}`
-    : s.pricing === 'siteAnalysis'
-      ? pick(lang, pricing.siteAnalysis.label)
-      : pick(lang, pricing.quoted.label);
+})();
+const isCd = id === 'construction-documents';
 
 const card = 'border border-[var(--color-rule-strong)] bg-[var(--color-bg)] p-6 md:p-7';
 const cardTitle = 'sheet-label mb-4 flex items-center gap-3 text-[var(--color-text-muted)]';
@@ -45,73 +43,27 @@ const priceRow = 'flex items-baseline justify-between gap-6 border-t border-[var
 const priceFig = 'font-[family-name:var(--font-display)] text-[1.6rem] leading-none';
 ---
 
-<Section titleTag="h1" label={page.hero.label} title={page.hero.title} intro={page.hero.intro}>
-  <p class="sheet-label mb-5 text-[var(--color-text-muted)]">{L.glance}</p>
-  <ol class="grid gap-px border border-[var(--color-rule-strong)] bg-[var(--color-rule-strong)] sm:grid-cols-2 lg:grid-cols-5">
-    {
-      services.services.map((s, i) => (
-        <li class="reveal bg-[var(--color-bg)]">
-          <a href={`#${s.id}`} class="group flex h-full flex-col gap-4 p-6 no-underline transition-colors hover:bg-[var(--color-bg-alt)]">
-            <span class="flex items-center justify-between">
-              <ServiceArt kind={s.id as 'residential-design'} variant="icon" class="h-11 w-11 text-obsidian" />
-              <span class="sheet-label text-[var(--color-text-muted)]">{num(i)}</span>
-            </span>
-            <span class="font-[family-name:var(--font-display)] text-[1.45rem] leading-tight">{pick(lang, s.short)}</span>
-            <span class="sheet-label mt-auto min-h-[3.6rem] border-t border-[var(--color-rule)] pt-3 text-[var(--color-text-muted)]">{glancePrice(s)}</span>
-          </a>
-        </li>
-      ))
-    }
-  </ol>
-</Section>
+<div class="container-site pt-8">
+  <a href={servicesHref} class="sheet-label text-[var(--color-text-muted)]">&larr; {L.allServices}</a>
+</div>
 
-<nav
-  id="service-nav"
-  aria-label={L.jump}
-  class="sticky top-[var(--header-h)] z-40 border-y border-[var(--color-rule)] bg-[var(--color-bg)]"
-  style="height:var(--subnav-h)"
->
-  <ul class="container-site flex h-full items-center gap-2 overflow-x-auto whitespace-nowrap">
-    {
-      services.services.map((s) => (
-        <li>
-          <a href={`#${s.id}`} data-target={s.id} class="inline-flex min-h-[var(--tap)] items-center border-b-2 border-transparent px-3 text-[0.72rem] font-medium uppercase tracking-[0.16em] no-underline hover:border-gold aria-[current=true]:border-obsidian">
-            {pick(lang, s.short)}
-          </a>
-        </li>
-      ))
-    }
-    <li>
-      <a href="#builders" data-target="builders" class="inline-flex min-h-[var(--tap)] items-center border-b-2 border-transparent px-3 text-[0.72rem] font-medium uppercase tracking-[0.16em] no-underline hover:border-gold aria-[current=true]:border-obsidian">
-        {page.builders.label}
-      </a>
-    </li>
-  </ul>
-</nav>
-
-{
-  services.services.map((s, i) => {
-    const d = items[s.id];
-    const isCd = s.id === 'construction-documents';
-    const photo = photoFor(s.id);
-    return (
-      <section id={s.id} data-service-section class={i % 2 === 1 ? 'tone-alt' : ''} style="padding-block:var(--section-space)">
+<section style="padding-block:var(--section-space)">
         <div class="container-site grid grid-cols-12 gap-y-10 lg:gap-x-12">
           <div class="col-span-12 lg:col-span-5">
-            <div class="lg:sticky lg:top-[calc(var(--header-h)+var(--subnav-h)+2rem)]">
+            <div class="lg:sticky lg:top-[calc(var(--header-h)+2rem)]">
               <div class="mb-6 flex items-end gap-4">
                 <span aria-hidden="true" class="font-[family-name:var(--font-display)] text-[5.5rem] font-light leading-[0.8] text-stone">{num(i)}</span>
-                <ServiceArt kind={s.id as 'residential-design'} variant="icon" class="mb-1 h-10 w-10 text-obsidian" />
+                <ServiceArt kind={id as 'residential-design'} variant="icon" class="mb-1 h-10 w-10 text-obsidian" />
               </div>
               <div class="reveal">
                 {photo ? (
                   <Image src={photo.src} alt={photo.alt} widths={[480, 800, 1000]} sizes="(min-width: 1024px) 40vw, 100vw" class="aspect-[4/3] w-full object-cover" loading="lazy" />
                 ) : (
                   <div class="border border-[var(--color-rule-strong)] bg-[var(--color-bg-alt)] p-4 text-obsidian">
-                    <ServiceArt kind={s.id as 'residential-design'} class="h-auto w-full" />
+                    <ServiceArt kind={id as 'residential-design'} class="h-auto w-full" />
                   </div>
                 )}
-                {s.id === 'residential-design' && <p class="mt-3"><a href={routeFor(lang, 'work')} class="sheet-label text-[var(--color-text-muted)]">{L.seeWork} &rarr;</a></p>}
+                {id === 'residential-design' && <p class="mt-3"><a href={routeFor(lang, 'work')} class="sheet-label text-[var(--color-text-muted)]">{L.seeWork} &rarr;</a></p>}
               </div>
 
               <div class={`reveal mt-6 ${card}`}>
@@ -169,7 +121,7 @@ const priceFig = 'font-[family-name:var(--font-display)] text-[1.6rem] leading-n
           <div class="col-span-12 lg:col-span-7">
             <div class="reveal">
               <p class="sheet-label mb-4 text-[var(--color-text-muted)]">{isCd ? L.cdEyebrow : pick(lang, s.short)}</p>
-              <h2>{pick(lang, s.title)}</h2>
+              <h1>{pick(lang, s.title)}</h1>
               <p class="lead mt-6 max-w-[60ch]">{d.what}</p>
             </div>
 
@@ -211,80 +163,25 @@ const priceFig = 'font-[family-name:var(--font-display)] text-[1.6rem] leading-n
               </div>
             )}
 
-            <p class="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
-              <Button href={quoteHref(s.id)}>{s.id === 'consultations' ? L.bookConsultation : L.requestQuote}</Button>
-              <a href={`${routeFor(lang, 'services')}${s.id}/`} class="sheet-label text-[var(--color-text-muted)]">{L.readMore} &rarr;</a>
+            <p class="mt-10">
+              <Button href={quoteHref(id)}>{id === 'consultations' ? L.bookConsultation : L.requestQuote}</Button>
             </p>
           </div>
         </div>
       </section>
-    );
-  })
-}
 
-<Section tone="alt" label={page.terms.label} title={page.terms.title}>
-  <ol class="grid gap-px border border-[var(--color-rule-strong)] bg-[var(--color-rule-strong)] sm:grid-cols-2 lg:grid-cols-3">
+<Section tone="alt" label={L.otherServices}>
+  <ul class="grid gap-px border border-[var(--color-rule-strong)] bg-[var(--color-rule-strong)] sm:grid-cols-2 lg:grid-cols-4">
     {
-      page.terms.items.map((x, n) => (
-        <li class="reveal flex flex-col gap-3 bg-[var(--color-bg)] p-6">
-          <span class="sheet-label text-[var(--color-text-muted)]">{num(n)}</span>
-          <span>{x}</span>
-        </li>
-      ))
-    }
-  </ol>
-</Section>
-
-<Section tone="light" label={page.notFit.label} title={page.notFit.title} intro={page.notFit.intro}>
-  <ul class="grid gap-6 sm:grid-cols-2">
-    {
-      page.notFit.items.map((x) => (
-        <li class={`reveal flex gap-4 ${card}`}>
-          <span aria-hidden="true" class="font-[family-name:var(--font-display)] text-3xl leading-none text-stone">&times;</span>
-          <span>{x}</span>
+      others.map((o) => (
+        <li class="bg-[var(--color-bg)]">
+          <a href={`${servicesHref}${o.id}/`} class="flex h-full flex-col gap-3 p-6 no-underline transition-colors hover:bg-[var(--color-bg-alt)]">
+            <ServiceArt kind={o.id as 'residential-design'} variant="icon" class="h-10 w-10 text-obsidian" />
+            <span class="font-[family-name:var(--font-display)] text-[1.4rem] leading-tight">{pick(lang, o.title)}</span>
+            <span class="text-sm text-[var(--color-text-muted)]">{pick(lang, o.summary)}</span>
+          </a>
         </li>
       ))
     }
   </ul>
 </Section>
-
-<section id="builders" data-service-section class="tone-dark" style="padding-block:var(--section-space)">
-  <div class="container-site grid grid-cols-12 items-center gap-y-10 lg:gap-x-12">
-    <div class="reveal col-span-12 lg:col-span-6">
-      <p class="sheet-label mb-5 text-[var(--color-text-muted)]">{page.builders.label}</p>
-      <h2>{page.builders.title}</h2>
-      <p class="lead mt-6 max-w-[56ch]">{page.builders.text}</p>
-      <p class="mt-10"><Button href={`${contact}?who=builder`}>{page.builders.button}</Button></p>
-    </div>
-    <div class="reveal col-span-12 lg:col-span-6">
-      <Image src={customFor('builders') ?? rear} alt={full.caseStudy.rearAlt} widths={[480, 800, 1000]} sizes="(min-width: 1024px) 45vw, 100vw" class="aspect-[4/3] w-full object-cover" loading="lazy" />
-    </div>
-  </div>
-</section>
-
-<script>
-  // Highlight the quick-jump link for the section on screen.
-  // Never call scrollIntoView here: on a pinned bar it drags the whole page back up while you scroll.
-  const nav = document.getElementById('service-nav');
-  const list = nav?.querySelector<HTMLElement>('ul');
-  const links = document.querySelectorAll<HTMLAnchorElement>('#service-nav a[data-target]');
-  const sections = document.querySelectorAll<HTMLElement>('[data-service-section]');
-  let current = '';
-  if ('IntersectionObserver' in window && list) {
-    const io = new IntersectionObserver(
-      (entries) =>
-        entries.forEach((e) => {
-          if (!e.isIntersecting || e.target.id === current) return;
-          current = e.target.id;
-          links.forEach((a) => a.setAttribute('aria-current', String(a.dataset.target === current)));
-          // On narrow screens the bar scrolls sideways. Move only that bar, never the page.
-          const active = list.querySelector<HTMLElement>('a[aria-current="true"]');
-          if (active && list.scrollWidth > list.clientWidth) {
-            list.scrollTo({ left: active.offsetLeft - (list.clientWidth - active.offsetWidth) / 2, behavior: 'auto' });
-          }
-        }),
-      { rootMargin: '-40% 0px -55% 0px' }
-    );
-    sections.forEach((s) => io.observe(s));
-  }
-</script>

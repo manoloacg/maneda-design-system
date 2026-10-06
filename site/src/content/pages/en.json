@@ -132,7 +132,10 @@
       "to": "to",
       "seeWork": "See the work",
       "overview": "The five services",
-      "glance": "Choose where you are"
+      "glance": "Choose where you are",
+      "allServices": "All services",
+      "otherServices": "Other services",
+      "readMore": "Full details"
     },
     "items": {
       "residential-design": {
@@ -161,7 +164,11 @@
           "Design development package: plans, elevations, sections, and material selections"
         ],
         "suits": "Owners building or changing a home who want design judgment, not only drawings.",
-        "duration": "About 9 to 15 weeks through design development: predesign takes 1 to 3 weeks, schematic design 4 to 6, and design development 4 to 6."
+        "duration": "About 9 to 15 weeks through design development: predesign takes 1 to 3 weeks, schematic design 4 to 6, and design development 4 to 6.",
+        "meta": {
+          "title": "Custom Home and Addition Design | Maneda Design Studios",
+          "description": "Predesign, schematic design and design development for custom homes, additions and renovations. About 9 to 15 weeks, quoted after a conversation."
+        }
       },
       "interior-design": {
         "what": "Full-service interior design, from plans to furnishings. The work runs in four phases: discovery and concept, design and documentation, furniture and styling, and optional procurement and installation support. On full-scope residential projects, interiors can run alongside the building design, so the total is about 5 to 7 months, not the sum of both.",
@@ -188,7 +195,11 @@
           "Install day checklist, if procurement support is chosen"
         ],
         "suits": "Owners of new homes, renovations, and additions who want interiors resolved with the building, not added after it.",
-        "duration": "Typical length is 12 to 18 weeks. Under 1,500 SF takes 10 to 14 weeks, 1,500 to 2,500 SF takes 12 to 18, and 2,500 to 3,500 SF or more takes 16 to 24."
+        "duration": "Typical length is 12 to 18 weeks. Under 1,500 SF takes 10 to 14 weeks, 1,500 to 2,500 SF takes 12 to 18, and 2,500 to 3,500 SF or more takes 16 to 24.",
+        "meta": {
+          "title": "Full-Service Interior Design | Maneda Design Studios",
+          "description": "Interior design from plans to furnishings, in four phases, run alongside the building design on full-scope residential projects. Quoted after a conversation."
+        }
       },
       "site-analysis": {
         "what": "A written report on a lot before you buy it or design on it. It sets out what zoning, setbacks, flood zone, and access allow, and what the lot can hold, using public records and a site visit. It is an informal zoning summary for design planning. It is not a survey, a legal opinion, or an engineering study. Final development rights must be confirmed by a licensed professional or the local building department.",
@@ -215,7 +226,11 @@
           "Massing sketches"
         ],
         "suits": "Buyers comparing lots, owners planning an addition, and builders testing a site before committing.",
-        "duration": "The site visit is 3 to 5 days after booking. The report follows 5 business days after the visit."
+        "duration": "The site visit is 3 to 5 days after booking. The report follows 5 business days after the visit.",
+        "meta": {
+          "title": "Lot and Site Analysis Report | Maneda Design Studios",
+          "description": "A written report on what zoning, setbacks, flood zone and access allow on a lot, before you buy it or design on it. Two fixed prices by lot size."
+        }
       },
       "consultations": {
         "what": "A working session with a designer on a room or a set of rooms: layout, materials, color, furniture, and lighting. Choose a 1 hour video call, a 90 minute visit, or a 2 hour deep dive. You get a written follow-up, and a credit applies toward a full-service package booked within 14 days.",
@@ -234,7 +249,11 @@
           "Deep dive: one-page concept summary PDF within 3 business days, and a follow-up email with links and recommendations"
         ],
         "suits": "Homeowners who need direction before a full project, DIY clients, and owners preparing a room overhaul or a multi-room refresh.",
-        "duration": "Written summary within 24 hours to 3 business days, depending on the session."
+        "duration": "Written summary within 24 hours to 3 business days, depending on the session.",
+        "meta": {
+          "title": "Design Consultations | Maneda Design Studios",
+          "description": "A working session with a designer on layout, materials, color, furniture and lighting. Virtual or in person, with a written follow-up."
+        }
       },
       "construction-documents": {
         "what": "The next step after design. Once the design is approved, it is developed into a set of construction documents, so the design that was approved is the design that gets built. Construction documents take about 8 to 12 weeks. If you want, MDS continues with permit support, bidding support, and construction administration. This service is offered to design clients. Formal review, approval, and certification actions are performed by the licensed professional of record.",
@@ -259,7 +278,11 @@
           "Closeout documents, if construction administration is chosen"
         ],
         "suits": "Design clients whose approved design is ready to be priced, permitted, and built.",
-        "duration": "Construction documents take 8 to 12 weeks. Permitting takes 3 to 8 weeks, depending on the jurisdiction. Bidding takes 2 to 4 weeks. Construction administration lasts as long as construction."
+        "duration": "Construction documents take 8 to 12 weeks. Permitting takes 3 to 8 weeks, depending on the jurisdiction. Bidding takes 2 to 4 weeks. Construction administration lasts as long as construction.",
+        "meta": {
+          "title": "Construction Documents for Homes | Maneda Design Studios",
+          "description": "Construction documents for homes and additions, developed from the approved design in about 8 to 12 weeks, with permit support if you want it."
+        }
       }
     },
     "cdSheets": [

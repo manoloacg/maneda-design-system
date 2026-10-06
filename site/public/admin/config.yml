@@ -505,6 +505,24 @@
                       "name": "glance",
                       "widget": "string",
                       "required": false
+                    },
+                    {
+                      "label": "All Services",
+                      "name": "allServices",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Other Services",
+                      "name": "otherServices",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Read More",
+                      "name": "readMore",
+                      "widget": "string",
+                      "required": false
                     }
                   ]
                 },
@@ -575,6 +593,27 @@
                           "name": "duration",
                           "widget": "text",
                           "required": false
+                        },
+                        {
+                          "label": "Meta",
+                          "name": "meta",
+                          "widget": "object",
+                          "required": false,
+                          "collapsed": true,
+                          "fields": [
+                            {
+                              "label": "Title",
+                              "name": "title",
+                              "widget": "string",
+                              "required": false
+                            },
+                            {
+                              "label": "Description",
+                              "name": "description",
+                              "widget": "text",
+                              "required": false
+                            }
+                          ]
                         }
                       ]
                     },
@@ -638,6 +677,27 @@
                           "name": "duration",
                           "widget": "text",
                           "required": false
+                        },
+                        {
+                          "label": "Meta",
+                          "name": "meta",
+                          "widget": "object",
+                          "required": false,
+                          "collapsed": true,
+                          "fields": [
+                            {
+                              "label": "Title",
+                              "name": "title",
+                              "widget": "string",
+                              "required": false
+                            },
+                            {
+                              "label": "Description",
+                              "name": "description",
+                              "widget": "text",
+                              "required": false
+                            }
+                          ]
                         }
                       ]
                     },
@@ -701,6 +761,27 @@
                           "name": "duration",
                           "widget": "text",
                           "required": false
+                        },
+                        {
+                          "label": "Meta",
+                          "name": "meta",
+                          "widget": "object",
+                          "required": false,
+                          "collapsed": true,
+                          "fields": [
+                            {
+                              "label": "Title",
+                              "name": "title",
+                              "widget": "string",
+                              "required": false
+                            },
+                            {
+                              "label": "Description",
+                              "name": "description",
+                              "widget": "text",
+                              "required": false
+                            }
+                          ]
                         }
                       ]
                     },
@@ -764,6 +845,27 @@
                           "name": "duration",
                           "widget": "string",
                           "required": false
+                        },
+                        {
+                          "label": "Meta",
+                          "name": "meta",
+                          "widget": "object",
+                          "required": false,
+                          "collapsed": true,
+                          "fields": [
+                            {
+                              "label": "Title",
+                              "name": "title",
+                              "widget": "string",
+                              "required": false
+                            },
+                            {
+                              "label": "Description",
+                              "name": "description",
+                              "widget": "text",
+                              "required": false
+                            }
+                          ]
                         }
                       ]
                     },
@@ -827,6 +929,27 @@
                           "name": "duration",
                           "widget": "text",
                           "required": false
+                        },
+                        {
+                          "label": "Meta",
+                          "name": "meta",
+                          "widget": "object",
+                          "required": false,
+                          "collapsed": true,
+                          "fields": [
+                            {
+                              "label": "Title",
+                              "name": "title",
+                              "widget": "string",
+                              "required": false
+                            },
+                            {
+                              "label": "Description",
+                              "name": "description",
+                              "widget": "text",
+                              "required": false
+                            }
+                          ]
                         }
                       ]
                     }
@@ -3455,6 +3578,24 @@
                       "name": "glance",
                       "widget": "string",
                       "required": false
+                    },
+                    {
+                      "label": "All Services",
+                      "name": "allServices",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Other Services",
+                      "name": "otherServices",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Read More",
+                      "name": "readMore",
+                      "widget": "string",
+                      "required": false
                     }
                   ]
                 },
@@ -3525,6 +3666,27 @@
                           "name": "duration",
                           "widget": "text",
                           "required": false
+                        },
+                        {
+                          "label": "Meta",
+                          "name": "meta",
+                          "widget": "object",
+                          "required": false,
+                          "collapsed": true,
+                          "fields": [
+                            {
+                              "label": "Title",
+                              "name": "title",
+                              "widget": "string",
+                              "required": false
+                            },
+                            {
+                              "label": "Description",
+                              "name": "description",
+                              "widget": "text",
+                              "required": false
+                            }
+                          ]
                         }
                       ]
                     },
@@ -3588,6 +3750,27 @@
                           "name": "duration",
                           "widget": "text",
                           "required": false
+                        },
+                        {
+                          "label": "Meta",
+                          "name": "meta",
+                          "widget": "object",
+                          "required": false,
+                          "collapsed": true,
+                          "fields": [
+                            {
+                              "label": "Title",
+                              "name": "title",
+                              "widget": "string",
+                              "required": false
+                            },
+                            {
+                              "label": "Description",
+                              "name": "description",
+                              "widget": "text",
+                              "required": false
+                            }
+                          ]
                         }
                       ]
                     },
@@ -3651,6 +3834,27 @@
                           "name": "duration",
                           "widget": "text",
                           "required": false
+                        },
+                        {
+                          "label": "Meta",
+                          "name": "meta",
+                          "widget": "object",
+                          "required": false,
+                          "collapsed": true,
+                          "fields": [
+                            {
+                              "label": "Title",
+                              "name": "title",
+                              "widget": "string",
+                              "required": false
+                            },
+                            {
+                              "label": "Description",
+                              "name": "description",
+                              "widget": "text",
+                              "required": false
+                            }
+                          ]
                         }
                       ]
                     },
@@ -3714,6 +3918,27 @@
                           "name": "duration",
                           "widget": "string",
                           "required": false
+                        },
+                        {
+                          "label": "Meta",
+                          "name": "meta",
+                          "widget": "object",
+                          "required": false,
+                          "collapsed": true,
+                          "fields": [
+                            {
+                              "label": "Title",
+                              "name": "title",
+                              "widget": "string",
+                              "required": false
+                            },
+                            {
+                              "label": "Description",
+                              "name": "description",
+                              "widget": "text",
+                              "required": false
+                            }
+                          ]
                         }
                       ]
                     },
@@ -3777,6 +4002,27 @@
                           "name": "duration",
                           "widget": "text",
                           "required": false
+                        },
+                        {
+                          "label": "Meta",
+                          "name": "meta",
+                          "widget": "object",
+                          "required": false,
+                          "collapsed": true,
+                          "fields": [
+                            {
+                              "label": "Title",
+                              "name": "title",
+                              "widget": "string",
+                              "required": false
+                            },
+                            {
+                              "label": "Description",
+                              "name": "description",
+                              "widget": "text",
+                              "required": false
+                            }
+                          ]
                         }
                       ]
                     }
