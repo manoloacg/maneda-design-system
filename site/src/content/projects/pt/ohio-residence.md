@@ -11,7 +11,7 @@ year: "2026"
 result: "Planta, elevações e interiores resolvidos com o proprietário e o construtor."
 clientApproved: false # Written owner release on file (confirmed by Manolo 2026-10-05). Kept false: no real names or address are used.
 heroImage: ../../../assets/hero-home.jpg
-cardImage: ../../../assets/ohio-rear.webp
+cardImage: ../../../assets/hero-home.jpg
 heroAlt: "Renderização 3D de uma residência branca de três níveis com coberturas metálicas escuras, entrada em empena alta, ala com revestimento em pedra e garagem para três carros, vista a partir do pátio pavimentado e do gramado."
 brief: "Os proprietários queriam uma casa moderna que se encaixasse em um cenário de fazenda sem virar uma casa de fazenda. As prioridades: uma planta aberta e conectada, onde as pessoas se veem e se ouvem entre os ambientes, uma fachada clara com detalhes em pedra cinza ou preta, uma sala para três a quatro estações do ano e um pavimento inferior com saída para o exterior (walkout), com academia, sauna, sala de cinema e suíte de hóspedes."
 context: "O terreno é rural, em Ohio, e o projeto segue o código de Ohio. O construtor estava pronto para começar logo, então planta e estrutura foram definidas primeiro, e os acabamentos ficaram para uma fase separada. O selo estrutural é de um engenheiro responsável licenciado em Ohio, coordenado à parte."
