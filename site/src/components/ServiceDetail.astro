@@ -2,6 +2,8 @@
 import Section from './Section.astro';
 import Button from './Button.astro';
 import GuideLink from './GuideLink.astro';
+import ZoomImage from './ZoomImage.astro';
+import ZoomDialog from './ZoomDialog.astro';
 import ServiceArt from './ServiceArt.astro';
 import { Image } from 'astro:assets';
 import Video from './Video.astro';
@@ -44,6 +46,10 @@ const photo = (() => {
   if (id === 'residential-design') return { src: hero, alt: full.home.hero.alt };
   return undefined;
 })();
+// Optional worked example for a service: text in the page copy, image saved as src/assets/services/<service-id>-example.webp (or .jpg, .png).
+const exampleImages = import.meta.glob<ImageMetadata>('../assets/services/*-example.{jpg,jpeg,png,webp}', { eager: true, import: 'default' });
+const exampleImg = Object.entries(exampleImages).find(([k]) => (k.split('/').pop() ?? '').startsWith(`${id}-example.`))?.[1];
+const example = (d as { example?: { label: string; title: string; caption: string; alt: string } }).example;
 const isCd = id === 'full-design';
 
 const card = 'border border-[var(--color-rule-strong)] bg-[var(--color-bg)] p-6 md:p-7';
@@ -186,6 +192,16 @@ const priceFig = 'font-[family-name:var(--font-display)] text-[1.6rem] leading-n
         </div>
       </section>
 
+{
+  example && exampleImg && (
+    <Section label={example.label} title={example.title} intro={example.caption}>
+      <div class="max-w-[64rem]">
+        <ZoomImage src={exampleImg} alt={example.alt} widths={[640, 960, 1200, 1800]} sizes="(min-width: 1024px) 64rem, 100vw" class="h-auto w-full border border-[var(--color-rule)]" label={L.zoomLabel} />
+      </div>
+    </Section>
+  )
+}
+
 <Section tone="alt" label={L.otherServices}>
   <ul class="grid gap-px border border-[var(--color-rule-strong)] bg-[var(--color-rule-strong)] sm:grid-cols-2 lg:grid-cols-4">
     {
@@ -201,3 +217,4 @@ const priceFig = 'font-[family-name:var(--font-display)] text-[1.6rem] leading-n
     }
   </ul>
 </Section>
+<ZoomDialog />

@@ -152,7 +152,8 @@
       "buildersLink": "Veja como a MDS trabalha com construtores",
       "creditLabel": "Crédito",
       "creditNote": "Cada crédito equivale à metade do valor e se aplica a um pacote completo contratado em até 14 dias.",
-      "guideLead": "Não sabe de qual profissional o seu projeto precisa? Leia:"
+      "guideLead": "Não sabe de qual profissional o seu projeto precisa? Leia:",
+      "zoomLabel": "Ampliar imagem"
     },
     "items": {
       "full-design": {
@@ -286,6 +287,12 @@
         "meta": {
           "title": "Relatório de Análise de Terreno | Maneda Design Studios",
           "description": "Relatório escrito sobre o que zoneamento, recuos, inundação e acesso permitem em um lote, antes de comprar ou projetar. Dois preços fixos."
+        },
+        "example": {
+          "label": "Exemplo",
+          "title": "Uma implantação conceitual.",
+          "caption": "Uma implantação conceitual de galpões industriais de pequeno porte, preparada para um incorporador antes de uma reunião de pré-aplicação no condado. Mostra a área construída, as vias internas, o estacionamento, os pátios fechados e os recuos. Conceitual e baseada em dados não verificados, não serve para alvará.",
+          "alt": "Implantação conceitual colorida de um galpão industrial comprido com escritórios na frente, estacionamento junto à rua, um grande pátio fechado nos fundos e faixas de paisagismo nas divisas do lote"
         }
       },
       "consultations": {

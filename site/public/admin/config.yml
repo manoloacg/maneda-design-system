@@ -619,6 +619,12 @@
                       "name": "guideLead",
                       "widget": "string",
                       "required": false
+                    },
+                    {
+                      "label": "Zoom Label",
+                      "name": "zoomLabel",
+                      "widget": "string",
+                      "required": false
                     }
                   ]
                 },
@@ -958,6 +964,39 @@
                             {
                               "label": "Description",
                               "name": "description",
+                              "widget": "text",
+                              "required": false
+                            }
+                          ]
+                        },
+                        {
+                          "label": "Example",
+                          "name": "example",
+                          "widget": "object",
+                          "required": false,
+                          "collapsed": true,
+                          "fields": [
+                            {
+                              "label": "Label",
+                              "name": "label",
+                              "widget": "string",
+                              "required": false
+                            },
+                            {
+                              "label": "Title",
+                              "name": "title",
+                              "widget": "string",
+                              "required": false
+                            },
+                            {
+                              "label": "Caption",
+                              "name": "caption",
+                              "widget": "text",
+                              "required": false
+                            },
+                            {
+                              "label": "Alt",
+                              "name": "alt",
                               "widget": "text",
                               "required": false
                             }
@@ -3812,6 +3851,12 @@
                       "name": "guideLead",
                       "widget": "string",
                       "required": false
+                    },
+                    {
+                      "label": "Zoom Label",
+                      "name": "zoomLabel",
+                      "widget": "string",
+                      "required": false
                     }
                   ]
                 },
@@ -4151,6 +4196,39 @@
                             {
                               "label": "Description",
                               "name": "description",
+                              "widget": "text",
+                              "required": false
+                            }
+                          ]
+                        },
+                        {
+                          "label": "Example",
+                          "name": "example",
+                          "widget": "object",
+                          "required": false,
+                          "collapsed": true,
+                          "fields": [
+                            {
+                              "label": "Label",
+                              "name": "label",
+                              "widget": "string",
+                              "required": false
+                            },
+                            {
+                              "label": "Title",
+                              "name": "title",
+                              "widget": "string",
+                              "required": false
+                            },
+                            {
+                              "label": "Caption",
+                              "name": "caption",
+                              "widget": "text",
+                              "required": false
+                            },
+                            {
+                              "label": "Alt",
+                              "name": "alt",
                               "widget": "text",
                               "required": false
                             }

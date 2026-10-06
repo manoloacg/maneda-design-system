@@ -152,7 +152,8 @@
       "buildersLink": "See how MDS works with builders",
       "creditLabel": "Credit",
       "creditNote": "Each credit is half the fee and applies toward a full-service package booked within 14 days.",
-      "guideLead": "Not sure which professional your project needs? Read:"
+      "guideLead": "Not sure which professional your project needs? Read:",
+      "zoomLabel": "Enlarge image"
     },
     "items": {
       "full-design": {
@@ -286,6 +287,12 @@
         "meta": {
           "title": "Lot and Site Analysis Report | Maneda Design Studios",
           "description": "A written report on what zoning, setbacks, flood zone and access allow on a lot, before you buy it or design on it. Two fixed prices by lot size."
+        },
+        "example": {
+          "label": "Example",
+          "title": "A conceptual site plan.",
+          "caption": "An industrial small-bay site plan prepared for a developer ahead of a county pre-application meeting. It shows the building footprint, drive aisles, parking, secured yards, and setbacks. Conceptual and based on unverified data, not for permit.",
+          "alt": "Colored conceptual site plan of a long industrial building with offices along the front, parking along the street side, a large secured yard at the rear, and landscape buffers at the lot edges"
         }
       },
       "consultations": {
