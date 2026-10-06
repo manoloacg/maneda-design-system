@@ -613,6 +613,12 @@
                       "name": "creditNote",
                       "widget": "text",
                       "required": false
+                    },
+                    {
+                      "label": "Guide Lead",
+                      "name": "guideLead",
+                      "widget": "string",
+                      "required": false
                     }
                   ]
                 },
@@ -3799,6 +3805,12 @@
                       "label": "Credit Note",
                       "name": "creditNote",
                       "widget": "text",
+                      "required": false
+                    },
+                    {
+                      "label": "Guide Lead",
+                      "name": "guideLead",
+                      "widget": "string",
                       "required": false
                     }
                   ]

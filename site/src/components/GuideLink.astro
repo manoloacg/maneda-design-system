@@ -1,0 +1,12 @@
+---
+/* A one-line pointer to the guide on who a project needs. Shows only when the article is published. */
+import { getGuide } from '../lib/journal';
+import { getLang, getPage } from '../i18n/utils';
+interface Props { class?: string }
+const { class: cls = '' } = Astro.props;
+const lang = getLang(Astro.url.pathname);
+const guide = await getGuide(lang);
+const lead = (getPage(lang).services.labels as { guideLead: string }).guideLead;
+---
+
+{guide && <p class={`text-[var(--color-text-muted)] ${cls}`}>{lead} <a href={guide.href} class="underline underline-offset-4">{guide.title}</a></p>}

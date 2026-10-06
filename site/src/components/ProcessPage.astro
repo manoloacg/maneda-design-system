@@ -1,4 +1,5 @@
 ---
+import GuideLink from './GuideLink.astro';
 import Section from './Section.astro';
 import Button from './Button.astro';
 import Faq from './Faq.astro';
@@ -66,5 +67,6 @@ const ph = markPlaceholders;
 
 <Section label={page.faq.label} title={page.faq.title}>
   <Faq items={page.faq.items} />
+  <GuideLink class="mt-8" />
   <p class="mt-12"><Button href={routeFor(lang, 'contact')}>{t(lang, 'cta.requestQuote')}</Button></p>
 </Section>

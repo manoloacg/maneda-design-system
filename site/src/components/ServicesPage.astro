@@ -1,6 +1,7 @@
 ---
 import Section from './Section.astro';
 import Button from './Button.astro';
+import GuideLink from './GuideLink.astro';
 import ServiceArt from './ServiceArt.astro';
 import { Image } from 'astro:assets';
 import Video from './Video.astro';
@@ -230,6 +231,7 @@ const priceFig = 'font-[family-name:var(--font-display)] text-[1.6rem] leading-n
               <Button href={quoteHref(s.id)}>{s.id === 'consultations' ? L.bookConsultation : L.requestQuote}</Button>
               <a href={`${routeFor(lang, 'services')}${s.id}/`} class="sheet-label text-[var(--color-text-muted)]">{L.readMore} &rarr;</a>
             </p>
+            {isCd && <GuideLink class="mt-6" />}
           </div>
         </div>
       </section>
