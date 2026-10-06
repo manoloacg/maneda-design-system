@@ -23,7 +23,7 @@ The editor saves your changes to GitHub. It needs a token that says "this person
 | In the left menu | What it changes |
 |---|---|
 | Page text: English / Portuguese | Every sentence on the pages, in each language. Open a section, change the words, Save. Keep both languages in step. |
-| Prices and services | The three consultation prices, the site analysis prices, add-ons, credits, and the five service names. |
+| Prices and services | The three consultation prices, the site analysis prices, add-ons, credits, and the six service names. |
 | Image slots | The gray frames. Click a slot, upload a picture, Save. |
 | Projects | Case studies: text, images, and the show or hide switch. |
 | Studio settings | Email, the reply promise, the on and off switches for Journal and Resources, and the launch switches. |

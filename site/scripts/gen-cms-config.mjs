@@ -94,7 +94,7 @@ export function build() {
     collections: [
       { label: 'Page text: English', name: 'pages_en', files: [file('All page text, English', 'pages/en.json', 'pages_en')] },
       { label: 'Page text: Portuguese', name: 'pages_pt', files: [file('All page text, Portuguese', 'pages/pt.json', 'pages_pt')] },
-      { label: 'Prices and services', name: 'prices', files: [file('Prices', 'pricing.json', 'pricing'), file('The five services', 'services.json', 'services')] },
+      { label: 'Prices and services', name: 'prices', files: [file('Prices', 'pricing.json', 'pricing'), file('The six services', 'services.json', 'services')] },
       { label: 'Image slots', name: 'slots', files: [{ label: 'Gray frames: add images here', name: 'slots', file: `${ROOT}/slots.json`, format: 'json', fields: slotFields }] },
       projects('en', 'Projects: English'),
       projects('pt', 'Projects: Portuguese'),

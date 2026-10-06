@@ -122,7 +122,7 @@
     "hero": {
       "label": "Services",
       "title": "Design first. Drawings follow.",
-      "intro": "Five services, listed in the order a project uses them. Residential design leads. Construction documents come last, as the next step for design clients."
+      "intro": "Five services, listed in the order a project uses them. Residential design leads. The full service comes last, taking a project from design through construction documents and permitting, with bidding and construction administration if you want them."
     },
     "labels": {
       "included": "What is included",
@@ -134,7 +134,7 @@
       "requestQuote": "Request a quote",
       "bookConsultation": "Request this consultation",
       "service": "Service",
-      "cdEyebrow": "The next step after design",
+      "cdEyebrow": "The complete path",
       "fixedPrice": "Fixed price",
       "duration": "Typical duration",
       "credit": "credit toward a full-service package booked within 14 days",
@@ -155,8 +155,47 @@
       "guideLead": "Not sure which professional your project needs? Read:"
     },
     "items": {
+      "full-design": {
+        "what": "The complete path in one agreement, from the first site review to the end of construction. Predesign, schematic design, design development, and construction documents are the core. Permitting support, bidding support, and construction administration follow if you want them. The fee is a written fixed fee set by phase at the proposal stage, so the cost is known before work starts. Where a seal is required, drawings are reviewed and sealed by a licensed professional of record, and structural drawings are prepared by a structural engineer under a separate contract.",
+        "included": [
+          "Predesign: site analysis, code, zoning, and building regulation review, a program document, and a preliminary cost estimate",
+          "Schematic design, usually three options, with sketches, models, plans, elevations, sections, and massing studies",
+          "Material and color palette exploration",
+          "Design development: refined plans, elevations, and sections, preliminary construction drawings, and material, finish, and fixture selection",
+          "Lighting and electrical plans",
+          "Construction documents: construction drawings and specifications, with interior and exterior details",
+          "Coordination with structural, mechanical, electrical, and plumbing consultants",
+          "Permit set preparation, permit submittal and tracking, responses to review comments, and client representation at hearings as needed",
+          "Two rounds of revisions in each phase",
+          "Optional: bid or pricing packages, pre-bid meetings and site visits, review and comparison of bids, and help with contractor selection",
+          "Optional: construction administration with site visits, requests for information, submittal tracking, and punch list review"
+        ],
+        "notIncluded": [
+          "Drawings sealed by MDS",
+          "Structural engineering. The owner hires a structural engineer under a separate contract.",
+          "Mechanical, electrical, or plumbing engineering",
+          "Surveys and soils tests. Predesign recommends them when they are needed.",
+          "Contractor services or construction work",
+          "Permit and impact fees"
+        ],
+        "deliverables": [
+          "Program document",
+          "Schematic design set at 1/4 inch scale: floor plans and elevations",
+          "Massing studies and 3D views",
+          "Design development package for your approval",
+          "Construction document set: plans, sections, elevations, details, and specifications",
+          "Responses to permit review comments",
+          "Closeout documents, if construction administration is chosen"
+        ],
+        "suits": "Owners who want one designer from the first site review to the drawings the builder uses, and through construction if they choose.",
+        "duration": "Predesign through construction documents takes 16 to 24 weeks, for a single-family residence of about 2,000 to 3,500 SF with your approvals within 5 business days: predesign 1 to 3 weeks, schematic design 4 to 6, design development 4 to 6, and construction documents 8 to 12. Permitting then takes 3 to 8 weeks, depending on the jurisdiction. Bidding takes 2 to 4 weeks. Construction administration lasts as long as construction.",
+        "meta": {
+          "title": "Full-Service Home Design | Maneda Design Studios",
+          "description": "Full-service home design in one agreement: design, construction documents, and permit support, with optional bidding and construction administration."
+        }
+      },
       "residential-design": {
-        "what": "This is the service for custom home design, house plans, and home additions. A designer works with you from the first sketch to a resolved design. Predesign sets the program, the code and zoning limits, and a first cost estimate. Schematic design then tests, usually, three options, and you choose one. Design development refines the chosen option. Design-only drawings are not permit-ready and are not for construction. A design client can continue into construction documents with MDS.",
+        "what": "This is the service for custom home design, house plans, and home additions. A designer works with you from the first sketch to a resolved design. Predesign sets the program, the code and zoning limits, and a first cost estimate. Schematic design then tests, usually, three options, and you choose one. Design development refines the chosen option. Design-only drawings are not permit-ready and are not for construction. A design client can continue into the full service with MDS.",
         "included": [
           "Predesign: site, code, and zoning review, and a program document",
           "Preliminary cost estimate from the program",
@@ -169,7 +208,7 @@
           "Two rounds of revisions in each phase"
         ],
         "notIncluded": [
-          "Construction documents, permit set, and permit submittal. These are the next step, below.",
+          "Construction documents, permit set, and permit submittal. They are part of the full service, below.",
           "Structural, mechanical, electrical, or plumbing engineering",
           "Surveys and soils tests. Predesign recommends them when they are needed.",
           "Permit and impact fees"
@@ -270,35 +309,6 @@
         "meta": {
           "title": "Design Consultations | Maneda Design Studios",
           "description": "A working session with a designer on layout, materials, color, furniture and lighting. Virtual or in person, with a written follow-up."
-        }
-      },
-      "construction-documents": {
-        "what": "The next step after design. Once the design is approved, it is developed into a set of construction documents, so the design that was approved is the design that gets built. Construction documents take about 8 to 12 weeks. If you want, MDS continues with permit support, bidding support, and construction administration. This service is offered to design clients. Formal review, approval, and certification actions are performed by the licensed professional of record.",
-        "included": [
-          "Construction drawings and specifications: plans, sections, elevations, and details",
-          "Interior and exterior details",
-          "Coordination with structural, mechanical, electrical, and plumbing consultants",
-          "Permit set preparation, permit submittal and tracking, and responses to review comments",
-          "Optional: bid packages, pre-bid meetings, and review of bids",
-          "Optional: construction administration with site visits, requests for information, submittal tracking, and punch list review"
-        ],
-        "notIncluded": [
-          "Drawings sealed by MDS",
-          "Structural engineering. The owner hires a structural engineer under a separate contract.",
-          "Mechanical, electrical, or plumbing engineering",
-          "Contractor services or construction work",
-          "Permit fees"
-        ],
-        "deliverables": [
-          "Construction document set",
-          "Responses to permit review comments",
-          "Closeout documents, if construction administration is chosen"
-        ],
-        "suits": "Design clients whose approved design is ready to be priced, permitted, and built.",
-        "duration": "Construction documents take 8 to 12 weeks. Permitting takes 3 to 8 weeks, depending on the jurisdiction. Bidding takes 2 to 4 weeks. Construction administration lasts as long as construction.",
-        "meta": {
-          "title": "Construction Documents for Homes | Maneda Design Studios",
-          "description": "Construction documents and permit drawings for homes and additions, developed from the approved design in about 8 to 12 weeks, with permit support if you want it."
         }
       }
     },
@@ -641,8 +651,8 @@
           "label": "Design consultation"
         },
         {
-          "value": "construction-documents",
-          "label": "Construction documents"
+          "value": "full-design",
+          "label": "Full-service design"
         },
         {
           "value": "not-sure",

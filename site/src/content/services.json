@@ -66,19 +66,19 @@
       }
     },
     {
-      "id": "construction-documents",
+      "id": "full-design",
       "pricing": "quoted",
       "title": {
-        "en": "Construction documents",
-        "pt": "Projeto executivo (construction documents)"
+        "en": "Full-service design",
+        "pt": "Serviço completo de projeto"
       },
       "summary": {
-        "en": "The next step for design clients. The design you approved is the design that gets built, with permit and construction support if you want it.",
-        "pt": "O próximo passo para clientes de projeto. O projeto aprovado é o projeto que será construído, com apoio na aprovação e na obra, se você quiser."
+        "en": "The complete path in one agreement: predesign through construction documents and permitting, with bidding and construction administration if you want them.",
+        "pt": "O caminho completo em um único contrato: do estudo preliminar ao projeto executivo e ao alvará, com licitação e administração da obra se você quiser."
       },
       "short": {
-        "en": "Construction documents",
-        "pt": "Projeto executivo"
+        "en": "Full service",
+        "pt": "Serviço completo"
       }
     }
   ]

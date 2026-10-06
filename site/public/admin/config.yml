@@ -630,6 +630,90 @@
                   "collapsed": true,
                   "fields": [
                     {
+                      "label": "Full design",
+                      "name": "full-design",
+                      "widget": "object",
+                      "required": false,
+                      "collapsed": true,
+                      "fields": [
+                        {
+                          "label": "What",
+                          "name": "what",
+                          "widget": "text",
+                          "required": false
+                        },
+                        {
+                          "label": "Included",
+                          "name": "included",
+                          "widget": "list",
+                          "required": false,
+                          "field": {
+                            "label": "Item",
+                            "name": "item",
+                            "widget": "text",
+                            "required": false
+                          }
+                        },
+                        {
+                          "label": "Not Included",
+                          "name": "notIncluded",
+                          "widget": "list",
+                          "required": false,
+                          "field": {
+                            "label": "Item",
+                            "name": "item",
+                            "widget": "text",
+                            "required": false
+                          }
+                        },
+                        {
+                          "label": "Deliverables",
+                          "name": "deliverables",
+                          "widget": "list",
+                          "required": false,
+                          "field": {
+                            "label": "Item",
+                            "name": "item",
+                            "widget": "text",
+                            "required": false
+                          }
+                        },
+                        {
+                          "label": "Suits",
+                          "name": "suits",
+                          "widget": "text",
+                          "required": false
+                        },
+                        {
+                          "label": "Duration",
+                          "name": "duration",
+                          "widget": "text",
+                          "required": false
+                        },
+                        {
+                          "label": "Meta",
+                          "name": "meta",
+                          "widget": "object",
+                          "required": false,
+                          "collapsed": true,
+                          "fields": [
+                            {
+                              "label": "Title",
+                              "name": "title",
+                              "widget": "string",
+                              "required": false
+                            },
+                            {
+                              "label": "Description",
+                              "name": "description",
+                              "widget": "text",
+                              "required": false
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
                       "label": "Residential design",
                       "name": "residential-design",
                       "widget": "object",
@@ -940,90 +1024,6 @@
                           "label": "Duration",
                           "name": "duration",
                           "widget": "string",
-                          "required": false
-                        },
-                        {
-                          "label": "Meta",
-                          "name": "meta",
-                          "widget": "object",
-                          "required": false,
-                          "collapsed": true,
-                          "fields": [
-                            {
-                              "label": "Title",
-                              "name": "title",
-                              "widget": "string",
-                              "required": false
-                            },
-                            {
-                              "label": "Description",
-                              "name": "description",
-                              "widget": "text",
-                              "required": false
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "label": "Construction documents",
-                      "name": "construction-documents",
-                      "widget": "object",
-                      "required": false,
-                      "collapsed": true,
-                      "fields": [
-                        {
-                          "label": "What",
-                          "name": "what",
-                          "widget": "text",
-                          "required": false
-                        },
-                        {
-                          "label": "Included",
-                          "name": "included",
-                          "widget": "list",
-                          "required": false,
-                          "field": {
-                            "label": "Item",
-                            "name": "item",
-                            "widget": "text",
-                            "required": false
-                          }
-                        },
-                        {
-                          "label": "Not Included",
-                          "name": "notIncluded",
-                          "widget": "list",
-                          "required": false,
-                          "field": {
-                            "label": "Item",
-                            "name": "item",
-                            "widget": "text",
-                            "required": false
-                          }
-                        },
-                        {
-                          "label": "Deliverables",
-                          "name": "deliverables",
-                          "widget": "list",
-                          "required": false,
-                          "field": {
-                            "label": "Item",
-                            "name": "item",
-                            "widget": "text",
-                            "required": false
-                          }
-                        },
-                        {
-                          "label": "Suits",
-                          "name": "suits",
-                          "widget": "string",
-                          "required": false
-                        },
-                        {
-                          "label": "Duration",
-                          "name": "duration",
-                          "widget": "text",
                           "required": false
                         },
                         {
@@ -3823,6 +3823,90 @@
                   "collapsed": true,
                   "fields": [
                     {
+                      "label": "Full design",
+                      "name": "full-design",
+                      "widget": "object",
+                      "required": false,
+                      "collapsed": true,
+                      "fields": [
+                        {
+                          "label": "What",
+                          "name": "what",
+                          "widget": "text",
+                          "required": false
+                        },
+                        {
+                          "label": "Included",
+                          "name": "included",
+                          "widget": "list",
+                          "required": false,
+                          "field": {
+                            "label": "Item",
+                            "name": "item",
+                            "widget": "text",
+                            "required": false
+                          }
+                        },
+                        {
+                          "label": "Not Included",
+                          "name": "notIncluded",
+                          "widget": "list",
+                          "required": false,
+                          "field": {
+                            "label": "Item",
+                            "name": "item",
+                            "widget": "text",
+                            "required": false
+                          }
+                        },
+                        {
+                          "label": "Deliverables",
+                          "name": "deliverables",
+                          "widget": "list",
+                          "required": false,
+                          "field": {
+                            "label": "Item",
+                            "name": "item",
+                            "widget": "text",
+                            "required": false
+                          }
+                        },
+                        {
+                          "label": "Suits",
+                          "name": "suits",
+                          "widget": "text",
+                          "required": false
+                        },
+                        {
+                          "label": "Duration",
+                          "name": "duration",
+                          "widget": "text",
+                          "required": false
+                        },
+                        {
+                          "label": "Meta",
+                          "name": "meta",
+                          "widget": "object",
+                          "required": false,
+                          "collapsed": true,
+                          "fields": [
+                            {
+                              "label": "Title",
+                              "name": "title",
+                              "widget": "string",
+                              "required": false
+                            },
+                            {
+                              "label": "Description",
+                              "name": "description",
+                              "widget": "text",
+                              "required": false
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
                       "label": "Residential design",
                       "name": "residential-design",
                       "widget": "object",
@@ -4133,90 +4217,6 @@
                           "label": "Duration",
                           "name": "duration",
                           "widget": "string",
-                          "required": false
-                        },
-                        {
-                          "label": "Meta",
-                          "name": "meta",
-                          "widget": "object",
-                          "required": false,
-                          "collapsed": true,
-                          "fields": [
-                            {
-                              "label": "Title",
-                              "name": "title",
-                              "widget": "string",
-                              "required": false
-                            },
-                            {
-                              "label": "Description",
-                              "name": "description",
-                              "widget": "text",
-                              "required": false
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "label": "Construction documents",
-                      "name": "construction-documents",
-                      "widget": "object",
-                      "required": false,
-                      "collapsed": true,
-                      "fields": [
-                        {
-                          "label": "What",
-                          "name": "what",
-                          "widget": "text",
-                          "required": false
-                        },
-                        {
-                          "label": "Included",
-                          "name": "included",
-                          "widget": "list",
-                          "required": false,
-                          "field": {
-                            "label": "Item",
-                            "name": "item",
-                            "widget": "text",
-                            "required": false
-                          }
-                        },
-                        {
-                          "label": "Not Included",
-                          "name": "notIncluded",
-                          "widget": "list",
-                          "required": false,
-                          "field": {
-                            "label": "Item",
-                            "name": "item",
-                            "widget": "text",
-                            "required": false
-                          }
-                        },
-                        {
-                          "label": "Deliverables",
-                          "name": "deliverables",
-                          "widget": "list",
-                          "required": false,
-                          "field": {
-                            "label": "Item",
-                            "name": "item",
-                            "widget": "text",
-                            "required": false
-                          }
-                        },
-                        {
-                          "label": "Suits",
-                          "name": "suits",
-                          "widget": "text",
-                          "required": false
-                        },
-                        {
-                          "label": "Duration",
-                          "name": "duration",
-                          "widget": "text",
                           "required": false
                         },
                         {
@@ -6672,7 +6672,7 @@
           ]
         },
         {
-          "label": "The five services",
+          "label": "The six services",
           "name": "services",
           "file": "site/src/content/services.json",
           "format": "json",

@@ -122,7 +122,7 @@
     "hero": {
       "label": "Serviços",
       "title": "Primeiro o projeto. Depois os desenhos.",
-      "intro": "Cinco serviços, na ordem em que um projeto os usa. O projeto residencial vem primeiro. O projeto executivo vem por último, como o próximo passo para clientes de projeto."
+      "intro": "Cinco serviços, na ordem em que um projeto os usa. O projeto residencial vem primeiro. O serviço completo vem por último e leva o projeto do estudo preliminar ao projeto executivo e ao alvará, com licitação e administração da obra se você quiser."
     },
     "labels": {
       "included": "O que está incluído",
@@ -134,7 +134,7 @@
       "requestQuote": "Solicitar orçamento",
       "bookConsultation": "Solicitar esta consultoria",
       "service": "Serviço",
-      "cdEyebrow": "O próximo passo depois do projeto",
+      "cdEyebrow": "O caminho completo",
       "fixedPrice": "Preço fixo",
       "duration": "Prazo típico",
       "credit": "de crédito para um pacote completo contratado em até 14 dias",
@@ -155,8 +155,47 @@
       "guideLead": "Não sabe de qual profissional o seu projeto precisa? Leia:"
     },
     "items": {
+      "full-design": {
+        "what": "O caminho completo em um único contrato, da primeira análise do terreno ao fim da obra. Estudo preliminar, anteprojeto, desenvolvimento do projeto e projeto executivo são o núcleo. Apoio ao alvará, apoio à licitação e administração da obra vêm depois, se você quiser. O valor é um preço fixo por escrito, definido por fase na proposta, para que o custo seja conhecido antes de o trabalho começar. Quando um carimbo é exigido, os desenhos são revisados e carimbados por um profissional habilitado responsável, e os desenhos estruturais são preparados por um engenheiro estrutural em contrato separado.",
+        "included": [
+          "Estudo preliminar: análise do terreno, do código, do zoneamento e das normas de construção, documento de programa e estimativa preliminar de custo",
+          "Anteprojeto, normalmente com três opções, com croquis, maquetes, plantas, elevações, cortes e estudos de volume",
+          "Exploração de materiais e paleta de cores",
+          "Desenvolvimento do projeto: plantas, elevações e cortes refinados, desenhos de construção preliminares e seleção de materiais, acabamentos e louças e metais",
+          "Plantas de iluminação e elétrica",
+          "Projeto executivo: desenhos de construção e especificações, com detalhes internos e externos",
+          "Coordenação com consultores de estrutura, mecânica, elétrica e hidráulica",
+          "Preparação do conjunto para alvará, protocolo e acompanhamento, respostas aos comentários da análise e representação do cliente em audiências, quando necessário",
+          "Duas rodadas de revisão em cada fase",
+          "Opcional: pacotes de licitação ou de preços, reuniões pré-licitação e visitas ao terreno, análise e comparação das propostas e ajuda na escolha do construtor",
+          "Opcional: administração da obra com visitas, pedidos de informação, controle de submissões e revisão da lista de pendências"
+        ],
+        "notIncluded": [
+          "Desenhos carimbados pela MDS",
+          "Engenharia estrutural. O proprietário contrata um engenheiro estrutural em contrato separado.",
+          "Engenharia mecânica, elétrica ou hidráulica",
+          "Levantamentos topográficos e sondagens. O estudo preliminar os recomenda quando são necessários.",
+          "Serviços de construtor ou execução de obra",
+          "Taxas de alvará e de impacto"
+        ],
+        "deliverables": [
+          "Documento de programa",
+          "Conjunto de anteprojeto na escala de 1/4 de polegada: plantas e elevações",
+          "Estudos de volume e vistas em 3D",
+          "Pacote de desenvolvimento do projeto para a sua aprovação",
+          "Conjunto de projeto executivo: plantas, cortes, elevações, detalhes e especificações",
+          "Respostas aos comentários da análise do alvará",
+          "Documentos de encerramento, se a administração da obra for contratada"
+        ],
+        "suits": "Proprietários que querem um só designer da primeira análise do terreno aos desenhos que o construtor usa, e durante a obra se escolherem.",
+        "duration": "Do estudo preliminar ao projeto executivo levam de 16 a 24 semanas, para uma residência unifamiliar de cerca de 190 a 325 m² com as suas aprovações em até 5 dias úteis: estudo preliminar de 1 a 3 semanas, anteprojeto de 4 a 6, desenvolvimento do projeto de 4 a 6 e projeto executivo de 8 a 12. A aprovação do alvará leva depois de 3 a 8 semanas, conforme a jurisdição. A licitação leva de 2 a 4 semanas. A administração da obra dura enquanto durar a obra.",
+        "meta": {
+          "title": "Projeto Completo de Casas | Maneda Design Studios",
+          "description": "Projeto completo de casas em um único contrato: projeto, projeto executivo e apoio ao alvará, com licitação e administração da obra opcionais."
+        }
+      },
       "residential-design": {
-        "what": "Este é o serviço para projeto de casas sob medida, plantas de casas e ampliações. Um designer trabalha com você do primeiro croqui até um projeto resolvido. O pré-projeto define o programa, os limites de código e de zoneamento e uma primeira estimativa de custo. O anteprojeto (schematic design) testa, em geral, três opções, e você escolhe uma. O desenvolvimento do projeto refina a opção escolhida. Os desenhos apenas de projeto não servem para aprovação (permit) nem para obra. Quem contrata o projeto pode seguir para o projeto executivo com a MDS.",
+        "what": "Este é o serviço para projeto de casas sob medida, plantas de casas e ampliações. Um designer trabalha com você do primeiro croqui até um projeto resolvido. O pré-projeto define o programa, os limites de código e de zoneamento e uma primeira estimativa de custo. O anteprojeto (schematic design) testa, em geral, três opções, e você escolhe uma. O desenvolvimento do projeto refina a opção escolhida. Os desenhos apenas de projeto não servem para aprovação (permit) nem para obra. Quem contrata o projeto pode seguir para o serviço completo com a MDS.",
         "included": [
           "Pré-projeto: análise do terreno, do código e do zoneamento, e documento de programa",
           "Estimativa preliminar de custo a partir do programa",
@@ -169,7 +208,7 @@
           "Duas rodadas de revisão em cada fase"
         ],
         "notIncluded": [
-          "Projeto executivo, conjunto para aprovação (permit set) e protocolo na prefeitura. Esse é o próximo passo, abaixo.",
+          "Projeto executivo, conjunto para aprovação (permit set) e protocolo na prefeitura. Fazem parte do serviço completo, abaixo.",
           "Engenharia estrutural, mecânica, elétrica ou hidráulica",
           "Levantamentos topográficos e sondagens do solo. O pré-projeto recomenda quando forem necessários.",
           "Taxas de aprovação e de impacto"
@@ -270,35 +309,6 @@
         "meta": {
           "title": "Consultorias de Projeto | Maneda Design Studios",
           "description": "Sessão de trabalho com um designer sobre layout, materiais, cor, mobiliário e iluminação. Virtual ou presencial, com resumo por escrito."
-        }
-      },
-      "construction-documents": {
-        "what": "O próximo passo depois do projeto. Com o projeto aprovado, ele é desenvolvido em um conjunto de projeto executivo (construction documents), para que o projeto aprovado seja o projeto construído. O projeto executivo leva cerca de 8 a 12 semanas. Se você quiser, a MDS segue com apoio na aprovação (permit), apoio na cotação com construtores e administração de obra. Este serviço é oferecido a clientes de projeto. Ações formais de revisão, aprovação e certificação são feitas pelo profissional licenciado responsável pelo projeto.",
-        "included": [
-          "Desenhos e especificações de construção: plantas, cortes, elevações e detalhes",
-          "Detalhes internos e externos",
-          "Coordenação com consultores de estrutura, mecânica, elétrica e hidráulica",
-          "Preparação do conjunto para aprovação (permit set), protocolo e acompanhamento, e respostas aos comentários da análise",
-          "Opcional: pacotes de cotação, reuniões com construtores e análise das propostas",
-          "Opcional: administração de obra, com visitas, pedidos de informação, controle de submissões e revisão da lista de pendências"
-        ],
-        "notIncluded": [
-          "Desenhos selados pela MDS",
-          "Engenharia estrutural. O proprietário contrata um engenheiro estrutural em contrato separado.",
-          "Engenharia mecânica, elétrica ou hidráulica",
-          "Serviços de construtor ou execução de obra",
-          "Taxas de aprovação"
-        ],
-        "deliverables": [
-          "Conjunto de projeto executivo",
-          "Respostas aos comentários da análise de aprovação",
-          "Documentos de encerramento, se a administração de obra for contratada"
-        ],
-        "suits": "Clientes de projeto cujo projeto aprovado está pronto para ser orçado, aprovado e construído.",
-        "duration": "O projeto executivo leva de 8 a 12 semanas. A aprovação leva de 3 a 8 semanas, conforme a prefeitura. A cotação leva de 2 a 4 semanas. A administração de obra dura o tempo da obra.",
-        "meta": {
-          "title": "Projeto Executivo para Casas | Maneda Design Studios",
-          "description": "Projeto executivo e desenhos para alvará de casas e ampliações, a partir do projeto aprovado, em cerca de 8 a 12 semanas, com apoio ao alvará se você quiser."
         }
       }
     },
@@ -641,8 +651,8 @@
           "label": "Consultoria de projeto"
         },
         {
-          "value": "construction-documents",
-          "label": "Projeto executivo"
+          "value": "full-design",
+          "label": "Serviço completo de projeto"
         },
         {
           "value": "not-sure",
