@@ -37,7 +37,7 @@ const groups = [
   ['Page copy (src/content/pages)', walk('src/content/pages')],
   ['Site settings and UI text', ['src/content/site.json', ...walk('src/i18n').filter((f) => f.endsWith('.json'))]],
   ['Case studies (src/content/projects)', walk('src/content/projects').filter((f) => !/^published:\s*false/m.test(readFileSync(f, 'utf8')))],
-  ...(site.features?.journal ? [['Journal posts (src/content/journal)', walk('src/content/journal')]] : []),
+  ...(site.features?.journal ? [['Journal posts (src/content/journal, published ones only)', walk('src/content/journal').filter((f) => !/^draft:\s*true/m.test(readFileSync(f, 'utf8')))]] : []),
 ];
 for (const [name, files] of groups) {
   const n = files.reduce((sum, f) => sum + count(f), 0);
