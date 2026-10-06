@@ -3,6 +3,7 @@ import Section from './Section.astro';
 import Button from './Button.astro';
 import ServiceArt from './ServiceArt.astro';
 import { Image } from 'astro:assets';
+import Video from './Video.astro';
 import type { ImageMetadata } from 'astro';
 import hero from '../assets/hero-home.jpg';
 import rear from '../assets/ohio-rear.webp';
@@ -22,6 +23,14 @@ const items = page.items as Record<string, (typeof page.items)['residential-desi
 // Your own image for a service: save it as src/assets/services/<service-id>.jpg (or .webp, .png).
 const custom = import.meta.glob<ImageMetadata>('../assets/services/*.{jpg,jpeg,png,webp}', { eager: true, import: 'default' });
 const customFor = (id: string) => Object.entries(custom).find(([k]) => (k.split('/').pop() ?? '').startsWith(`${id}.`))?.[1];
+const clips = import.meta.glob<string>('../assets/videos/services/*.mp4', { eager: true, query: '?url', import: 'default' });
+const clipWebm = import.meta.glob<string>('../assets/videos/services/*.webm', { eager: true, query: '?url', import: 'default' });
+const clipPosters = import.meta.glob<string>('../assets/videos/services/*.jpg', { eager: true, query: '?url', import: 'default' });
+const clipFor = (id: string) => {
+  const find = (files: Record<string, string>) => Object.entries(files).find(([k]) => (k.split('/').pop() ?? '').startsWith(`${id}.`))?.[1];
+  const src = find(clips);
+  return src ? { src, webm: find(clipWebm), poster: find(clipPosters) } : undefined;
+};
 const photoFor = (id: string): { src: ImageMetadata; alt: string } | undefined => {
   const c = customFor(id);
   if (c) return { src: c, alt: pick(lang, services.services.find((s) => s.id === id)!.title) };
@@ -94,6 +103,7 @@ const priceFig = 'font-[family-name:var(--font-display)] text-[1.6rem] leading-n
     const d = items[s.id];
     const isCd = s.id === 'construction-documents';
     const photo = photoFor(s.id);
+    const clip = clipFor(s.id);
     return (
       <section id={s.id} data-service-section class={i % 2 === 1 ? 'tone-alt' : ''} style="padding-block:var(--section-space)">
         <div class="container-site grid grid-cols-12 gap-y-10 lg:gap-x-12">
@@ -104,7 +114,9 @@ const priceFig = 'font-[family-name:var(--font-display)] text-[1.6rem] leading-n
                 <ServiceArt kind={s.id as 'residential-design'} variant="icon" class="mb-1 h-10 w-10 text-obsidian" />
               </div>
               <div class="reveal">
-                {photo ? (
+                {clip ? (
+                  <Video src={clip.src} webm={clip.webm} poster={clip.poster} ratio="4 / 3" />
+                ) : photo ? (
                   <Image src={photo.src} alt={photo.alt} widths={[480, 800, 1000]} sizes="(min-width: 1024px) 40vw, 100vw" class="aspect-[4/3] w-full object-cover" loading="lazy" />
                 ) : (
                   <div class="border border-[var(--color-rule-strong)] bg-[var(--color-bg-alt)] p-4 text-obsidian">

@@ -1,0 +1,43 @@
+---
+/* Ambient video: muted, looping, no sound, no controls. It loads and plays only when it scrolls into view,
+   and stays a still poster for visitors who ask their device for reduced motion.
+   Keep clips short (10 to 20 seconds) and small (under 8 MB). */
+interface Props { src: string; webm?: string; poster?: string; ratio?: string; class?: string; label?: string }
+const { src, webm, poster, ratio = '4 / 3', class: extra = '', label } = Astro.props;
+---
+
+<video
+  class={`w-full object-cover ${extra}`}
+  style={`aspect-ratio:${ratio}`}
+  muted
+  loop
+  playsinline
+  preload="none"
+  poster={poster}
+  data-ambient
+  aria-hidden={label ? undefined : 'true'}
+  aria-label={label}
+  disablepictureinpicture
+  disableremoteplayback
+>
+  {webm && <source src={webm} type="video/webm" />}
+  <source src={src} type="video/mp4" />
+</video>
+
+<script>
+  // Play each ambient video only while it is on screen. Respect reduced motion.
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const videos = document.querySelectorAll<HTMLVideoElement>('video[data-ambient]');
+  if (!reduce && 'IntersectionObserver' in window) {
+    const io = new IntersectionObserver(
+      (entries) =>
+        entries.forEach((e) => {
+          const v = e.target as HTMLVideoElement;
+          if (e.isIntersecting) v.play().catch(() => {});
+          else v.pause();
+        }),
+      { rootMargin: '120px 0px' }
+    );
+    videos.forEach((v) => io.observe(v));
+  }
+</script>

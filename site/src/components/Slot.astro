@@ -1,7 +1,8 @@
 ---
 import { Image } from 'astro:assets';
 import ImagePlaceholder from './ImagePlaceholder.astro';
-import { slotImage, slotVisible } from '../lib/slots';
+import Video from './Video.astro';
+import { slotImage, slotVideo, slotVisible } from '../lib/slots';
 import { getLang, getPage } from '../i18n/utils';
 
 interface Props { id: string; ratio?: string; sizes?: string; eager?: boolean; class?: string }
@@ -9,10 +10,13 @@ const { id, ratio = '4 / 3', sizes = '100vw', eager = false, class: extra = '' }
 const lang = getLang(Astro.url.pathname);
 const info = (getPage(lang).slots as Record<string, { note: string; alt: string }>)[id] ?? { note: id, alt: '' };
 const img = slotImage(id);
+const vid = slotVideo(id);
 ---
 
 {
-  img ? (
+  vid ? (
+    <Video src={vid.src} webm={vid.webm} poster={vid.poster} ratio={ratio} class={extra} />
+  ) : img ? (
     <Image src={img} alt={info.alt} widths={[480, 800, 1200, 1600]} sizes={sizes} loading={eager ? 'eager' : 'lazy'} class={`w-full object-cover ${extra}`} style={`aspect-ratio:${ratio}`} />
   ) : slotVisible(id) ? (
     <ImagePlaceholder ratio={ratio} note={info.note} class={extra} />

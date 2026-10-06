@@ -45,6 +45,13 @@ Each Save is a published change. A few seconds later Cloudflare starts rebuildin
 ## Cloudflare setting (one time)
 In Cloudflare: Workers and Pages, your project, **Settings**, **Build configuration**. Change **Build command** from `npm run build` to `npm run build:safe`. Save.
 
+## Short videos
+Short looping clips (muted, no sound, no controls) can fill an image slot or a service photo. They are added as files, not in the editor.
+- For a slot: save `src/assets/videos/slots/<slot-id>.mp4`, a matching `.webm`, and a poster `<slot-id>.jpg`. The slot ids are the ones listed under "Image slots".
+- For a service: the same three files in `src/assets/videos/services/<service-id>.*`. The ids are residential-design, interior-design, site-analysis, consultations, and construction-documents.
+- Keep each clip 10 to 20 seconds and under 8 MB. The site plays it only while it is on screen, and shows the still poster to visitors who have reduced motion turned on.
+- A clip takes the place of the image in that slot. Stock footage should only fill ambient spots, never a case study, and never with a caption that says it shows the studio's work.
+
 ## Good to know
 - The editor writes to the same branch Cloudflare publishes. Today that is `claude/focused-cannon-kgwtpc`. When we move the site to `main`, ask me and I will point the editor at `main`.
 - Images you upload from a project go in `src/assets`. Images for gray frames go in `src/assets/slots`.
