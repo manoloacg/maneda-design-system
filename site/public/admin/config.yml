@@ -3022,7 +3022,7 @@
                     {
                       "label": "Alt",
                       "name": "alt",
-                      "widget": "string",
+                      "widget": "text",
                       "required": false
                     }
                   ]
@@ -6215,7 +6215,7 @@
                     {
                       "label": "Alt",
                       "name": "alt",
-                      "widget": "string",
+                      "widget": "text",
                       "required": false
                     }
                   ]
