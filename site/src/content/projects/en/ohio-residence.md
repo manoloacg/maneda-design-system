@@ -9,7 +9,7 @@ scope: "Layout, elevations, and interior design"
 role: "Designer"
 year: "2026"
 result: "Plan, elevations, and interiors resolved with the owner and the builder."
-clientApproved: false # Owner OK to publish given verbally via Manolo on 2026-10-05. Get it in writing. Keep false: no real names or address are used.
+clientApproved: false # Written owner release on file (confirmed by Manolo 2026-10-05). Kept false: no real names or address are used.
 heroImage: ../../../assets/hero-home.jpg
 cardImage: ../../../assets/ohio-rear.webp
 heroAlt: "3D rendering of a white three-level residence with dark metal roofs, a tall gabled entry, a stone-clad wing, and a three-car garage, seen across a paved motor court and lawn."

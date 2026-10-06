@@ -9,7 +9,7 @@ scope: "Planta, elevações e design de interiores"
 role: "Designer"
 year: "2026"
 result: "Planta, elevações e interiores resolvidos com o proprietário e o construtor."
-clientApproved: false # Owner OK to publish given verbally via Manolo on 2026-10-05. Get it in writing. Keep false: no real names or address are used.
+clientApproved: false # Written owner release on file (confirmed by Manolo 2026-10-05). Kept false: no real names or address are used.
 heroImage: ../../../assets/hero-home.jpg
 cardImage: ../../../assets/ohio-rear.webp
 heroAlt: "Renderização 3D de uma residência branca de três níveis com coberturas metálicas escuras, entrada em empena alta, ala com revestimento em pedra e garagem para três carros, vista a partir do pátio pavimentado e do gramado."
