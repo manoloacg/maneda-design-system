@@ -96,6 +96,23 @@ const ph = markPlaceholders;
   </Section>
 
   {
+    d.sheets && d.sheets.length > 0 && (
+      <Section label={nextLabel()} title={S.sheets} intro={S.sheetsIntro}>
+        <ul class="grid gap-8 md:grid-cols-2">
+          {d.sheets.map((sh: { image: ImageMetadata; alt: string; caption: string }) => (
+            <li class="reveal">
+              <figure>
+                <Image src={sh.image} alt={sh.alt} widths={[640, 960, 1200]} sizes="(min-width: 768px) 50vw, 100vw" class="aspect-[4/3] w-full border border-[var(--color-rule)] object-cover" loading="lazy" />
+                <figcaption class="sheet-label mt-3 text-[var(--color-text-muted)]">{sh.caption}</figcaption>
+              </figure>
+            </li>
+          ))}
+        </ul>
+      </Section>
+    )
+  }
+
+  {
     hasSketch && (
       <Section tone="alt" label={nextLabel()} title={S.sketch}>
         <div class="grid gap-8 md:grid-cols-2">

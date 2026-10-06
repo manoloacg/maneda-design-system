@@ -1306,6 +1306,18 @@
                       "name": "outcome",
                       "widget": "string",
                       "required": false
+                    },
+                    {
+                      "label": "Sheets",
+                      "name": "sheets",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Sheets Intro",
+                      "name": "sheetsIntro",
+                      "widget": "string",
+                      "required": false
                     }
                   ]
                 },
@@ -4377,6 +4389,18 @@
                     {
                       "label": "Outcome",
                       "name": "outcome",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Sheets",
+                      "name": "sheets",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Sheets Intro",
+                      "name": "sheetsIntro",
                       "widget": "string",
                       "required": false
                     }

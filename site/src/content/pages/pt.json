@@ -367,7 +367,9 @@
       "sketchFinal": "Planta ou elevação final",
       "documents": "Os documentos",
       "documentsIntro": "Um trecho de prancha, como prova de que o projeto foi resolvido em desenhos prontos para construir.",
-      "outcome": "O resultado"
+      "outcome": "O resultado",
+      "sheets": "Pranchas selecionadas",
+      "sheetsIntro": "Plantas e elevações do conjunto de desenhos."
     },
     "back": "Todos os trabalhos",
     "cta": {

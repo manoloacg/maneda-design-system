@@ -18,18 +18,38 @@ context: "O terreno é rural, em Ohio, e o projeto segue o código de Ohio. O co
 moves:
   - title: "Dois acessos, uma sauna maior"
     text: "Foi testada uma sauna de vidro em canto, com três acessos. Ela deixava espaço para apenas um banco útil. A sauna final tem dois acessos, pelo corredor e pelo banheiro, e uma área maior, que aproveita o espaço liberado pela nova planta."
-    visual: "Planta da sauna, do corredor e do banheiro"
+    image: ../../../assets/ohio-m-sauna.webp
+    alt: "Detalhe da planta do nível inferior com a sauna, a banheira fria, o chuveiro, o banheiro e a sala de estar ao lado."
   - title: "Uma sala que funciona o ano todo"
     text: "Uma sala para três a quatro estações precisa ser acabada e climatizada por baixo, para evitar condensação na face inferior do segundo pavimento. A dimensão de 14 por 30 ft vem da folga que o proprietário queria em volta de mesa e cadeiras."
     image: ../../../assets/ohio-rear.webp
     alt: "Renderização 3D da parte de trás da residência: fachada branca de três níveis com uma sala de vidro angulada de esquadrias escuras, um deck longo com escada e um pavimento inferior com saída para o gramado."
   - title: "Ver e ouvir entre os ambientes"
     text: "Os proprietários queriam ambientes que se conectam em vez de se dividirem. O cinema foi alinhado com a sala principal, para ver as duas telas ao mesmo tempo, e uma janela interna entre a sala e a academia foi levantada como uma forma de manter essa conexão."
-    visual: "Planta ou vista 3D com as linhas de visão"
+    image: ../../../assets/ohio-m-sight.webp
+    alt: "Planta do nível inferior com o cinema alinhado à sala de estar, ao bar e à sala de treino."
   - title: "Código primeiro na saída de emergência"
     text: "A janela de saída de emergência do quarto sul precisou mudar de lugar para garantir um acesso dentro do código. Banheiro e closet foram para a parede do lado da academia e o quarto para o lado leste, e a correção foi resolvida dentro da planta."
-    visual: "Planta do quarto, antes e depois"
+    image: ../../../assets/ohio-m-egress.webp
+    alt: "Detalhe da planta do térreo com o quarto principal, o banheiro, o closet e o escritório."
   - title: "Espaço para o carro dar ré"
     text: "O bloco de garagem, hall de entrada e closet de casacos foi deslocado lateralmente, para que um carro saindo de ré da garagem passe livre do beiral da entrada coberta."
-    visual: "Planta ou elevação da garagem e da entrada"
+    image: ../../../assets/ohio-m-garage.webp
+    alt: "Detalhe da planta do térreo com o hall de entrada, o closet de casacos, o corredor e a garagem."
+sheets:
+  - image: ../../../assets/ohio-sheet-lower.webp
+    alt: "Planta do nível inferior com sala de estar, bar, cinema, sala de artesanato, sala segura, sala de treino, sauna e quadra de meia quadra."
+    caption: "Planta do nível inferior"
+  - image: ../../../assets/ohio-sheet-ground.webp
+    alt: "Planta do térreo com sala de pé-direito duplo, cozinha, despensa do mordomo, escritório, suíte principal, sala de três estações, deck e garagem."
+    caption: "Planta do térreo"
+  - image: ../../../assets/ohio-sheet-second.webp
+    alt: "Planta do segundo pavimento com sala de brincar, três suítes, lavanderia e vazios sobre o térreo."
+    caption: "Planta do segundo pavimento"
+  - image: ../../../assets/ohio-sheet-elev.webp
+    alt: "Elevações esquerda e direita da residência em um terreno inclinado, com linhas do terreno e notas de chamada."
+    caption: "Elevações esquerda e direita"
+documents: "Elevações posterior e frontal do conjunto, com notas que ligam cada acabamento externo a uma seção da especificação."
+documentsImage: ../../../assets/ohio-docs.webp
+documentsAlt: "Elevações posterior e frontal da residência com notas de chamada, inclinações da cobertura, níveis dos pisos e linhas do terreno."
 ---

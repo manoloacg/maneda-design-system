@@ -42,6 +42,7 @@ const projects = defineCollection({
           finalAlt: z.string().optional(),
         })
         .optional(),
+      sheets: z.array(z.object({ image: image(), alt: z.string(), caption: z.string() })).optional(), // selected drawing sheets, cropped to leave out the title block
       documents: z.string().optional(),
       documentsImage: image().optional(),
       documentsAlt: z.string().optional(),

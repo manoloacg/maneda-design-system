@@ -367,7 +367,9 @@
       "sketchFinal": "Finished plan or elevation",
       "documents": "The documents",
       "documentsIntro": "One sheet excerpt, as proof the design was resolved into buildable drawings.",
-      "outcome": "The outcome"
+      "outcome": "The outcome",
+      "sheets": "Selected sheets",
+      "sheetsIntro": "Plans and elevations from the drawing set."
     },
     "back": "All work",
     "cta": {
