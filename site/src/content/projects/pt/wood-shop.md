@@ -10,7 +10,7 @@ scope: "Conjunto para alvará: plantas, planta de cobertura, elevações, corte 
 role: "Documentos para alvará, a partir de um projeto desenvolvido por terceiros"
 year: "2026"
 result: "Um conjunto de desenhos para alvará preparado a partir de um projeto existente."
-clientApproved: false # CONFIRMAR que o proprietário (e o autor do projeto) concordam em mostrar este projeto antes do lançamento. Mantido false: legenda, endereço e município foram cortados de todas as imagens.
+clientApproved: false # Aprovação para mostrar este projeto confirmada por Manolo (2026-10-06). Mantido false: legenda, endereço e município foram cortados de todas as imagens.
 heroImage: ../../../assets/shop-hero.webp
 cardImage: ../../../assets/shop-plan.webp
 heroAlt: "Elevação direita de uma oficina de marcenaria com cobertura metálica de junta em pé, um lanternim, paredes de estuque e uma ala de estúdio com empena, desenhada na escala de um quarto de polegada."

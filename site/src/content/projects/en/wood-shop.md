@@ -10,7 +10,7 @@ scope: "Permit drawing set: plans, roof plan, elevations, section, and general n
 role: "Permit documents, for a design developed by others"
 year: "2026"
 result: "A permit drawing set prepared from an existing design."
-clientApproved: false # CONFIRM the owner (and the designer of record) agree to show this project before launch. Kept false: title block, address, and township are cropped out of every image.
+clientApproved: false # Approval to show this project confirmed by Manolo (2026-10-06). Kept false: title block, address, and township are cropped out of every image.
 heroImage: ../../../assets/shop-hero.webp
 cardImage: ../../../assets/shop-plan.webp
 heroAlt: "Right elevation of a wood shop with a standing seam metal roof, a cupola, stucco walls, and a gabled studio wing, drawn at one quarter inch scale."
