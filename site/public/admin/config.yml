@@ -1970,12 +1970,6 @@
                       "name": "social",
                       "widget": "string",
                       "required": false
-                    },
-                    {
-                      "label": "Note",
-                      "name": "note",
-                      "widget": "string",
-                      "required": false
                     }
                   ]
                 },
@@ -5161,12 +5155,6 @@
                     {
                       "label": "Social",
                       "name": "social",
-                      "widget": "string",
-                      "required": false
-                    },
-                    {
-                      "label": "Note",
-                      "name": "note",
                       "widget": "string",
                       "required": false
                     }

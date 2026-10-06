@@ -574,8 +574,7 @@
     "side": {
       "email": "E-mail",
       "area": "Área de atendimento",
-      "social": "Redes",
-      "note": "Não publicamos endereço. As reuniões são virtuais ou no seu terreno."
+      "social": "Redes"
     },
     "form": {
       "name": "Nome",

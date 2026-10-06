@@ -574,8 +574,7 @@
     "side": {
       "email": "Email",
       "area": "Service area",
-      "social": "Social",
-      "note": "No street address is published. Meetings are virtual or at your site."
+      "social": "Social"
     },
     "form": {
       "name": "Name",
