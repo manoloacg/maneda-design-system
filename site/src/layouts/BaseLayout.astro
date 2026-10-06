@@ -11,6 +11,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import LangBanner from '../components/LangBanner.astro';
 import MobileCta from '../components/MobileCta.astro';
+import { existsSync } from 'node:fs';
 import site from '../content/site.json';
 import { alternatePath, getLang, routes, t, type RouteKey } from '../i18n/utils';
 import { breadcrumbSchema, websiteSchema } from '../lib/schema';
@@ -23,7 +24,16 @@ interface Props {
   schema?: object[];
 }
 const lang = getLang(Astro.url.pathname);
-const { title = t(lang, 'meta.defaultTitle'), description = t(lang, 'meta.defaultDescription'), image = '/images/og-default.png', noindex = false, schema = [] } = Astro.props;
+const { title = t(lang, 'meta.defaultTitle'), description = t(lang, 'meta.defaultDescription'), image: imageProp, noindex = false, schema = [] } = Astro.props;
+// Share image: a page's own image if passed, else a branded card from public/images/share, else the studio default.
+const sharePath = Astro.url.pathname;
+const shareKey = (() => {
+  const svc = sharePath.match(/^(?:\/pt)?\/(?:services|servicos)\/([^/]+)\/$/);
+  if (svc) return `service-${svc[1]}`;
+  return (['services', 'work', 'process', 'about', 'contact'] as const).find((k) => routes[k][lang] === sharePath);
+})();
+const cardFile = shareKey ? `/images/share/${lang}-${shareKey}.png` : undefined;
+const image = imageProp ?? (cardFile && existsSync(`public${cardFile}`) ? cardFile : '/images/og-default.png');
 // Until launch, every page is noindex. Flip "indexing" in site.json when the site goes live.
 const hidden = noindex || !site.indexing || site.showPlaceholders;
 const path = Astro.url.pathname;
