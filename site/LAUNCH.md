@@ -9,7 +9,7 @@ Prices and screen names for outside services change. Where this guide names a bu
 | Decision | Why it matters |
 |---|---|
 | Domain name | Decided: manedastudios.com. |
-| Studio email | The form sends inquiries here. Currently manedastudios@gmail.com. |
+| Studio email | Shown on the site: hello@manedastudios.com (Cloudflare Email Routing, forwards to the studio Gmail). Form submissions go to the email on the Web3Forms account. |
 | Which real projects are public | Each case study needs your approval and real content. |
 
 Domain: manedastudios.com, bought by you.

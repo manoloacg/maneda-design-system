@@ -2,7 +2,7 @@
 
 Every placeholder on the site is written `[PLACEHOLDER: ...]` in the source and shows as a yellow flag in the preview. Run `npm run launch-check` to see the live count.
 
-Done already: studio email (manedastudios@gmail.com), seal sentence in English (confirmed), home hero photo (the Ohio residence front render), rear render in design move 2, Web3Forms access key (the form now sends real email).
+Done already: studio email (hello@manedastudios.com, forwarding to the studio Gmail), seal sentence in English (confirmed), home hero photo (the Ohio residence front render), rear render in design move 2, Web3Forms access key (the form now sends real email).
 
 Domain: manedastudios.com, newly bought by Manolo, nothing hosted on it. Reply promise: within 1 business day (confirmed).
 
