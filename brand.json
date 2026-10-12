@@ -1,5 +1,6 @@
 {
-  "brand": "Maneda Photography",
+  "brand": "Maneda Design Studios",
+  "discipline": "Architectural design",
   "archetype": {
     "dominant": "Sage",
     "dominant_weight": 0.7,
@@ -20,7 +21,7 @@
     "goldLight": "#D4BC9E",
     "goldDark": "#A88B62"
   },
-  "colorRule": "Gold is an accent only, never a base color. No vibrant, saturated, or warm colors elsewhere in the palette.",
+  "colorRule": "Gold is an accent only, never a base color. No vibrant or saturated colors elsewhere in the palette.",
   "typography": {
     "display": {
       "family": "Cormorant Garamond",
@@ -34,24 +35,43 @@
     },
     "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
   },
+  "documents": {
+    "page": "US Letter, 1in top/bottom, 1.25in left/right",
+    "font": "Helvetica",
+    "colors": {
+      "heading": "#404040",
+      "body": "#808080",
+      "rule": "#BFBFBF"
+    },
+    "header": "Logo top left on every page",
+    "footer": "Document title left, page X of Y right, 8pt",
+    "fileNaming": "MDS_<Client>_<Document-Type>.docx",
+    "delivery": "Word first, PDF only after approval"
+  },
+  "services": [
+    "Schematic Design",
+    "Design Development",
+    "Construction Documents",
+    "Permitting and Construction Support"
+  ],
   "voice": {
     "tone": ["sober", "precise", "collegial"],
     "forbidden": ["superlatives", "exclamation points", "sales language", "em-dashes", "excessive emoji"],
-    "coreCredential": "10+ years as an architectural designer, photographs with a designer's understanding of space, light, and materiality"
+    "coreCredential": "10+ years as an architectural designer, from program and site through construction documents and permitting"
   },
   "logos": {
     "status": "uploaded, vector source still needed",
     "files": {
-      "primarySquareBlack": "logos/primary-square-black.png",
-      "primarySquareWhite": "logos/primary-square-white.png",
-      "primaryHorizontalBlack": "logos/primary-horizontal-black.png",
-      "iconBlackOnWhite": "logos/icon-black-on-white.png",
-      "iconWhiteOnBlack": "logos/icon-white-on-black.png",
-      "iconWhiteTransparent": "logos/icon-white-transparent.png",
-      "iconBlackOnCream": "logos/icon-black-on-cream.png"
+      "primarySquareBlack": "Logos/primary-square-black.png",
+      "primarySquareWhite": "Logos/primary-square-white.png",
+      "primaryHorizontalBlack": "Logos/primary-horizontal-black.png",
+      "iconBlackOnWhite": "Logos/icon-black-on-white.png",
+      "iconWhiteOnBlack": "Logos/icon-white-on-black.png",
+      "iconWhiteTransparent": "Logos/icon-white-transparent.png",
+      "iconBlackOnCream": "Logos/icon-black-on-cream.png"
     },
     "vectorSource": null,
-    "note": "No SVG available yet. PNG only. See logos/README.md for usage rules."
+    "note": "No SVG available yet. PNG only. See Logos/README.md for usage rules."
   },
   "contact": {
     "email": "manedastudios@gmail.com",
