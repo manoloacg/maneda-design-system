@@ -1,6 +1,6 @@
 # Logos
 
-All files transparent PNG unless noted. Vector (SVG) not yet available if you have the original vector source (Illustrator/Figma), export SVG versions and add them here for crisp scaling in Canva and web use.
+All files transparent PNG unless noted. Vector (SVG) not yet available. If you have the original vector source (Illustrator/Figma), export SVG versions and add them here for crisp scaling in Canva and web use.
 
 ## Files
 
@@ -8,7 +8,7 @@ All files transparent PNG unless noted. Vector (SVG) not yet available if you ha
 |---|---|---|
 | `primary-square-black.png` | Full lockup, stacked (icon over "MANEDA STUDIOS"), black ink | Light / white backgrounds |
 | `primary-square-white.png` | Full lockup, stacked, white ink | Dark backgrounds |
-| `primary-horizontal-black.png` | Full lockup, horizontal (icon beside wordmark), black ink | Light backgrounds, wide formats email signatures, letterhead, website header |
+| `primary-horizontal-black.png` | Full lockup, horizontal (icon beside wordmark), black ink | Light backgrounds, wide formats such as email signatures, letterhead, website header |
 | `icon-black-on-white.png` | Icon mark only, black ink, white square fill | Square social avatars where transparency isn't supported |
 | `icon-white-on-black.png` | Icon mark only, white ink, black square fill | Square social avatars, dark UI |
 | `icon-white-transparent.png` | Icon mark only, white ink, transparent background | Overlay on renderings and project images, dark video, watermarks |
