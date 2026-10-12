@@ -24,7 +24,7 @@
     "en": "within 1 business day",
     "pt": "em até 1 dia útil"
   },
-  "indexing": false,
+  "indexing": true,
   "indexingNote": "Keep false until launch. While false, every page is marked noindex and robots.txt blocks crawlers.",
   "analytics": {
     "provider": "cloudflare-web-analytics",
@@ -40,7 +40,7 @@
   "privacyUpdatedNote": "Change this date whenever the privacy policy text changes, and on launch day.",
   "legalReviewDone": true,
   "legalReviewNote": "Set to true after a lawyer has reviewed the privacy policy and your standard agreement. See LEGAL-CHECKLIST.md.",
-  "showPlaceholders": true,
+  "showPlaceholders": false,
   "showPlaceholdersNote": "true shows gray frames where images will go (preview). Set to false at launch: every empty image slot then disappears and the site is also hidden from search while it is true.",
   "booking": {
     "_help": "Paste the address of your scheduling page (for example a Cal.com link) in \"url\" to show a \"Book a scoping call\" button on the home and contact pages. Leave it empty to hide the button.",
