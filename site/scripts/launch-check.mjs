@@ -11,6 +11,8 @@ const count = (file) => {
   if (file.includes('src/content/pages/')) {
     const data = JSON.parse(text);
     off.forEach((k) => delete data[k]);
+    // The case study placeholder text only shows in preview mode, so it does not count once the frames are off.
+    if (!site.showPlaceholders && data.caseStudy) delete data.caseStudy.placeholders;
     text = JSON.stringify(data);
   }
   return (text.match(/\[PLACEHOLDER/g) || []).length;
