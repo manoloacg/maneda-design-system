@@ -820,7 +820,9 @@
         "text": "Para perguntar sobre ou remover informações que você nos enviou, escreva para o e-mail do estúdio."
       }
     ],
-    "analyticsOn": "Este site usa o Cloudflare Web Analytics. Ele não usa cookies e não rastreia você entre sites. Ele informa, de forma agregada, as visualizações de página e a localização geral."
+    "analyticsOn": "Este site usa o Cloudflare Web Analytics. Ele não usa cookies e não rastreia você entre sites. Ele informa, de forma agregada, as visualizações de página e a localização geral.",
+    "cookiesAds": "Este site usa o Google Ads para medir se os nossos anúncios geram contatos. O Google define cookies para isso quando você chega por um anúncio ou visita uma página. O site também guarda a sua escolha de idioma e, durante a sua visita, a campanha de onde você veio, para registrá-la no seu contato. Você pode bloquear ou apagar cookies nas configurações do navegador e gerenciar a personalização de anúncios em adssettings.google.com.",
+    "adsOn": "Este site usa o Cloudflare Web Analytics, que não usa cookies e informa, de forma agregada, as visualizações de página e a localização geral. Ele também usa a medição de conversões do Google Ads, que nos informa quando um visitante que clicou em um dos nossos anúncios envia um contato. O Google trata esses dados de acordo com a própria política de privacidade, em policies.google.com/privacy. Não vendemos as suas informações."
   },
   "notFound": {
     "meta": {

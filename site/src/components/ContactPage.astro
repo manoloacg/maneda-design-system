@@ -45,6 +45,7 @@ const link = 'underline decoration-gold';
       <input type="hidden" name="subject" value="New inquiry from the Maneda Design Studios website" />
       <input type="hidden" name="from_name" value="Maneda Design Studios website" />
       <input type="hidden" name="page_language" value={lang} />
+      {site.ads.enabled && <input type="hidden" name="came_from" value="" data-source />}
       <!-- Spam trap: people never see or tick this. Web3Forms rejects submissions where it is checked. -->
       <input type="checkbox" name="botcheck" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none" />
 

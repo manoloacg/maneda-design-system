@@ -5,7 +5,13 @@ import { getLang, getPage } from '../i18n/utils';
 const lang = getLang(Astro.url.pathname);
 const page = getPage(lang).privacy;
 const updated = new Date(site.privacyUpdated).toLocaleDateString(lang === 'pt' ? 'pt-BR' : 'en-US', { dateStyle: 'long', timeZone: 'UTC' });
+const cookiesTitle = page.sections[2].title;
 const analyticsTitle = page.sections[3].title;
+const ads = site.ads.enabled && !!site.ads.tagId;
+const textFor = (s: { title: string; text: string }) =>
+  s.title === cookiesTitle && ads ? page.cookiesAds
+  : s.title === analyticsTitle ? (ads ? page.adsOn : site.analytics.enabled ? page.analyticsOn : s.text)
+  : s.text;
 ---
 
 <section style="padding-block:var(--section-space)">
@@ -13,7 +19,7 @@ const analyticsTitle = page.sections[3].title;
     <h1>{page.title}</h1>
     <p class="mt-4 text-[var(--color-text-muted)]">{page.updated} {updated}</p>
     {
-      page.sections.map((s) => s.title === analyticsTitle ? { ...s, text: site.analytics.enabled ? page.analyticsOn : s.text } : s).map((s) => (
+      page.sections.map((s) => ({ ...s, text: textFor(s) })).map((s) => (
         <div class="mt-10 border-t border-[var(--color-rule-strong)] pt-6">
           <h2 class="mb-3 text-[1.6rem]">{s.title}</h2>
           <p class="text-[var(--color-text-muted)]">{s.text}</p>

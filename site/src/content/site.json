@@ -31,6 +31,12 @@
     "enabled": true,
     "token": ""
   },
+  "ads": {
+    "_help": "Google Ads. Paste the tag id (AW-...) and the label of the Contact form conversion, then set enabled to true. While enabled, the Google tag loads, a conversion is reported on the thank-you page, the ad click id and campaign tags ride along with each inquiry, and the privacy page switches to the Google Ads wording.",
+    "enabled": false,
+    "tagId": "",
+    "conversionLabel": ""
+  },
   "features": {
     "resources": false,
     "journal": true

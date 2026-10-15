@@ -820,7 +820,9 @@
         "text": "To ask about or remove information you sent us, email the studio."
       }
     ],
-    "analyticsOn": "This site uses Cloudflare Web Analytics. It does not use cookies and does not track you across sites. It reports page views and general location in aggregate."
+    "analyticsOn": "This site uses Cloudflare Web Analytics. It does not use cookies and does not track you across sites. It reports page views and general location in aggregate.",
+    "cookiesAds": "This site uses Google Ads to measure whether our ads lead to inquiries. Google sets cookies for this when you arrive from an ad or visit a page. The site also stores your language choice, and, for the length of your visit, the campaign you came from, so it can be noted on your inquiry. You can block or clear cookies in your browser settings, and manage ad personalization at adssettings.google.com.",
+    "adsOn": "This site uses Cloudflare Web Analytics, which does not use cookies and reports page views and general location in aggregate. It also uses Google Ads conversion measurement, which tells us when a visitor who clicked one of our ads sends an inquiry. Google processes that data under its own privacy policy at policies.google.com/privacy. We do not sell your information."
   },
   "notFound": {
     "meta": {

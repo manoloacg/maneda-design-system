@@ -3,6 +3,13 @@
 export function initForm(form: HTMLFormElement) {
   const status = form.querySelector<HTMLElement>('[data-status]')!;
   const submit = form.querySelector<HTMLButtonElement>('[type=submit]')!;
+  // Ad click id and campaign tags kept by the Google Ads snippet, sent with the inquiry.
+  const source = form.querySelector<HTMLInputElement>('[data-source]');
+  if (source) {
+    try {
+      source.value = sessionStorage.getItem('mds-source') ?? 'direct or search';
+    } catch {}
+  }
 
   const fields = () =>
     [...form.querySelectorAll<HTMLInputElement>('input:not([type=hidden]):not([type=checkbox]), select, textarea')];

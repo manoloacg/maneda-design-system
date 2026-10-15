@@ -2465,6 +2465,18 @@
                   "name": "analyticsOn",
                   "widget": "text",
                   "required": false
+                },
+                {
+                  "label": "Cookies Ads",
+                  "name": "cookiesAds",
+                  "widget": "text",
+                  "required": false
+                },
+                {
+                  "label": "Ads On",
+                  "name": "adsOn",
+                  "widget": "text",
+                  "required": false
                 }
               ]
             },
@@ -5703,6 +5715,18 @@
                   "name": "analyticsOn",
                   "widget": "text",
                   "required": false
+                },
+                {
+                  "label": "Cookies Ads",
+                  "name": "cookiesAds",
+                  "widget": "text",
+                  "required": false
+                },
+                {
+                  "label": "Ads On",
+                  "name": "adsOn",
+                  "widget": "text",
+                  "required": false
                 }
               ]
             },
@@ -7653,6 +7677,39 @@
                 {
                   "label": "Token",
                   "name": "token",
+                  "widget": "string",
+                  "required": false
+                }
+              ]
+            },
+            {
+              "label": "Ads",
+              "name": "ads",
+              "widget": "object",
+              "required": false,
+              "collapsed": true,
+              "fields": [
+                {
+                  "label": " help",
+                  "name": "_help",
+                  "widget": "text",
+                  "required": false
+                },
+                {
+                  "label": "Enabled",
+                  "name": "enabled",
+                  "widget": "boolean",
+                  "required": false
+                },
+                {
+                  "label": "Tag Id",
+                  "name": "tagId",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "label": "Conversion Label",
+                  "name": "conversionLabel",
                   "widget": "string",
                   "required": false
                 }
