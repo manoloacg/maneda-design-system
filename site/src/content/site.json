@@ -28,7 +28,7 @@
   "indexingNote": "Keep false until launch. While false, every page is marked noindex and robots.txt blocks crawlers.",
   "analytics": {
     "provider": "cloudflare-web-analytics",
-    "enabled": false,
+    "enabled": true,
     "token": ""
   },
   "features": {
