@@ -1,4 +1,5 @@
 ---
+import { socialUrl } from '../lib/schema';
 import Section from './Section.astro';
 import Button from './Button.astro';
 import FormField from './FormField.astro';
@@ -83,10 +84,10 @@ const link = 'underline decoration-gold';
         <p class="sheet-label mb-2 text-[var(--color-text-muted)]">{page.side.area}</p>
         <p class="mb-8">{pick(lang, site.serviceArea)}</p>
         {
-          site.social.instagram && (
+          socialUrl(site.social.instagram) && (
             <>
               <p class="sheet-label mb-2 text-[var(--color-text-muted)]">{page.side.social}</p>
-              <p class="mb-8"><a href={site.social.instagram} class={link} rel="noopener">Instagram</a></p>
+              <p class="mb-8"><a href={socialUrl(site.social.instagram)} class={link} rel="noopener">Instagram</a></p>
             </>
           )
         }

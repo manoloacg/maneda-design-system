@@ -19,6 +19,10 @@ export function shorten(text: string, limit = 200) {
   return (out || sentences[0]).trim();
 }
 const ctx = 'https://schema.org';
+/** A profile link from site.json "social", or undefined while it is still an [ADD ...] placeholder or empty. */
+export const socialUrl = (v?: string) => (v && /^https?:\/\//.test(v) ? v : undefined);
+const sameAs = () => [site.social.instagram, site.social.linkedin, site.social.upwork].map(socialUrl).filter(Boolean) as string[];
+const personId = () => abs('/#manolo');
 const studioId = () => abs('/#studio');
 
 export function studioSchema(lang: Lang) {
@@ -34,10 +38,17 @@ export function studioSchema(lang: Lang) {
     ...(isPlaceholder(site.email) ? {} : { email: site.email }),
     // City level only. No street address is published.
     address: { '@type': 'PostalAddress', addressLocality: 'Orlando', addressRegion: 'FL', addressCountry: 'US' },
-    areaServed: { '@type': 'Country', name: 'United States' },
+    areaServed: [
+      { '@type': 'City', name: 'Orlando', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Apopka', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Winter Park', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Winter Garden', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'Place', name: 'Central Florida' },
+      { '@type': 'Country', name: 'United States' },
+    ],
     knowsLanguage: ['en', 'pt-BR'],
-    founder: { '@type': 'Person', name: 'Manolo Castaneda', jobTitle: 'Residential Designer' },
-    ...(site.social.instagram ? { sameAs: [site.social.instagram] } : {}),
+    founder: person(lang),
+    ...(sameAs().length ? { sameAs: sameAs() } : {}),
   };
 }
 
@@ -93,15 +104,22 @@ export function caseStudySchema(lang: Lang, d: { title: string; brief: string },
   };
 }
 
-export function articleSchema(lang: Lang, d: { title: string; description: string; date?: string }, url: string) {
+export function articleSchema(
+  lang: Lang,
+  d: { title: string; description: string; date?: string; updated?: string; image?: string },
+  url: string,
+) {
   return {
     '@context': ctx,
-    '@type': 'Article',
+    '@type': 'BlogPosting',
+    '@id': `${abs(url)}#article`,
     headline: d.title,
     description: d.description,
     url: abs(url),
-    ...(d.date ? { datePublished: d.date } : {}),
-    author: { '@type': 'Person', name: 'Manolo Castaneda' },
+    mainEntityOfPage: abs(url),
+    image: abs(d.image ?? '/images/og-default.png'),
+    ...(d.date ? { datePublished: d.date, dateModified: d.updated && d.updated > d.date ? d.updated : d.date } : {}),
+    author: { '@type': 'Person', '@id': personId(), name: 'Manolo Castaneda', url: abs(routeFor(lang, 'about')) },
     publisher: { '@id': studioId() },
     inLanguage: lang === 'pt' ? 'pt-BR' : 'en',
   };
@@ -119,18 +137,31 @@ export function websiteSchema(lang: Lang) {
   };
 }
 
-export function personSchema(lang: Lang) {
+/** Manolo, as a Person. Used on its own on the About page and as the founder inside ProfessionalService. */
+function person(lang: Lang) {
   return {
-    '@context': ctx,
     '@type': 'Person',
-    '@id': abs('/#manolo'),
+    '@id': personId(),
     name: 'Manolo Castaneda',
     jobTitle: 'Residential Designer',
     worksFor: { '@id': studioId() },
     url: abs(routeFor(lang, 'about')),
+    image: abs('/images/manolo-castaneda.jpg'),
     address: { '@type': 'PostalAddress', addressLocality: 'Orlando', addressRegion: 'FL', addressCountry: 'US' },
-    knowsLanguage: ['en', 'pt-BR'],
+    alumniOf: [
+      { '@type': 'CollegeOrUniversity', name: 'New Jersey Institute of Technology', alternateName: 'NJIT' },
+      { '@type': 'CollegeOrUniversity', name: 'Universidade Católica de Brasília' },
+    ],
+    knowsLanguage: [
+      { '@type': 'Language', name: 'English', alternateName: 'en' },
+      { '@type': 'Language', name: 'Portuguese', alternateName: 'pt-BR' },
+    ],
+    ...(sameAs().length ? { sameAs: sameAs() } : {}),
   };
+}
+
+export function personSchema(lang: Lang) {
+  return { '@context': ctx, ...person(lang) };
 }
 
 export function breadcrumbSchema(crumbs: { name: string; path: string }[]) {

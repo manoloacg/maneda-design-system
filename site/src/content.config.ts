@@ -61,6 +61,8 @@ const journal = defineCollection({
     title: z.string(),
     description: z.string(),
     date: z.string().optional(), // YYYY-MM-DD, required before a post is published
+    updated: z.string().optional(), // YYYY-MM-DD, set when a published post changes in substance
+    image: z.string().optional(), // share image path under public/, for example /images/share/en-journal.png
     draft: z.boolean().default(true),
   }),
 });

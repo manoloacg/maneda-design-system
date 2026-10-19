@@ -7718,8 +7718,26 @@
               "collapsed": true,
               "fields": [
                 {
+                  "label": " help",
+                  "name": "_help",
+                  "widget": "text",
+                  "required": false
+                },
+                {
                   "label": "Instagram",
                   "name": "instagram",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "label": "Linkedin",
+                  "name": "linkedin",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "label": "Upwork",
+                  "name": "upwork",
                   "widget": "string",
                   "required": false
                 }
