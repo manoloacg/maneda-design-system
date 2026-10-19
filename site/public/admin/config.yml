@@ -1860,6 +1860,71 @@
                   }
                 },
                 {
+                  "label": "Sections",
+                  "name": "sections",
+                  "widget": "list",
+                  "required": false,
+                  "fields": [
+                    {
+                      "label": "Label",
+                      "name": "label",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Title",
+                      "name": "title",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Paragraphs",
+                      "name": "paragraphs",
+                      "widget": "list",
+                      "required": false,
+                      "field": {
+                        "label": "Item",
+                        "name": "item",
+                        "widget": "text",
+                        "required": false
+                      }
+                    },
+                    {
+                      "label": "Links",
+                      "name": "links",
+                      "widget": "list",
+                      "required": false,
+                      "field": {
+                        "label": "Item",
+                        "name": "item",
+                        "widget": "text",
+                        "required": false
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "Link Labels",
+                  "name": "linkLabels",
+                  "widget": "object",
+                  "required": false,
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "label": "Services",
+                      "name": "services",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Process",
+                      "name": "process",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
+                },
+                {
                   "label": "Values",
                   "name": "values",
                   "widget": "object",
@@ -1893,27 +1958,6 @@
                   ]
                 },
                 {
-                  "label": "Cta",
-                  "name": "cta",
-                  "widget": "object",
-                  "required": false,
-                  "collapsed": true,
-                  "fields": [
-                    {
-                      "label": "Title",
-                      "name": "title",
-                      "widget": "string",
-                      "required": false
-                    },
-                    {
-                      "label": "Text",
-                      "name": "text",
-                      "widget": "string",
-                      "required": false
-                    }
-                  ]
-                },
-                {
                   "label": "Studio",
                   "name": "studio",
                   "widget": "object",
@@ -1929,6 +1973,27 @@
                     {
                       "label": "Title",
                       "name": "title",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
+                },
+                {
+                  "label": "Cta",
+                  "name": "cta",
+                  "widget": "object",
+                  "required": false,
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "label": "Title",
+                      "name": "title",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Text",
+                      "name": "text",
                       "widget": "string",
                       "required": false
                     }
@@ -5110,6 +5175,71 @@
                   }
                 },
                 {
+                  "label": "Sections",
+                  "name": "sections",
+                  "widget": "list",
+                  "required": false,
+                  "fields": [
+                    {
+                      "label": "Label",
+                      "name": "label",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Title",
+                      "name": "title",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Paragraphs",
+                      "name": "paragraphs",
+                      "widget": "list",
+                      "required": false,
+                      "field": {
+                        "label": "Item",
+                        "name": "item",
+                        "widget": "text",
+                        "required": false
+                      }
+                    },
+                    {
+                      "label": "Links",
+                      "name": "links",
+                      "widget": "list",
+                      "required": false,
+                      "field": {
+                        "label": "Item",
+                        "name": "item",
+                        "widget": "text",
+                        "required": false
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "Link Labels",
+                  "name": "linkLabels",
+                  "widget": "object",
+                  "required": false,
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "label": "Services",
+                      "name": "services",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Process",
+                      "name": "process",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
+                },
+                {
                   "label": "Values",
                   "name": "values",
                   "widget": "object",
@@ -5143,27 +5273,6 @@
                   ]
                 },
                 {
-                  "label": "Cta",
-                  "name": "cta",
-                  "widget": "object",
-                  "required": false,
-                  "collapsed": true,
-                  "fields": [
-                    {
-                      "label": "Title",
-                      "name": "title",
-                      "widget": "string",
-                      "required": false
-                    },
-                    {
-                      "label": "Text",
-                      "name": "text",
-                      "widget": "string",
-                      "required": false
-                    }
-                  ]
-                },
-                {
                   "label": "Studio",
                   "name": "studio",
                   "widget": "object",
@@ -5179,6 +5288,27 @@
                     {
                       "label": "Title",
                       "name": "title",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
+                },
+                {
+                  "label": "Cta",
+                  "name": "cta",
+                  "widget": "object",
+                  "required": false,
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "label": "Title",
+                      "name": "title",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Text",
+                      "name": "text",
                       "widget": "string",
                       "required": false
                     }

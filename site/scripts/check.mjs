@@ -29,6 +29,8 @@ for (const file of walk('.').filter((f) => textExt.has(extname(f)) && !f.endsWit
     const internalDoc = ['README.md', 'LAUNCH.md', 'CONTENT-NEEDED.md', 'QUALITY-REPORT.md', 'LEGAL-CHECKLIST.md', 'EDITING.md'].includes(file) || file.startsWith('docs-drafts/');
     // One approved article explains the architect and designer difference, so it names the licensed profession. Every other file keeps the rules.
     const approvedArticle = file.includes('journal/') && file.endsWith('architect-or-residential-designer.md');
+    // The About page states the Brazilian license and the Florida exam as facts. Allowed only in a line that says "in Brazil" or names the ARE.
+    const licenseFact = file.includes('content/pages/') && /\bin Brazil\b|\bno Brasil\b|Architect Registration Examination/.test(line);
     // lastmod.json is generated: page keys and dates, no copy.
     if (internalDoc || file.endsWith('content/lastmod.json')) return;
     if (!file.endsWith('.css') && !file.endsWith('.ts') && !file.endsWith('.astro') || file.endsWith('.json')) {
@@ -36,9 +38,9 @@ for (const file of walk('.').filter((f) => textExt.has(extname(f)) && !f.endsWit
       if (file.includes('/pt.json') || file.includes('/pt/') || file.endsWith('pt.json')) {
         const d = line.match(diminutive); if (d) fail(`possible diminutive "${d[0]}" ${at}`);
       }
-      if (!approvedArticle && /\barchitect\b/i.test(line) && !/"(label|value)": "Architect"/i.test(line)) fail(`"architect" ${at}: ${line.trim().slice(0, 80)}`);
+      if (!approvedArticle && !licenseFact && /\barchitect\b/i.test(line) && !/"(label|value)": "Architect"/i.test(line)) fail(`"architect" ${at}: ${line.trim().slice(0, 80)}`);
       if (!approvedArticle && /\bArquiteto\b/.test(line) && !/"label": "Arquiteto"/.test(line)) fail(`"Arquiteto" ${at}`);
-      if (!approvedArticle && /\blicensed\b|licenciado/i.test(line) && !seal.test(line) && !/seal/i.test(line) && !/engineer|engenheiro/i.test(line) && !/licensed professional|profissional licenciado/i.test(line)) fail(`"licensed" ${at}: ${line.trim().slice(0, 80)}`);
+      if (!approvedArticle && !licenseFact && /\blicensed\b|licenciado/i.test(line) && !seal.test(line) && !/seal/i.test(line) && !/engineer|engenheiro/i.test(line) && !/licensed professional|profissional licenciado/i.test(line)) fail(`"licensed" ${at}: ${line.trim().slice(0, 80)}`);
     }
   });
 }

@@ -549,7 +549,7 @@
   "about": {
     "meta": {
       "title": "Residential Designer in Orlando | Maneda Design Studios",
-      "description": "Manolo Castaneda, residential designer. 10+ years in multifamily and retail projects. Based in Orlando, Florida. Bilingual in English and Portuguese."
+      "description": "Manolo Castaneda, residential designer in Apopka and Orlando. 10+ years in multifamily, retail and residential work. Bilingual in English and Portuguese."
     },
     "hero": {
       "label": "About",
@@ -558,9 +558,53 @@
       "portraitAlt": "Portrait of Manolo Castaneda, Residential Designer."
     },
     "story": [
-      "Manolo Castaneda is a residential designer with more than 10 years of experience in multifamily and retail projects. He trained in architecture in Brazil and the United States, with degrees from the Catholic University of Brasilia and NJIT. He is bilingual in English and Brazilian Portuguese and is based in Orlando, Florida.",
+      "Manolo Castaneda is the founder of Maneda Design Studios, a residential design studio based in Apopka, in the Orlando area. He has more than 10 years of experience in architecture firms, on multifamily, retail and residential projects. He is bilingual in English and Portuguese, and he works with Brazilian clients in their own language.",
       "He designs from the site and from how people live in a building: space, light, circulation, and how a room is used. A design is not finished until it can be permitted and built, so local code and jurisdiction rules are part of the process from the first sketch. Code literacy is what lets a design get built. It is part of the work, not a separate service."
     ],
+    "sections": [
+      {
+        "label": "Experience",
+        "title": "Where the experience comes from.",
+        "paragraphs": [
+          "Most of those years were spent inside established offices, on projects with many consultants, fixed schedules and strict review. Manolo has worked at Cuhaci Peterson, Charlan Brock Architects, C5 Studios and J. Fletcher Creamer & Son. The work covered multifamily buildings, retail spaces and homes.",
+          "Larger projects teach habits that matter just as much on a house: drawings that agree with each other, decisions written down when they are made, and code questions answered before they reach the plans reviewer. Maneda Design Studios brings those habits to residential work, at a scale where the owner talks directly with the person drawing the project."
+        ]
+      },
+      {
+        "label": "Education and licensure",
+        "title": "Trained in two countries.",
+        "paragraphs": [
+          "Manolo earned dual degrees from NJIT, the New Jersey Institute of Technology, and from Universidade Católica de Brasília.",
+          "He is a licensed architect in Brazil. That license applies in Brazil only. In the United States, he is completing the Architect Registration Examination (ARE) toward licensure in Florida. Until a Florida license is issued, his work in the United States is residential design, and he does not use the title of architect here.",
+          "Where a seal is required, drawings are reviewed and sealed by a licensed professional of record. The studio says so at the start of the project, so the owner knows who signs what before the drawings are done."
+        ]
+      },
+      {
+        "label": "Language",
+        "title": "Design in English or Portuguese.",
+        "paragraphs": [
+          "Brazilian families building or renovating a home can go through the whole project in Portuguese: the first call, the design reviews, and the plain explanation of what the county or city will ask for. Permit drawings are prepared in English for the building department, and Manolo explains them in Portuguese, sheet by sheet, so nothing in the set is a surprise.",
+          "English-speaking clients get the same process and the same drawings. Meetings are virtual or at your site."
+        ]
+      },
+      {
+        "label": "The studio",
+        "title": "How Maneda Design Studios works.",
+        "paragraphs": [
+          "Clients work directly with Manolo, from the first conversation to the final set. Projects run in phases, each with a written scope and a fixed fee, so the owner always knows what comes next and what it costs. The studio takes on homes, additions, interiors and site studies, and it says plainly when a project needs a different kind of professional.",
+          "Based in Apopka, the studio works on projects across Central Florida, including Orlando, Winter Park and Winter Garden, and on projects in other states when the work can be done from surveys, photos and virtual meetings. The Ohio residence and the Ohio wood shop in the work section are two of them. Every jurisdiction has its own rules, so each project starts by confirming the local code, the zoning, and what the building department will ask to see before it issues a permit.",
+          "The services and the published prices are on the services page. The steps of a project, from the first call to permit, are on the process page."
+        ],
+        "links": [
+          "services",
+          "process"
+        ]
+      }
+    ],
+    "linkLabels": {
+      "services": "See the services and prices",
+      "process": "See how a project runs"
+    },
     "values": {
       "label": "What I value",
       "title": "What I value in a project.",
@@ -570,13 +614,13 @@
         "Say why. Every decision has a reason I can explain to the owner and to the builder."
       ]
     },
-    "cta": {
-      "title": "Start with a conversation.",
-      "text": "Tell us about the project and we will tell you plainly if it is a fit."
-    },
     "studio": {
       "label": "Studio",
       "title": "How the work happens."
+    },
+    "cta": {
+      "title": "Start with a conversation.",
+      "text": "Tell us about the project and we will tell you plainly if it is a fit."
     }
   },
   "contact": {

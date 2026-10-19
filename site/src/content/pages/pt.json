@@ -549,7 +549,7 @@
   "about": {
     "meta": {
       "title": "Designer Residencial em Orlando | Maneda Design Studios",
-      "description": "Manolo Castaneda, designer residencial. Mais de 10 anos em projetos multifamiliares e de varejo. Baseado em Orlando, Flórida. Bilíngue em inglês e português."
+      "description": "Manolo Castaneda, designer residencial em Apopka e Orlando. Mais de 10 anos em projetos multifamiliares, comerciais e residenciais. Fala português e inglês."
     },
     "hero": {
       "label": "Sobre",
@@ -558,9 +558,53 @@
       "portraitAlt": "Retrato de Manolo Castaneda, Designer Residencial."
     },
     "story": [
-      "Manolo Castaneda é designer residencial, com mais de 10 anos de experiência em projetos multifamiliares e de varejo. Estudou arquitetura no Brasil e nos Estados Unidos, com formação pela Universidade Católica de Brasília e pelo NJIT. É bilíngue em inglês e português do Brasil e é baseado em Orlando, Flórida.",
+      "Manolo Castaneda é o fundador da Maneda Design Studios, um estúdio de projeto residencial com sede em Apopka, na região de Orlando. Ele tem mais de 10 anos de experiência em escritórios de arquitetura, em projetos multifamiliares, comerciais e residenciais. É bilíngue em inglês e português e atende clientes brasileiros no próprio idioma deles.",
       "Ele projeta a partir do terreno e de como as pessoas vivem em uma edificação: espaço, luz, circulação e o uso de cada ambiente. Um projeto só está pronto quando pode ser aprovado e construído, por isso o código local e as regras de cada prefeitura entram no processo desde o primeiro croqui. Conhecer o código é o que permite que um projeto seja construído. Faz parte do trabalho, não é um serviço separado."
     ],
+    "sections": [
+      {
+        "label": "Experiência",
+        "title": "De onde vem a experiência.",
+        "paragraphs": [
+          "A maior parte desses anos foi dentro de escritórios estabelecidos, em projetos com muitos consultores, prazos fixos e análise rigorosa. Manolo trabalhou na Cuhaci Peterson, na Charlan Brock Architects, na C5 Studios e na J. Fletcher Creamer & Son. O trabalho incluiu edifícios multifamiliares, espaços comerciais e residências.",
+          "Projetos grandes ensinam hábitos que valem também para uma casa: desenhos que concordam entre si, decisões registradas por escrito no momento em que são tomadas e dúvidas de código resolvidas antes de chegarem ao analista da prefeitura. A Maneda Design Studios leva esses hábitos ao projeto residencial, em uma escala em que o proprietário conversa diretamente com quem desenha o projeto."
+        ]
+      },
+      {
+        "label": "Formação e registro profissional",
+        "title": "Formado em dois países.",
+        "paragraphs": [
+          "Manolo tem dupla diplomação pelo NJIT, o New Jersey Institute of Technology, e pela Universidade Católica de Brasília.",
+          "Ele é arquiteto registrado no Brasil. Esse registro vale apenas no Brasil. Nos Estados Unidos, ele está concluindo o Architect Registration Examination (ARE) para obter a licença na Flórida. Até que a licença da Flórida seja emitida, o trabalho dele nos Estados Unidos é de projeto residencial, e ele não usa o título de arquiteto aqui.",
+          "Quando um selo é exigido, os desenhos são revisados e selados por um profissional licenciado responsável pelo projeto. O estúdio informa isso no início, para que o proprietário saiba quem assina o quê antes de os desenhos ficarem prontos."
+        ]
+      },
+      {
+        "label": "Idioma",
+        "title": "Projeto em português ou em inglês.",
+        "paragraphs": [
+          "Famílias brasileiras que vão construir ou reformar uma casa podem fazer o projeto inteiro em português: a primeira conversa, as revisões do projeto e a explicação clara do que o condado ou a prefeitura vão pedir. Os desenhos para aprovação são preparados em inglês para o departamento de obras, e Manolo explica cada folha em português, para que nada no conjunto seja surpresa.",
+          "Clientes que falam inglês têm o mesmo processo e os mesmos desenhos. As reuniões são virtuais ou no seu terreno."
+        ]
+      },
+      {
+        "label": "O estúdio",
+        "title": "Como a Maneda Design Studios trabalha.",
+        "paragraphs": [
+          "Os clientes trabalham diretamente com Manolo, da primeira conversa ao conjunto final de desenhos. Os projetos são feitos em etapas, cada uma com escopo escrito e honorário fixo, para que o proprietário sempre saiba o que vem a seguir e quanto custa. O estúdio faz casas, ampliações, interiores e estudos de terreno, e diz com clareza quando um projeto precisa de outro tipo de profissional.",
+          "Com sede em Apopka, o estúdio faz projetos em toda a Flórida Central, incluindo Orlando, Winter Park e Winter Garden, e também em outros estados quando o trabalho pode ser feito a partir de levantamentos, fotos e reuniões virtuais. A residência em Ohio e a oficina de marcenaria em Ohio, na seção de trabalhos, são dois exemplos. Cada jurisdição tem as próprias regras, então todo projeto começa confirmando o código local, o zoneamento e o que o departamento de obras vai pedir antes de emitir a licença de obra.",
+          "Os serviços e os preços publicados estão na página de serviços. As etapas de um projeto, da primeira conversa até a aprovação, estão na página do processo."
+        ],
+        "links": [
+          "services",
+          "process"
+        ]
+      }
+    ],
+    "linkLabels": {
+      "services": "Ver os serviços e preços",
+      "process": "Ver como um projeto funciona"
+    },
     "values": {
       "label": "O que eu valorizo",
       "title": "O que eu valorizo em um projeto.",
@@ -570,13 +614,13 @@
         "Explicar o motivo. Cada decisão tem uma razão que eu sei explicar ao proprietário e ao construtor."
       ]
     },
-    "cta": {
-      "title": "Comece por uma conversa.",
-      "text": "Conte-nos sobre o projeto e diremos com clareza se faz sentido."
-    },
     "studio": {
       "label": "Estúdio",
       "title": "Como o trabalho acontece."
+    },
+    "cta": {
+      "title": "Comece por uma conversa.",
+      "text": "Conte-nos sobre o projeto e diremos com clareza se faz sentido."
     }
   },
   "contact": {

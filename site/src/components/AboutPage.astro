@@ -42,6 +42,23 @@ const showStudio = studioSlots.some((id) => slotVisible(id));
 </section>
 
 {
+  page.sections.map((sec, i) => (
+    <Section tone={i % 2 ? 'light' : 'alt'} label={sec.label} title={sec.title}>
+      <div class="grid max-w-[64ch] gap-6 text-lg">
+        {sec.paragraphs.map((para) => <p>{para}</p>)}
+      </div>
+      {
+        'links' in sec && sec.links && (
+          <p class="mt-8 flex flex-wrap gap-x-8 gap-y-3">
+            {sec.links.map((key) => <a href={routeFor(lang, key as 'services' | 'process')} class="underline underline-offset-4">{page.linkLabels[key as 'services' | 'process']}</a>)}
+          </p>
+        )
+      }
+    </Section>
+  ))
+}
+
+{
   showStudio && (
     <Section label={page.studio.label} title={page.studio.title}>
       <div class="grid gap-6 md:grid-cols-3">
