@@ -2704,6 +2704,12 @@
                       "required": false
                     }
                   ]
+                },
+                {
+                  "label": "Faq Title",
+                  "name": "faqTitle",
+                  "widget": "string",
+                  "required": false
                 }
               ]
             },
@@ -6019,6 +6025,12 @@
                       "required": false
                     }
                   ]
+                },
+                {
+                  "label": "Faq Title",
+                  "name": "faqTitle",
+                  "widget": "string",
+                  "required": false
                 }
               ]
             },

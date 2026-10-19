@@ -3,13 +3,13 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import JournalPost from '../../../components/JournalPost.astro';
 import lastmod from '../../../content/lastmod.json';
-import { articleSchema } from '../../../lib/schema';
+import { articleSchema, faqSchema } from '../../../lib/schema';
 import { hasPlaceholder } from '../../../lib/journal';
 import { getLang, routeFor, withSiteName } from '../../../i18n/utils';
 
 export async function getStaticPaths() {
   const all = await getCollection('journal');
-  return all.filter((p) => p.id.startsWith('pt/') && !p.data.draft).map((entry) => ({ params: { slug: entry.id.split('/')[1] }, props: { entry } }));
+  return all.filter((p) => p.id.startsWith('pt/') && (!p.data.draft || import.meta.env.DEV)).map((entry) => ({ params: { slug: entry.id.split('/')[1] }, props: { entry } }));
 }
 const { entry } = Astro.props;
 const lang = getLang(Astro.url.pathname);
@@ -23,7 +23,7 @@ const url = `${routeFor(lang, 'journal')}${Astro.params.slug}/`;
   title={withSiteName(entry.data.title)}
   description={entry.data.description}
   noindex={unfinished}
-  schema={unfinished ? [] : [articleSchema(lang, { ...entry.data, updated }, url)]}
+  schema={unfinished ? [] : [articleSchema(lang, { ...entry.data, updated }, url), ...(entry.data.faq?.length ? [faqSchema(entry.data.faq)] : [])]}
 >
   <JournalPost entry={entry} />
 </BaseLayout>

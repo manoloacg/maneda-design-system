@@ -19,7 +19,7 @@ export const GET: APIRoute = async () => {
   // Each page: its English path, and the content sources whose last change dates the page, per language.
   const pages: { path: string; keys: (l: Lang) => string[] }[] = [];
   const projects = (await getCollection('projects')).filter((p) => p.id.startsWith('en/') && p.data.published && !hasPlaceholder(p.data));
-  const posts = (site.features.journal ? await getCollection('journal') : []).filter((p) => p.id.startsWith('en/') && !p.data.draft && !hasPlaceholder(p.data));
+  const posts = (site.features.journal ? await getCollection('journal') : []).filter((p) => p.id.startsWith('en/') && !p.data.draft && !hasPlaceholder(p.data) && !hasPlaceholder(p.body));
   const slug = (id: string) => id.split('/')[1];
   const pageKey: Partial<Record<string, string>> = { home: 'home', services: 'services', work: 'work', process: 'process', about: 'about', contact: 'contact', journal: 'journal', privacy: 'privacy' };
   for (const [key, r] of Object.entries(routes)) {

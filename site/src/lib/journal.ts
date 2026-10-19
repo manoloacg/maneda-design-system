@@ -3,7 +3,8 @@ import type { Lang } from '../i18n/utils';
 import { routeFor } from '../i18n/utils';
 import site from '../content/site.json';
 
-export const hasPlaceholder = (value: unknown) => JSON.stringify(value).includes('[PLACEHOLDER');
+/** True while text still holds [PLACEHOLDER ...] or [VERIFY ...] notes. Such pages stay noindex and out of the sitemap. */
+export const hasPlaceholder = (value: unknown) => /\[(PLACEHOLDER|VERIFY)/.test(JSON.stringify(value) ?? '');
 
 /** Journal posts for one language. The slug is the file name. */
 export async function getPosts(lang: Lang) {

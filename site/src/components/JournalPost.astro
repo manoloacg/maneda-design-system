@@ -2,6 +2,7 @@
 import { render } from 'astro:content';
 import Section from './Section.astro';
 import Button from './Button.astro';
+import Faq from './Faq.astro';
 import { getLang, getPage, routeFor, t } from '../i18n/utils';
 
 const { entry } = Astro.props;
@@ -22,6 +23,13 @@ const { Content } = await render(entry);
   <div class="container-site" style="padding-block:clamp(2rem, 1rem + 4vw, 5rem)">
     <div class="prose-site"><Content /></div>
   </div>
+  {
+    entry.data.faq?.length && (
+      <Section title={page.faqTitle}>
+        <Faq items={entry.data.faq} />
+      </Section>
+    )
+  }
   <Section tone="alt" title={page.cta.title} intro={page.cta.text}>
     <Button href={routeFor(lang, 'contact')}>{t(lang, 'cta.requestQuote')}</Button>
   </Section>

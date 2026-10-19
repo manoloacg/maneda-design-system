@@ -64,6 +64,7 @@ const journal = defineCollection({
     updated: z.string().optional(), // YYYY-MM-DD, set when a published post changes in substance
     image: z.string().optional(), // share image path under public/, for example /images/share/en-journal.png
     draft: z.boolean().default(true),
+    faq: z.array(z.object({ q: z.string(), a: z.string() })).optional(), // shown at the end of the post, with FAQPage structured data
   }),
 });
 
