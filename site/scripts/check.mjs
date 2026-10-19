@@ -29,7 +29,8 @@ for (const file of walk('.').filter((f) => textExt.has(extname(f)) && !f.endsWit
     const internalDoc = ['README.md', 'LAUNCH.md', 'CONTENT-NEEDED.md', 'QUALITY-REPORT.md', 'LEGAL-CHECKLIST.md', 'EDITING.md'].includes(file) || file.startsWith('docs-drafts/');
     // One approved article explains the architect and designer difference, so it names the licensed profession. Every other file keeps the rules.
     const approvedArticle = file.includes('journal/') && file.endsWith('architect-or-residential-designer.md');
-    if (internalDoc) return;
+    // lastmod.json is generated: page keys and dates, no copy.
+    if (internalDoc || file.endsWith('content/lastmod.json')) return;
     if (!file.endsWith('.css') && !file.endsWith('.ts') && !file.endsWith('.astro') || file.endsWith('.json')) {
       const b = line.match(banned); if (b) fail(`banned word "${b[0]}" ${at}`);
       if (file.includes('/pt.json') || file.includes('/pt/') || file.endsWith('pt.json')) {

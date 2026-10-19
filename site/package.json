@@ -5,12 +5,13 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "node scripts/lastmod.mjs && astro build",
     "preview": "astro preview",
     "check": "node scripts/check.mjs",
     "launch-check": "node scripts/launch-check.mjs",
     "cms:config": "node scripts/gen-cms-config.mjs",
-    "build:safe": "astro build && node scripts/check.mjs"
+    "build:safe": "node scripts/lastmod.mjs && astro build && node scripts/check.mjs",
+    "lastmod": "node scripts/lastmod.mjs"
   },
   "dependencies": {
     "@fontsource/cormorant-garamond": "^5.3.0",
