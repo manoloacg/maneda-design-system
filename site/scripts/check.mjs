@@ -26,7 +26,7 @@ for (const file of walk('.').filter((f) => textExt.has(extname(f)) && !f.endsWit
   readFileSync(file, 'utf8').split('\n').forEach((line, i) => {
     const at = `${file}:${i + 1}`;
     if (/[—–]/.test(line)) fail(`dash ${at}: ${line.trim().slice(0, 80)}`);
-    const internalDoc = ['README.md', 'LAUNCH.md', 'CONTENT-NEEDED.md', 'QUALITY-REPORT.md', 'LEGAL-CHECKLIST.md', 'EDITING.md'].includes(file) || file.startsWith('docs-drafts/');
+    const internalDoc = ['README.md', 'LAUNCH.md', 'CONTENT-NEEDED.md', 'QUALITY-REPORT.md', 'LEGAL-CHECKLIST.md', 'EDITING.md', 'REDIRECTS.md', 'SEO-REPORT.md'].includes(file) || file.startsWith('docs-drafts/');
     // One approved article explains the architect and designer difference, so it names the licensed profession. Every other file keeps the rules.
     // Unpublished journal drafts may name the profession too, because they explain it. Each one needs legal review, and its file added here, before it is published.
     const approvedArticle = file.includes('journal/') && (file.endsWith('architect-or-residential-designer.md') || /^draft: true$/m.test(readFileSync(file, 'utf8')));
