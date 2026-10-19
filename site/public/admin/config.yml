@@ -56,7 +56,7 @@
                     {
                       "label": "Alt",
                       "name": "alt",
-                      "widget": "text",
+                      "widget": "string",
                       "required": false
                     }
                   ]

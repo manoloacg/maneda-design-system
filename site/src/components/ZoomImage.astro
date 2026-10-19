@@ -10,6 +10,6 @@ const big = await getImage({ src, width: Math.min(src.width, 2600), format: 'web
 ---
 
 <button type="button" class="group relative block w-full cursor-zoom-in text-left" data-zoom={big.src} data-zoom-alt={alt} aria-label={`${label}: ${alt}`}>
-  <Image src={src} alt="" widths={widths} sizes={sizes} class={cls} loading={loading} />
+  <Image src={src} alt={alt} widths={widths} sizes={sizes} class={cls} loading={loading} />
   <span aria-hidden="true" class="pointer-events-none absolute bottom-3 right-3 bg-[var(--color-bg)] px-3 py-1 text-[0.65rem] font-medium uppercase tracking-[0.16em] opacity-0 transition-opacity group-hover:opacity-100 group-focus-visible:opacity-100">{label}</span>
 </button>

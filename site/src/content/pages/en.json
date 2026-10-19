@@ -5,7 +5,7 @@
       "description": "Residential design from Orlando, Florida. Homes, additions, and interiors, carried through to buildable drawings. Projects across the United States."
     },
     "hero": {
-      "alt": "3D rendering of a two-story white residence with dark metal roofs, a tall gabled entry, a stone-clad wing, and a three-car garage, seen across a paved motor court and lawn."
+      "alt": "Rendering of a white three-level residence with a stone wing and three-car garage, Ohio"
     },
     "positioning": {
       "label": "The studio",
@@ -292,7 +292,7 @@
           "label": "Example",
           "title": "A conceptual site plan.",
           "caption": "An industrial small-bay site plan prepared for a developer ahead of a county pre-application meeting. It shows the building footprint, drive aisles, parking, secured yards, and setbacks. Conceptual and based on unverified data, not for permit.",
-          "alt": "Colored conceptual site plan of a long industrial building with offices along the front, parking along the street side, a large secured yard at the rear, and landscape buffers at the lot edges"
+          "alt": "Conceptual site plan of an industrial building with front offices, parking and a secured rear yard"
         }
       },
       "consultations": {
