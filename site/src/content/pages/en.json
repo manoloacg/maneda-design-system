@@ -153,7 +153,9 @@
       "creditLabel": "Credit",
       "creditNote": "Each credit is half the fee and applies toward a full-service package booked within 14 days.",
       "guideLead": "Not sure which professional your project needs? Read:",
-      "zoomLabel": "Enlarge image"
+      "zoomLabel": "Enlarge image",
+      "relatedWork": "Related work",
+      "relatedReading": "Further reading"
     },
     "items": {
       "full-design": {

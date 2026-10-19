@@ -625,6 +625,18 @@
                       "name": "zoomLabel",
                       "widget": "string",
                       "required": false
+                    },
+                    {
+                      "label": "Related Work",
+                      "name": "relatedWork",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Related Reading",
+                      "name": "relatedReading",
+                      "widget": "string",
+                      "required": false
                     }
                   ]
                 },
@@ -3946,6 +3958,18 @@
                       "name": "zoomLabel",
                       "widget": "string",
                       "required": false
+                    },
+                    {
+                      "label": "Related Work",
+                      "name": "relatedWork",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Related Reading",
+                      "name": "relatedReading",
+                      "widget": "string",
+                      "required": false
                     }
                   ]
                 },
@@ -7019,8 +7043,47 @@
                       "required": false
                     }
                   ]
+                },
+                {
+                  "label": "Related",
+                  "name": "related",
+                  "widget": "object",
+                  "required": false,
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "label": "Projects",
+                      "name": "projects",
+                      "widget": "list",
+                      "required": false,
+                      "field": {
+                        "label": "Item",
+                        "name": "item",
+                        "widget": "text",
+                        "required": false
+                      }
+                    },
+                    {
+                      "label": "Articles",
+                      "name": "articles",
+                      "widget": "list",
+                      "required": false,
+                      "field": {
+                        "label": "Item",
+                        "name": "item",
+                        "widget": "text",
+                        "required": false
+                      }
+                    }
+                  ]
                 }
               ]
+            },
+            {
+              "label": " related Help",
+              "name": "_relatedHelp",
+              "widget": "text",
+              "required": false
             }
           ]
         }

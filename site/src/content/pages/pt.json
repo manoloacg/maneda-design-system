@@ -153,7 +153,9 @@
       "creditLabel": "Crédito",
       "creditNote": "Cada crédito equivale à metade do valor e se aplica a um pacote completo contratado em até 14 dias.",
       "guideLead": "Não sabe de qual profissional o seu projeto precisa? Leia:",
-      "zoomLabel": "Ampliar imagem"
+      "zoomLabel": "Ampliar imagem",
+      "relatedWork": "Trabalhos relacionados",
+      "relatedReading": "Leitura relacionada"
     },
     "items": {
       "full-design": {

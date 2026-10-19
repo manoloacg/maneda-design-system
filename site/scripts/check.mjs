@@ -31,6 +31,8 @@ for (const file of walk('.').filter((f) => textExt.has(extname(f)) && !f.endsWit
     // Unpublished journal drafts may name the profession too, because they explain it. Each one needs legal review, and its file added here, before it is published.
     const approvedArticle = file.includes('journal/') && (file.endsWith('architect-or-residential-designer.md') || /^draft: true$/m.test(readFileSync(file, 'utf8')));
     // The About page states the Brazilian license and the Florida exam as facts. Allowed only in a line that says "in Brazil" or names the ARE.
+    // A bare URL slug in a list, such as "architect-or-residential-designer", is an address, not copy.
+    const slugOnly = /^\s*"[a-z0-9-]+",?\s*$/.test(line);
     const licenseFact = file.includes('content/pages/') && /\bin Brazil\b|\bno Brasil\b|Architect Registration Examination/.test(line);
     // lastmod.json is generated: page keys and dates, no copy.
     if (internalDoc || file.endsWith('content/lastmod.json')) return;
@@ -39,7 +41,7 @@ for (const file of walk('.').filter((f) => textExt.has(extname(f)) && !f.endsWit
       if (file.includes('/pt.json') || file.includes('/pt/') || file.endsWith('pt.json')) {
         const d = line.match(diminutive); if (d) fail(`possible diminutive "${d[0]}" ${at}`);
       }
-      if (!approvedArticle && !licenseFact && /\barchitect\b/i.test(line) && !/"(label|value)": "Architect"/i.test(line)) fail(`"architect" ${at}: ${line.trim().slice(0, 80)}`);
+      if (!approvedArticle && !licenseFact && !slugOnly && /\barchitect\b/i.test(line) && !/"(label|value)": "Architect"/i.test(line)) fail(`"architect" ${at}: ${line.trim().slice(0, 80)}`);
       if (!approvedArticle && /\bArquiteto\b/.test(line) && !/"label": "Arquiteto"/.test(line)) fail(`"Arquiteto" ${at}`);
       if (!approvedArticle && !licenseFact && /\blicensed\b|licenciado/i.test(line) && !seal.test(line) && !/seal/i.test(line) && !/engineer|engenheiro/i.test(line) && !/licensed professional|profissional licenciado/i.test(line)) fail(`"licensed" ${at}: ${line.trim().slice(0, 80)}`);
     }

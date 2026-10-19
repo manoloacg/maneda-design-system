@@ -7,6 +7,10 @@ import ZoomDialog from './ZoomDialog.astro';
 import ServiceArt from './ServiceArt.astro';
 import { Image } from 'astro:assets';
 import Video from './Video.astro';
+import ProjectCard from './ProjectCard.astro';
+import { getProjects } from '../lib/projects';
+import { getPosts, hasPlaceholder } from '../lib/journal';
+import site from '../content/site.json';
 import type { ImageMetadata } from 'astro';
 import hero from '../assets/hero-home.jpg';
 import services from '../content/services.json';
@@ -51,6 +55,11 @@ const exampleImages = import.meta.glob<ImageMetadata>('../assets/services/*-exam
 const exampleImg = Object.entries(exampleImages).find(([k]) => (k.split('/').pop() ?? '').startsWith(`${id}-example.`))?.[1];
 const example = (d as { example?: { label: string; title: string; caption: string; alt: string } }).example;
 const isCd = id === 'full-design';
+// Related case studies and articles, from "related" in services.json. Only published ones are shown.
+const related = (s as { related?: { projects: string[]; articles: string[] } }).related ?? { projects: [], articles: [] };
+const relatedProjects = (await getProjects(lang)).filter((p) => related.projects.includes(p.slug) && !hasPlaceholder(p.data));
+const relatedPosts = site.features.journal ? (await getPosts(lang)).filter((p) => related.articles.includes(p.slug)) : [];
+const workF = full.work.filters as Record<string, string>;
 
 const card = 'border border-[var(--color-rule-strong)] bg-[var(--color-bg)] p-6 md:p-7';
 const cardTitle = 'sheet-label mb-4 flex items-center gap-3 text-[var(--color-text-muted)]';
@@ -198,6 +207,44 @@ const priceFig = 'font-[family-name:var(--font-display)] text-[1.6rem] leading-n
       <div class="max-w-[64rem]">
         <ZoomImage src={exampleImg} alt={example.alt} widths={[640, 960, 1200, 1800]} sizes="(min-width: 1024px) 64rem, 100vw" class="h-auto w-full border border-[var(--color-rule)]" label={L.zoomLabel} />
       </div>
+    </Section>
+  )
+}
+
+{
+  (relatedProjects.length > 0 || relatedPosts.length > 0) && (
+    <Section label={L.relatedWork}>
+      {relatedProjects.length > 0 && (
+        <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+          {relatedProjects.map((pr) => (
+            <ProjectCard
+              href={`${routeFor(lang, 'work')}${pr.slug}/`}
+              number={pr.data.number}
+              title={pr.data.title}
+              type={workF[pr.data.type]}
+              location={pr.data.location}
+              result={pr.data.result}
+              alt={pr.data.heroAlt}
+              image={pr.data.cardImage ?? pr.data.heroImage}
+            />
+          ))}
+        </div>
+      )}
+      {relatedPosts.length > 0 && (
+        <div class={relatedProjects.length > 0 ? 'mt-14' : ''}>
+          <p class="sheet-label mb-4 text-[var(--color-text-muted)]">{L.relatedReading}</p>
+          <ul class="border-t border-[var(--color-rule-strong)]">
+            {relatedPosts.map((post) => (
+              <li class="border-b border-[var(--color-rule)]">
+                <a href={`${routeFor(lang, 'journal')}${post.slug}/`} class="flex min-h-[var(--tap)] items-center justify-between gap-6 py-4 text-lg no-underline hover:underline decoration-gold underline-offset-[0.3em]">
+                  <span>{post.data.title}</span>
+                  <span aria-hidden="true">&rarr;</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </Section>
   )
 }

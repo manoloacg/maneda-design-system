@@ -15,6 +15,16 @@
       "short": {
         "en": "Residential design",
         "pt": "Projeto residencial"
+      },
+      "related": {
+        "projects": [
+          "ohio-residence"
+        ],
+        "articles": [
+          "architect-or-residential-designer",
+          "do-you-need-an-architect-for-a-home-addition-in-florida",
+          "what-does-it-cost-to-design-a-house-in-florida"
+        ]
       }
     },
     {
@@ -31,6 +41,10 @@
       "short": {
         "en": "Interiors",
         "pt": "Interiores"
+      },
+      "related": {
+        "projects": [],
+        "articles": []
       }
     },
     {
@@ -47,6 +61,14 @@
       "short": {
         "en": "Site analysis",
         "pt": "Terreno"
+      },
+      "related": {
+        "projects": [
+          "industrial-site-plan"
+        ],
+        "articles": [
+          "what-a-site-analysis-tells-you"
+        ]
       }
     },
     {
@@ -63,6 +85,12 @@
       "short": {
         "en": "Consultations",
         "pt": "Consultorias"
+      },
+      "related": {
+        "projects": [],
+        "articles": [
+          "what-does-it-cost-to-design-a-house-in-florida"
+        ]
       }
     },
     {
@@ -79,7 +107,19 @@
       "short": {
         "en": "Full service",
         "pt": "Serviço completo"
+      },
+      "related": {
+        "projects": [
+          "ohio-residence",
+          "wood-shop"
+        ],
+        "articles": [
+          "architect-or-residential-designer",
+          "how-long-do-permit-drawings-take-in-orange-county-fl",
+          "what-does-it-cost-to-design-a-house-in-florida"
+        ]
       }
     }
-  ]
+  ],
+  "_relatedHelp": "related: project slugs and journal article slugs shown on the service page. Unpublished projects and draft articles are skipped until they go live."
 }
