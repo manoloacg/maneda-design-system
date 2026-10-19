@@ -1,5 +1,6 @@
 ---
 title: "Industrial site plan, Arizona"
+metaDescription: "A conceptual site plan for an industrial small-bay development in Arizona, prepared for a county pre-application meeting, with the design moves."
 number: "MDS-26-03"
 order: 3
 type: site-analysis

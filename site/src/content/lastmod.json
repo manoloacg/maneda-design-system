@@ -31,7 +31,7 @@
   "page:en:service-interior-design": "2026-10-06",
   "page:en:service-residential-design": "2026-10-06",
   "page:en:service-site-analysis": "2026-10-19",
-  "page:en:services": "2026-10-06",
+  "page:en:services": "2026-10-19",
   "page:en:work": "2026-10-06",
   "page:pt:about": "2026-10-19",
   "page:pt:caseStudy": "2026-10-06",
@@ -46,13 +46,13 @@
   "page:pt:service-interior-design": "2026-10-06",
   "page:pt:service-residential-design": "2026-10-06",
   "page:pt:service-site-analysis": "2026-10-19",
-  "page:pt:services": "2026-10-06",
+  "page:pt:services": "2026-10-19",
   "page:pt:work": "2026-10-06",
   "pricing.json": "2026-10-06",
   "services.json:construction-documents": "2026-10-05",
-  "services.json:consultations": "2026-10-05",
-  "services.json:full-design": "2026-10-06",
-  "services.json:interior-design": "2026-10-05",
-  "services.json:residential-design": "2026-10-05",
-  "services.json:site-analysis": "2026-10-05"
+  "services.json:consultations": "2026-10-19",
+  "services.json:full-design": "2026-10-19",
+  "services.json:interior-design": "2026-10-19",
+  "services.json:residential-design": "2026-10-19",
+  "services.json:site-analysis": "2026-10-19"
 }

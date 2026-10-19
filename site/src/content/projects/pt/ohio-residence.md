@@ -1,5 +1,6 @@
 ---
 title: "Residência de três níveis, Ohio"
+metaDescription: "Uma residência sob medida de três níveis em Ohio, do terreno e do programa ao projeto para aprovação: o programa, as decisões de planta e as folhas."
 number: "MDS-26-01"
 order: 1
 type: residential

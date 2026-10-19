@@ -1,5 +1,6 @@
 ---
 title: "Wood shop with studio, Ohio"
+metaDescription: "Permit drawings for a wood shop with a studio in Ohio, prepared from the owner's existing design: plans, elevations, wall sections, and details."
 number: "MDS-26-02"
 order: 2
 type: residential

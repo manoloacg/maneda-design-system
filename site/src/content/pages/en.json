@@ -116,7 +116,7 @@
   },
   "services": {
     "meta": {
-      "title": "Residential Design Services, Orlando | Maneda Design Studios",
+      "title": "Residential Design Services Orlando | Maneda Design Studios",
       "description": "Residential design, interior design, site analysis, consultations and construction documents for homes and additions, with fixed published prices."
     },
     "hero": {
@@ -829,7 +829,7 @@
   "thankYou": {
     "meta": {
       "title": "Thank you | Maneda Design Studios",
-      "description": "Your inquiry was received."
+      "description": "Your inquiry was received. Maneda Design Studios replies within 1 business day with a plain answer on fit and the next step for your project."
     },
     "title": "Thank you.",
     "text": "Your inquiry was received. Expect a reply {replyWindow}.",
@@ -883,7 +883,7 @@
   "journal": {
     "meta": {
       "title": "Journal | Maneda Design Studios",
-      "description": "Practical notes on starting a residential design project: lots, code, builders, and cost."
+      "description": "Practical notes on starting a residential design project in Florida: lots, zoning, code, builders, design fees, and how long permits take."
     },
     "hero": {
       "label": "Journal",

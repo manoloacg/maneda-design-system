@@ -1,5 +1,6 @@
 ---
 title: "Architect or residential designer: which does your home need?"
+metaTitle: "Architect or Residential Designer: Which Do You Need?"
 description: "A plain guide to the difference between an architect and a residential designer, who seals drawings, and what to ask before you hire."
 date: "2026-10-06"
 draft: false

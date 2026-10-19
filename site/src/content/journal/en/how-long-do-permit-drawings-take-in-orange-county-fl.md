@@ -1,5 +1,6 @@
 ---
 title: "How long do permit drawings take in Orange County, FL?"
+metaTitle: "Permit Drawing Timeline in Orange County, FL"
 description: "The steps from first call to permit for a home or addition in the Orange County area, how long each one usually takes, and what slows a permit down."
 draft: true
 faq:

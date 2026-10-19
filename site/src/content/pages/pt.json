@@ -1,7 +1,7 @@
 {
   "home": {
     "meta": {
-      "title": "Projeto Residencial com Base em Orlando | Maneda Design Studios",
+      "title": "Projeto Residencial em Orlando | Maneda Design Studios",
       "description": "Projeto residencial com base em Orlando, Flórida. Casas, ampliações e interiores até os desenhos prontos para construir. Projetos em todos os Estados Unidos."
     },
     "hero": {
@@ -226,7 +226,7 @@
         "duration": "Cerca de 9 a 15 semanas até o desenvolvimento do projeto: o pré-projeto leva de 1 a 3 semanas, o anteprojeto de 4 a 6 e o desenvolvimento de 4 a 6.",
         "meta": {
           "title": "Projeto de Casas e Ampliações | Maneda Design Studios",
-          "description": "Projeto de casas sob medida, plantas de casas e ampliações: estudo preliminar, anteprojeto e desenvolvimento. Cerca de 9 a 15 semanas, orçamento após uma conversa."
+          "description": "Projeto de casas sob medida e ampliações: estudo preliminar, anteprojeto e desenvolvimento. Cerca de 9 a 15 semanas, orçamento após uma conversa."
         }
       },
       "interior-design": {
@@ -829,7 +829,7 @@
   "thankYou": {
     "meta": {
       "title": "Obrigado | Maneda Design Studios",
-      "description": "Sua solicitação foi recebida."
+      "description": "Sua solicitação foi recebida. A Maneda Design Studios responde em até 1 dia útil, com uma resposta clara sobre o encaixe e o próximo passo."
     },
     "title": "Obrigado.",
     "text": "Sua solicitação foi recebida. Espere uma resposta {replyWindow}.",
@@ -840,7 +840,7 @@
   "privacy": {
     "meta": {
       "title": "Política de privacidade | Maneda Design Studios",
-      "description": "Quais informações a Maneda Design Studios coleta neste site, como são usadas e como falar conosco sobre os seus dados."
+      "description": "Quais informações a Maneda Design Studios coleta neste site, como elas são usadas e como falar conosco sobre os seus dados pessoais."
     },
     "title": "Política de privacidade",
     "updated": "Última atualização:",
@@ -883,7 +883,7 @@
   "journal": {
     "meta": {
       "title": "Artigos | Maneda Design Studios",
-      "description": "Notas práticas sobre como começar um projeto residencial: terreno, código, construtores e custo."
+      "description": "Notas práticas sobre como começar um projeto residencial na Flórida: terreno, zoneamento, código, construtores, honorários e prazos de aprovação."
     },
     "hero": {
       "label": "Artigos",

@@ -1,5 +1,6 @@
 ---
 title: "Three-level residence, Ohio"
+metaDescription: "A three-level custom residence in Ohio, from site and program to a permit set: the brief, the plan decisions, selected sheets, and where it stands now."
 number: "MDS-26-01"
 order: 1
 type: residential

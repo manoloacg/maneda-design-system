@@ -15,7 +15,7 @@ export async function getStaticPaths() {
 }
 const { entry } = Astro.props;
 const lang = getLang(Astro.url.pathname);
-const description = fill(getPage(lang).caseStudy.metaDescription, { title: entry.data.title });
+const description = entry.data.metaDescription ?? fill(getPage(lang).caseStudy.metaDescription, { title: entry.data.title });
 const unfinished = hasPlaceholder(entry.data);
 // Share image: the project's own hero photo when one is supplied, otherwise the studio default.
 const share = entry.data.heroImage ? (await getImage({ src: entry.data.heroImage, width: 1200, height: 630, fit: 'cover', format: 'jpg' })).src : undefined;

@@ -1,5 +1,6 @@
 ---
 title: "Implantação industrial, Arizona"
+metaDescription: "Uma implantação conceitual para um empreendimento industrial de galpões no Arizona, preparada para uma reunião prévia com o condado, e as decisões."
 number: "MDS-26-03"
 order: 3
 type: site-analysis

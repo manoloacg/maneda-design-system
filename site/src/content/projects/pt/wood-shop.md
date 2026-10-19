@@ -1,5 +1,6 @@
 ---
 title: "Oficina de marcenaria com estúdio, Ohio"
+metaDescription: "Desenhos para alvará de uma oficina de marcenaria com estúdio em Ohio, feitos a partir do projeto do proprietário: plantas, elevações, cortes e detalhes."
 number: "MDS-26-02"
 order: 2
 type: residential

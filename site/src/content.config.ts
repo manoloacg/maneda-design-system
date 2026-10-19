@@ -9,6 +9,7 @@ const projects = defineCollection({
   schema: ({ image }) =>
     z.object({
       title: z.string(),
+      metaDescription: z.string().optional(), // 120 to 160 characters, for search results. Without it, a generic line is built from the title.
       number: z.string(), // sheet-style number, for example MDS-26-01
       order: z.number(),
       published: z.boolean().default(true), // false hides the project everywhere without deleting the file
@@ -59,6 +60,7 @@ const journal = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/journal' }),
   schema: z.object({
     title: z.string(),
+    metaTitle: z.string().optional(), // for the browser tab and search results, when the title is too long. " | MDS" is added.
     description: z.string(),
     date: z.string().optional(), // YYYY-MM-DD, required before a post is published
     updated: z.string().optional(), // YYYY-MM-DD, set when a published post changes in substance

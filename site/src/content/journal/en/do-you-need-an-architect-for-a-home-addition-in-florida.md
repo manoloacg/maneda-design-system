@@ -1,5 +1,6 @@
 ---
 title: "Do you need an architect for a home addition in Florida?"
+metaTitle: "Do You Need an Architect for an Addition in Florida?"
 description: "What Florida's residential exemption in section 481.229 means for a home addition, what it does not cover, and what to ask your building department."
 draft: true
 faq:

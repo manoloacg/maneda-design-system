@@ -20,7 +20,7 @@ const url = `${routeFor(lang, 'journal')}${Astro.params.slug}/`;
 ---
 
 <BaseLayout
-  title={withSiteName(entry.data.title)}
+  title={withSiteName(entry.data.metaTitle ?? entry.data.title)}
   description={entry.data.description}
   noindex={unfinished}
   schema={unfinished ? [] : [articleSchema(lang, { ...entry.data, updated }, url), ...(entry.data.faq?.length ? [faqSchema(entry.data.faq)] : [])]}

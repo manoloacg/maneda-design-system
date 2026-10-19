@@ -82,7 +82,8 @@ export const formatUsd = (lang: Lang, amount: number) =>
   lang === 'pt' ? `US$ ${amount.toLocaleString('pt-BR')}` : `$${amount.toLocaleString('en-US')}`;
 
 /** "Title | Maneda Design Studios", shortened to "| MDS" when the full form is too long for a search result. */
+/** Page title with the studio name. Search results cut titles near 60 characters, so it falls back to " | MDS". */
 export const withSiteName = (title: string) => {
   const full = `${title} | Maneda Design Studios`;
-  return full.length <= 65 ? full : `${title} | MDS`;
+  return full.length < 60 ? full : `${title} | MDS`;
 };

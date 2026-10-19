@@ -1,5 +1,6 @@
 ---
 title: "Arquiteto ou designer residencial: do que a sua casa precisa?"
+metaTitle: "Arquiteto ou Designer Residencial: Quem Contratar?"
 description: "Guia direto sobre a diferença entre arquiteto e designer residencial, quem sela os desenhos e o que perguntar antes de contratar."
 date: "2026-10-06"
 draft: false
