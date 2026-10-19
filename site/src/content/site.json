@@ -14,7 +14,7 @@
   ],
   "social": {
     "_help": "Profile links for the footer and for Google's structured data (sameAs). Replace each [ADD ...] with the full https address. Anything still in [brackets] is left out of the site automatically.",
-    "instagram": "[ADD Instagram profile URL, for example https://www.instagram.com/maneda.ph/]",
+    "instagram": "https://www.instagram.com/maneda.studios/",
     "linkedin": "[ADD LinkedIn profile URL]",
     "upwork": "[ADD Upwork profile URL]"
   },
