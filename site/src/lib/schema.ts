@@ -3,7 +3,7 @@
 import site from '../content/site.json';
 import services from '../content/services.json';
 import pricing from '../content/pricing.json';
-import { getPage, isPlaceholder, pick, routeFor, t, type Lang } from '../i18n/utils';
+import { getPage, isPlaceholder, pick, routeFor, t, type Lang, detailPath } from '../i18n/utils';
 
 export const abs = (path: string) => new URL(path, site.url).href;
 export const stripPlaceholders = (text: string) => text.replace(/\s*\[PLACEHOLDER[^\]]*\]/g, '').trim();
@@ -76,7 +76,7 @@ export function servicesSchema(lang: Lang) {
       '@type': 'Service',
       name: pick(lang, s.title),
       description: shorten(items[s.id].what),
-      url: `${abs(routeFor(lang, 'services'))}${s.id}/`,
+      url: abs(detailPath(lang, 'services', s.id)),
       provider: { '@id': studioId() },
       areaServed: 'United States',
       ...(offers ? { offers } : {}),

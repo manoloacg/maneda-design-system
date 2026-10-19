@@ -5,13 +5,13 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import CaseStudy from '../../../components/CaseStudy.astro';
 import { caseStudySchema } from '../../../lib/schema';
 import { hasPlaceholder } from '../../../lib/journal';
-import { fill, getLang, getPage, routeFor, withSiteName } from '../../../i18n/utils';
+import { fill, getLang, getPage, localSlug, routeFor, withSiteName } from '../../../i18n/utils';
 
 export async function getStaticPaths() {
   const all = await getCollection('projects');
   return all
     .filter((p) => p.id.startsWith('pt/') && p.data.published)
-    .map((entry) => ({ params: { slug: entry.id.split('/')[1] }, props: { entry } }));
+    .map((entry) => ({ params: { slug: localSlug('pt', 'work', entry.id.split('/')[1]) }, props: { entry } }));
 }
 const { entry } = Astro.props;
 const lang = getLang(Astro.url.pathname);

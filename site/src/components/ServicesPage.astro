@@ -10,7 +10,7 @@ import hero from '../assets/hero-home.jpg';
 import rear from '../assets/ohio-rear.webp';
 import services from '../content/services.json';
 import pricing from '../content/pricing.json';
-import { formatUsd, getLang, getPage, pick, routeFor, t } from '../i18n/utils';
+import { formatUsd, getLang, getPage, pick, routeFor, t, detailPath } from '../i18n/utils';
 
 const lang = getLang(Astro.url.pathname);
 const full = getPage(lang);
@@ -229,7 +229,7 @@ const priceFig = 'font-[family-name:var(--font-display)] text-[1.6rem] leading-n
 
             <p class="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
               <Button href={quoteHref(s.id)}>{s.id === 'consultations' ? L.bookConsultation : L.requestQuote}</Button>
-              <a href={`${routeFor(lang, 'services')}${s.id}/`} class="sheet-label text-[var(--color-text-muted)]">{L.readMore} &rarr;</a>
+              <a href={detailPath(lang, 'services', s.id)} class="sheet-label text-[var(--color-text-muted)]">{L.readMore} &rarr;</a>
             </p>
             {isCd && <GuideLink class="mt-6" />}
           </div>

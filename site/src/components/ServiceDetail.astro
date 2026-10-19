@@ -15,7 +15,7 @@ import type { ImageMetadata } from 'astro';
 import hero from '../assets/hero-home.jpg';
 import services from '../content/services.json';
 import pricing from '../content/pricing.json';
-import { formatUsd, getLang, getPage, pick, routeFor, t } from '../i18n/utils';
+import { formatUsd, getLang, getPage, pick, routeFor, t, detailPath } from '../i18n/utils';
 
 interface Props { id: string }
 const { id } = Astro.props;
@@ -218,7 +218,7 @@ const priceFig = 'font-[family-name:var(--font-display)] text-[1.6rem] leading-n
         <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
           {relatedProjects.map((pr) => (
             <ProjectCard
-              href={`${routeFor(lang, 'work')}${pr.slug}/`}
+              href={detailPath(lang, 'work', pr.slug)}
               number={pr.data.number}
               title={pr.data.title}
               type={workF[pr.data.type]}
@@ -236,7 +236,7 @@ const priceFig = 'font-[family-name:var(--font-display)] text-[1.6rem] leading-n
           <ul class="border-t border-[var(--color-rule-strong)]">
             {relatedPosts.map((post) => (
               <li class="border-b border-[var(--color-rule)]">
-                <a href={`${routeFor(lang, 'journal')}${post.slug}/`} class="flex min-h-[var(--tap)] items-center justify-between gap-6 py-4 text-lg no-underline hover:underline decoration-gold underline-offset-[0.3em]">
+                <a href={detailPath(lang, 'journal', post.slug)} class="flex min-h-[var(--tap)] items-center justify-between gap-6 py-4 text-lg no-underline hover:underline decoration-gold underline-offset-[0.3em]">
                   <span>{post.data.title}</span>
                   <span aria-hidden="true">&rarr;</span>
                 </a>
@@ -254,7 +254,7 @@ const priceFig = 'font-[family-name:var(--font-display)] text-[1.6rem] leading-n
     {
       others.map((o) => (
         <li class="bg-[var(--color-bg)]">
-          <a href={`${servicesHref}${o.id}/`} class="flex h-full flex-col gap-3 p-6 no-underline transition-colors hover:bg-[var(--color-bg-alt)]">
+          <a href={detailPath(lang, 'services', o.id)} class="flex h-full flex-col gap-3 p-6 no-underline transition-colors hover:bg-[var(--color-bg-alt)]">
             <ServiceArt kind={o.id as 'residential-design'} variant="icon" class="h-10 w-10 text-obsidian" />
             <span class="font-[family-name:var(--font-display)] text-[1.4rem] leading-tight">{pick(lang, o.title)}</span>
             <span class="text-sm text-[var(--color-text-muted)]">{pick(lang, o.summary)}</span>

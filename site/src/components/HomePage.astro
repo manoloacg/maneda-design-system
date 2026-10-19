@@ -13,7 +13,7 @@ import pricing from '../content/pricing.json';
 import site from '../content/site.json';
 import voices from '../content/testimonials.json';
 import { getProjects } from '../lib/projects';
-import { formatUsd, getLang, getPage, pick, routeFor, t } from '../i18n/utils';
+import { formatUsd, getLang, getPage, pick, routeFor, t, detailPath } from '../i18n/utils';
 
 const lang = getLang(Astro.url.pathname);
 const p = getPage(lang).home;
@@ -76,7 +76,7 @@ const audienceSlots = ['home-audience-owners', 'home-audience-pt', 'home-audienc
   <div class="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
     <Button href={`${contact}?service=consultations`}>{p.start.button}</Button>
     {site.booking?.url && <Button href={site.booking.url} variant="secondary">{p.start.bookCall}</Button>}
-    <Button href={`${routeFor(lang, 'services')}consultations/`} variant="text">{p.start.more}</Button>
+    <Button href={detailPath(lang, 'services', 'consultations')} variant="text">{p.start.more}</Button>
   </div>
 </Section>
 
@@ -112,7 +112,7 @@ const audienceSlots = ['home-audience-owners', 'home-audience-pt', 'home-audienc
           </h3>
           <p class="col-span-12 text-[var(--color-text-muted)] md:col-span-5">{pick(lang, s.summary)}</p>
           <p class="col-span-12 md:col-span-2 md:text-right">
-            <Button href={`${routeFor(lang, 'services')}${s.id}/`} variant="text">{p.services.learnMore}<span class="sr-only">&nbsp;{p.services.learnMoreAbout} {pick(lang, s.title)}</span></Button>
+            <Button href={detailPath(lang, 'services', s.id)} variant="text">{p.services.learnMore}<span class="sr-only">&nbsp;{p.services.learnMoreAbout} {pick(lang, s.title)}</span></Button>
           </p>
         </li>
       ))
@@ -125,7 +125,7 @@ const audienceSlots = ['home-audience-owners', 'home-audience-pt', 'home-audienc
     {
       projects.map((pr) => (
         <ProjectCard
-          href={`${routeFor(lang, 'work')}${pr.slug}/`}
+          href={detailPath(lang, 'work', pr.slug)}
           number={pr.data.number}
           title={pr.data.title}
           type={labels[pr.data.type]}

@@ -13,7 +13,7 @@ import LangBanner from '../components/LangBanner.astro';
 import MobileCta from '../components/MobileCta.astro';
 import { existsSync } from 'node:fs';
 import site from '../content/site.json';
-import { alternatePath, getLang, routes, t, type RouteKey } from '../i18n/utils';
+import { alternatePath, getLang, routes, t, type RouteKey, englishSlug } from '../i18n/utils';
 import { breadcrumbSchema, websiteSchema } from '../lib/schema';
 
 interface Props {
@@ -29,7 +29,7 @@ const { title = t(lang, 'meta.defaultTitle'), description = t(lang, 'meta.defaul
 const sharePath = Astro.url.pathname;
 const shareKey = (() => {
   const svc = sharePath.match(/^(?:\/pt)?\/(?:services|servicos)\/([^/]+)\/$/);
-  if (svc) return `service-${svc[1]}`;
+  if (svc) return `service-${englishSlug('services', svc[1])}`;
   return (['services', 'work', 'process', 'about', 'contact'] as const).find((k) => routes[k][lang] === sharePath);
 })();
 const cardFile = shareKey ? `/images/share/${lang}-${shareKey}.png` : undefined;

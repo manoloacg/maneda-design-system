@@ -14,24 +14,24 @@ Generated from the built site. Not deployed.
 | `/journal/` | Journal \| Maneda Design Studios | 31 | 138 | Notes on designing a home. | 52 | sitemap |
 | `/privacy/` | Privacy policy \| Maneda Design Studios | 38 | 124 | Privacy policy | 155 | sitemap |
 | `/process/` | Home Design Process and Timeline \| Maneda Design Studios | 56 | 143 | How a project works. | 919 | sitemap |
-| `/pt/artigos/architect-or-residential-designer/` | Arquiteto ou Designer Residencial: Quem Contratar? \| MDS | 56 | 129 | Arquiteto ou designer residencial: do que a sua casa precisa? | 920 | sitemap |
+| `/pt/artigos/arquiteto-ou-designer-residencial/` | Arquiteto ou Designer Residencial: Quem Contratar? \| MDS | 56 | 129 | Arquiteto ou designer residencial: do que a sua casa precisa? | 920 | sitemap |
 | `/pt/artigos/` | Artigos \| Maneda Design Studios | 31 | 145 | Notas sobre como projetar uma casa. | 55 | sitemap |
 | `/pt/contato/` | Solicite um Orçamento de Projeto \| Maneda Design Studios | 56 | 155 | Solicitar orçamento. | 231 | sitemap |
 | `/pt/contato/obrigado/` | Obrigado \| Maneda Design Studios | 32 | 139 | Obrigado. | 44 | noindex |
 | `/pt/` | Projeto Residencial em Orlando \| Maneda Design Studios | 54 | 157 | Projeto residencial, com base em Orlando. | 671 | sitemap |
 | `/pt/privacidade/` | Política de privacidade \| Maneda Design Studios | 47 | 132 | Política de privacidade | 169 | sitemap |
 | `/pt/processo/` | Processo e Prazos do Projeto \| Maneda Design Studios | 52 | 137 | Como funciona um projeto. | 1020 | sitemap |
-| `/pt/servicos/consultations/` | Consultorias de Projeto \| Maneda Design Studios | 47 | 136 | Consultorias de projeto | 398 | sitemap |
-| `/pt/servicos/full-design/` | Projeto Completo de Casas \| Maneda Design Studios | 49 | 142 | Serviço completo de projeto | 785 | sitemap |
+| `/pt/servicos/analise-de-terreno/` | Relatório de Análise de Terreno \| Maneda Design Studios | 55 | 138 | Levantamento e análise de terreno | 464 | sitemap |
+| `/pt/servicos/consultorias/` | Consultorias de Projeto \| Maneda Design Studios | 47 | 136 | Consultorias de projeto | 398 | sitemap |
+| `/pt/servicos/design-de-interiores/` | Design de Interiores Completo \| Maneda Design Studios | 53 | 125 | Design de interiores | 433 | sitemap |
 | `/pt/servicos/` | Serviços de Projeto Residencial \| Maneda Design Studios | 55 | 149 | Primeiro o projeto. Depois os desenhos. | 2356 | sitemap |
-| `/pt/servicos/interior-design/` | Design de Interiores Completo \| Maneda Design Studios | 53 | 125 | Design de interiores | 433 | sitemap |
-| `/pt/servicos/residential-design/` | Projeto de Casas e Ampliações \| Maneda Design Studios | 53 | 145 | Projeto residencial | 497 | sitemap |
-| `/pt/servicos/site-analysis/` | Relatório de Análise de Terreno \| Maneda Design Studios | 55 | 138 | Levantamento e análise de terreno | 464 | sitemap |
+| `/pt/servicos/projeto-completo/` | Projeto Completo de Casas \| Maneda Design Studios | 49 | 142 | Serviço completo de projeto | 785 | sitemap |
+| `/pt/servicos/projeto-residencial/` | Projeto de Casas e Ampliações \| Maneda Design Studios | 53 | 145 | Projeto residencial | 497 | sitemap |
 | `/pt/sobre/` | Designer Residencial em Orlando \| Maneda Design Studios | 55 | 156 | Manolo Castaneda | 737 | sitemap |
+| `/pt/trabalhos/implantacao-industrial/` | Implantação industrial, Arizona \| Maneda Design Studios | 55 | 147 | Implantação industrial, Arizona | 386 | sitemap |
 | `/pt/trabalhos/` | Projetos Residenciais \| Maneda Design Studios | 45 | 135 | Trabalhos selecionados. | 100 | sitemap |
-| `/pt/trabalhos/industrial-site-plan/` | Implantação industrial, Arizona \| Maneda Design Studios | 55 | 147 | Implantação industrial, Arizona | 386 | sitemap |
-| `/pt/trabalhos/ohio-residence/` | Residência de três níveis, Ohio \| Maneda Design Studios | 55 | 148 | Residência de três níveis, Ohio | 522 | sitemap |
-| `/pt/trabalhos/wood-shop/` | Oficina de marcenaria com estúdio, Ohio \| MDS | 45 | 153 | Oficina de marcenaria com estúdio, Ohio | 566 | sitemap |
+| `/pt/trabalhos/oficina-de-marcenaria/` | Oficina de marcenaria com estúdio, Ohio \| MDS | 45 | 153 | Oficina de marcenaria com estúdio, Ohio | 566 | sitemap |
+| `/pt/trabalhos/residencia-ohio/` | Residência de três níveis, Ohio \| Maneda Design Studios | 55 | 148 | Residência de três níveis, Ohio | 522 | sitemap |
 | `/services/consultations/` | Design Consultations \| Maneda Design Studios | 44 | 134 | Design consultations | 362 | sitemap |
 | `/services/full-design/` | Full-Service Home Design \| Maneda Design Studios | 48 | 149 | Full-service design | 681 | sitemap |
 | `/services/` | Residential Design Services Orlando \| Maneda Design Studios | 59 | 146 | Design first. Drawings follow. | 2041 | sitemap |

@@ -1,0 +1,20 @@
+# Path redirects for Cloudflare Pages. Format: old new status.
+# Portuguese detail pages moved from English slugs to Portuguese ones (see src/i18n/slugs.json).
+/pt/servicos/residential-design/ /pt/servicos/projeto-residencial/ 301
+/pt/servicos/residential-design /pt/servicos/projeto-residencial/ 301
+/pt/servicos/interior-design/ /pt/servicos/design-de-interiores/ 301
+/pt/servicos/interior-design /pt/servicos/design-de-interiores/ 301
+/pt/servicos/site-analysis/ /pt/servicos/analise-de-terreno/ 301
+/pt/servicos/site-analysis /pt/servicos/analise-de-terreno/ 301
+/pt/servicos/consultations/ /pt/servicos/consultorias/ 301
+/pt/servicos/consultations /pt/servicos/consultorias/ 301
+/pt/servicos/full-design/ /pt/servicos/projeto-completo/ 301
+/pt/servicos/full-design /pt/servicos/projeto-completo/ 301
+/pt/trabalhos/industrial-site-plan/ /pt/trabalhos/implantacao-industrial/ 301
+/pt/trabalhos/industrial-site-plan /pt/trabalhos/implantacao-industrial/ 301
+/pt/trabalhos/ohio-residence/ /pt/trabalhos/residencia-ohio/ 301
+/pt/trabalhos/ohio-residence /pt/trabalhos/residencia-ohio/ 301
+/pt/trabalhos/wood-shop/ /pt/trabalhos/oficina-de-marcenaria/ 301
+/pt/trabalhos/wood-shop /pt/trabalhos/oficina-de-marcenaria/ 301
+/pt/artigos/architect-or-residential-designer/ /pt/artigos/arquiteto-ou-designer-residencial/ 301
+/pt/artigos/architect-or-residential-designer /pt/artigos/arquiteto-ou-designer-residencial/ 301

@@ -5,17 +5,17 @@ import JournalPost from '../../../components/JournalPost.astro';
 import lastmod from '../../../content/lastmod.json';
 import { articleSchema, faqSchema } from '../../../lib/schema';
 import { hasPlaceholder } from '../../../lib/journal';
-import { getLang, routeFor, withSiteName } from '../../../i18n/utils';
+import { getLang, localSlug, routeFor, withSiteName } from '../../../i18n/utils';
 
 export async function getStaticPaths() {
   const all = await getCollection('journal');
-  return all.filter((p) => p.id.startsWith('pt/') && (!p.data.draft || import.meta.env.DEV)).map((entry) => ({ params: { slug: entry.id.split('/')[1] }, props: { entry } }));
+  return all.filter((p) => p.id.startsWith('pt/') && (!p.data.draft || import.meta.env.DEV)).map((entry) => ({ params: { slug: localSlug('pt', 'journal', entry.id.split('/')[1]) }, props: { entry } }));
 }
 const { entry } = Astro.props;
 const lang = getLang(Astro.url.pathname);
 const unfinished = entry.data.draft || hasPlaceholder(entry.data) || hasPlaceholder(entry.body);
 // dateModified: the frontmatter "updated" date if set, else the last git change of the file.
-const updated = entry.data.updated ?? (lastmod as Record<string, string>)[`file:src/content/journal/pt/${Astro.params.slug}.md`];
+const updated = entry.data.updated ?? (lastmod as Record<string, string>)[`file:src/content/journal/pt/${entry.id.split('/')[1]}.md`];
 const url = `${routeFor(lang, 'journal')}${Astro.params.slug}/`;
 ---
 

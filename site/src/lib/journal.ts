@@ -1,6 +1,6 @@
 import { getCollection } from 'astro:content';
 import type { Lang } from '../i18n/utils';
-import { routeFor } from '../i18n/utils';
+import { routeFor, detailPath } from '../i18n/utils';
 import site from '../content/site.json';
 
 /** True while text still holds [PLACEHOLDER ...] or [VERIFY ...] notes. Such pages stay noindex and out of the sitemap. */
@@ -25,5 +25,5 @@ export async function getCities(lang: Lang) {
 export async function getGuide(lang: Lang) {
   if (!site.features.journal) return null;
   const post = (await getPosts(lang)).find((p) => p.slug === 'architect-or-residential-designer');
-  return post ? { title: post.data.title, href: `${routeFor(lang, 'journal')}${post.slug}/` } : null;
+  return post ? { title: post.data.title, href: detailPath(lang, 'journal', post.slug) } : null;
 }

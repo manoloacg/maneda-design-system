@@ -1,0 +1,21 @@
+{
+  "_help": "Portuguese addresses for detail pages. Left: the English slug (the file name or service id). Right: the Portuguese slug used under /pt/. A page without an entry keeps its English slug. When you change a Portuguese slug that is already live, add a 301 from the old address in public/_redirects.",
+  "services": {
+    "residential-design": "projeto-residencial",
+    "interior-design": "design-de-interiores",
+    "site-analysis": "analise-de-terreno",
+    "consultations": "consultorias",
+    "full-design": "projeto-completo"
+  },
+  "work": {
+    "industrial-site-plan": "implantacao-industrial",
+    "ohio-residence": "residencia-ohio",
+    "wood-shop": "oficina-de-marcenaria"
+  },
+  "journal": {
+    "architect-or-residential-designer": "arquiteto-ou-designer-residencial",
+    "what-a-site-analysis-tells-you": "o-que-a-analise-de-terreno-revela",
+    "design-drawings-and-construction-documents": "desenhos-de-projeto-e-projeto-executivo",
+    "how-a-design-project-runs": "como-funciona-um-projeto"
+  }
+}
