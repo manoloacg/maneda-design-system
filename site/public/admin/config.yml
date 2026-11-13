@@ -1685,6 +1685,12 @@
                       "required": false
                     },
                     {
+                      "label": "Lead",
+                      "name": "lead",
+                      "widget": "text",
+                      "required": false
+                    },
+                    {
                       "label": "Emphasis",
                       "name": "emphasis",
                       "widget": "boolean",
@@ -1699,7 +1705,7 @@
                     {
                       "label": "Provide",
                       "name": "provide",
-                      "widget": "string",
+                      "widget": "text",
                       "required": false
                     },
                     {
@@ -1795,6 +1801,27 @@
                   "name": "durationNote",
                   "widget": "text",
                   "required": false
+                },
+                {
+                  "label": "Quote",
+                  "name": "quote",
+                  "widget": "object",
+                  "required": false,
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "label": "Text",
+                      "name": "text",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Sub",
+                      "name": "sub",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
                 }
               ]
             },
@@ -3159,7 +3186,7 @@
                     {
                       "label": "Alt",
                       "name": "alt",
-                      "widget": "string",
+                      "widget": "text",
                       "required": false
                     }
                   ]
@@ -3167,27 +3194,6 @@
                 {
                   "label": "Process 5",
                   "name": "process-5",
-                  "widget": "object",
-                  "required": false,
-                  "collapsed": true,
-                  "fields": [
-                    {
-                      "label": "Note",
-                      "name": "note",
-                      "widget": "string",
-                      "required": false
-                    },
-                    {
-                      "label": "Alt",
-                      "name": "alt",
-                      "widget": "text",
-                      "required": false
-                    }
-                  ]
-                },
-                {
-                  "label": "Process 6",
-                  "name": "process-6",
                   "widget": "object",
                   "required": false,
                   "collapsed": true,
@@ -5036,6 +5042,12 @@
                       "required": false
                     },
                     {
+                      "label": "Lead",
+                      "name": "lead",
+                      "widget": "text",
+                      "required": false
+                    },
+                    {
                       "label": "Emphasis",
                       "name": "emphasis",
                       "widget": "boolean",
@@ -5146,6 +5158,27 @@
                   "name": "durationNote",
                   "widget": "text",
                   "required": false
+                },
+                {
+                  "label": "Quote",
+                  "name": "quote",
+                  "widget": "object",
+                  "required": false,
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "label": "Text",
+                      "name": "text",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Sub",
+                      "name": "sub",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
                 }
               ]
             },
@@ -6510,7 +6543,7 @@
                     {
                       "label": "Alt",
                       "name": "alt",
-                      "widget": "string",
+                      "widget": "text",
                       "required": false
                     }
                   ]
@@ -6518,27 +6551,6 @@
                 {
                   "label": "Process 5",
                   "name": "process-5",
-                  "widget": "object",
-                  "required": false,
-                  "collapsed": true,
-                  "fields": [
-                    {
-                      "label": "Note",
-                      "name": "note",
-                      "widget": "string",
-                      "required": false
-                    },
-                    {
-                      "label": "Alt",
-                      "name": "alt",
-                      "widget": "text",
-                      "required": false
-                    }
-                  ]
-                },
-                {
-                  "label": "Process 6",
-                  "name": "process-6",
                   "widget": "object",
                   "required": false,
                   "collapsed": true,
@@ -7232,7 +7244,7 @@
               "public_folder": "/src/assets/slots"
             },
             {
-              "label": "Image: a page from a sample proposal, with names removed",
+              "label": "Image: a site and zoning diagram",
               "name": "process-2",
               "widget": "image",
               "required": false,
@@ -7241,7 +7253,7 @@
               "public_folder": "/src/assets/slots"
             },
             {
-              "label": "Image: a site and zoning diagram",
+              "label": "Image: concept sketches and massing options",
               "name": "process-3",
               "widget": "image",
               "required": false,
@@ -7250,7 +7262,7 @@
               "public_folder": "/src/assets/slots"
             },
             {
-              "label": "Image: concept sketches and massing options",
+              "label": "Image: a design development plan or material board",
               "name": "process-4",
               "widget": "image",
               "required": false,
@@ -7259,20 +7271,11 @@
               "public_folder": "/src/assets/slots"
             },
             {
-              "label": "Image: a design development plan or material board",
+              "label": "Image: drawing sheets from a construction document set, with names removed",
               "name": "process-5",
               "widget": "image",
               "required": false,
               "hint": "Slot: process-5",
-              "media_folder": "/site/src/assets/slots",
-              "public_folder": "/src/assets/slots"
-            },
-            {
-              "label": "Image: drawing sheets from a construction document set, with names removed",
-              "name": "process-6",
-              "widget": "image",
-              "required": false,
-              "hint": "Slot: process-6",
               "media_folder": "/site/src/assets/slots",
               "public_folder": "/src/assets/slots"
             },

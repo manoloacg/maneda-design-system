@@ -429,40 +429,34 @@
   },
   "process": {
     "meta": {
-      "title": "Home Design Process and Timeline | Maneda Design Studios",
-      "description": "How a residential design project works with MDS, from inquiry to construction documents, with what happens, what you provide, and what you get."
+      "title": "Our Approach to Residential Design | Maneda Design Studios",
+      "description": "How Maneda Design Studios works: understand, explore, develop, refine, and document. A residential design process built around how you live."
     },
     "hero": {
-      "label": "Process",
-      "title": "How a project works.",
-      "intro": "Six phases, in plain language. Most of the value sits in phases four and five, where the design is decided."
+      "label": "Our approach",
+      "title": "We take the time to understand before we begin to design.",
+      "intro": "Five steps, in plain language, from the first conversation to the drawings. We start with the people who will live in the home, not with the rooms."
     },
     "labels": {
       "happens": "What happens",
       "provide": "What you provide",
       "get": "What you get",
       "duration": "Typical duration",
-      "phase": "Phase"
+      "phase": "Step"
     },
     "phases": [
       {
-        "title": "Inquiry and scope",
+        "title": "Understand",
+        "lead": "We listen first: your story, your routines, your priorities, your values, and what you expect from the home.",
         "emphasis": false,
-        "happens": "You send the inquiry form. We review it and reply, and we talk through the project, the lot, and the budget range.",
-        "provide": "Project description, site location, target start, and files or photos if you have them.",
-        "get": "A clear read on fit, and the next step.",
-        "duration": "Reply within 1 business day. Scoping call within 3 business days."
+        "happens": "You send the inquiry and we talk through the project, the lot, and the budget range. If it is a fit, we send a written proposal with scope, deliverables, and fee, and you sign the agreement.",
+        "provide": "A description of the project, the site location, your target start, and any files or photos you have.",
+        "get": "A clear read on fit, and a written scope, deliverables list, and fee.",
+        "duration": "The schedule starts when the agreement is signed."
       },
       {
-        "title": "Proposal and agreement",
-        "emphasis": false,
-        "happens": "We send a written proposal with scope, deliverables, and fee. You review it and sign the agreement.",
-        "provide": "Questions, decisions, and the signed agreement.",
-        "get": "A written scope, a deliverables list, and a fee.",
-        "duration": "Written proposal within 5 business days of the call. The schedule starts when the agreement is signed."
-      },
-      {
-        "title": "Site and code review",
+        "title": "Explore",
+        "lead": "We study how the spaces relate, public and private, and how the lot, the sun, the light, the views, and privacy shape the design.",
         "emphasis": false,
         "happens": "We review the lot, zoning, setbacks, flood zone, and the jurisdiction's rules. Constraints are found before they shape the design. We also recommend added pre-work when it is needed, such as a survey or soils tests.",
         "provide": "Survey, plat, or deed if you have them. Site access if a visit is needed.",
@@ -470,7 +464,8 @@
         "duration": "1 to 3 weeks"
       },
       {
-        "title": "Concept and schematic design",
+        "title": "Develop",
+        "lead": "We create early studies and a concept proposal to present, discuss, and take your feedback.",
         "emphasis": true,
         "happens": "We develop, usually, three options with sketches, plans, elevations, and massing studies. Each option shows how the house sits, how light enters, and how the rooms connect. You choose one.",
         "provide": "Feedback on the options. Your priorities for rooms, light, and budget.",
@@ -478,7 +473,8 @@
         "duration": "4 to 6 weeks"
       },
       {
-        "title": "Design development and revisions",
+        "title": "Refine",
+        "lead": "We refine proportions, relationships, and decisions. We explain limits and show alternatives when they are needed.",
         "emphasis": true,
         "happens": "The chosen design is resolved: room sizes, openings, materials, and finishes. Revisions are made in the rounds defined in the agreement.",
         "provide": "Decisions on materials and finishes, and timely feedback.",
@@ -486,7 +482,8 @@
         "duration": "4 to 6 weeks"
       },
       {
-        "title": "Construction documents and permit support",
+        "title": "Document",
+        "lead": "We prepare drawings and documentation for the scope you contract and the requirements that apply.",
         "emphasis": false,
         "happens": "For design clients, the approved design is developed into construction documents and coordinated for permit submittal. The set goes to your builder as the basis for pricing and construction. Structural drawings are prepared by a structural engineer, hired by the owner under a separate contract.",
         "provide": "Your builder and engineers, if you have them. Responses to permit review comments.",
@@ -546,7 +543,11 @@
         }
       ]
     },
-    "durationNote": "Durations assume a single-family residence of about 2,000 to 3,500 SF and your approvals within 5 business days. Predesign through construction documents takes 16 to 24 weeks. Commercial and retail projects add 30 to 50 percent for engineer and tenant coordination."
+    "durationNote": "Durations assume a single-family residence of about 2,000 to 3,500 SF and your approvals within 5 business days. Predesign through construction documents takes 16 to 24 weeks.",
+    "quote": {
+      "text": "The right design is not always the first idea.",
+      "sub": "We don't start with rooms. We start with the people who will live in them."
+    }
   },
   "about": {
     "meta": {
@@ -978,22 +979,18 @@
       "alt": "Hand sketching a floor plan with a pen on paper"
     },
     "process-2": {
-      "note": "Image: a page from a sample proposal, with names removed",
-      "alt": "A page from a sample proposal"
-    },
-    "process-3": {
       "note": "Image: a site and zoning diagram",
       "alt": "A site and zoning diagram"
     },
-    "process-4": {
+    "process-3": {
       "note": "Image: concept sketches and massing options",
       "alt": "Concept sketches and massing options"
     },
-    "process-5": {
+    "process-4": {
       "note": "Image: a design development plan or material board",
       "alt": "Material samples on an oak table: wood, limestone, plaster, bronze, green tile, and linen, with a pencil"
     },
-    "process-6": {
+    "process-5": {
       "note": "Image: drawing sheets from a construction document set, with names removed",
       "alt": "Drawing sheets from a construction document set"
     },

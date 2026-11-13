@@ -429,40 +429,34 @@
   },
   "process": {
     "meta": {
-      "title": "Processo e Prazos do Projeto | Maneda Design Studios",
-      "description": "Como funciona um projeto residencial com o Maneda, da consulta ao projeto executivo: o que acontece, o que você fornece e o que você recebe."
+      "title": "Nossa Abordagem de Projeto | Maneda Design Studios",
+      "description": "Como o Maneda trabalha: entender, explorar, desenvolver, refinar e documentar. Um processo de projeto residencial pensado em torno de como você vive."
     },
     "hero": {
-      "label": "Processo",
-      "title": "Como funciona um projeto.",
-      "intro": "Seis fases, em linguagem clara. A maior parte do valor está nas fases quatro e cinco, onde o projeto é decidido."
+      "label": "Nossa abordagem",
+      "title": "Dedicamos tempo para entender antes de começar a projetar.",
+      "intro": "Cinco etapas, em linguagem clara, da primeira conversa aos desenhos. Começamos pelas pessoas que vão viver na casa, não pelos ambientes."
     },
     "labels": {
       "happens": "O que acontece",
       "provide": "O que você fornece",
       "get": "O que você recebe",
       "duration": "Duração típica",
-      "phase": "Fase"
+      "phase": "Etapa"
     },
     "phases": [
       {
-        "title": "Consulta e escopo",
+        "title": "Entender",
+        "lead": "Primeiro, ouvimos: a sua história, a sua rotina, as suas prioridades, os seus valores e o que você espera da casa.",
         "emphasis": false,
-        "happens": "Você envia o formulário. Analisamos, respondemos e conversamos sobre o projeto, o lote e a faixa de orçamento.",
-        "provide": "Descrição do projeto, localização do terreno, prazo desejado e arquivos ou fotos, se tiver.",
-        "get": "Uma leitura clara de adequação e o próximo passo.",
-        "duration": "Resposta em até 1 dia útil. Conversa de escopo em até 3 dias úteis."
+        "happens": "Você envia o formulário e conversamos sobre o projeto, o terreno e a faixa de orçamento. Se houver encaixe, enviamos uma proposta escrita com escopo, entregas e honorários, e você assina o contrato.",
+        "provide": "Uma descrição do projeto, a localização do terreno, o prazo desejado para começar e os arquivos ou fotos que você tiver.",
+        "get": "Uma leitura clara do encaixe e um escopo, uma lista de entregas e honorários por escrito.",
+        "duration": "O cronograma começa quando o contrato é assinado."
       },
       {
-        "title": "Proposta e contrato",
-        "emphasis": false,
-        "happens": "Enviamos uma proposta escrita com escopo, entregas e honorários. Você analisa e assina o contrato.",
-        "provide": "Dúvidas, decisões e o contrato assinado.",
-        "get": "Escopo escrito, lista de entregas e honorários.",
-        "duration": "Proposta por escrito em até 5 dias úteis após a conversa. O cronograma começa quando o contrato é assinado."
-      },
-      {
-        "title": "Análise do terreno e do código",
+        "title": "Explorar",
+        "lead": "Estudamos como os ambientes se relacionam, o público e o privado, e como o terreno, o sol, a luz, as vistas e a privacidade moldam o projeto.",
         "emphasis": false,
         "happens": "Analisamos o lote, o zoneamento, os recuos, a zona de inundação e as regras da prefeitura. As restrições aparecem antes de moldar o projeto. Também recomendamos trabalhos prévios adicionais quando forem necessários, como levantamento topográfico ou sondagem do solo.",
         "provide": "Levantamento, planta cadastral ou escritura, se tiver. Acesso ao terreno, se for preciso visitar.",
@@ -470,7 +464,8 @@
         "duration": "1 a 3 semanas"
       },
       {
-        "title": "Estudo preliminar e anteprojeto",
+        "title": "Desenvolver",
+        "lead": "Criamos estudos iniciais e uma proposta de conceito para apresentar, discutir e receber o seu retorno.",
         "emphasis": true,
         "happens": "Desenvolvemos, em geral, três opções, com croquis, plantas, elevações e estudos de volumetria. Cada opção mostra como a casa se posiciona, como a luz entra e como os ambientes se conectam. Você escolhe uma.",
         "provide": "Retorno sobre as opções. Suas prioridades de ambientes, luz e orçamento.",
@@ -478,7 +473,8 @@
         "duration": "4 a 6 semanas"
       },
       {
-        "title": "Desenvolvimento do projeto e revisões",
+        "title": "Refinar",
+        "lead": "Aprimoramos proporções, relações e decisões. Explicamos limitações e apresentamos alternativas quando necessário.",
         "emphasis": true,
         "happens": "O projeto escolhido é resolvido: dimensões dos ambientes, aberturas, materiais e acabamentos. As revisões acontecem nas rodadas definidas no contrato.",
         "provide": "Decisões sobre materiais e acabamentos e retorno dentro do prazo.",
@@ -486,7 +482,8 @@
         "duration": "4 a 6 semanas"
       },
       {
-        "title": "Projeto executivo e apoio na aprovação",
+        "title": "Documentar",
+        "lead": "Preparamos desenhos e documentação conforme o escopo contratado e os requisitos aplicáveis.",
         "emphasis": false,
         "happens": "Para clientes de projeto, o projeto aprovado é desenvolvido em projeto executivo (construction documents) e coordenado para a submissão à prefeitura (permit). O conjunto segue para o seu construtor como base de orçamento e obra. Os desenhos estruturais são feitos por um engenheiro estrutural, contratado pelo proprietário em contrato separado.",
         "provide": "Seu construtor e seus engenheiros, se tiver. Respostas aos comentários da análise de aprovação (plan review).",
@@ -546,7 +543,11 @@
         }
       ]
     },
-    "durationNote": "Os prazos supõem uma residência unifamiliar de cerca de 2.000 a 3.500 SF e aprovações suas em até 5 dias úteis. Do pré-projeto ao projeto executivo leva de 16 a 24 semanas. Projetos comerciais e de varejo somam de 30% a 50% por causa da coordenação com engenheiros e locatários."
+    "durationNote": "Os prazos supõem uma residência unifamiliar de cerca de 2.000 a 3.500 SF e aprovações suas em até 5 dias úteis. Do pré-projeto ao projeto executivo leva de 16 a 24 semanas.",
+    "quote": {
+      "text": "O projeto certo nem sempre é a primeira ideia.",
+      "sub": "Não começamos pelos ambientes. Começamos pelas pessoas que vão viver neles."
+    }
   },
   "about": {
     "meta": {
@@ -978,22 +979,18 @@
       "alt": "Mão desenhando uma planta com caneta sobre papel"
     },
     "process-2": {
-      "note": "Imagem: uma página de uma proposta de exemplo, sem nomes",
-      "alt": "Uma página de uma proposta de exemplo"
-    },
-    "process-3": {
       "note": "Imagem: um diagrama de terreno e zoneamento",
       "alt": "Um diagrama de terreno e zoneamento"
     },
-    "process-4": {
+    "process-3": {
       "note": "Imagem: croquis de estudo preliminar e opções de volumetria",
       "alt": "Croquis de estudo preliminar e opções de volumetria"
     },
-    "process-5": {
+    "process-4": {
       "note": "Imagem: uma planta de desenvolvimento do projeto ou um painel de materiais",
       "alt": "Amostras de materiais sobre uma mesa de carvalho: madeira, calcário, reboco, bronze, azulejo verde e linho, com um lápis"
     },
-    "process-6": {
+    "process-5": {
       "note": "Imagem: pranchas de um conjunto de projeto executivo, sem nomes",
       "alt": "Pranchas de um conjunto de projeto executivo"
     },

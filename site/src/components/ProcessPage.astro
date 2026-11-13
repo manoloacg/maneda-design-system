@@ -26,6 +26,7 @@ const ph = markPlaceholders;
           <div class="col-span-12 md:col-span-4">
             <SheetLabel text={`${L.phase} ${i + 1}`} class="mb-3" />
             <h2 class={ph_.emphasis ? '' : 'text-[1.6rem]'}>{ph_.title}</h2>
+            <p class="mt-4 text-[1.05rem]">{ph_.lead}</p>
             <p class="sheet-label mt-4 text-[var(--color-text-muted)]">{L.duration}</p>
             <p class="text-sm" set:html={ph(ph_.duration)} />
             {slotVisible(`process-${i + 1}`) && <div class="mt-6"><Slot id={`process-${i + 1}`} ratio="4 / 3" sizes="(min-width: 768px) 30vw, 100vw" /></div>}
@@ -48,6 +49,13 @@ const ph = markPlaceholders;
       ))
     }
   </ol>
+</section>
+
+<section class="tone-alt" style="padding-block:var(--section-space)">
+  <div class="container-site reveal max-w-[56rem]">
+    <p class="font-[family-name:var(--font-display)] text-[clamp(1.8rem,1.2rem+2vw,2.8rem)] leading-tight">{page.quote.text}</p>
+    <p class="mt-5 text-[var(--color-text-muted)]">{page.quote.sub}</p>
+  </div>
 </section>
 
 {(slotVisible('process-sketch-early') || slotVisible('process-sketch-final')) && (
