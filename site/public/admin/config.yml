@@ -1483,6 +1483,24 @@
                       "name": "close",
                       "widget": "string",
                       "required": false
+                    },
+                    {
+                      "label": "Interiors",
+                      "name": "interiors",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Interiors Intro",
+                      "name": "interiorsIntro",
+                      "widget": "text",
+                      "required": false
+                    },
+                    {
+                      "label": "Concept Label",
+                      "name": "conceptLabel",
+                      "widget": "string",
+                      "required": false
                     }
                   ]
                 },
@@ -4838,6 +4856,24 @@
                     {
                       "label": "Close",
                       "name": "close",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Interiors",
+                      "name": "interiors",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Interiors Intro",
+                      "name": "interiorsIntro",
+                      "widget": "text",
+                      "required": false
+                    },
+                    {
+                      "label": "Concept Label",
+                      "name": "conceptLabel",
                       "widget": "string",
                       "required": false
                     }

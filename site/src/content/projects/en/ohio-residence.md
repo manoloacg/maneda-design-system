@@ -1,58 +1,63 @@
 ---
-title: "Three-level residence, Ohio"
-metaDescription: "A three-level custom residence in Ohio, from site and program to a permit set: the brief, the plan decisions, selected sheets, and where it stands now."
-number: "MDS-26-01"
+title: The View
+metaDescription: 'The View: a three-level custom residence in Ohio, designed around how the family lives and hosts. Concept, plans, and drawings, with conceptual interiors.'
+number: MDS-26-01
 order: 1
 type: residential
 published: true
-location: "Ohio"
-size: "15,990 SF conditioned, 18,997 SF total construction"
-scope: "Layout, elevations, and interior design"
-role: "Designer"
-year: "2026"
-result: "Plan, elevations, and interiors resolved with the owner and the builder."
+location: Ohio
+size: 15,990 SF conditioned, 18,997 SF total construction
+scope: Layout, exterior design, and conceptual interior studies
+role: Designer
+year: '2026'
+result: A three-level family home designed around how the family lives and hosts.
 clientApproved: false # Written owner release on file (confirmed by Manolo 2026-10-05). Kept false: no real names or address are used.
 heroImage: ../../../assets/hero-home.jpg
 cardImage: ../../../assets/hero-home.jpg
-heroAlt: "Rendering of a white three-level residence with a stone wing and three-car garage, Ohio"
-brief: "The owners wanted a modern house that reads right on a farm-type setting without turning into a farmhouse. The priorities: an open, connected plan where people can see and hear between spaces, a light exterior with gray or black stone accents, a three to four season room, and a finished walkout level with a gym, sauna, theater, and guest suite."
-context: "The site is a rural lot in Ohio, so the design follows Ohio code. The builder was ready to start soon, so layout and structure were fixed first and finishes followed in a separate phase. Structural stamping is by a licensed Ohio engineer of record, coordinated separately."
+heroAlt: Rendering of The View, a white three-level residence with a stone wing and three-car garage, Ohio
+brief: The name refers to the view. The property was once an apple orchard, and the house looks out over trees and hills. The family likes to host, so the design started with how they gather, how they relax, and where they can step away. They wanted a modern house that reads right in a rural setting without turning into a farmhouse, with an open, connected plan, a light exterior with gray or black stone accents, and a finished walkout level.
+context: The lot offers views toward trees and hills, natural light, and privacy that comes from the topography. The house is placed to take advantage of that. The site is in Ohio, so the design follows Ohio code. The drawings are shown as issued for review, not for construction. Structural drawings are by a licensed Ohio engineer, coordinated separately.
 moves:
-  - title: "Two doors, a larger sauna"
-    text: "A corner glass sauna with three access points was tested. It left room for only one usable bench. The final sauna has two access points, from the hallway and the bathroom, and a larger footprint that uses the space freed by the new layout."
-    image: ../../../assets/ohio-m-sauna.webp
-    alt: "Lower level plan detail: sauna, cold tub, shower and family room"
-  - title: "A room that works in all seasons"
-    text: "A three to four season room has to be finished and conditioned underneath, to avoid condensation on the underside of the second floor. Its 14 by 30 ft size comes from the clearance the owner wanted around a table and chairs."
-    image: ../../../assets/ohio-rear.webp
-    alt: "Rear rendering of the Ohio residence with an angled glass room, long deck and walkout lower level"
-  - title: "See and hear across the house"
-    text: "The owners wanted spaces that connect instead of divide. The theater is aligned with the main living space so both screens can be seen at once, and an interior window between the living room and the gym was raised as one way to keep that connection."
-    image: ../../../assets/ohio-m-sight.webp
-    alt: "Lower level plan: theater aligned with the family room, bar and workout room"
-  - title: "Code first on bedroom egress"
-    text: "The south bedroom egress window had to move to give code-compliant emergency access. The bathroom and closet shifted to the gym-side wall and the bedroom to the east side of the room, so the fix was resolved in the layout."
-    image: ../../../assets/ohio-m-egress.webp
-    alt: "Ground floor plan detail: primary bedroom, bathroom, closet and office"
-  - title: "Room for a car to back out"
-    text: "The garage, foyer, and coat closet block was shifted sideways so a car backing out of the garage clears the roof overhang of the covered entry."
-    image: ../../../assets/ohio-m-garage.webp
-    alt: "Ground floor plan detail: foyer, coat closet, hallway and garage"
+- title: A great room built for hosting
+  text: The great room is the center of the house. It is two stories tall and opens to the kitchen and to the three-season room, so a gathering can spread across all three without anyone losing the conversation.
+  image: ../../../assets/ohio-sheet-ground.webp
+  alt: Ground floor plan with two-story great room, kitchen, primary suite and three-season room
+- title: A room that works in all seasons
+  text: A three to four season room has to be finished and conditioned underneath, to avoid condensation on the underside of the second floor. Its 14 by 30 ft size comes from the clearance the owner wanted around a table and chairs, and it faces the view.
+  image: ../../../assets/ohio-rear.webp
+  alt: Rear rendering of The View with an angled glass room, long deck and walkout lower level
+- title: Leisure below, a loft above
+  text: 'The walkout lower level holds the leisure and more private activities: a theater, a gym, a sauna, and a guest suite. The theater lines up with the main living space so both screens can be seen at once. On the second floor, a loft sits close to the children’s suites.'
+  image: ../../../assets/ohio-m-sight.webp
+  alt: 'Lower level plan: theater aligned with the family room, bar and workout room'
+- title: Two doors, a larger sauna
+  text: A corner glass sauna with three access points was tested. It left room for only one usable bench. The final sauna has two access points, from the hallway and the bathroom, and a larger footprint that uses the space freed by the new layout.
+  image: ../../../assets/ohio-m-sauna.webp
+  alt: 'Lower level plan detail: sauna, cold tub, shower and family room'
+- title: Room for a car to back out
+  text: The garage, foyer, and coat closet block was shifted sideways so a car backing out of the garage clears the roof overhang of the covered entry.
+  image: ../../../assets/ohio-m-garage.webp
+  alt: 'Ground floor plan detail: foyer, coat closet, hallway and garage'
 sheets:
-  - image: ../../../assets/ohio-sheet-lower.webp
-    alt: "Lower level floor plan with family room, theater, safe room, sauna and half-court gym"
-    caption: "Lower level plan"
-  - image: ../../../assets/ohio-sheet-ground.webp
-    alt: "Ground floor plan with two-story great room, kitchen, primary suite and three-season room"
-    caption: "Ground floor plan"
-  - image: ../../../assets/ohio-sheet-second.webp
-    alt: "Second floor plan with kids loft, three suites and laundry"
-    caption: "Second floor plan"
-  - image: ../../../assets/ohio-sheet-elev.webp
-    alt: "Left and right elevations of the Ohio residence on a sloping site"
-    caption: "Left and right elevations"
-documents: "Rear and front elevations from the set, with keynotes that tie each exterior finish to a specification section."
+- image: ../../../assets/ohio-sheet-lower.webp
+  alt: Lower level floor plan with family room, theater, safe room, sauna and half-court gym
+  caption: Lower level plan
+- image: ../../../assets/ohio-sheet-ground.webp
+  alt: Ground floor plan with two-story great room, kitchen, primary suite and three-season room
+  caption: Ground floor plan
+- image: ../../../assets/ohio-sheet-second.webp
+  alt: Second floor plan with kids loft, three suites and laundry
+  caption: Second floor plan
+- image: ../../../assets/ohio-sheet-elev.webp
+  alt: Left and right elevations of the Ohio residence on a sloping site
+  caption: Left and right elevations
+documents: Front and rear elevations from the drawing set, with keynotes that tie each exterior finish to a specification section.
 documentsImage: ../../../assets/ohio-docs.webp
-documentsAlt: "Front and rear elevations from the permit set, with keynotes and floor levels"
-outcome: "The permit set has been submitted, and the project is in permit review."
+documentsAlt: Front and rear elevations from the drawing set, with keynotes and floor levels
+outcome: The View is a developed design. The drawing set is marked Issued for Review (Not for Construction) and follows Ohio code. It is not an approved permit set, and the house has not been built.
+heroCaption: The View, from the project design. A rendering, not a photograph. The house has not been built.
+movesTitle: How the family shaped the design
+movesIntro: A house this large still has to feel balanced and warm. The work was to keep the volumes in harmony with each other and with the views at the back, and to let the way the family lives decide each room.
+documentsTitle: Drawings, issued for review
+documentsIntro: The drawing set is marked Issued for Review (Not for Construction) and follows Ohio code. It is not an approved permit set.
 ---

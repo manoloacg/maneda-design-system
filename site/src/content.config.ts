@@ -44,6 +44,7 @@ const projects = defineCollection({
           finalAlt: z.string().optional(),
         })
         .optional(),
+      visualizations: z.array(z.object({ image: image(), alt: z.string(), caption: z.string().optional() })).optional(), // conceptual interior images, shown with an AI-assisted label
       sheets: z.array(z.object({ image: image(), alt: z.string(), caption: z.string() })).optional(), // selected drawing sheets, cropped to leave out the title block
       documentsTitle: z.string().optional(), // overrides the heading of the documents section
       documentsIntro: z.string().optional(),

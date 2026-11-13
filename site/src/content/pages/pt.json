@@ -408,7 +408,10 @@
       "sheets": "Pranchas selecionadas",
       "sheetsIntro": "Plantas e elevações do conjunto de desenhos.",
       "zoom": "Ampliar imagem",
-      "close": "Fechar"
+      "close": "Fechar",
+      "interiors": "Interiores, como estudos conceituais",
+      "interiorsIntro": "Estas imagens de interiores são visualizações conceituais do projeto, feitas com apoio de IA. Não são fotografias nem renderizações do modelo do projeto.",
+      "conceptLabel": "Visualização conceitual de interior (com apoio de IA)"
     },
     "back": "Todos os trabalhos",
     "cta": {

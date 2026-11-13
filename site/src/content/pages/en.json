@@ -408,7 +408,10 @@
       "sheets": "Selected sheets",
       "sheetsIntro": "Plans and elevations from the drawing set.",
       "zoom": "Enlarge image",
-      "close": "Close"
+      "close": "Close",
+      "interiors": "Interiors, as conceptual studies",
+      "interiorsIntro": "These interior images are AI-assisted conceptual visualizations of the design. They are not photographs, and they are not renders from the project model.",
+      "conceptLabel": "Conceptual Interior Visualization (AI-assisted)"
     },
     "back": "All work",
     "cta": {
