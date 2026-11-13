@@ -627,13 +627,13 @@
   },
   "contact": {
     "meta": {
-      "title": "Request a Residential Design Quote | Maneda Design Studios",
+      "title": "Request a Consultation | Maneda Design Studios",
       "description": "Tell us about your project, your lot and your timeline. Based in Orlando, working across the United States, in English or Portuguese."
     },
     "hero": {
       "label": "Contact",
-      "title": "Request a quote.",
-      "intro": "The form asks for what we need to give you a useful answer. Expect a reply {replyWindow}."
+      "title": "Let's start with your story.",
+      "intro": "The form asks for what we need to understand your project and to give you a useful answer. It does not take long, and it is not an application."
     },
     "side": {
       "email": "Email",
@@ -652,7 +652,7 @@
       "city": "Project city and county",
       "size": "Approximate size (SF)",
       "start": "Target start",
-      "budget": "Budget range",
+      "budget": "Estimated construction budget",
       "description": "Project description",
       "descriptionHint": "What you want to build or change, and what matters most.",
       "files": "Link to files",
@@ -672,15 +672,15 @@
       "whoOptions": [
         {
           "value": "owner",
-          "label": "Owner"
+          "label": "Homeowner / Property Owner"
         },
         {
           "value": "builder",
-          "label": "Builder or developer"
+          "label": "Builder / Developer"
         },
         {
           "value": "architect",
-          "label": "Architect"
+          "label": "Architect / Design Professional"
         },
         {
           "value": "other",
@@ -737,10 +737,6 @@
         {
           "value": "interiors",
           "label": "Interiors only"
-        },
-        {
-          "value": "commercial",
-          "label": "Commercial or retail"
         },
         {
           "value": "other",
@@ -802,37 +798,48 @@
         },
         {
           "value": "search",
-          "label": "Search"
+          "label": "Google / Online Search"
         },
         {
           "value": "instagram",
           "label": "Instagram"
         },
         {
+          "value": "facebook",
+          "label": "Facebook"
+        },
+        {
+          "value": "returning",
+          "label": "Returning Client"
+        },
+        {
           "value": "other",
           "label": "Other"
         }
       ],
-      "submit": "Send inquiry",
+      "submit": "Request a consultation",
       "sending": "Sending",
       "errorRequired": "This field is required.",
       "errorEmail": "Enter a valid email address.",
       "errorSend": "The inquiry could not be sent. Please email the studio directly.",
       "fixErrors": "Check the highlighted fields and try again.",
-      "testMode": "Test mode: the form is not connected yet. Nothing was sent."
+      "testMode": "Test mode: the form is not connected yet. Nothing was sent.",
+      "budgetHint": "What is your estimated total construction budget?",
+      "privacyNote": "By sending this form you agree to our",
+      "privacyLink": "privacy policy"
     },
     "confirmationEmail": {
       "subject": "We received your inquiry",
-      "body": "Thank you for your inquiry. We received it and will reply {replyWindow}.\n\nIf you have a survey, plans, or photos, reply to this email with a link.\n\nManeda Design Studios"
+      "body": "Thank you for your inquiry. We received it and will be in touch.\n\nIf you have a survey, plans, or photos, reply to this email with a link.\n\nManeda Design Studios"
     }
   },
   "thankYou": {
     "meta": {
       "title": "Thank you | Maneda Design Studios",
-      "description": "Your inquiry was received. Maneda Design Studios replies within 1 business day with a plain answer on fit and the next step for your project."
+      "description": "Your inquiry was received. Thank you for sharing your project with Maneda Design Studios. We will be in touch about the next step."
     },
     "title": "Thank you.",
-    "text": "Your inquiry was received. Expect a reply {replyWindow}.",
+    "text": "Your inquiry was received. We will be in touch.",
     "extra": "If you have a survey, plans, or photos, reply to the confirmation email with a link.",
     "testNote": "Test mode: the form is not connected yet. Nothing was sent.",
     "back": "Back to the home page"

@@ -627,13 +627,13 @@
   },
   "contact": {
     "meta": {
-      "title": "Solicite um Orçamento de Projeto | Maneda Design Studios",
-      "description": "Conte-nos sobre o seu projeto, o seu lote e o seu prazo. O Maneda Design Studios tem base em Orlando, atende todo o país e responde em português ou inglês."
+      "title": "Solicite uma Consulta | Maneda Design Studios",
+      "description": "Conte sobre o seu projeto, o seu terreno e o seu prazo. Com base em Orlando e atuação em todos os Estados Unidos, em português ou inglês."
     },
     "hero": {
       "label": "Contato",
-      "title": "Solicitar orçamento.",
-      "intro": "O formulário pergunta o que precisamos para dar uma resposta útil. Espere uma resposta {replyWindow}."
+      "title": "Vamos começar pela sua história.",
+      "intro": "O formulário pergunta o que precisamos para entender o seu projeto e dar uma resposta útil. Não leva muito tempo e não é uma candidatura."
     },
     "side": {
       "email": "E-mail",
@@ -652,7 +652,7 @@
       "city": "Cidade e condado do projeto",
       "size": "Tamanho aproximado (SF)",
       "start": "Início desejado",
-      "budget": "Faixa de orçamento",
+      "budget": "Orçamento estimado de construção",
       "description": "Descrição do projeto",
       "descriptionHint": "O que você quer construir ou mudar e o que mais importa.",
       "files": "Link para arquivos",
@@ -672,15 +672,15 @@
       "whoOptions": [
         {
           "value": "owner",
-          "label": "Proprietário"
+          "label": "Proprietário(a) / Dono(a) do imóvel"
         },
         {
           "value": "builder",
-          "label": "Construtor ou incorporador"
+          "label": "Construtor / Incorporador"
         },
         {
           "value": "architect",
-          "label": "Arquiteto"
+          "label": "Arquiteto / Profissional de projeto"
         },
         {
           "value": "other",
@@ -737,10 +737,6 @@
         {
           "value": "interiors",
           "label": "Só interiores"
-        },
-        {
-          "value": "commercial",
-          "label": "Comercial ou varejo"
         },
         {
           "value": "other",
@@ -802,37 +798,48 @@
         },
         {
           "value": "search",
-          "label": "Busca"
+          "label": "Google / Busca online"
         },
         {
           "value": "instagram",
           "label": "Instagram"
         },
         {
+          "value": "facebook",
+          "label": "Facebook"
+        },
+        {
+          "value": "returning",
+          "label": "Cliente recorrente"
+        },
+        {
           "value": "other",
           "label": "Outro"
         }
       ],
-      "submit": "Enviar solicitação",
+      "submit": "Solicite uma consulta",
       "sending": "Enviando",
       "errorRequired": "Este campo é obrigatório.",
       "errorEmail": "Informe um e-mail válido.",
       "errorSend": "Não foi possível enviar a solicitação. Escreva diretamente para o estúdio.",
       "fixErrors": "Verifique os campos destacados e tente novamente.",
-      "testMode": "Modo de teste: o formulário ainda não está conectado. Nada foi enviado."
+      "testMode": "Modo de teste: o formulário ainda não está conectado. Nada foi enviado.",
+      "budgetHint": "Qual é o seu orçamento total estimado de construção?",
+      "privacyNote": "Ao enviar este formulário, você concorda com a nossa",
+      "privacyLink": "política de privacidade"
     },
     "confirmationEmail": {
       "subject": "Recebemos a sua solicitação",
-      "body": "Obrigado pela sua solicitação. Recebemos e responderemos {replyWindow}.\n\nSe você tiver levantamento, plantas ou fotos, responda a este e-mail com um link.\n\nManeda Design Studios"
+      "body": "Obrigado pela sua solicitação. Recebemos e entraremos em contato.\n\nSe você tiver levantamento, plantas ou fotos, responda a este e-mail com um link.\n\nManeda Design Studios"
     }
   },
   "thankYou": {
     "meta": {
       "title": "Obrigado | Maneda Design Studios",
-      "description": "Sua solicitação foi recebida. O Maneda Design Studios responde em até 1 dia útil, com uma resposta clara sobre o encaixe e o próximo passo."
+      "description": "Sua solicitação foi recebida. Obrigado por compartilhar o seu projeto com o Maneda Design Studios. Entraremos em contato sobre o próximo passo."
     },
     "title": "Obrigado.",
-    "text": "Sua solicitação foi recebida. Espere uma resposta {replyWindow}.",
+    "text": "Sua solicitação foi recebida. Entraremos em contato.",
     "extra": "Se você tiver levantamento, plantas ou fotos, responda ao e-mail de confirmação com um link.",
     "testNote": "Modo de teste: o formulário ainda não está conectado. Nada foi enviado.",
     "back": "Voltar à página inicial"

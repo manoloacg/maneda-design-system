@@ -11,7 +11,6 @@ import { fill, getLang, getPage, isPlaceholder, markPlaceholders, pick, routeFor
 const lang = getLang(Astro.url.pathname);
 const page = getPage(lang).contact;
 const F = page.form;
-const reply = pick(lang, site.replyWindow);
 const testMode = isPlaceholder(site.form.accessKey);
 const email = site.email;
 const link = 'underline decoration-gold';
@@ -21,7 +20,7 @@ const link = 'underline decoration-gold';
   <div class="container-site reveal">
     <p class="sheet-label mb-5 text-[var(--color-text-muted)]">{page.hero.label}</p>
     <h1>{page.hero.title}</h1>
-    <p class="lead mt-6 max-w-[60ch]" set:html={markPlaceholders(fill(page.hero.intro, { replyWindow: reply }))} />
+    <p class="lead mt-6 max-w-[60ch]">{page.hero.intro}</p>
   </div>
 </section>
 
@@ -60,7 +59,7 @@ const link = 'underline decoration-gold';
       <FormField name="city" label={F.city} required autocomplete="address-level2" />
       <FormField name="size" label={F.size} inputmode="numeric" />
       <FormField name="start" label={F.start} type="select" options={F.startOptions} emptyLabel={F.choose} />
-      <FormField name="budget" label={F.budget} type="select" options={F.budgetOptions} emptyLabel={F.choose} />
+      <FormField name="budget" label={F.budget} type="select" options={F.budgetOptions} emptyLabel={F.choose} hint={F.budgetHint} />
       <FormField name="heard" label={F.heard} type="select" options={F.heardOptions} emptyLabel={F.choose} />
       <div class="md:col-span-2">
         <FormField name="description" label={F.description} type="textarea" hint={F.descriptionHint} required rows={6} />
@@ -71,6 +70,7 @@ const link = 'underline decoration-gold';
       <div class="md:col-span-2">
         <p data-status class="mb-4 min-h-[1.5rem] text-[#9B1C1C]" role="alert"></p>
         <Button type="submit">{F.submit}</Button>
+        <p class="mt-4 text-sm text-[var(--color-text-muted)]">{F.privacyNote} <a href={routeFor(lang, 'privacy')} class="underline decoration-gold">{F.privacyLink}</a>.</p>
       </div>
     </form>
 

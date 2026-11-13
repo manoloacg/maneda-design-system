@@ -2063,7 +2063,7 @@
                     {
                       "label": "Intro",
                       "name": "intro",
-                      "widget": "string",
+                      "widget": "text",
                       "required": false
                     }
                   ]
@@ -2389,6 +2389,24 @@
                     {
                       "label": "Test Mode",
                       "name": "testMode",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Budget Hint",
+                      "name": "budgetHint",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Privacy Note",
+                      "name": "privacyNote",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Privacy Link",
+                      "name": "privacyLink",
                       "widget": "string",
                       "required": false
                     }
@@ -5724,6 +5742,24 @@
                       "name": "testMode",
                       "widget": "string",
                       "required": false
+                    },
+                    {
+                      "label": "Budget Hint",
+                      "name": "budgetHint",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Privacy Note",
+                      "name": "privacyNote",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Privacy Link",
+                      "name": "privacyLink",
+                      "widget": "string",
+                      "required": false
                     }
                   ]
                 },
@@ -7891,27 +7927,6 @@
                 {
                   "label": "Access Key",
                   "name": "accessKey",
-                  "widget": "string",
-                  "required": false
-                }
-              ]
-            },
-            {
-              "label": "Reply Window",
-              "name": "replyWindow",
-              "widget": "object",
-              "required": false,
-              "collapsed": true,
-              "fields": [
-                {
-                  "label": "En",
-                  "name": "en",
-                  "widget": "string",
-                  "required": false
-                },
-                {
-                  "label": "Pt",
-                  "name": "pt",
                   "widget": "string",
                   "required": false
                 }

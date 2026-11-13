@@ -23,7 +23,6 @@ const need = (ok, okMsg, badMsg) => (ok ? done.push(okMsg) : blockers.push(badMs
 need(!site.url.includes('example.com'), `Domain set: ${site.url}`, 'Domain not set. Put the real address in src/content/site.json ("url").');
 need(!site.email.includes('PLACEHOLDER'), `Studio email set: ${site.email}`, 'Studio email missing in site.json.');
 need(!site.form.accessKey.includes('PLACEHOLDER'), 'Form access key set. The form will send real email.', 'Form is in test mode. Add the Web3Forms access key in site.json ("form.accessKey").');
-need(!site.replyWindow.en.includes('PLACEHOLDER') && !site.replyWindow.pt.includes('PLACEHOLDER'), 'Reply window promise set.', 'Reply window promise is still a placeholder (site.json, "replyWindow").');
 
 // Image slots: every slot id in the page copy, and which ones already have a file in src/assets/slots.
 const slotIds = Object.keys(JSON.parse(readFileSync('src/content/pages/en.json', 'utf8')).slots ?? {});
