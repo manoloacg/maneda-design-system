@@ -38,6 +38,26 @@ moves:
   text: A sauna, a banheira fria, o chuveiro e o banheiro ficam agrupados ao lado da sala de estar e do bar, então o nível inferior serve tanto para um recolhimento tranquilo quanto para uma noite cheia de convidados.
   image: ../../../assets/ohio-m-sauna.webp
   alt: 'Detalhe da planta do nível inferior: sala de estar, bar, banheira fria, chuveiro, sauna e banheiro'
+visualizations:
+- image: ../../../assets/view-kitchen-great-room.webp
+  alt: Visualização conceitual da ilha da cozinha aberta para uma sala de pé-direito duplo com lareira de pedra e escada de aço
+  caption: Cozinha e sala de estar
+- image: ../../../assets/view-kitchen.webp
+  alt: Visualização conceitual de uma ilha de cozinha comprida com pendentes, armários brancos e janelas para as árvores
+  caption: Cozinha
+- image: ../../../assets/view-foyer.webp
+  alt: Visualização conceitual de um hall de entrada de pé-direito duplo com guarda-corpo de vidro, lustre em dois níveis e um corredor longo até a sala de estar
+  caption: Hall de entrada
+- image: ../../../assets/view-primary-bedroom.webp
+  alt: Visualização conceitual de uma suíte principal com teto inclinado e janelas de canto para as árvores
+  caption: Suíte principal
+sketches:
+- image: ../../../assets/view-sketch-plan.webp
+  alt: Croqui à mão do estudo de planta, desenhado com marcador
+  caption: Estudo de planta
+- image: ../../../assets/view-sketch-elevation.webp
+  alt: Croqui à mão do estudo da cobertura e dos materiais, com revestimento e pedra indicados
+  caption: Estudo da cobertura e dos materiais
 sheets:
 - image: ../../../assets/ohio-sheet-lower.webp
   alt: Planta do nível inferior com sala de estar, bar, cinema, sala de treino, sauna e meia quadra

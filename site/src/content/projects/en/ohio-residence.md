@@ -38,6 +38,26 @@ moves:
   text: The sauna, cold tub, shower, and bathroom are grouped together next to the family room and the bar, so the lower level works for a quiet recovery and for a full evening with guests.
   image: ../../../assets/ohio-m-sauna.webp
   alt: 'Lower level plan detail: family room, bar, cold tub, shower, sauna and bathroom'
+visualizations:
+- image: ../../../assets/view-kitchen-great-room.webp
+  alt: Conceptual view of the kitchen island opening to a two-story great room with a stone fireplace and a steel stair
+  caption: Kitchen and great room
+- image: ../../../assets/view-kitchen.webp
+  alt: Conceptual view of a long kitchen island with pendant lights, white cabinets and windows to the trees
+  caption: Kitchen
+- image: ../../../assets/view-foyer.webp
+  alt: Conceptual view of a two-story foyer with a glass balustrade, a tiered chandelier and a long hall toward the great room
+  caption: Foyer
+- image: ../../../assets/view-primary-bedroom.webp
+  alt: Conceptual view of a primary bedroom with a vaulted ceiling and corner windows to the trees
+  caption: Primary bedroom
+sketches:
+- image: ../../../assets/view-sketch-plan.webp
+  alt: Hand sketch of the floor plan study, drawn in marker
+  caption: Plan study
+- image: ../../../assets/view-sketch-elevation.webp
+  alt: Hand sketch of the roof and materials study, with siding and stone noted
+  caption: Roof and materials study
 sheets:
 - image: ../../../assets/ohio-sheet-lower.webp
   alt: Lower level floor plan with family room, bar, theater, workout room, sauna and half-court gym

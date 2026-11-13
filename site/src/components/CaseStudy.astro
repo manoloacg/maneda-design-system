@@ -105,7 +105,7 @@ const ph = markPlaceholders;
           {d.visualizations.map((v: { image: ImageMetadata; alt: string; caption?: string }) => (
             <li class="reveal">
               <figure>
-                <ZoomImage src={v.image} alt={v.alt} widths={[640, 960, 1200]} sizes="(min-width: 768px) 50vw, 100vw" class="aspect-[4/3] w-full object-cover" label={S.zoom} />
+                <ZoomImage src={v.image} alt={v.alt} widths={[640, 960, 1200]} sizes="(min-width: 768px) 50vw, 100vw" class="h-auto w-full" label={S.zoom} />
                 <figcaption class="mt-3 text-sm text-[var(--color-text-muted)]">{v.caption ? `${v.caption}. ` : ''}<span class="sheet-label">{S.conceptLabel}</span></figcaption>
               </figure>
             </li>
