@@ -23,27 +23,27 @@ moves:
   image: ../../../assets/ohio-sheet-ground.webp
   alt: Planta do térreo com sala de pé-direito duplo, cozinha, suíte principal e varanda envidraçada
 - title: Um ambiente que funciona o ano todo
-  text: Uma varanda de três a quatro estações precisa ser acabada e climatizada por baixo, para evitar condensação na face inferior do segundo pavimento. As dimensões de 14 por 30 pés vêm do espaço livre que o proprietário queria ao redor de uma mesa com cadeiras, e ela é voltada para a vista.
+  text: Uma varanda de três a quatro estações precisa ser acabada e climatizada por baixo, para evitar condensação na face inferior do segundo pavimento. Ela fica nos fundos da casa e é voltada para a vista.
   image: ../../../assets/ohio-rear.webp
   alt: Renderização dos fundos de The View com sala de vidro angulada, deck longo e nível inferior com saída para o jardim
+- title: Um lado tranquilo para os proprietários
+  text: No térreo, a suíte principal, o banheiro, o closet e um escritório ficam em um lado próprio da sala de estar, para que os proprietários possam se recolher com a casa cheia.
+  image: ../../../assets/ohio-m-egress.webp
+  alt: 'Planta do térreo: suíte principal, banheiro, closet, escritório e lavanderia'
 - title: Lazer embaixo, um mezanino em cima
-  text: 'O nível inferior, com saída para o terreno, concentra o lazer e as atividades mais reservadas: cinema, academia, sauna e suíte de hóspedes. O cinema se alinha com a sala principal, para que as duas telas sejam vistas ao mesmo tempo. No segundo pavimento, um mezanino fica perto das suítes dos filhos.'
+  text: 'O nível inferior, com saída para o terreno, concentra o lazer e as atividades mais reservadas: sala de estar com bar, cinema, sala de treino, suíte de hóspedes e meia quadra. No segundo pavimento, um mezanino das crianças fica perto das suítes dos filhos.'
   image: ../../../assets/ohio-m-sight.webp
-  alt: 'Planta do nível inferior: cinema alinhado com a sala de estar, o bar e a academia'
-- title: Duas portas, uma sauna maior
-  text: Foi testada uma sauna de vidro de canto com três acessos. Sobrava espaço para apenas um banco utilizável. A sauna final tem dois acessos, pelo corredor e pelo banheiro, e uma área maior que aproveita o espaço liberado pela nova planta.
+  alt: 'Planta do nível inferior: sala de estar, bar, cinema, sala de treino, sauna e banheira fria'
+- title: Um spa ao lado da sala de estar
+  text: A sauna, a banheira fria, o chuveiro e o banheiro ficam agrupados ao lado da sala de estar e do bar, então o nível inferior serve tanto para um recolhimento tranquilo quanto para uma noite cheia de convidados.
   image: ../../../assets/ohio-m-sauna.webp
-  alt: 'Detalhe da planta do nível inferior: sauna, banheira fria, chuveiro e sala de estar'
-- title: Espaço para o carro dar ré
-  text: O bloco de garagem, hall de entrada e armário de casacos foi deslocado para o lado, para que o carro que dá ré na garagem passe livre do beiral da entrada coberta.
-  image: ../../../assets/ohio-m-garage.webp
-  alt: 'Detalhe da planta do térreo: hall de entrada, armário de casacos, corredor e garagem'
+  alt: 'Detalhe da planta do nível inferior: sala de estar, bar, banheira fria, chuveiro, sauna e banheiro'
 sheets:
 - image: ../../../assets/ohio-sheet-lower.webp
-  alt: Planta do nível inferior com sala de estar, cinema, sala segura, sauna e meia quadra
+  alt: Planta do nível inferior com sala de estar, bar, cinema, sala de treino, sauna e meia quadra
   caption: Planta do nível inferior
 - image: ../../../assets/ohio-sheet-ground.webp
-  alt: Planta do térreo com sala de pé-direito duplo, cozinha, suíte principal e varanda envidraçada
+  alt: Planta do térreo com sala de pé-direito duplo, cozinha, suíte principal, varanda envidraçada e garagem
   caption: Planta do térreo
 - image: ../../../assets/ohio-sheet-second.webp
   alt: Planta do segundo pavimento com mezanino das crianças, três suítes e lavanderia
@@ -51,8 +51,8 @@ sheets:
 - image: ../../../assets/ohio-sheet-elev.webp
   alt: Elevações esquerda e direita da residência em Ohio, em terreno inclinado
   caption: Elevações esquerda e direita
-outcomeTitle: "Situação atual"
-outcome: "The View está em desenvolvimento e em aprovação. O conjunto de desenhos está marcado como Emitido para revisão (Não para construção) e segue o código de Ohio. A casa não foi construída."
+outcomeTitle: Situação atual
+outcome: The View está em desenvolvimento e em aprovação. O conjunto de desenhos está marcado como Emitido para revisão (Não para construção) e segue o código de Ohio. A casa não foi construída.
 heroCaption: The View, a partir do projeto. Uma renderização, não uma fotografia. A casa não foi construída.
 movesTitle: Como a família moldou o projeto
 movesIntro: Uma casa deste tamanho ainda precisa ser equilibrada e acolhedora. O trabalho foi manter os volumes em harmonia entre si e com as vistas dos fundos, e deixar que a forma como a família vive decidisse cada ambiente.
