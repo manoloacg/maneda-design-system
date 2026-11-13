@@ -51,13 +51,8 @@ sheets:
 - image: ../../../assets/ohio-sheet-elev.webp
   alt: Elevações esquerda e direita da residência em Ohio, em terreno inclinado
   caption: Elevações esquerda e direita
-documents: Elevações frontal e posterior do conjunto de desenhos, com notas que ligam cada acabamento externo a uma seção da especificação.
-documentsImage: ../../../assets/ohio-docs.webp
-documentsAlt: Elevações frontal e posterior do conjunto de desenhos, com notas e níveis de piso
 outcome: The View é um projeto desenvolvido. O conjunto de desenhos está marcado como Emitido para revisão (Não para construção) e segue o código de Ohio. Não é um conjunto de licença aprovado, e a casa não foi construída.
 heroCaption: The View, a partir do projeto. Uma renderização, não uma fotografia. A casa não foi construída.
 movesTitle: Como a família moldou o projeto
 movesIntro: Uma casa deste tamanho ainda precisa ser equilibrada e acolhedora. O trabalho foi manter os volumes em harmonia entre si e com as vistas dos fundos, e deixar que a forma como a família vive decidisse cada ambiente.
-documentsTitle: Desenhos, emitidos para revisão
-documentsIntro: O conjunto de desenhos está marcado como Emitido para revisão (Não para construção) e segue o código de Ohio. Não é um conjunto de licença aprovado.
 ---
