@@ -1,13 +1,13 @@
 {
   "meta": {
     "siteName": "Maneda Design Studios",
-    "defaultTitle": "Maneda Design Studios | Residential design from Orlando",
-    "defaultDescription": "Residential design from Orlando, Florida. Homes, additions, and interiors, carried through to buildable drawings. Projects across the United States."
+    "defaultTitle": "Maneda Design Studios | Residential Design in Orlando, FL",
+    "defaultDescription": "Personalized residential design in Orlando, Florida. Thoughtful home design shaped around your lifestyle, vision, and the way you live."
   },
   "nav": {
     "services": "Services",
     "work": "Work",
-    "process": "Process",
+    "process": "Our Approach",
     "about": "About",
     "contact": "Contact",
     "primary": "Primary",
@@ -19,8 +19,8 @@
     "footer": "Footer"
   },
   "cta": {
-    "requestQuote": "Request a quote",
-    "seeWork": "See selected work",
+    "requestQuote": "Request a consultation",
+    "seeWork": "Explore our work",
     "nextStep": "Next step"
   },
   "lang": {
@@ -64,7 +64,8 @@
     "heading": "Questions"
   },
   "home": {
-    "headline": "Residential design, based in Orlando.",
-    "subhead": "Maneda Design Studios designs homes, additions, and interiors, and carries the design through to buildable drawings."
+    "headline": "A home should feel like you.",
+    "subhead": "Your home should reflect who you are, support the way you live, and make room for the moments that matter most.",
+    "tagline": "Thoughtfully Designed. Personally Lived."
   }
 }

@@ -86,5 +86,15 @@
       "en": "Site visit, 90 minutes",
       "pt": "Visita ao terreno, 90 minutos"
     }
+  },
+  "hidden": {
+    "label": {
+      "en": "Shared after a conversation",
+      "pt": "Informado após uma conversa"
+    },
+    "explanation": {
+      "en": "Each session or report is priced by scope. We confirm the fee in writing before any work starts.",
+      "pt": "Cada sessão ou relatório é orçado conforme o escopo. Confirmamos o valor por escrito antes de qualquer trabalho começar."
+    }
   }
 }

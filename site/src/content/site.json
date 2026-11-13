@@ -28,6 +28,8 @@
     "pt": "em até 1 dia útil"
   },
   "indexing": true,
+  "showPrices": false,
+  "_showPricesHelp": "false hides every dollar amount on the site (home, services, structured data) and shows \"shared after a conversation\" instead. The amounts stay in pricing.json.",
   "indexingNote": "Keep false until launch. While false, every page is marked noindex and robots.txt blocks crawlers.",
   "analytics": {
     "provider": "cloudflare-web-analytics",

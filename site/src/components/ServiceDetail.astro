@@ -96,13 +96,13 @@ const priceFig = 'font-[family-name:var(--font-display)] text-[1.6rem] leading-n
 
               <div class={`reveal mt-6 ${card}`}>
                 <p class={cardTitle}>{L.pricing}</p>
-                {s.pricing === 'quoted' && (
+                {(s.pricing === 'quoted' || !site.showPrices) && (
                   <>
-                    <p class="font-medium">{pick(lang, pricing.quoted.label)}</p>
-                    <p class="mt-2 text-sm text-[var(--color-text-muted)]">{pick(lang, pricing.quoted.explanation)}</p>
+                    <p class="font-medium">{pick(lang, s.pricing === 'quoted' ? pricing.quoted.label : pricing.hidden.label)}</p>
+                    <p class="mt-2 text-sm text-[var(--color-text-muted)]">{pick(lang, s.pricing === 'quoted' ? pricing.quoted.explanation : pricing.hidden.explanation)}</p>
                   </>
                 )}
-                {s.pricing === 'siteAnalysis' && (
+                {site.showPrices && s.pricing === 'siteAnalysis' && (
                   <>
                     <ul>
                       {pricing.siteAnalysis.tiers.map((tier) => (
@@ -117,7 +117,7 @@ const priceFig = 'font-[family-name:var(--font-display)] text-[1.6rem] leading-n
                     </ul>
                   </>
                 )}
-                {s.pricing === 'consultations' && (
+                {site.showPrices && s.pricing === 'consultations' && (
                   <ul>
                     {pricing.consultations.map((c) => (
                       <li class="border-t border-[var(--color-rule)] py-3 first:border-t-0">
@@ -130,8 +130,8 @@ const priceFig = 'font-[family-name:var(--font-display)] text-[1.6rem] leading-n
                     ))}
                   </ul>
                 )}
-                {s.pricing === 'consultations' && <p class="mt-4 text-sm text-[var(--color-text-muted)]">{L.creditNote}</p>}
-                {isCd && (
+                {site.showPrices && s.pricing === 'consultations' && <p class="mt-4 text-sm text-[var(--color-text-muted)]">{L.creditNote}</p>}
+                {site.showPrices && isCd && (
                   <>
                     <p class="sheet-label mb-1 mt-5 text-[var(--color-text-muted)]">{L.siteVisitTitle}</p>
                     <div class="border-t border-[var(--color-rule)] pt-3">

@@ -1,13 +1,13 @@
 {
   "meta": {
     "siteName": "Maneda Design Studios",
-    "defaultTitle": "Maneda Design Studios | Projeto residencial com base em Orlando",
-    "defaultDescription": "Projeto residencial com base em Orlando, Flórida. Casas, ampliações e interiores até o projeto executivo. Projetos em todos os Estados Unidos."
+    "defaultTitle": "Maneda Design Studios | Projeto residencial em Orlando, FL",
+    "defaultDescription": "Projeto residencial personalizado em Orlando, Flórida. Um projeto pensado com cuidado, a partir do seu estilo de vida, da sua visão e da sua forma de viver."
   },
   "nav": {
     "services": "Serviços",
     "work": "Trabalhos",
-    "process": "Processo",
+    "process": "Nossa abordagem",
     "about": "Sobre",
     "contact": "Contato",
     "primary": "Principal",
@@ -19,8 +19,8 @@
     "footer": "Rodapé"
   },
   "cta": {
-    "requestQuote": "Solicitar orçamento",
-    "seeWork": "Ver trabalhos selecionados",
+    "requestQuote": "Solicite uma consulta",
+    "seeWork": "Conheça nossos projetos",
     "nextStep": "Próximo passo"
   },
   "lang": {
@@ -35,7 +35,7 @@
     "skip": "Ir para o conteúdo principal"
   },
   "footer": {
-    "about": "A Maneda Design Studios é um estúdio de projeto residencial com sede em Orlando, Flórida.",
+    "about": "O Maneda Design Studios é um estúdio de projeto residencial com sede em Orlando, Flórida.",
     "seal": "Quando um selo é exigido, os desenhos são revisados e selados por um profissional licenciado responsável pelo projeto.",
     "serviceArea": "Área de atendimento",
     "email": "E-mail",
@@ -64,7 +64,8 @@
     "heading": "Perguntas"
   },
   "home": {
-    "headline": "Projeto residencial, com base em Orlando.",
-    "subhead": "A Maneda Design Studios projeta casas, ampliações e interiores, e leva o projeto até os desenhos prontos para construir."
+    "headline": "Uma casa deve ter a sua essência.",
+    "subhead": "Sua casa deve refletir quem você é, apoiar a maneira como vive e abrir espaço para os momentos que realmente importam.",
+    "tagline": "Projetada com intenção. Vivida com personalidade."
   }
 }

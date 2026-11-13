@@ -4,7 +4,7 @@ description: "As seis etapas da primeira consulta ao apoio ao alvará, com o que
 draft: true
 ---
 
-Um processo claro economiza tempo dos dois lados. É assim que um projeto funciona com a Maneda Design Studios.
+Um processo claro economiza tempo dos dois lados. É assim que um projeto funciona com o Maneda Design Studios.
 
 ## 1. Consulta e escopo
 

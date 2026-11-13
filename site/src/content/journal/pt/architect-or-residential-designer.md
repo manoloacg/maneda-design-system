@@ -58,8 +58,8 @@ Siga estes quatro passos antes de assinar contrato com qualquer pessoa.
 
 Um ponto prático: se o seu projeto precisa de arquiteto, de engenheiro ou dos dois depende da lei estadual e do departamento de obras. Descubra isso cedo, antes de terminar o projeto. Uma mudança na hora de pedir o alvará custa tempo e dinheiro.
 
-## Onde a MDS se encaixa
+## Onde o Maneda se encaixa
 
-A Maneda Design Studios é um estúdio de design residencial com sede em Orlando, na Flórida. O estúdio atende projetos em estados onde a lei estadual permite que um designer residencial prepare o projeto. A MDS projeta a casa, prepara os desenhos de construção e se coordena com o arquiteto ou engenheiro que sela os desenhos quando o selo é exigido. A MDS não sela desenhos e não presta serviços de arquitetura nem de engenharia.
+O Maneda Design Studios é um estúdio de design residencial com sede em Orlando, na Flórida. O estúdio atende projetos em estados onde a lei estadual permite que um designer residencial prepare o projeto. O Maneda projeta a casa, prepara os desenhos de construção e se coordena com o arquiteto ou engenheiro que sela os desenhos quando o selo é exigido. O Maneda não sela desenhos e não presta serviços de arquitetura nem de engenharia.
 
 *Este artigo traz apenas informações gerais. Não é aconselhamento jurídico. As regras mudam de estado para estado e de uma jurisdição para outra, e são alteradas com o tempo. Confirme os requisitos de alvará e de profissionais licenciados com o departamento de obras local, a autoridade competente (AHJ), antes de começar o projeto ou contratar alguém.*

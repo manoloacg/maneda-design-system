@@ -45,6 +45,7 @@ const audienceSlots = ['home-audience-owners', 'home-audience-pt', 'home-audienc
   </div>
   <div class="container-site reveal pb-12 pt-10 text-obsidian xl:absolute xl:inset-x-0 xl:bottom-0 xl:pb-14 xl:pt-0 xl:text-ivory xl:[--color-text-muted:var(--ivory)]">
     <h1 class="max-w-[16ch] xl:max-w-[22ch] xl:text-[clamp(2.5rem,1rem+3vw,3.75rem)]">{t(lang, 'home.headline')}</h1>
+    <p class="mt-4 font-[family-name:var(--font-display)] text-[1.35rem] italic leading-snug xl:text-[1.6rem]">{t(lang, 'home.tagline')}</p>
     <p class="lead mt-6 max-w-[52ch] xl:mt-5 xl:max-w-[110ch] xl:text-[1.1rem]">{t(lang, 'home.subhead')}</p>
     <div class="mt-8 flex flex-wrap gap-4 xl:hidden">
       <Button href={contact}>{t(lang, 'cta.requestQuote')}</Button>
@@ -62,7 +63,7 @@ const audienceSlots = ['home-audience-owners', 'home-audience-pt', 'home-audienc
 {slotVisible('home-band') && <div class="reveal"><Slot id="home-band" ratio="21 / 9" sizes="100vw" /></div>}
 
 <Section tone="alt" label={p.start.label} title={p.start.title} intro={p.start.text}>
-  <ul class="grid gap-px border border-[var(--color-rule-strong)] bg-[var(--color-rule-strong)] md:grid-cols-3">
+  {site.showPrices && <ul class="grid gap-px border border-[var(--color-rule-strong)] bg-[var(--color-rule-strong)] md:grid-cols-3">
     {
       pricing.consultations.map((c) => (
         <li class="reveal bg-[var(--color-bg)] p-6">
@@ -72,8 +73,8 @@ const audienceSlots = ['home-audience-owners', 'home-audience-pt', 'home-audienc
         </li>
       ))
     }
-  </ul>
-  <div class="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
+  </ul>}
+  <div class={`flex flex-wrap items-center gap-x-8 gap-y-4 ${site.showPrices ? 'mt-10' : ''}`}>
     <Button href={`${contact}?service=consultations`}>{p.start.button}</Button>
     {site.booking?.url && <Button href={site.booking.url} variant="secondary">{p.start.bookCall}</Button>}
     <Button href={detailPath(lang, 'services', 'consultations')} variant="text">{p.start.more}</Button>

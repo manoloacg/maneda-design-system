@@ -1,16 +1,16 @@
 {
   "home": {
     "meta": {
-      "title": "Residential Design from Orlando | Maneda Design Studios",
-      "description": "Residential design from Orlando, Florida. Homes, additions, and interiors, carried through to buildable drawings. Projects across the United States."
+      "title": "Maneda Design Studios | Residential Design in Orlando, FL",
+      "description": "Personalized residential design in Orlando, Florida. Thoughtful home design shaped around your lifestyle, vision, and the way you live."
     },
     "hero": {
       "alt": "Rendering of a white three-level residence with a stone wing and three-car garage, Ohio"
     },
     "positioning": {
       "label": "The studio",
-      "title": "Design decisions come first.",
-      "text": "How a house sits on its lot, how light and air move through it, and how the rooms connect are settled before anything is drawn for permit. Each decision is explained in plain language and checked against the code that applies to your lot. The design you approve is the design that gets built."
+      "title": "We take the time to understand before we begin to design.",
+      "text": "At Maneda Design Studios, we take the time to understand your vision, your lifestyle, and what matters to you. Then we translate that understanding into thoughtful residential design."
     },
     "audience": {
       "label": "Who this is for",
@@ -43,29 +43,29 @@
       "viewAll": "See all work"
     },
     "process": {
-      "label": "Process",
-      "title": "Five steps from first call to buildable drawings.",
-      "link": "Read the full process",
+      "label": "Our approach",
+      "title": "Five steps, from the first conversation to the drawings.",
+      "link": "Read our approach",
       "steps": [
         {
-          "title": "Inquiry, scope, and agreement",
-          "text": "You describe the project. We agree on scope and fee."
+          "title": "Understand",
+          "text": "We listen to you and your family first."
         },
         {
-          "title": "Site and code review",
-          "text": "We check the lot, zoning, and code before drawing."
+          "title": "Explore",
+          "text": "We study the lot, the light, the views, and how the rooms relate."
         },
         {
-          "title": "Concept and schematic design",
-          "text": "Sketches, massing, and plan options."
+          "title": "Develop",
+          "text": "Early studies and a concept to discuss together."
         },
         {
-          "title": "Design development",
-          "text": "The chosen design is refined, with revisions."
+          "title": "Refine",
+          "text": "Proportions and decisions, refined with your feedback."
         },
         {
-          "title": "Construction documents",
-          "text": "The approved design becomes a buildable set."
+          "title": "Document",
+          "text": "Drawings and documentation for the scope you contract."
         }
       ]
     },
@@ -103,10 +103,10 @@
     },
     "start": {
       "label": "Where to start",
-      "title": "Start with a consultation.",
-      "text": "A working session with a designer, virtual or in person. You get a written follow-up, and a credit applies toward a full-service package booked within 14 days.",
-      "button": "Book a consultation",
-      "more": "See all consultation options",
+      "title": "Start with a conversation.",
+      "text": "A design consultation is a working session with a designer, virtual or in person, with a written follow-up. Request one on the contact form and tell us about your project.",
+      "button": "Request a consultation",
+      "more": "About design consultations",
       "bookCall": "Book a free scoping call"
     },
     "voices": {
@@ -117,12 +117,12 @@
   "services": {
     "meta": {
       "title": "Residential Design Services Orlando | Maneda Design Studios",
-      "description": "Residential design, interior design, site analysis, consultations and construction documents for homes and additions, with fixed published prices."
+      "description": "New residential design, home additions, home renovations, design development, and construction documents, shaped around how you live. Based in Orlando, FL."
     },
     "hero": {
       "label": "Services",
       "title": "Design first. Drawings follow.",
-      "intro": "Five services, listed in the order a project uses them. Residential design leads. The full service comes last, taking a project from design through construction documents and permitting, with bidding and construction administration if you want them."
+      "intro": "New residential design, home additions, home renovations, design development, and construction documents, in five services listed in the order a project uses them. Residential design leads. The full service comes last, taking a project from design through construction documents and permitting, with bidding and construction administration if you want them."
     },
     "labels": {
       "included": "What is included",
@@ -131,8 +131,8 @@
       "suits": "Who it suits",
       "pricing": "How pricing works",
       "sheetIndex": "Sample sheet index",
-      "requestQuote": "Request a quote",
-      "bookConsultation": "Request this consultation",
+      "requestQuote": "Request a consultation",
+      "bookConsultation": "Request a consultation",
       "service": "Service",
       "cdEyebrow": "The complete path",
       "fixedPrice": "Fixed price",
@@ -288,7 +288,7 @@
         "duration": "The site visit is 3 to 5 days after booking. The report follows 5 business days after the visit.",
         "meta": {
           "title": "Lot and Site Analysis Report | Maneda Design Studios",
-          "description": "A written report on what zoning, setbacks, flood zone and access allow on a lot, before you buy it or design on it. Two fixed prices by lot size."
+          "description": "A written report on what zoning, setbacks, flood zone and access allow on a lot, before you buy it or design on it. Includes a site visit."
         },
         "example": {
           "label": "Example",

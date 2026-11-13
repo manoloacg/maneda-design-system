@@ -6948,6 +6948,57 @@
                   ]
                 }
               ]
+            },
+            {
+              "label": "Hidden",
+              "name": "hidden",
+              "widget": "object",
+              "required": false,
+              "collapsed": true,
+              "fields": [
+                {
+                  "label": "Label",
+                  "name": "label",
+                  "widget": "object",
+                  "required": false,
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "label": "En",
+                      "name": "en",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Pt",
+                      "name": "pt",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
+                },
+                {
+                  "label": "Explanation",
+                  "name": "explanation",
+                  "widget": "object",
+                  "required": false,
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "label": "En",
+                      "name": "en",
+                      "widget": "text",
+                      "required": false
+                    },
+                    {
+                      "label": "Pt",
+                      "name": "pt",
+                      "widget": "text",
+                      "required": false
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -7873,6 +7924,18 @@
               "required": false
             },
             {
+              "label": "Show Prices",
+              "name": "showPrices",
+              "widget": "boolean",
+              "required": false
+            },
+            {
+              "label": " show Prices Help",
+              "name": "_showPricesHelp",
+              "widget": "text",
+              "required": false
+            },
+            {
               "label": "Indexing Note",
               "name": "indexingNote",
               "widget": "text",
@@ -8466,6 +8529,12 @@
                   "name": "subhead",
                   "widget": "text",
                   "required": false
+                },
+                {
+                  "label": "Tagline",
+                  "name": "tagline",
+                  "widget": "string",
+                  "required": false
                 }
               ]
             }
@@ -8848,6 +8917,12 @@
                   "label": "Subhead",
                   "name": "subhead",
                   "widget": "text",
+                  "required": false
+                },
+                {
+                  "label": "Tagline",
+                  "name": "tagline",
+                  "widget": "string",
                   "required": false
                 }
               ]

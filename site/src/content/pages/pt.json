@@ -1,16 +1,16 @@
 {
   "home": {
     "meta": {
-      "title": "Projeto Residencial em Orlando | Maneda Design Studios",
-      "description": "Projeto residencial com base em Orlando, Flórida. Casas, ampliações e interiores até os desenhos prontos para construir. Projetos em todos os Estados Unidos."
+      "title": "Maneda Design Studios | Projeto residencial em Orlando, FL",
+      "description": "Projeto residencial personalizado em Orlando, Flórida. Um projeto pensado com cuidado, a partir do seu estilo de vida, da sua visão e da sua forma de viver."
     },
     "hero": {
       "alt": "Renderização de uma residência branca de três níveis com ala em pedra e garagem para três carros, Ohio"
     },
     "positioning": {
       "label": "O estúdio",
-      "title": "As decisões de projeto vêm primeiro.",
-      "text": "Como a casa se posiciona no lote, como a luz e o ar circulam e como os ambientes se conectam são definidos antes de qualquer desenho para aprovação. Cada decisão é explicada em linguagem clara e verificada contra o código que se aplica ao seu lote. O projeto que você aprova é o projeto que será construído."
+      "title": "Dedicamos tempo para entender antes de começar a projetar.",
+      "text": "No Maneda Design Studios, dedicamos tempo para entender sua visão, seu estilo de vida e o que é importante para você. Depois, transformamos esse entendimento em um projeto residencial pensado com cuidado."
     },
     "audience": {
       "label": "Para quem é",
@@ -26,7 +26,7 @@
         },
         {
           "title": "Construtores e incorporadores",
-          "text": "Chame a MDS na fase de projeto, para que a obra seja resolvida antes de ser orçada e construída.",
+          "text": "Chame o Maneda na fase de projeto, para que a obra seja resolvida antes de ser orçada e construída.",
           "link": "Veja como funciona"
         }
       ]
@@ -43,29 +43,29 @@
       "viewAll": "Ver todos os trabalhos"
     },
     "process": {
-      "label": "Processo",
-      "title": "Cinco etapas, da primeira conversa aos desenhos prontos para construir.",
-      "link": "Leia o processo completo",
+      "label": "Nossa abordagem",
+      "title": "Cinco etapas, da primeira conversa aos desenhos.",
+      "link": "Conheça nossa abordagem",
       "steps": [
         {
-          "title": "Consulta, escopo e contrato",
-          "text": "Você descreve o projeto. Acertamos escopo e honorários."
+          "title": "Entender",
+          "text": "Primeiro, ouvimos você e a sua família."
         },
         {
-          "title": "Análise do terreno e do código",
-          "text": "Verificamos lote, zoneamento e código antes de desenhar."
+          "title": "Explorar",
+          "text": "Estudamos o terreno, a luz, as vistas e a relação entre os ambientes."
         },
         {
-          "title": "Estudo preliminar e anteprojeto",
-          "text": "Croquis, volumetria e opções de planta."
+          "title": "Desenvolver",
+          "text": "Estudos iniciais e um conceito para discutirmos juntos."
         },
         {
-          "title": "Desenvolvimento do projeto",
-          "text": "O projeto escolhido é refinado, com revisões."
+          "title": "Refinar",
+          "text": "Proporções e decisões, aprimoradas com o seu retorno."
         },
         {
-          "title": "Projeto executivo",
-          "text": "O projeto aprovado vira um conjunto pronto para construir."
+          "title": "Documentar",
+          "text": "Desenhos e documentação conforme o escopo contratado."
         }
       ]
     },
@@ -103,10 +103,10 @@
     },
     "start": {
       "label": "Por onde começar",
-      "title": "Comece com uma consultoria.",
-      "text": "Uma sessão de trabalho com um designer, virtual ou presencial. Você recebe um resumo por escrito, e um crédito é aplicado a um pacote completo contratado em até 14 dias.",
-      "button": "Agendar uma consultoria",
-      "more": "Ver todas as opções de consultoria",
+      "title": "Comece com uma conversa.",
+      "text": "A consultoria de projeto é uma sessão de trabalho com um designer, virtual ou presencial, com um resumo por escrito. Solicite pelo formulário de contato e conte sobre o seu projeto.",
+      "button": "Solicite uma consulta",
+      "more": "Sobre as consultorias de projeto",
       "bookCall": "Agendar uma conversa de escopo gratuita"
     },
     "voices": {
@@ -117,12 +117,12 @@
   "services": {
     "meta": {
       "title": "Serviços de Projeto Residencial | Maneda Design Studios",
-      "description": "Projeto residencial, design de interiores, análise de terreno, consultorias e projeto executivo para casas e ampliações, com preços fixos publicados."
+      "description": "Projeto de casas novas, ampliações, reformas, desenvolvimento do projeto e projeto executivo, pensados em torno de como você vive. Com base em Orlando, FL."
     },
     "hero": {
       "label": "Serviços",
       "title": "Primeiro o projeto. Depois os desenhos.",
-      "intro": "Cinco serviços, na ordem em que um projeto os usa. O projeto residencial vem primeiro. O serviço completo vem por último e leva o projeto do estudo preliminar ao projeto executivo e ao alvará, com licitação e administração da obra se você quiser."
+      "intro": "Projeto de casas novas, ampliações, reformas, desenvolvimento do projeto e projeto executivo, em cinco serviços na ordem em que um projeto os usa. O projeto residencial vem primeiro. O serviço completo vem por último e leva o projeto do estudo preliminar ao projeto executivo e ao alvará, com licitação e administração da obra se você quiser."
     },
     "labels": {
       "included": "O que está incluído",
@@ -131,8 +131,8 @@
       "suits": "Para quem serve",
       "pricing": "Como funciona o preço",
       "sheetIndex": "Índice de pranchas de exemplo",
-      "requestQuote": "Solicitar orçamento",
-      "bookConsultation": "Solicitar esta consultoria",
+      "requestQuote": "Solicite uma consulta",
+      "bookConsultation": "Solicite uma consulta",
       "service": "Serviço",
       "cdEyebrow": "O caminho completo",
       "fixedPrice": "Preço fixo",
@@ -149,7 +149,7 @@
       "otherServices": "Outros serviços",
       "readMore": "Detalhes completos",
       "buildersLine": "Construtor ou incorporador?",
-      "buildersLink": "Veja como a MDS trabalha com construtores",
+      "buildersLink": "Veja como o Maneda trabalha com construtores",
       "creditLabel": "Crédito",
       "creditNote": "Cada crédito equivale à metade do valor e se aplica a um pacote completo contratado em até 14 dias.",
       "guideLead": "Não sabe de qual profissional o seu projeto precisa? Leia:",
@@ -174,7 +174,7 @@
           "Opcional: administração da obra com visitas, pedidos de informação, controle de submissões e revisão da lista de pendências"
         ],
         "notIncluded": [
-          "Desenhos carimbados pela MDS",
+          "Desenhos carimbados pelo Maneda",
           "Engenharia estrutural. O proprietário contrata um engenheiro estrutural em contrato separado.",
           "Engenharia mecânica, elétrica ou hidráulica",
           "Levantamentos topográficos e sondagens. O estudo preliminar os recomenda quando são necessários.",
@@ -198,7 +198,7 @@
         }
       },
       "residential-design": {
-        "what": "Este é o serviço para projeto de casas sob medida, plantas de casas e ampliações. Um designer trabalha com você do primeiro croqui até um projeto resolvido. O pré-projeto define o programa, os limites de código e de zoneamento e uma primeira estimativa de custo. O anteprojeto (schematic design) testa, em geral, três opções, e você escolhe uma. O desenvolvimento do projeto refina a opção escolhida. Os desenhos apenas de projeto não servem para aprovação (permit) nem para obra. Quem contrata o projeto pode seguir para o serviço completo com a MDS.",
+        "what": "Este é o serviço para projeto de casas sob medida, plantas de casas e ampliações. Um designer trabalha com você do primeiro croqui até um projeto resolvido. O pré-projeto define o programa, os limites de código e de zoneamento e uma primeira estimativa de custo. O anteprojeto (schematic design) testa, em geral, três opções, e você escolhe uma. O desenvolvimento do projeto refina a opção escolhida. Os desenhos apenas de projeto não servem para aprovação (permit) nem para obra. Quem contrata o projeto pode seguir para o serviço completo com o Maneda.",
         "included": [
           "Pré-projeto: análise do terreno, do código e do zoneamento, e documento de programa",
           "Estimativa preliminar de custo a partir do programa",
@@ -288,7 +288,7 @@
         "duration": "A visita ao terreno acontece de 3 a 5 dias após a contratação. O relatório sai 5 dias úteis depois da visita.",
         "meta": {
           "title": "Relatório de Análise de Terreno | Maneda Design Studios",
-          "description": "Relatório escrito sobre o que zoneamento, recuos, inundação e acesso permitem em um lote, antes de comprar ou projetar. Dois preços fixos."
+          "description": "Relatório escrito sobre o que zoneamento, recuos, inundação e acesso permitem em um lote, antes de comprar ou projetar. Inclui visita ao terreno."
         },
         "example": {
           "label": "Exemplo",
@@ -333,10 +333,10 @@
     ],
     "notFit": {
       "label": "Adequação",
-      "title": "O que a MDS não faz.",
+      "title": "O que o Maneda não faz.",
       "intro": "Isto poupa tempo se você está comparando opções.",
       "items": [
-        "Sem desenhos selados ou carimbados pela MDS",
+        "Sem desenhos selados ou carimbados pelo Maneda",
         "Sem engenharia estrutural, mecânica, elétrica ou hidráulica",
         "Sem serviços de construtor nem execução de obra",
         "Sem trabalhos só de desenho. Esses pedidos são analisados caso a caso pelo formulário de contato."
@@ -345,7 +345,7 @@
     "builders": {
       "label": "Construtores e incorporadores",
       "title": "Parceiro de projeto para construtores e incorporadores.",
-      "text": "Chame a MDS na fase de projeto, para que a obra seja resolvida antes de ser orçada e construída. Decisões de projeto tomadas cedo custam menos para mudar do que decisões já construídas. Você pode contratar só o projeto, anteprojeto e desenvolvimento, e entregá-lo ao profissional de sua escolha para o projeto executivo. Ou seguir com a MDS no projeto executivo.",
+      "text": "Chame o Maneda na fase de projeto, para que a obra seja resolvida antes de ser orçada e construída. Decisões de projeto tomadas cedo custam menos para mudar do que decisões já construídas. Você pode contratar só o projeto, anteprojeto e desenvolvimento, e entregá-lo ao profissional de sua escolha para o projeto executivo. Ou seguir com o Maneda no projeto executivo.",
       "button": "Conversar sobre um projeto"
     },
     "terms": {
@@ -366,7 +366,7 @@
   "work": {
     "meta": {
       "title": "Projetos Residenciais | Maneda Design Studios",
-      "description": "Projetos residenciais da Maneda Design Studios, com o programa, o contexto do terreno, as decisões de projeto e o resultado de cada um."
+      "description": "Projetos residenciais do Maneda Design Studios, com o programa, o contexto do terreno, as decisões de projeto e o resultado de cada um."
     },
     "hero": {
       "label": "Trabalhos",
@@ -430,7 +430,7 @@
   "process": {
     "meta": {
       "title": "Processo e Prazos do Projeto | Maneda Design Studios",
-      "description": "Como funciona um projeto residencial com a MDS, da consulta ao projeto executivo: o que acontece, o que você fornece e o que você recebe."
+      "description": "Como funciona um projeto residencial com o Maneda, da consulta ao projeto executivo: o que acontece, o que você fornece e o que você recebe."
     },
     "hero": {
       "label": "Processo",
@@ -510,7 +510,7 @@
         },
         {
           "q": "Quem sela os desenhos?",
-          "a": "Quando um selo é exigido, os desenhos são revisados e selados por um profissional licenciado responsável pelo projeto. Em projetos residenciais, esse profissional costuma ser o engenheiro estrutural, contratado e pago pelo proprietário em contrato separado. A MDS coordena os desenhos com o engenheiro durante o projeto executivo. Quando a prefeitura exige outro profissional, a MDS confirma isso na análise do terreno e do código."
+          "a": "Quando um selo é exigido, os desenhos são revisados e selados por um profissional licenciado responsável pelo projeto. Em projetos residenciais, esse profissional costuma ser o engenheiro estrutural, contratado e pago pelo proprietário em contrato separado. O Maneda coordena os desenhos com o engenheiro durante o projeto executivo. Quando a prefeitura exige outro profissional, o Maneda confirma isso na análise do terreno e do código."
         },
         {
           "q": "Quantas revisões estão incluídas?",
@@ -526,7 +526,7 @@
         },
         {
           "q": "Onde vocês atuam?",
-          "a": "Com base em Orlando, Flórida. Projetos por todos os Estados Unidos. No início de cada projeto, a MDS pesquisa a jurisdição: qual código se aplica, limites de tamanho e altura, quando há exigência de selo e de engenharia, e o formato de submissão."
+          "a": "Com base em Orlando, Flórida. Projetos por todos os Estados Unidos. No início de cada projeto, o Maneda pesquisa a jurisdição: qual código se aplica, limites de tamanho e altura, quando há exigência de selo e de engenharia, e o formato de submissão."
         },
         {
           "q": "Podemos trabalhar em português?",
@@ -538,11 +538,11 @@
         },
         {
           "q": "Vocês gerenciam a obra?",
-          "a": "A MDS não constrói nem conduz um canteiro de obras. A administração de obra é oferecida como opção: visitas, pedidos de informação, controle de submissões e revisão da lista de pendências. Ações formais de revisão, aprovação e certificação são feitas pelo profissional licenciado responsável pelo projeto."
+          "a": "O Maneda não constrói nem conduz um canteiro de obras. A administração de obra é oferecida como opção: visitas, pedidos de informação, controle de submissões e revisão da lista de pendências. Ações formais de revisão, aprovação e certificação são feitas pelo profissional licenciado responsável pelo projeto."
         },
         {
           "q": "Vocês aceitam trabalhos só de desenho?",
-          "a": "A MDS é um estúdio de projeto. Pedidos só de desenho são analisados caso a caso pelo formulário de contato."
+          "a": "O Maneda é um estúdio de projeto. Pedidos só de desenho são analisados caso a caso pelo formulário de contato."
         }
       ]
     },
@@ -560,7 +560,7 @@
       "portraitAlt": "Retrato de Manolo Castaneda, Designer Residencial."
     },
     "story": [
-      "Manolo Castaneda é o fundador da Maneda Design Studios, um estúdio de projeto residencial com sede em Apopka, na região de Orlando. Ele tem mais de 10 anos de experiência em escritórios de arquitetura, em projetos multifamiliares, comerciais e residenciais. É bilíngue em inglês e português e atende clientes brasileiros no próprio idioma deles.",
+      "Manolo Castaneda é o fundador do Maneda Design Studios, um estúdio de projeto residencial com sede em Apopka, na região de Orlando. Ele tem mais de 10 anos de experiência em escritórios de arquitetura, em projetos multifamiliares, comerciais e residenciais. É bilíngue em inglês e português e atende clientes brasileiros no próprio idioma deles.",
       "Ele projeta a partir do terreno e de como as pessoas vivem em uma edificação: espaço, luz, circulação e o uso de cada ambiente. Um projeto só está pronto quando pode ser aprovado e construído, por isso o código local e as regras de cada prefeitura entram no processo desde o primeiro croqui. Conhecer o código é o que permite que um projeto seja construído. Faz parte do trabalho, não é um serviço separado."
     ],
     "sections": [
@@ -569,7 +569,7 @@
         "title": "De onde vem a experiência.",
         "paragraphs": [
           "A maior parte desses anos foi dentro de escritórios estabelecidos, em projetos com muitos consultores, prazos fixos e análise rigorosa. Manolo trabalhou na Cuhaci Peterson, na Charlan Brock Architects, na C5 Studios e na J. Fletcher Creamer & Son. O trabalho incluiu edifícios multifamiliares, espaços comerciais e residências.",
-          "Projetos grandes ensinam hábitos que valem também para uma casa: desenhos que concordam entre si, decisões registradas por escrito no momento em que são tomadas e dúvidas de código resolvidas antes de chegarem ao analista da prefeitura. A Maneda Design Studios leva esses hábitos ao projeto residencial, em uma escala em que o proprietário conversa diretamente com quem desenha o projeto."
+          "Projetos grandes ensinam hábitos que valem também para uma casa: desenhos que concordam entre si, decisões registradas por escrito no momento em que são tomadas e dúvidas de código resolvidas antes de chegarem ao analista da prefeitura. O Maneda Design Studios leva esses hábitos ao projeto residencial, em uma escala em que o proprietário conversa diretamente com quem desenha o projeto."
         ]
       },
       {
@@ -591,7 +591,7 @@
       },
       {
         "label": "O estúdio",
-        "title": "Como a Maneda Design Studios trabalha.",
+        "title": "Como o Maneda Design Studios trabalha.",
         "paragraphs": [
           "Os clientes trabalham diretamente com Manolo, da primeira conversa ao conjunto final de desenhos. Os projetos são feitos em etapas, cada uma com escopo escrito e honorário fixo, para que o proprietário sempre saiba o que vem a seguir e quanto custa. O estúdio faz casas, ampliações, interiores e estudos de terreno, e diz com clareza quando um projeto precisa de outro tipo de profissional.",
           "Com sede em Apopka, o estúdio faz projetos em toda a Flórida Central, incluindo Orlando, Winter Park e Winter Garden, e também em outros estados quando o trabalho pode ser feito a partir de levantamentos, fotos e reuniões virtuais. A residência em Ohio e a oficina de marcenaria em Ohio, na seção de trabalhos, são dois exemplos. Cada jurisdição tem as próprias regras, então todo projeto começa confirmando o código local, o zoneamento e o que o departamento de obras vai pedir antes de emitir a licença de obra.",
@@ -628,7 +628,7 @@
   "contact": {
     "meta": {
       "title": "Solicite um Orçamento de Projeto | Maneda Design Studios",
-      "description": "Conte-nos sobre o seu projeto, o seu lote e o seu prazo. A Maneda Design Studios tem base em Orlando, atende todo o país e responde em português ou inglês."
+      "description": "Conte-nos sobre o seu projeto, o seu lote e o seu prazo. O Maneda Design Studios tem base em Orlando, atende todo o país e responde em português ou inglês."
     },
     "hero": {
       "label": "Contato",
@@ -657,7 +657,7 @@
       "descriptionHint": "O que você quer construir ou mudar e o que mais importa.",
       "files": "Link para arquivos",
       "filesHint": "Um link do Dropbox ou do Google Drive com levantamento, plantas ou fotos.",
-      "heard": "Como você conheceu a MDS?",
+      "heard": "Como você conheceu o Maneda?",
       "choose": "Escolha uma opção",
       "languageOptions": [
         {
@@ -829,7 +829,7 @@
   "thankYou": {
     "meta": {
       "title": "Obrigado | Maneda Design Studios",
-      "description": "Sua solicitação foi recebida. A Maneda Design Studios responde em até 1 dia útil, com uma resposta clara sobre o encaixe e o próximo passo."
+      "description": "Sua solicitação foi recebida. O Maneda Design Studios responde em até 1 dia útil, com uma resposta clara sobre o encaixe e o próximo passo."
     },
     "title": "Obrigado.",
     "text": "Sua solicitação foi recebida. Espere uma resposta {replyWindow}.",
@@ -840,7 +840,7 @@
   "privacy": {
     "meta": {
       "title": "Política de privacidade | Maneda Design Studios",
-      "description": "Quais informações a Maneda Design Studios coleta neste site, como elas são usadas e como falar conosco sobre os seus dados pessoais."
+      "description": "Quais informações o Maneda Design Studios coleta neste site, como elas são usadas e como falar conosco sobre os seus dados pessoais."
     },
     "title": "Política de privacidade",
     "updated": "Última atualização:",

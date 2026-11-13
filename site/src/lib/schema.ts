@@ -55,8 +55,9 @@ export function studioSchema(lang: Lang) {
 export function servicesSchema(lang: Lang) {
   const items = getPage(lang).services.items as Record<string, { what: string }>;
   return services.services.map((s) => {
-    const offers =
-      s.pricing === 'consultations'
+    const offers = !site.showPrices
+      ? undefined
+      : s.pricing === 'consultations'
         ? pricing.consultations.map((c) => ({
             '@type': 'Offer',
             name: pick(lang, c.duration),
