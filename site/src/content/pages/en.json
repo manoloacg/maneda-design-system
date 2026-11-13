@@ -411,7 +411,9 @@
       "close": "Close",
       "interiors": "Interiors, as conceptual studies",
       "interiorsIntro": "These interior images are AI-assisted conceptual visualizations of the design. They are not photographs, and they are not renders from the project model.",
-      "conceptLabel": "Conceptual Interior Visualization (AI-assisted)"
+      "conceptLabel": "Conceptual Interior Visualization (AI-assisted)",
+      "sketches": "Where it started: hand sketches",
+      "sketchesIntro": "The first ideas were drawn by hand: a plan study, and a study of the roof and the materials."
     },
     "back": "All work",
     "cta": {

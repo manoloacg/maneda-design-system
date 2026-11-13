@@ -1501,6 +1501,18 @@
                       "name": "conceptLabel",
                       "widget": "string",
                       "required": false
+                    },
+                    {
+                      "label": "Sketches",
+                      "name": "sketches",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Sketches Intro",
+                      "name": "sketchesIntro",
+                      "widget": "text",
+                      "required": false
                     }
                   ]
                 },
@@ -4875,6 +4887,18 @@
                       "label": "Concept Label",
                       "name": "conceptLabel",
                       "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Sketches",
+                      "name": "sketches",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "label": "Sketches Intro",
+                      "name": "sketchesIntro",
+                      "widget": "text",
                       "required": false
                     }
                   ]
