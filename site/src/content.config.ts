@@ -52,6 +52,7 @@ const projects = defineCollection({
       documents: z.string().optional(),
       documentsImage: image().optional(),
       documentsAlt: z.string().optional(),
+      outcomeTitle: z.string().optional(), // overrides the heading of the outcome section, for example Status
       outcome: z.string().optional(),
     }),
 });

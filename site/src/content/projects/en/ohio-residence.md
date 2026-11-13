@@ -51,7 +51,8 @@ sheets:
 - image: ../../../assets/ohio-sheet-elev.webp
   alt: Left and right elevations of the Ohio residence on a sloping site
   caption: Left and right elevations
-outcome: The View is a developed design. The drawing set is marked Issued for Review (Not for Construction) and follows Ohio code. It is not an approved permit set, and the house has not been built.
+outcomeTitle: "Status"
+outcome: "The View is under development and approval. The drawing set is marked Issued for Review (Not for Construction) and follows Ohio code. The house has not been built."
 heroCaption: The View, from the project design. A rendering, not a photograph. The house has not been built.
 movesTitle: How the family shaped the design
 movesIntro: A house this large still has to feel balanced and warm. The work was to keep the volumes in harmony with each other and with the views at the back, and to let the way the family lives decide each room.

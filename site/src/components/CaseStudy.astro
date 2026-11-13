@@ -176,7 +176,7 @@ const ph = markPlaceholders;
     )
   }
 
-  {(d.outcome || show) && <Section tone="alt" label={nextLabel()} title={S.outcome} intro={d.outcome ?? PH.outcome} />}
+  {(d.outcome || show) && <Section tone="alt" label={nextLabel()} title={d.outcomeTitle ?? S.outcome} intro={d.outcome ?? PH.outcome} />}
 
   <Section tone="dark" label={t(lang, 'cta.nextStep')} title={c.cta.title} intro={c.cta.text}>
     <Button href={`${routeFor(lang, 'contact')}?service=residential-design`}>{c.cta.button}</Button>
