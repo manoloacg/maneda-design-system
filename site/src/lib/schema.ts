@@ -39,10 +39,11 @@ export function studioSchema(lang: Lang) {
     // City level only. No street address is published.
     address: { '@type': 'PostalAddress', addressLocality: 'Orlando', addressRegion: 'FL', addressCountry: 'US' },
     areaServed: [
-      { '@type': 'City', name: 'Orlando', containedInPlace: { '@type': 'State', name: 'Florida' } },
-      { '@type': 'City', name: 'Apopka', containedInPlace: { '@type': 'State', name: 'Florida' } },
-      { '@type': 'City', name: 'Winter Park', containedInPlace: { '@type': 'State', name: 'Florida' } },
-      { '@type': 'City', name: 'Winter Garden', containedInPlace: { '@type': 'State', name: 'Florida' } },
+      ...['Orlando', 'Apopka', 'Winter Park', 'Winter Garden', 'Windermere', 'Dr. Phillips', 'Horizon West', 'Lake Nona', 'Montverde', 'Mount Dora', 'Altamonte Springs', 'Lake Mary', 'Sanford', 'Longwood', 'Maitland', 'Ocala'].map((name) => ({
+        '@type': 'City',
+        name,
+        containedInPlace: { '@type': 'State', name: 'Florida' },
+      })),
       { '@type': 'Place', name: 'Central Florida' },
       { '@type': 'Country', name: 'United States' },
     ],

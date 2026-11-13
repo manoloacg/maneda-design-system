@@ -566,25 +566,24 @@
       "portraitAlt": "Portrait of Manolo Castaneda, Residential Designer."
     },
     "story": [
-      "Manolo Castaneda is the founder of Maneda Design Studios, a residential design studio based in Apopka, in the Orlando area. He has more than 10 years of experience in architecture firms, on multifamily, retail and residential projects. He is bilingual in English and Portuguese, and he works with Brazilian clients in their own language.",
-      "He designs from the site and from how people live in a building: space, light, circulation, and how a room is used. A design is not finished until it can be permitted and built, so local code and jurisdiction rules are part of the process from the first sketch. Code literacy is what lets a design get built. It is part of the work, not a separate service."
+      "Manolo Castaneda is the founder of Maneda Design Studios, a residential design studio in Orlando, Florida. A home should feel like you, and that starts with listening.",
+      "We don't start with rooms. We start with the people who will live in them. The studio's work is to understand your story, your needs, and the way you live, and to turn that into a well-thought-out home, from the first sketch to the drawings."
     ],
     "sections": [
       {
-        "label": "Experience",
-        "title": "Where the experience comes from.",
+        "label": "Where it began",
+        "title": "A life around homes.",
         "paragraphs": [
-          "Most of those years were spent inside established offices, on projects with many consultants, fixed schedules and strict review. Manolo has worked at Cuhaci Peterson, Charlan Brock Architects, C5 Studios and J. Fletcher Creamer & Son. The work covered multifamily buildings, retail spaces and homes.",
+          "Manolo has worked in the field since before 2014. He grew up watching his father, a residential architect, at work. He has since worked at Cuhaci Peterson, Charlan Brock Architects, C5 Studios and J. Fletcher Creamer & Son, on multifamily, retail and residential projects.",
           "Larger projects teach habits that matter just as much on a house: drawings that agree with each other, decisions written down when they are made, and code questions answered before they reach the plans reviewer. Maneda Design Studios brings those habits to residential work, at a scale where the owner talks directly with the person drawing the project."
         ]
       },
       {
-        "label": "Education and licensure",
-        "title": "Trained in two countries.",
+        "label": "Between two countries",
+        "title": "Trained in the United States and Brazil.",
         "paragraphs": [
-          "Manolo earned dual degrees from NJIT, the New Jersey Institute of Technology, and from Universidade Católica de Brasília.",
-          "In the United States, his work is residential design.",
-          "Where a seal is required, drawings are reviewed and sealed by a licensed professional of record. The studio says so at the start of the project, so the owner knows who signs what before the drawings are done."
+          "Manolo completed his architecture education in the United States in 2019 and in Brazil in 2020, with degrees from NJIT, the New Jersey Institute of Technology, and from Universidade Católica de Brasília. Working between the two countries has meant seeing different building systems and different ways of running a project.",
+          "In the United States, his work is residential design."
         ]
       },
       {
@@ -599,19 +598,19 @@
         "label": "The studio",
         "title": "How Maneda Design Studios works.",
         "paragraphs": [
-          "Clients work directly with Manolo, from the first conversation to the final set. Projects run in phases, each with a written scope and a fixed fee, so the owner always knows what comes next and what it costs. The studio takes on homes, additions, interiors and site studies, and it says plainly when a project needs a different kind of professional.",
-          "Based in Apopka, the studio works on projects across Central Florida, including Orlando, Winter Park and Winter Garden, and on projects in other states when the work can be done from surveys, photos and virtual meetings. The Ohio residence and the Ohio wood shop in the work section are two of them. Every jurisdiction has its own rules, so each project starts by confirming the local code, the zoning, and what the building department will ask to see before it issues a permit.",
-          "The services and the published prices are on the services page. The steps of a project, from the first call to permit, are on the process page."
+          "The design starts with listening. Clients work directly with Manolo, from the first conversation to the final set of drawings. Projects run in steps, each with a written scope and a fixed fee, so you always know what comes next.",
+          "Based in the Orlando area, the studio works across Central Florida, including Orlando, Winter Park, Winter Garden, Windermere, Dr. Phillips, Horizon West, Lake Nona, Montverde, Mount Dora, Apopka, Altamonte Springs, Lake Mary, Sanford, Longwood, Maitland, and Ocala, and on projects in other states when the work can be done from surveys, photos and virtual meetings. The View, in the work section, is one of them. Every jurisdiction has its own rules, so each project starts by confirming the local code, the zoning, and what the building department will ask to see.",
+          "How the work unfolds is on the Our Approach page. The services are on the services page."
         ],
         "links": [
-          "services",
-          "process"
+          "process",
+          "services"
         ]
       }
     ],
     "linkLabels": {
-      "services": "See the services and prices",
-      "process": "See how a project runs"
+      "services": "See the services",
+      "process": "See our approach"
     },
     "values": {
       "label": "What I value",

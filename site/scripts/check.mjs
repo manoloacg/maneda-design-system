@@ -33,7 +33,7 @@ for (const file of walk('.').filter((f) => textExt.has(extname(f)) && !f.endsWit
     // The About page states the Brazilian license and the Florida exam as facts. Allowed only in a line that says "in Brazil" or names the ARE.
     // A bare URL slug, or an English to Portuguese slug pair, such as "architect-or-residential-designer", is an address, not copy.
     const slugOnly = /^\s*"[a-z0-9-]+"(:\s*"[a-z0-9-]+")?,?\s*$/.test(line);
-    const licenseFact = file.includes('content/pages/') && /\bin Brazil\b|\bno Brasil\b|Architect Registration Examination/.test(line);
+    const licenseFact = file.includes('content/pages/') && /\bin Brazil\b|\bno Brasil\b|Architect Registration Examination|his father, a residential architect|pai, arquiteto residencial|architecture education|formação em arquitetura/.test(line);
     // lastmod.json is generated: page keys and dates, no copy.
     if (internalDoc || file.endsWith('content/lastmod.json')) return;
     if (!file.endsWith('.css') && !file.endsWith('.ts') && !file.endsWith('.astro') || file.endsWith('.json')) {

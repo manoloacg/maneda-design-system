@@ -566,25 +566,24 @@
       "portraitAlt": "Retrato de Manolo Castaneda, Designer Residencial."
     },
     "story": [
-      "Manolo Castaneda é o fundador do Maneda Design Studios, um estúdio de projeto residencial com sede em Apopka, na região de Orlando. Ele tem mais de 10 anos de experiência em escritórios de arquitetura, em projetos multifamiliares, comerciais e residenciais. É bilíngue em inglês e português e atende clientes brasileiros no próprio idioma deles.",
-      "Ele projeta a partir do terreno e de como as pessoas vivem em uma edificação: espaço, luz, circulação e o uso de cada ambiente. Um projeto só está pronto quando pode ser aprovado e construído, por isso o código local e as regras de cada prefeitura entram no processo desde o primeiro croqui. Conhecer o código é o que permite que um projeto seja construído. Faz parte do trabalho, não é um serviço separado."
+      "Manolo Castaneda é o fundador do Maneda Design Studios, um estúdio de projeto residencial em Orlando, Flórida. Uma casa deve ter a sua essência, e isso começa por ouvir.",
+      "Não começamos pelos ambientes. Começamos pelas pessoas que vão viver neles. O trabalho do estúdio é entender a sua história, as suas necessidades e a sua forma de viver, e transformar isso em uma casa bem pensada, do primeiro croqui aos desenhos."
     ],
     "sections": [
       {
-        "label": "Experiência",
-        "title": "De onde vem a experiência.",
+        "label": "Onde começou",
+        "title": "Uma vida em torno de casas.",
         "paragraphs": [
-          "A maior parte desses anos foi dentro de escritórios estabelecidos, em projetos com muitos consultores, prazos fixos e análise rigorosa. Manolo trabalhou na Cuhaci Peterson, na Charlan Brock Architects, na C5 Studios e na J. Fletcher Creamer & Son. O trabalho incluiu edifícios multifamiliares, espaços comerciais e residências.",
+          "Manolo trabalha na área desde antes de 2014. Cresceu acompanhando o pai, arquiteto residencial, no trabalho. Depois passou pela Cuhaci Peterson, pela Charlan Brock Architects, pela C5 Studios e pela J. Fletcher Creamer & Son, em projetos multifamiliares, comerciais e residenciais.",
           "Projetos grandes ensinam hábitos que valem também para uma casa: desenhos que concordam entre si, decisões registradas por escrito no momento em que são tomadas e dúvidas de código resolvidas antes de chegarem ao analista da prefeitura. O Maneda Design Studios leva esses hábitos ao projeto residencial, em uma escala em que o proprietário conversa diretamente com quem desenha o projeto."
         ]
       },
       {
-        "label": "Formação e registro profissional",
-        "title": "Formado em dois países.",
+        "label": "Entre dois países",
+        "title": "Formado nos Estados Unidos e no Brasil.",
         "paragraphs": [
-          "Manolo tem dupla diplomação pelo NJIT, o New Jersey Institute of Technology, e pela Universidade Católica de Brasília.",
-          "Nos Estados Unidos, o trabalho dele é de projeto residencial.",
-          "Quando um selo é exigido, os desenhos são revisados e selados por um profissional licenciado responsável pelo projeto. O estúdio informa isso no início, para que o proprietário saiba quem assina o quê antes de os desenhos ficarem prontos."
+          "Manolo concluiu a formação em arquitetura nos Estados Unidos em 2019 e no Brasil em 2020, com diplomas pelo NJIT, o New Jersey Institute of Technology, e pela Universidade Católica de Brasília. Trabalhar entre os dois países significou conhecer sistemas construtivos diferentes e formas diferentes de conduzir um projeto.",
+          "Nos Estados Unidos, o trabalho dele é de projeto residencial."
         ]
       },
       {
@@ -599,19 +598,19 @@
         "label": "O estúdio",
         "title": "Como o Maneda Design Studios trabalha.",
         "paragraphs": [
-          "Os clientes trabalham diretamente com Manolo, da primeira conversa ao conjunto final de desenhos. Os projetos são feitos em etapas, cada uma com escopo escrito e honorário fixo, para que o proprietário sempre saiba o que vem a seguir e quanto custa. O estúdio faz casas, ampliações, interiores e estudos de terreno, e diz com clareza quando um projeto precisa de outro tipo de profissional.",
-          "Com sede em Apopka, o estúdio faz projetos em toda a Flórida Central, incluindo Orlando, Winter Park e Winter Garden, e também em outros estados quando o trabalho pode ser feito a partir de levantamentos, fotos e reuniões virtuais. A residência em Ohio e a oficina de marcenaria em Ohio, na seção de trabalhos, são dois exemplos. Cada jurisdição tem as próprias regras, então todo projeto começa confirmando o código local, o zoneamento e o que o departamento de obras vai pedir antes de emitir a licença de obra.",
-          "Os serviços e os preços publicados estão na página de serviços. As etapas de um projeto, da primeira conversa até a aprovação, estão na página do processo."
+          "O projeto começa por ouvir. Os clientes trabalham diretamente com Manolo, da primeira conversa ao conjunto final de desenhos. Os projetos são feitos em etapas, cada uma com escopo escrito e honorário fixo, para que você sempre saiba o que vem a seguir.",
+          "Com sede na região de Orlando, o estúdio atende toda a Flórida Central, incluindo Orlando, Winter Park, Winter Garden, Windermere, Dr. Phillips, Horizon West, Lake Nona, Montverde, Mount Dora, Apopka, Altamonte Springs, Lake Mary, Sanford, Longwood, Maitland e Ocala, e também outros estados quando o trabalho pode ser feito a partir de levantamentos, fotos e reuniões virtuais. The View, na seção de trabalhos, é um exemplo. Cada jurisdição tem as próprias regras, então todo projeto começa confirmando o código local, o zoneamento e o que o departamento de obras vai pedir.",
+          "Como o trabalho se desenrola está na página Nossa abordagem. Os serviços estão na página de serviços."
         ],
         "links": [
-          "services",
-          "process"
+          "process",
+          "services"
         ]
       }
     ],
     "linkLabels": {
-      "services": "Ver os serviços e preços",
-      "process": "Ver como um projeto funciona"
+      "services": "Ver os serviços",
+      "process": "Ver nossa abordagem"
     },
     "values": {
       "label": "O que eu valorizo",
