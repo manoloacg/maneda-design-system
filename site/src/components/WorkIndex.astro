@@ -28,7 +28,7 @@ const btn = 'inline-flex min-h-[var(--tap)] items-center border border-obsidian 
 
   <div id="grid" class={`${showFilters || unfinished ? "mt-12" : "mt-0"} grid gap-10 md:grid-cols-3`}>
     {
-      projects.map((pr) => (
+      projects.map((pr, i) => (
         <div data-type={pr.data.type}>
           <ProjectCard
             as="h2"
@@ -40,6 +40,7 @@ const btn = 'inline-flex min-h-[var(--tap)] items-center border border-obsidian 
             result={pr.data.result}
             alt={pr.data.heroAlt}
             image={pr.data.cardImage ?? pr.data.heroImage}
+            priority={i < 3}
           />
         </div>
       ))

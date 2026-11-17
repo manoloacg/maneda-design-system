@@ -22,6 +22,6 @@ const share = entry.data.heroImage ? (await getImage({ src: entry.data.heroImage
 const url = `${routeFor(lang, 'work')}${Astro.params.slug}/`;
 ---
 
-<BaseLayout image={share} noindex={unfinished} schema={unfinished ? [] : [caseStudySchema(lang, entry.data, url)]} title={withSiteName(entry.data.title)} description={description}>
+<BaseLayout image={share} noindex={unfinished} schema={unfinished ? [] : [caseStudySchema(lang, entry.data, url)]} title={withSiteName(entry.data.metaTitle ?? entry.data.title)} description={description}>
   <CaseStudy entry={entry} />
 </BaseLayout>

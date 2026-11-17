@@ -102,12 +102,9 @@
 
 /* Scroll reveal: only when JS is on and motion is allowed */
 @media (prefers-reduced-motion: no-preference) {
-  .js .reveal {
-    opacity: 0;
-    transform: translateY(14px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
-  }
-  .js .reveal.is-visible { opacity: 1; transform: none; }
+  /* Only content below the fold at load is hidden, so the first screen paints at once */
+  .js .reveal { transition: opacity 0.7s ease, transform 0.7s ease; }
+  .js .reveal.reveal-pending { opacity: 0; transform: translateY(14px); }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

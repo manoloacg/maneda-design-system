@@ -16,16 +16,18 @@ interface Props {
   image?: ImageMetadata;
   alt?: string;
   as?: 'h2' | 'h3';
+  /* Above the fold: load at once and skip the fade-in so it counts as painted right away */
+  priority?: boolean;
 }
-const { href, number, type, location, result, title, image, alt = '', as: Heading = 'h3' } = Astro.props;
+const { href, number, type, location, result, title, image, alt = '', as: Heading = 'h3', priority = false } = Astro.props;
 ---
 
-<article class="reveal group">
+<article class={priority ? 'group' : 'reveal group'}>
   <a href={href} class="block no-underline">
     <div class="overflow-hidden">
       {
         image ? (
-          <Image src={image} alt={alt} widths={[480, 800, 1200]} sizes="(min-width: 1024px) 380px, 100vw" class="aspect-[16/9] w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]" loading="lazy" />
+          <Image src={image} alt={alt} widths={[480, 800, 1200]} sizes="(min-width: 1024px) 380px, 100vw" class="aspect-[16/9] w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]" loading={priority ? 'eager' : 'lazy'} fetchpriority={priority ? 'high' : 'auto'} />
         ) : (
           <ImagePlaceholder ratio="4 / 3" note={alt} />
         )

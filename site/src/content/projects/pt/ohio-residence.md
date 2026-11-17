@@ -1,5 +1,6 @@
 ---
 title: The View
+metaTitle: 'The View, Residência em Ohio'
 metaDescription: 'The View: uma residência de três níveis em Ohio, projetada em torno de como a família vive e recebe. Conceito, plantas e desenhos, com interiores conceituais.'
 number: MDS-26-01
 order: 1

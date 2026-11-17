@@ -1,5 +1,6 @@
 ---
 title: The View
+metaTitle: 'The View, Custom Residence in Ohio'
 metaDescription: 'The View: a three-level custom residence in Ohio, designed around how the family lives and hosts. Concept, plans, and drawings, with conceptual interiors.'
 number: MDS-26-01
 order: 1

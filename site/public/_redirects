@@ -1,4 +1,7 @@
 # Path redirects for Cloudflare Pages. Format: old new status.
+# A shared link to /work. (trailing period from the end of a sentence) reached the site.
+/work. /work/ 301
+
 # Portuguese detail pages moved from English slugs to Portuguese ones (see src/i18n/slugs.json).
 /pt/servicos/residential-design/ /pt/servicos/projeto-residencial/ 301
 /pt/servicos/residential-design /pt/servicos/projeto-residencial/ 301
