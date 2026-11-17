@@ -1,5 +1,5 @@
 ---
-title: "Como funciona um projeto residencial, da primeira conversa aos desenhos"
+title: "Como funciona um projeto residencial"
 metaTitle: "Como Funciona um Projeto Residencial, Etapa por Etapa"
 description: "As cinco etapas de um projeto residencial, o que acontece em cada uma, o que você fornece, quanto tempo leva e por que o processo começa pelas pessoas."
 date: "2026-11-17"

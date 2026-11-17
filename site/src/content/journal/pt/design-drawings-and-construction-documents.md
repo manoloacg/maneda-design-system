@@ -1,5 +1,5 @@
 ---
-title: "Desenhos de projeto e projeto executivo: o que cada etapa faz pela sua casa"
+title: "Desenhos de projeto e projeto executivo"
 metaTitle: "Desenhos de Projeto e Projeto Executivo"
 description: "Por que uma casa precisa de dois tipos de desenho, o que cada um faz, quanto tempo leva e por que o segundo protege as decisões que você tomou no primeiro."
 date: "2026-11-17"

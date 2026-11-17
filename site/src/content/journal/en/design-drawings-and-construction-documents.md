@@ -1,5 +1,5 @@
 ---
-title: "Design drawings and construction documents: what each set does for your home"
+title: "Design drawings and construction documents"
 metaTitle: "Design Drawings vs Construction Documents"
 description: "Why a home needs two kinds of drawings, what each one does, how long each takes, and why the second set protects the decisions you made in the first."
 date: "2026-11-17"

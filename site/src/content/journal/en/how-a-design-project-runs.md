@@ -1,5 +1,5 @@
 ---
-title: "How a residential design project runs, from the first conversation to the drawings"
+title: "How a residential design project runs"
 metaTitle: "How a Residential Design Project Runs, Step by Step"
 description: "The five steps of a residential design project, what happens in each, what you provide, how long it takes, and why the process starts with people, not rooms."
 date: "2026-11-17"
