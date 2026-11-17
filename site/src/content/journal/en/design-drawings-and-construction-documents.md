@@ -2,7 +2,8 @@
 title: "Design drawings and construction documents: what each set does for your home"
 metaTitle: "Design Drawings vs Construction Documents"
 description: "Why a home needs two kinds of drawings, what each one does, how long each takes, and why the second set protects the decisions you made in the first."
-draft: true
+date: "2026-11-17"
+draft: false
 ---
 
 There is a moment in every residential project when the house finally looks right. The plan works. The kitchen opens to the place where the family actually gathers. The bedrooms sit where the morning light is. For many owners, that feels like the finish line.
@@ -51,6 +52,6 @@ At Maneda Design Studios, the drawings are never the starting point. We don't st
 
 That understanding is what makes the second set matter. When the construction documents are drawn by the same studio that listened to you and resolved the design with you, the intent travels intact from the first sketch to the last detail. The sill heights, the openings, the transitions and the proportions on the construction set are the same ones you agreed to, because they were decided for a reason you discussed.
 
-The studio's founder, Manolo Castañeda, has worked in residential design since before 2014, trained in architecture in the United States and in Brazil, and grew up around the work of his father, a residential architect. That background shapes how the studio works: careful with decisions, clear about limits, and present through the whole path from concept to the drawings your builder will use.
+The studio's founder, Manolo Castañeda, has worked in residential design since before 2014, trained in architecture in the United States and in Brazil, and grew up around residential design through his father's work. That background shapes how the studio works: careful with decisions, clear about limits, and present through the whole path from concept to the drawings your builder will use.
 
 The process is laid out step by step on [Our Approach](/process/), and the scope for each service is on the [services page](/services/). If you are planning a new home, an addition or a renovation, the first step is a conversation about your story and your site. [Request a consultation](/contact/).

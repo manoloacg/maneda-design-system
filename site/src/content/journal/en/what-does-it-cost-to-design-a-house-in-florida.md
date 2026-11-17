@@ -2,7 +2,8 @@
 title: "What does it cost to design a house in Florida?"
 metaTitle: "What Does It Cost to Design a House in Florida?"
 description: "How residential design fees are structured, what a fee covers and what it does not, what drives it up, and how to compare proposals before you sign."
-draft: true
+date: "2026-11-17"
+draft: false
 ---
 
 Most people asking what it costs to design a house want one number. It is a fair question. You are about to make one of the largest investments of your life, and you want to know what the first step will cost before you take it.

@@ -2,7 +2,8 @@
 title: "How a residential design project runs, from the first conversation to the drawings"
 metaTitle: "How a Residential Design Project Runs, Step by Step"
 description: "The five steps of a residential design project, what happens in each, what you provide, how long it takes, and why the process starts with people, not rooms."
-draft: true
+date: "2026-11-17"
+draft: false
 ---
 
 Most people who are about to design a home carry two feelings at once. One is excitement: finally, a house shaped around the way the family lives. The other is a quieter worry. How many decisions will this take? Will the designer actually listen, or arrive with a style already in mind? What happens if something important is missed and only shows up during construction?

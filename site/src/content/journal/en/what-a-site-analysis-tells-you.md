@@ -2,7 +2,8 @@
 title: "What a site analysis tells you before you buy a lot"
 metaTitle: "What a Site Analysis Tells You Before You Buy a Lot"
 description: "Zoning, setbacks, flood zone and access can decide what a lot will hold. What a written site analysis covers, what it does not, and when to order one."
-draft: true
+date: "2026-11-17"
+draft: false
 ---
 
 Most people choose a lot the way they would choose a view. They stand on it, look at the trees, picture the kitchen window, and imagine the family on a Saturday afternoon. That instinct matters. The way a place feels is a large part of why a home works.
