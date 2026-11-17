@@ -89,4 +89,4 @@ The studio works with families on new homes, additions and renovations, from the
 
 A home is not only a financial investment. It is an investment in the way you live. The design fee is what makes sure that investment turns into a house that works for your family, every day, long after construction ends.
 
-If you have a lot, a rough size and a budget range, that is enough to begin. The services are described on the [services page](/services/), and the process is on [Our Approach](/process/). [Request a consultation](/contact/) and the first conversation will give you a clear read on fit and the next step.
+If you have a lot, a rough size and a construction budget range, that is enough to begin. The services are described on the [services page](/services/), and the process is on [Our Approach](/process/). [Request a consultation](/contact/) and the first conversation will give you a clear read on fit and the next step.
