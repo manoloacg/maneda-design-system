@@ -16,7 +16,7 @@ This is how a project runs at Maneda Design Studios.
 
 Every project starts with listening. Before anything is drawn, the studio wants to know who will live in the house and how: the daily routines, how the family hosts, where people need quiet, what is not working in the current home, and what the new one should feel like when you walk in at the end of the day.
 
-In practice, you send the inquiry form and there is a first conversation about the project, the lot and the budget range. If it is a good fit, you receive a written proposal with the scope, the deliverables and a fixed fee set by phase. The schedule starts when the agreement is signed.
+In practice, you send the inquiry form and there is a first conversation about the project, the lot and the construction budget range. If it is a good fit, you receive a written proposal with the scope, the deliverables and a fixed fee set by phase. The schedule starts when the agreement is signed.
 
 Sometimes you know how you want your home to feel before you know what it should look like. That is exactly where this step begins.
 
